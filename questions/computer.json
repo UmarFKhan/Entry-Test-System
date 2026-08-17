@@ -1,0 +1,3278 @@
+[
+    {
+        "id": "1",
+        "section": "Computer",
+        "question": "What does CPU stand for?",
+        "options": [
+            "Central Process Unit",
+            "Central Processing Unit",
+            "Computer Personal Unit",
+            "Central Processor Unifier"
+        ],
+        "answer": "Central Processing Unit",
+        "difficulty": "Easy",
+        "explanation": "CPU stands for Central Processing Unit, the main processor of a computer."
+    },
+    {
+        "id": "2",
+        "section": "Computer",
+        "question": "Which of these is a programming language?",
+        "options": [
+            "HTML",
+            "Python",
+            "HTTP",
+            "USB"
+        ],
+        "answer": "Python",
+        "difficulty": "Easy",
+        "explanation": "Python is a general-purpose programming language; HTML is a markup language."
+    },
+    {
+        "id": "3",
+        "section": "Computer",
+        "question": "What does RAM stand for?",
+        "options": [
+            "Random Access Memory",
+            "Read Access Memory",
+            "Random Available Memory",
+            "Run Access Memory"
+        ],
+        "answer": "Random Access Memory",
+        "difficulty": "Easy",
+        "explanation": "RAM stands for Random Access Memory, used for temporary data storage."
+    },
+    {
+        "id": "4",
+        "section": "Computer",
+        "question": "Which data structure uses LIFO (Last In First Out)?",
+        "options": [
+            "Queue",
+            "Stack",
+            "Array",
+            "Linked List"
+        ],
+        "answer": "Stack",
+        "difficulty": "Medium",
+        "explanation": "A stack follows the Last In First Out principle."
+    },
+    {
+        "id": "5",
+        "section": "Computer",
+        "question": "What is the binary equivalent of the decimal number 10?",
+        "options": [
+            "1010",
+            "1100",
+            "1001",
+            "1110"
+        ],
+        "answer": "1010",
+        "difficulty": "Medium",
+        "explanation": "10 in decimal equals 1010 in binary (8+0+2+0)."
+    },
+    {
+        "id": "6",
+        "section": "Computer",
+        "question": "Which protocol is used to send emails?",
+        "options": [
+            "HTTP",
+            "FTP",
+            "SMTP",
+            "TCP"
+        ],
+        "answer": "SMTP",
+        "difficulty": "Medium",
+        "explanation": "SMTP (Simple Mail Transfer Protocol) is used to send emails."
+    },
+    {
+        "id": "7",
+        "section": "Computer",
+        "question": "What does SQL stand for?",
+        "options": [
+            "Structured Query Language",
+            "Simple Query Language",
+            "Structured Question Language",
+            "System Query Language"
+        ],
+        "answer": "Structured Query Language",
+        "difficulty": "Easy",
+        "explanation": "SQL stands for Structured Query Language, used for managing databases."
+    },
+    {
+        "id": "8",
+        "section": "Computer",
+        "question": "Which of the following is an operating system?",
+        "options": [
+            "Oracle",
+            "Linux",
+            "MySQL",
+            "Photoshop"
+        ],
+        "answer": "Linux",
+        "difficulty": "Easy",
+        "explanation": "Linux is an open-source operating system."
+    },
+    {
+        "id": "9",
+        "section": "Computer",
+        "question": "What is the time complexity of binary search on a sorted array?",
+        "options": [
+            "O(n)",
+            "O(n^2)",
+            "O(log n)",
+            "O(1)"
+        ],
+        "answer": "O(log n)",
+        "difficulty": "Hard",
+        "explanation": "Binary search halves the search space each step, giving O(log n) complexity."
+    },
+    {
+        "id": "10",
+        "section": "Computer",
+        "question": "Which language is primarily used for styling web pages?",
+        "options": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP"
+        ],
+        "answer": "CSS",
+        "difficulty": "Easy",
+        "explanation": "CSS (Cascading Style Sheets) is used to style HTML documents."
+    },
+    {
+        "id": "11",
+        "section": "Computer",
+        "question": "What does URL stand for?",
+        "options": [
+            "Uniform Resource Locator",
+            "Universal Resource Link",
+            "Uniform Retrieval Locator",
+            "Universal Reference Locator"
+        ],
+        "answer": "Uniform Resource Locator",
+        "difficulty": "Easy",
+        "explanation": "URL stands for Uniform Resource Locator, the address of a web resource."
+    },
+    {
+        "id": "12",
+        "section": "Computer",
+        "question": "Which of the following sorting algorithms has the best average time complexity?",
+        "options": [
+            "Bubble Sort",
+            "Selection Sort",
+            "Quick Sort",
+            "Insertion Sort"
+        ],
+        "answer": "Quick Sort",
+        "difficulty": "Hard",
+        "explanation": "Quick Sort has an average time complexity of O(n log n), better than the others listed."
+    },
+    {
+        "id": "13",
+        "section": "Computer",
+        "question": "What is the primary function of an operating system?",
+        "options": [
+            "Compile code",
+            "Manage hardware and software resources",
+            "Design websites",
+            "Edit images"
+        ],
+        "answer": "Manage hardware and software resources",
+        "difficulty": "Medium",
+        "explanation": "An OS manages hardware resources and provides services for software."
+    },
+    {
+        "id": "14",
+        "section": "Computer",
+        "question": "Which company developed the Python programming language?",
+        "options": [
+            "Microsoft",
+            "Google",
+            "It was created by Guido van Rossum, not a company",
+            "Apple"
+        ],
+        "answer": "It was created by Guido van Rossum, not a company",
+        "difficulty": "Medium",
+        "explanation": "Python was created by Guido van Rossum in the late 1980s, not by a company."
+    },
+    {
+        "id": "15",
+        "section": "Computer",
+        "question": "What does 'HTTP' stand for?",
+        "options": [
+            "Hyper Text Transfer Protocol",
+            "High Transfer Text Protocol",
+            "Hyper Transfer Text Protocol",
+            "Home Tool Transfer Protocol"
+        ],
+        "answer": "Hyper Text Transfer Protocol",
+        "difficulty": "Easy",
+        "explanation": "HTTP stands for Hyper Text Transfer Protocol, used for transmitting web pages."
+    },
+    {
+        "id": 151,
+        "section": "Computer",
+        "question": "What does CPU stand for?",
+        "options": [
+            "Central Processing Unit",
+            "Computer Processing Unit",
+            "Central Processor Unit",
+            "Control Program Unit"
+        ],
+        "answer": "Central Processing Unit",
+        "difficulty": "Easy",
+        "explanation": "CPU is the acronym for Central Processing Unit."
+    },
+    {
+        "id": 152,
+        "section": "Computer",
+        "question": "Which of the following is an input device?",
+        "options": [
+            "Monitor",
+            "Printer",
+            "Keyboard",
+            "Speaker"
+        ],
+        "answer": "Keyboard",
+        "difficulty": "Easy",
+        "explanation": "Keyboard is used to input data into the computer."
+    },
+    {
+        "id": 153,
+        "section": "Computer",
+        "question": "What is the smallest unit of data in a computer?",
+        "options": [
+            "Bit",
+            "Byte",
+            "Kilobyte",
+            "Megabyte"
+        ],
+        "answer": "Bit",
+        "difficulty": "Easy",
+        "explanation": "A 'bit' is the smallest unit of data, representing a 0 or 1."
+    },
+    {
+        "id": 154,
+        "section": "Computer",
+        "question": "Which software is used to manage the hardware and software resources of a computer?",
+        "options": [
+            "Application Software",
+            "Utility Software",
+            "Operating System",
+            "Programming Language"
+        ],
+        "answer": "Operating System",
+        "difficulty": "Easy",
+        "explanation": "The Operating System (OS) manages the system resources."
+    },
+    {
+        "id": 155,
+        "section": "Computer",
+        "question": "What is the shortcut key to copy selected text in Windows?",
+        "options": [
+            "Ctrl + C",
+            "Ctrl + V",
+            "Ctrl + X",
+            "Ctrl + Z"
+        ],
+        "answer": "Ctrl + C",
+        "difficulty": "Easy",
+        "explanation": "Ctrl + C is the standard shortcut for copying in most applications."
+    },
+    {
+        "id": 156,
+        "section": "Computer",
+        "question": "Which of the following is a primary memory?",
+        "options": [
+            "Hard Disk",
+            "SSD",
+            "RAM",
+            "USB Drive"
+        ],
+        "answer": "RAM",
+        "difficulty": "Easy",
+        "explanation": "RAM (Random Access Memory) is volatile primary memory."
+    },
+    {
+        "id": 157,
+        "section": "Computer",
+        "question": "Which protocol is used for sending emails?",
+        "options": [
+            "FTP",
+            "HTTP",
+            "SMTP",
+            "POP3"
+        ],
+        "answer": "SMTP",
+        "difficulty": "Medium",
+        "explanation": "SMTP (Simple Mail Transfer Protocol) is used to send email messages."
+    },
+    {
+        "id": 158,
+        "section": "Computer",
+        "question": "In Excel, which function is used to find the average of a range of numbers?",
+        "options": [
+            "SUM",
+            "COUNT",
+            "AVERAGE",
+            "MAX"
+        ],
+        "answer": "AVERAGE",
+        "difficulty": "Easy",
+        "explanation": "The AVERAGE function calculates the arithmetic mean of a range."
+    },
+    {
+        "id": 159,
+        "section": "Computer",
+        "question": "Which type of memory is non-volatile?",
+        "options": [
+            "RAM",
+            "Registers",
+            "Cache",
+            "ROM"
+        ],
+        "answer": "ROM",
+        "difficulty": "Medium",
+        "explanation": "ROM (Read-Only Memory) retains its data even when power is off."
+    },
+    {
+        "id": 160,
+        "section": "Computer",
+        "question": "What is the full form of LAN?",
+        "options": [
+            "Large Area Network",
+            "Local Area Network",
+            "Local Access Network",
+            "Linked Area Network"
+        ],
+        "answer": "Local Area Network",
+        "difficulty": "Easy",
+        "explanation": "LAN stands for Local Area Network, a network confined to a small geographical area."
+    },
+    {
+        "id": 161,
+        "section": "Computer",
+        "question": "Which is a web browser?",
+        "options": [
+            "Microsoft Word",
+            "Google Chrome",
+            "Adobe Photoshop",
+            "VLC Media Player"
+        ],
+        "answer": "Google Chrome",
+        "difficulty": "Easy",
+        "explanation": "Google Chrome is a web browser used to access the internet."
+    },
+    {
+        "id": 162,
+        "section": "Computer",
+        "question": "What does URL stand for?",
+        "options": [
+            "Universal Resource Locator",
+            "Uniform Resource Locator",
+            "Unique Resource Link",
+            "Universal Resource Link"
+        ],
+        "answer": "Uniform Resource Locator",
+        "difficulty": "Easy",
+        "explanation": "URL is the address used to locate resources on the World Wide Web."
+    },
+    {
+        "id": 163,
+        "section": "Computer",
+        "question": "Which device is used to connect multiple devices in a network?",
+        "options": [
+            "Router",
+            "Modem",
+            "Hub",
+            "All of the above"
+        ],
+        "answer": "All of the above",
+        "difficulty": "Medium",
+        "explanation": "Routers, Modems, and Hubs are all network devices used to connect other devices."
+    },
+    {
+        "id": 164,
+        "section": "Computer",
+        "question": "What is the purpose of an algorithm?",
+        "options": [
+            "To store data",
+            "To perform calculations",
+            "To solve a problem",
+            "To display graphics"
+        ],
+        "answer": "To solve a problem",
+        "difficulty": "Medium",
+        "explanation": "An algorithm is a step-by-step procedure for solving a problem."
+    },
+    {
+        "id": 165,
+        "section": "Computer",
+        "question": "In Excel, how do you refer to the range of cells from A1 to A10?",
+        "options": [
+            "A1, A10",
+            "A1:A10",
+            "A1 through A10",
+            "A1..A10"
+        ],
+        "answer": "A1:A10",
+        "difficulty": "Easy",
+        "explanation": "The colon is used to denote a range in Excel."
+    },
+    {
+        "id": 166,
+        "section": "Computer",
+        "question": "Which file format is commonly used for images on the web?",
+        "options": [
+            "DOC",
+            "TXT",
+            "JPEG",
+            "PDF"
+        ],
+        "answer": "JPEG",
+        "difficulty": "Easy",
+        "explanation": "JPEG is a popular format for digital images, especially on the web."
+    },
+    {
+        "id": 167,
+        "section": "Computer",
+        "question": "What is 'Malware'?",
+        "options": [
+            "Good Software",
+            "Friendly Software",
+            "Harmful Software",
+            "Fast Software"
+        ],
+        "answer": "Harmful Software",
+        "difficulty": "Medium",
+        "explanation": "Malware is short for Malicious Software, designed to harm computer systems."
+    },
+    {
+        "id": 168,
+        "section": "Computer",
+        "question": "Which of the following is a programming language?",
+        "options": [
+            "HTML",
+            "CSS",
+            "Python",
+            "SQL"
+        ],
+        "answer": "Python",
+        "difficulty": "Easy",
+        "explanation": "Python is a high-level programming language. HTML/CSS are markup languages, SQL is for database queries."
+    },
+    {
+        "id": 169,
+        "section": "Computer",
+        "question": "What does 'www' stand for?",
+        "options": [
+            "Wide World Web",
+            "World Wide Web",
+            "Web World Wide",
+            "World Web Wide"
+        ],
+        "answer": "World Wide Web",
+        "difficulty": "Easy",
+        "explanation": "'www' refers to the World Wide Web."
+    },
+    {
+        "id": 170,
+        "section": "Computer",
+        "question": "Which part of the computer is known as the 'brain' of the system?",
+        "options": [
+            "RAM",
+            "Motherboard",
+            "CPU",
+            "Hard Disk"
+        ],
+        "answer": "CPU",
+        "difficulty": "Easy",
+        "explanation": "The CPU (Central Processing Unit) processes all instructions and is often called the brain of the computer."
+    },
+    {
+        "id": 171,
+        "section": "Computer",
+        "question": "Which of the following is an output device?",
+        "options": [
+            "Mouse",
+            "Scanner",
+            "Monitor",
+            "Keyboard"
+        ],
+        "answer": "Monitor",
+        "difficulty": "Easy",
+        "explanation": "A Monitor displays output from the computer, making it an output device."
+    },
+    {
+        "id": 172,
+        "section": "Computer",
+        "question": "What does SSD stand for?",
+        "options": [
+            "Solid State Drive",
+            "Secondary Storage Device",
+            "Standard Storage Disk",
+            "Solid Storage Data"
+        ],
+        "answer": "Solid State Drive",
+        "difficulty": "Easy",
+        "explanation": "SSD stands for Solid State Drive, a storage device with no moving parts."
+    },
+    {
+        "id": 173,
+        "section": "Computer",
+        "question": "Which of these devices is used to convert digital signals to analog and vice versa?",
+        "options": [
+            "Router",
+            "Modem",
+            "Switch",
+            "Hub"
+        ],
+        "answer": "Modem",
+        "difficulty": "Medium",
+        "explanation": "A Modem (Modulator-Demodulator) converts digital data to analog signals for transmission and back."
+    },
+    {
+        "id": 174,
+        "section": "Computer",
+        "question": "Which component stores the BIOS?",
+        "options": [
+            "RAM",
+            "ROM",
+            "Cache",
+            "Hard Disk"
+        ],
+        "answer": "ROM",
+        "difficulty": "Medium",
+        "explanation": "The BIOS (Basic Input Output System) is stored in ROM, which retains data without power."
+    },
+    {
+        "id": 175,
+        "section": "Computer",
+        "question": "What is the function of a graphics card?",
+        "options": [
+            "Store data permanently",
+            "Process and render images/video",
+            "Connect to the internet",
+            "Cool the CPU"
+        ],
+        "answer": "Process and render images/video",
+        "difficulty": "Easy",
+        "explanation": "A graphics card (GPU) processes and renders images, video, and animations for display."
+    },
+    {
+        "id": 176,
+        "section": "Computer",
+        "question": "Which of the following is a pointing device?",
+        "options": [
+            "Keyboard",
+            "Mouse",
+            "Printer",
+            "Scanner"
+        ],
+        "answer": "Mouse",
+        "difficulty": "Easy",
+        "explanation": "A Mouse is a pointing device used to control the cursor on screen."
+    },
+    {
+        "id": 177,
+        "section": "Computer",
+        "question": "What is the main circuit board of a computer called?",
+        "options": [
+            "Motherboard",
+            "Daughterboard",
+            "Circuit Card",
+            "Processor Board"
+        ],
+        "answer": "Motherboard",
+        "difficulty": "Easy",
+        "explanation": "The Motherboard is the main circuit board that connects all hardware components."
+    },
+    {
+        "id": 178,
+        "section": "Computer",
+        "question": "Which unit is used to measure the speed of a CPU?",
+        "options": [
+            "Bytes",
+            "Hertz",
+            "Pixels",
+            "Bits per second"
+        ],
+        "answer": "Hertz",
+        "difficulty": "Medium",
+        "explanation": "CPU speed is measured in Hertz (Hz), typically expressed in GHz (gigahertz)."
+    },
+    {
+        "id": 179,
+        "section": "Computer",
+        "question": "Which of the following is a type of printer?",
+        "options": [
+            "Laser Printer",
+            "LED Monitor",
+            "Optical Mouse",
+            "Flatbed Scanner"
+        ],
+        "answer": "Laser Printer",
+        "difficulty": "Easy",
+        "explanation": "A Laser Printer is a type of printer that uses a laser beam to produce output."
+    },
+    {
+        "id": 180,
+        "section": "Computer",
+        "question": "What does 'Plug and Play' refer to?",
+        "options": [
+            "A gaming feature",
+            "Hardware that works automatically once connected",
+            "A type of virus",
+            "A software installation method"
+        ],
+        "answer": "Hardware that works automatically once connected",
+        "difficulty": "Medium",
+        "explanation": "Plug and Play describes hardware devices that are automatically recognized and configured by the OS upon connection."
+    },
+    {
+        "id": 181,
+        "section": "Computer",
+        "question": "Which port is commonly used to connect a printer to a computer today?",
+        "options": [
+            "USB",
+            "VGA",
+            "PS/2",
+            "Serial Port"
+        ],
+        "answer": "USB",
+        "difficulty": "Easy",
+        "explanation": "USB (Universal Serial Bus) is the most common modern port for connecting printers and other peripherals."
+    },
+    {
+        "id": 182,
+        "section": "Computer",
+        "question": "What is the function of the CPU's Control Unit?",
+        "options": [
+            "Perform arithmetic operations",
+            "Store data permanently",
+            "Direct the operation of the processor",
+            "Display output"
+        ],
+        "answer": "Direct the operation of the processor",
+        "difficulty": "Medium",
+        "explanation": "The Control Unit directs and coordinates the operations of the processor and other components."
+    },
+    {
+        "id": 183,
+        "section": "Computer",
+        "question": "Which of the following has the fastest access speed?",
+        "options": [
+            "Hard Disk",
+            "Cache Memory",
+            "Magnetic Tape",
+            "CD-ROM"
+        ],
+        "answer": "Cache Memory",
+        "difficulty": "Hard",
+        "explanation": "Cache memory is faster than RAM and secondary storage because it is located closest to the CPU."
+    },
+    {
+        "id": 184,
+        "section": "Computer",
+        "question": "What is a 'motherboard chipset' responsible for?",
+        "options": [
+            "Managing data flow between CPU, memory, and peripherals",
+            "Displaying video output",
+            "Storing user files",
+            "Connecting to the internet"
+        ],
+        "answer": "Managing data flow between CPU, memory, and peripherals",
+        "difficulty": "Hard",
+        "explanation": "The chipset manages communication between the CPU, memory, and other components on the motherboard."
+    },
+    {
+        "id": 185,
+        "section": "Computer",
+        "question": "Which of the following is volatile memory?",
+        "options": [
+            "ROM",
+            "RAM",
+            "Hard Disk",
+            "Flash Drive"
+        ],
+        "answer": "RAM",
+        "difficulty": "Easy",
+        "explanation": "RAM is volatile memory, meaning its contents are lost when power is turned off."
+    },
+    {
+        "id": 186,
+        "section": "Computer",
+        "question": "Which device converts computer output into a form that can be understood by users, like text or images on paper?",
+        "options": [
+            "Scanner",
+            "Printer",
+            "Keyboard",
+            "Modem"
+        ],
+        "answer": "Printer",
+        "difficulty": "Easy",
+        "explanation": "A Printer produces a hard copy (paper output) of digital documents."
+    },
+    {
+        "id": 187,
+        "section": "Computer",
+        "question": "Which of the following best describes 'dual-core' processor?",
+        "options": [
+            "A processor with two separate cores on a single chip",
+            "Two separate computers",
+            "A processor that runs twice as fast always",
+            "A backup processor"
+        ],
+        "answer": "A processor with two separate cores on a single chip",
+        "difficulty": "Medium",
+        "explanation": "A dual-core processor has two independent processing units (cores) on a single chip, allowing parallel task execution."
+    },
+    {
+        "id": 188,
+        "section": "Computer",
+        "question": "What does 'HDD' stand for?",
+        "options": [
+            "High Density Disk",
+            "Hard Disk Drive",
+            "High Data Drive",
+            "Hard Drive Device"
+        ],
+        "answer": "Hard Disk Drive",
+        "difficulty": "Easy",
+        "explanation": "HDD stands for Hard Disk Drive, a common secondary storage device."
+    },
+    {
+        "id": 189,
+        "section": "Computer",
+        "question": "Which of the following is used to reduce the temperature of a CPU?",
+        "options": [
+            "Heat sink and fan",
+            "RAM module",
+            "Power supply",
+            "Sound card"
+        ],
+        "answer": "Heat sink and fan",
+        "difficulty": "Easy",
+        "explanation": "A heat sink and fan dissipate heat generated by the CPU to prevent overheating."
+    },
+    {
+        "id": 190,
+        "section": "Computer",
+        "question": "What is the purpose of a UPS in a computer system?",
+        "options": [
+            "Increase processing speed",
+            "Provide backup power during outages",
+            "Store data",
+            "Connect to a network"
+        ],
+        "answer": "Provide backup power during outages",
+        "difficulty": "Easy",
+        "explanation": "A UPS (Uninterruptible Power Supply) provides temporary backup power in case of a power failure."
+    },
+    {
+        "id": 191,
+        "section": "Computer",
+        "question": "Which of the following is an example of secondary storage?",
+        "options": [
+            "RAM",
+            "Cache",
+            "Registers",
+            "Hard Disk"
+        ],
+        "answer": "Hard Disk",
+        "difficulty": "Easy",
+        "explanation": "A Hard Disk is secondary (non-volatile) storage, unlike RAM, cache, and registers."
+    },
+    {
+        "id": 192,
+        "section": "Computer",
+        "question": "What is the function of a sound card?",
+        "options": [
+            "Process and output audio",
+            "Display video",
+            "Store files",
+            "Connect peripherals"
+        ],
+        "answer": "Process and output audio",
+        "difficulty": "Easy",
+        "explanation": "A sound card processes audio data and outputs it through speakers or headphones."
+    },
+    {
+        "id": 193,
+        "section": "Computer",
+        "question": "Which type of memory is used to speed up access to frequently used data by the CPU?",
+        "options": [
+            "Cache Memory",
+            "ROM",
+            "Virtual Memory",
+            "Flash Memory"
+        ],
+        "answer": "Cache Memory",
+        "difficulty": "Medium",
+        "explanation": "Cache memory stores frequently accessed data to reduce the time the CPU takes to access it."
+    },
+    {
+        "id": 194,
+        "section": "Computer",
+        "question": "What does 'PCI' stand for in relation to computer expansion slots?",
+        "options": [
+            "Personal Computer Interface",
+            "Peripheral Component Interconnect",
+            "Processor Chip Interface",
+            "Program Control Interface"
+        ],
+        "answer": "Peripheral Component Interconnect",
+        "difficulty": "Hard",
+        "explanation": "PCI (Peripheral Component Interconnect) is a standard for connecting hardware devices to a computer's motherboard."
+    },
+    {
+        "id": 195,
+        "section": "Computer",
+        "question": "Which of the following best defines 'firmware'?",
+        "options": [
+            "Software stored permanently on hardware devices",
+            "A type of virus",
+            "An antivirus program",
+            "A web browser"
+        ],
+        "answer": "Software stored permanently on hardware devices",
+        "difficulty": "Medium",
+        "explanation": "Firmware is low-level software embedded in hardware devices to control their basic functions."
+    },
+    {
+        "id": 196,
+        "section": "Computer",
+        "question": "Which component is responsible for converting AC power from the outlet into DC power for computer components?",
+        "options": [
+            "Motherboard",
+            "Power Supply Unit (PSU)",
+            "Hard Disk",
+            "Graphics Card"
+        ],
+        "answer": "Power Supply Unit (PSU)",
+        "difficulty": "Medium",
+        "explanation": "The Power Supply Unit (PSU) converts AC power into the DC power needed by computer components."
+    },
+    {
+        "id": 197,
+        "section": "Computer",
+        "question": "A touchscreen is an example of which type of device?",
+        "options": [
+            "Input device only",
+            "Output device only",
+            "Both input and output device",
+            "Storage device"
+        ],
+        "answer": "Both input and output device",
+        "difficulty": "Medium",
+        "explanation": "A touchscreen displays output and also accepts touch input, making it both an input and output device."
+    },
+    {
+        "id": 198,
+        "section": "Computer",
+        "question": "Which of the following is NOT a type of computer memory?",
+        "options": [
+            "RAM",
+            "ROM",
+            "Cache",
+            "Router"
+        ],
+        "answer": "Router",
+        "difficulty": "Easy",
+        "explanation": "A Router is a networking device, not a type of computer memory."
+    },
+    {
+        "id": 199,
+        "section": "Computer",
+        "question": "What is the typical unit used to measure hard disk storage capacity?",
+        "options": [
+            "Hertz",
+            "Bytes (GB/TB)",
+            "Pixels",
+            "Watts"
+        ],
+        "answer": "Bytes (GB/TB)",
+        "difficulty": "Easy",
+        "explanation": "Storage capacity is measured in bytes, commonly expressed as gigabytes (GB) or terabytes (TB)."
+    },
+    {
+        "id": 200,
+        "section": "Computer",
+        "question": "Which of the following is an example of an operating system?",
+        "options": [
+            "MS Word",
+            "Windows",
+            "Excel",
+            "Photoshop"
+        ],
+        "answer": "Windows",
+        "difficulty": "Easy",
+        "explanation": "Windows is an operating system; the others are application software."
+    },
+    {
+        "id": 201,
+        "section": "Computer",
+        "question": "What is the main function of an operating system?",
+        "options": [
+            "Create documents",
+            "Manage hardware and software resources",
+            "Browse the internet",
+            "Edit photos"
+        ],
+        "answer": "Manage hardware and software resources",
+        "difficulty": "Easy",
+        "explanation": "The operating system manages a computer's hardware and software resources."
+    },
+    {
+        "id": 202,
+        "section": "Computer",
+        "question": "Which of the following is system software?",
+        "options": [
+            "Operating System",
+            "Word Processor",
+            "Spreadsheet",
+            "Web Browser"
+        ],
+        "answer": "Operating System",
+        "difficulty": "Easy",
+        "explanation": "An Operating System is system software; the others are application software."
+    },
+    {
+        "id": 203,
+        "section": "Computer",
+        "question": "What is 'multitasking' in the context of an operating system?",
+        "options": [
+            "Running multiple programs simultaneously",
+            "Using multiple monitors",
+            "Having multiple users",
+            "Installing multiple OS"
+        ],
+        "answer": "Running multiple programs simultaneously",
+        "difficulty": "Medium",
+        "explanation": "Multitasking is the ability of an OS to run multiple programs or processes at the same time."
+    },
+    {
+        "id": 204,
+        "section": "Computer",
+        "question": "Which of these is an open-source operating system?",
+        "options": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "iOS"
+        ],
+        "answer": "Linux",
+        "difficulty": "Medium",
+        "explanation": "Linux is an open-source operating system whose source code is freely available."
+    },
+    {
+        "id": 205,
+        "section": "Computer",
+        "question": "What is a 'device driver'?",
+        "options": [
+            "A software that allows the OS to communicate with hardware",
+            "A type of hard disk",
+            "A network cable",
+            "An antivirus tool"
+        ],
+        "answer": "A software that allows the OS to communicate with hardware",
+        "difficulty": "Medium",
+        "explanation": "A device driver is software that enables the operating system to interact with hardware devices."
+    },
+    {
+        "id": 206,
+        "section": "Computer",
+        "question": "Which of the following is application software?",
+        "options": [
+            "Linux",
+            "MS Excel",
+            "Windows 11",
+            "Ubuntu"
+        ],
+        "answer": "MS Excel",
+        "difficulty": "Easy",
+        "explanation": "MS Excel is application software used for spreadsheets; the others are operating systems."
+    },
+    {
+        "id": 207,
+        "section": "Computer",
+        "question": "What is the purpose of 'defragmentation' in a computer?",
+        "options": [
+            "Speed up internet",
+            "Reorganize fragmented data for faster access",
+            "Delete unused files",
+            "Install new software"
+        ],
+        "answer": "Reorganize fragmented data for faster access",
+        "difficulty": "Hard",
+        "explanation": "Defragmentation reorganizes fragmented data on a hard disk so files can be accessed more quickly."
+    },
+    {
+        "id": 208,
+        "section": "Computer",
+        "question": "Which file extension is associated with an executable file in Windows?",
+        "options": [
+            ".txt",
+            ".exe",
+            ".jpg",
+            ".mp3"
+        ],
+        "answer": ".exe",
+        "difficulty": "Easy",
+        "explanation": "Files with the .exe extension are executable programs in Windows."
+    },
+    {
+        "id": 209,
+        "section": "Computer",
+        "question": "What does 'GUI' stand for?",
+        "options": [
+            "General User Interface",
+            "Graphical User Interface",
+            "Global User Input",
+            "Graphic Utility Interface"
+        ],
+        "answer": "Graphical User Interface",
+        "difficulty": "Easy",
+        "explanation": "GUI stands for Graphical User Interface, allowing users to interact via visual elements."
+    },
+    {
+        "id": 210,
+        "section": "Computer",
+        "question": "Which of the following is a utility software?",
+        "options": [
+            "Antivirus",
+            "MS PowerPoint",
+            "Web Browser",
+            "Photo Editor"
+        ],
+        "answer": "Antivirus",
+        "difficulty": "Medium",
+        "explanation": "Antivirus software is a utility program designed to protect and maintain the system."
+    },
+    {
+        "id": 211,
+        "section": "Computer",
+        "question": "What is 'booting' in computer terminology?",
+        "options": [
+            "Shutting down the computer",
+            "Starting up the computer and loading the OS",
+            "Installing software",
+            "Deleting files"
+        ],
+        "answer": "Starting up the computer and loading the OS",
+        "difficulty": "Easy",
+        "explanation": "Booting refers to the process of starting a computer and loading the operating system into memory."
+    },
+    {
+        "id": 212,
+        "section": "Computer",
+        "question": "Which of the following best describes 'freeware'?",
+        "options": [
+            "Software available free of cost",
+            "Software with open source code only",
+            "Software that expires after a trial",
+            "Paid software with a discount"
+        ],
+        "answer": "Software available free of cost",
+        "difficulty": "Medium",
+        "explanation": "Freeware is software that is available for use at no cost, though it may not be open-source."
+    },
+    {
+        "id": 213,
+        "section": "Computer",
+        "question": "What is the purpose of the 'Task Manager' in Windows?",
+        "options": [
+            "Manage running programs and processes",
+            "Edit documents",
+            "Browse files",
+            "Send emails"
+        ],
+        "answer": "Manage running programs and processes",
+        "difficulty": "Easy",
+        "explanation": "Task Manager allows users to view and manage running applications, processes, and system performance."
+    },
+    {
+        "id": 214,
+        "section": "Computer",
+        "question": "What is a 'compiler' used for?",
+        "options": [
+            "Translating high-level code into machine code",
+            "Compressing files",
+            "Scanning for viruses",
+            "Managing memory"
+        ],
+        "answer": "Translating high-level code into machine code",
+        "difficulty": "Medium",
+        "explanation": "A compiler translates source code written in a high-level language into machine code."
+    },
+    {
+        "id": 215,
+        "section": "Computer",
+        "question": "Which of the following is an example of a mobile operating system?",
+        "options": [
+            "Android",
+            "MS Office",
+            "Photoshop",
+            "VLC"
+        ],
+        "answer": "Android",
+        "difficulty": "Easy",
+        "explanation": "Android is a mobile operating system developed by Google."
+    },
+    {
+        "id": 216,
+        "section": "Computer",
+        "question": "What does 'installing' software mean?",
+        "options": [
+            "Deleting a program",
+            "Setting up a program to run on a computer",
+            "Updating the OS",
+            "Copying a file to a USB drive"
+        ],
+        "answer": "Setting up a program to run on a computer",
+        "difficulty": "Easy",
+        "explanation": "Installing means setting up software so it can be run on a computer."
+    },
+    {
+        "id": 217,
+        "section": "Computer",
+        "question": "Which type of software controls and coordinates computer hardware and enables application software to run?",
+        "options": [
+            "Application Software",
+            "System Software",
+            "Utility Tool",
+            "Firmware Only"
+        ],
+        "answer": "System Software",
+        "difficulty": "Medium",
+        "explanation": "System software, including the OS, manages hardware and provides a platform for application software."
+    },
+    {
+        "id": 218,
+        "section": "Computer",
+        "question": "What is 'Safe Mode' in Windows used for?",
+        "options": [
+            "Playing games safely",
+            "Troubleshooting by starting with minimal drivers and services",
+            "Increasing internet speed",
+            "Backing up files automatically"
+        ],
+        "answer": "Troubleshooting by starting with minimal drivers and services",
+        "difficulty": "Medium",
+        "explanation": "Safe Mode starts Windows with only essential drivers and services, useful for troubleshooting."
+    },
+    {
+        "id": 219,
+        "section": "Computer",
+        "question": "Which of the following is a version control system used in software development?",
+        "options": [
+            "Git",
+            "Excel",
+            "Photoshop",
+            "Windows Media Player"
+        ],
+        "answer": "Git",
+        "difficulty": "Hard",
+        "explanation": "Git is a widely used version control system for tracking changes in source code."
+    },
+    {
+        "id": 220,
+        "section": "Computer",
+        "question": "What is an 'interpreter' in programming?",
+        "options": [
+            "A program that executes code line-by-line without prior compilation",
+            "A hardware device",
+            "A type of file format",
+            "A network protocol"
+        ],
+        "answer": "A program that executes code line-by-line without prior compilation",
+        "difficulty": "Hard",
+        "explanation": "An interpreter executes source code directly, translating and running it line by line."
+    },
+    {
+        "id": 221,
+        "section": "Computer",
+        "question": "Which of these is NOT an example of an operating system?",
+        "options": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "MS Word"
+        ],
+        "answer": "MS Word",
+        "difficulty": "Easy",
+        "explanation": "MS Word is application software, not an operating system."
+    },
+    {
+        "id": 222,
+        "section": "Computer",
+        "question": "What is the purpose of 'Disk Cleanup' in Windows?",
+        "options": [
+            "Remove unnecessary files to free up disk space",
+            "Install new software",
+            "Format the hard disk",
+            "Update device drivers"
+        ],
+        "answer": "Remove unnecessary files to free up disk space",
+        "difficulty": "Easy",
+        "explanation": "Disk Cleanup removes temporary and unnecessary files to free up storage space."
+    },
+    {
+        "id": 223,
+        "section": "Computer",
+        "question": "What does 'BIOS' stand for?",
+        "options": [
+            "Basic Input Output System",
+            "Binary Input Output Software",
+            "Basic Internal Operating System",
+            "Built-In Operating Software"
+        ],
+        "answer": "Basic Input Output System",
+        "difficulty": "Medium",
+        "explanation": "BIOS stands for Basic Input Output System, firmware used to initialize hardware during booting."
+    },
+    {
+        "id": 224,
+        "section": "Computer",
+        "question": "Which term describes software that is illegally copied or distributed?",
+        "options": [
+            "Freeware",
+            "Shareware",
+            "Pirated software",
+            "Open-source software"
+        ],
+        "answer": "Pirated software",
+        "difficulty": "Medium",
+        "explanation": "Pirated software refers to software that is copied and distributed illegally, violating copyright laws."
+    },
+    {
+        "id": 225,
+        "section": "Computer",
+        "question": "What does 'IP' stand for in IP address?",
+        "options": [
+            "Internet Protocol",
+            "Internal Protocol",
+            "Internet Provider",
+            "Interconnected Program"
+        ],
+        "answer": "Internet Protocol",
+        "difficulty": "Easy",
+        "explanation": "IP stands for Internet Protocol, used to identify devices on a network."
+    },
+    {
+        "id": 226,
+        "section": "Computer",
+        "question": "Which protocol is used to transfer web pages over the internet?",
+        "options": [
+            "FTP",
+            "HTTP",
+            "SMTP",
+            "POP3"
+        ],
+        "answer": "HTTP",
+        "difficulty": "Easy",
+        "explanation": "HTTP (HyperText Transfer Protocol) is used to transfer web pages over the internet."
+    },
+    {
+        "id": 227,
+        "section": "Computer",
+        "question": "What does 'Wi-Fi' primarily provide?",
+        "options": [
+            "Wired internet access",
+            "Wireless internet access",
+            "Data storage",
+            "Video editing"
+        ],
+        "answer": "Wireless internet access",
+        "difficulty": "Easy",
+        "explanation": "Wi-Fi provides wireless internet access to connected devices."
+    },
+    {
+        "id": 228,
+        "section": "Computer",
+        "question": "Which of the following is a secure version of HTTP?",
+        "options": [
+            "HTTP",
+            "HTTPS",
+            "FTP",
+            "SMTP"
+        ],
+        "answer": "HTTPS",
+        "difficulty": "Easy",
+        "explanation": "HTTPS (HTTP Secure) encrypts data transferred between a browser and a website."
+    },
+    {
+        "id": 229,
+        "section": "Computer",
+        "question": "What is the purpose of a firewall?",
+        "options": [
+            "Increase internet speed",
+            "Protect a network from unauthorized access",
+            "Store data",
+            "Display web pages"
+        ],
+        "answer": "Protect a network from unauthorized access",
+        "difficulty": "Medium",
+        "explanation": "A firewall monitors and controls incoming/outgoing network traffic to protect against unauthorized access."
+    },
+    {
+        "id": 230,
+        "section": "Computer",
+        "question": "Which of the following best describes 'bandwidth'?",
+        "options": [
+            "The physical size of a network cable",
+            "The maximum data transfer rate of a network",
+            "The number of connected devices",
+            "The speed of the CPU"
+        ],
+        "answer": "The maximum data transfer rate of a network",
+        "difficulty": "Medium",
+        "explanation": "Bandwidth refers to the maximum rate of data transfer across a network connection."
+    },
+    {
+        "id": 231,
+        "section": "Computer",
+        "question": "What does 'DNS' stand for?",
+        "options": [
+            "Domain Name System",
+            "Data Network Service",
+            "Digital Naming System",
+            "Domain Network Server"
+        ],
+        "answer": "Domain Name System",
+        "difficulty": "Medium",
+        "explanation": "DNS (Domain Name System) translates domain names into IP addresses."
+    },
+    {
+        "id": 232,
+        "section": "Computer",
+        "question": "Which network covers a large geographical area, such as a country or continent?",
+        "options": [
+            "LAN",
+            "WAN",
+            "PAN",
+            "MAN"
+        ],
+        "answer": "WAN",
+        "difficulty": "Medium",
+        "explanation": "A WAN (Wide Area Network) spans large geographical areas, connecting multiple LANs."
+    },
+    {
+        "id": 233,
+        "section": "Computer",
+        "question": "What is the function of a 'router'?",
+        "options": [
+            "Store files",
+            "Direct data packets between networks",
+            "Print documents",
+            "Scan images"
+        ],
+        "answer": "Direct data packets between networks",
+        "difficulty": "Easy",
+        "explanation": "A router directs data packets between different networks, such as a home network and the internet."
+    },
+    {
+        "id": 234,
+        "section": "Computer",
+        "question": "Which protocol is used to retrieve email from a mail server?",
+        "options": [
+            "SMTP",
+            "POP3",
+            "HTTP",
+            "FTP"
+        ],
+        "answer": "POP3",
+        "difficulty": "Medium",
+        "explanation": "POP3 (Post Office Protocol 3) is used to retrieve emails from a mail server to a local client."
+    },
+    {
+        "id": 235,
+        "section": "Computer",
+        "question": "What does 'FTP' stand for?",
+        "options": [
+            "File Transfer Protocol",
+            "Fast Transfer Protocol",
+            "File Transmission Program",
+            "Full Transfer Protocol"
+        ],
+        "answer": "File Transfer Protocol",
+        "difficulty": "Easy",
+        "explanation": "FTP (File Transfer Protocol) is used to transfer files between computers over a network."
+    },
+    {
+        "id": 236,
+        "section": "Computer",
+        "question": "Which of the following is a social networking site?",
+        "options": [
+            "Facebook",
+            "Google Chrome",
+            "MS Word",
+            "Adobe Reader"
+        ],
+        "answer": "Facebook",
+        "difficulty": "Easy",
+        "explanation": "Facebook is a social networking website; the others are software applications."
+    },
+    {
+        "id": 237,
+        "section": "Computer",
+        "question": "What does 'ISP' stand for?",
+        "options": [
+            "Internet Service Provider",
+            "Internal System Program",
+            "Internet Server Protocol",
+            "Information Service Provider"
+        ],
+        "answer": "Internet Service Provider",
+        "difficulty": "Easy",
+        "explanation": "ISP stands for Internet Service Provider, a company that provides internet access."
+    },
+    {
+        "id": 238,
+        "section": "Computer",
+        "question": "Which of the following is used to uniquely identify a device on a network?",
+        "options": [
+            "MAC Address",
+            "File Name",
+            "User Name",
+            "Domain Name"
+        ],
+        "answer": "MAC Address",
+        "difficulty": "Hard",
+        "explanation": "A MAC (Media Access Control) address uniquely identifies a network interface device."
+    },
+    {
+        "id": 239,
+        "section": "Computer",
+        "question": "What is 'cloud computing'?",
+        "options": [
+            "Storing weather data",
+            "Delivering computing services over the internet",
+            "A type of virus",
+            "A hardware component"
+        ],
+        "answer": "Delivering computing services over the internet",
+        "difficulty": "Medium",
+        "explanation": "Cloud computing delivers computing services like storage and processing power over the internet."
+    },
+    {
+        "id": 240,
+        "section": "Computer",
+        "question": "Which network topology connects all devices to a single central hub?",
+        "options": [
+            "Bus Topology",
+            "Star Topology",
+            "Ring Topology",
+            "Mesh Topology"
+        ],
+        "answer": "Star Topology",
+        "difficulty": "Medium",
+        "explanation": "In a Star Topology, all devices connect to a central hub or switch."
+    },
+    {
+        "id": 241,
+        "section": "Computer",
+        "question": "What is the purpose of a 'browser' like Google Chrome or Firefox?",
+        "options": [
+            "Edit spreadsheets",
+            "Access and view websites",
+            "Compress files",
+            "Manage printers"
+        ],
+        "answer": "Access and view websites",
+        "difficulty": "Easy",
+        "explanation": "A web browser is software used to access and view websites on the internet."
+    },
+    {
+        "id": 242,
+        "section": "Computer",
+        "question": "What does 'Wi-Fi' stand for (commonly)?",
+        "options": [
+            "Wireless Fidelity",
+            "Wide Frequency",
+            "Wireless File",
+            "Wired Fidelity"
+        ],
+        "answer": "Wireless Fidelity",
+        "difficulty": "Medium",
+        "explanation": "Wi-Fi is commonly understood as an abbreviation for 'Wireless Fidelity', though it is technically a trademarked term."
+    },
+    {
+        "id": 243,
+        "section": "Computer",
+        "question": "Which of the following is an example of a search engine?",
+        "options": [
+            "Google",
+            "Windows",
+            "MS Excel",
+            "Skype"
+        ],
+        "answer": "Google",
+        "difficulty": "Easy",
+        "explanation": "Google is a search engine used to find information on the internet."
+    },
+    {
+        "id": 244,
+        "section": "Computer",
+        "question": "What is 'bandwidth throttling'?",
+        "options": [
+            "Increasing internet speed permanently",
+            "Intentionally slowing down internet speed",
+            "Deleting internet history",
+            "Blocking a website"
+        ],
+        "answer": "Intentionally slowing down internet speed",
+        "difficulty": "Hard",
+        "explanation": "Bandwidth throttling is the intentional slowing of internet service by an ISP or network administrator."
+    },
+    {
+        "id": 245,
+        "section": "Computer",
+        "question": "Which of the following best defines a 'network switch'?",
+        "options": [
+            "A device that connects devices within a LAN using packet switching",
+            "A device that provides internet access directly",
+            "A type of software",
+            "A storage device"
+        ],
+        "answer": "A device that connects devices within a LAN using packet switching",
+        "difficulty": "Hard",
+        "explanation": "A network switch connects devices within a local area network and forwards data using packet switching."
+    },
+    {
+        "id": 246,
+        "section": "Computer",
+        "question": "What does 'VPN' stand for?",
+        "options": [
+            "Virtual Private Network",
+            "Virtual Public Network",
+            "Verified Private Node",
+            "Virtual Personal Network"
+        ],
+        "answer": "Virtual Private Network",
+        "difficulty": "Medium",
+        "explanation": "VPN stands for Virtual Private Network, which creates a secure, encrypted connection over a public network."
+    },
+    {
+        "id": 247,
+        "section": "Computer",
+        "question": "Which of the following is an email service provider?",
+        "options": [
+            "Gmail",
+            "MS Paint",
+            "VLC Media Player",
+            "Notepad"
+        ],
+        "answer": "Gmail",
+        "difficulty": "Easy",
+        "explanation": "Gmail is an email service provided by Google."
+    },
+    {
+        "id": 248,
+        "section": "Computer",
+        "question": "What is the main purpose of a 'proxy server'?",
+        "options": [
+            "Act as an intermediary between a client and the internet",
+            "Store printed documents",
+            "Edit videos",
+            "Compile code"
+        ],
+        "answer": "Act as an intermediary between a client and the internet",
+        "difficulty": "Hard",
+        "explanation": "A proxy server acts as an intermediary, forwarding requests between a client and the internet."
+    },
+    {
+        "id": 249,
+        "section": "Computer",
+        "question": "Which of the following is a video conferencing application?",
+        "options": [
+            "Zoom",
+            "MS Excel",
+            "Adobe Photoshop",
+            "WinRAR"
+        ],
+        "answer": "Zoom",
+        "difficulty": "Easy",
+        "explanation": "Zoom is a video conferencing application used for online meetings."
+    },
+    {
+        "id": 250,
+        "section": "Computer",
+        "question": "What does 'HTTP' stand for?",
+        "options": [
+            "HyperText Transfer Protocol",
+            "High Transfer Text Protocol",
+            "HyperText Transmission Path",
+            "Home Text Transfer Protocol"
+        ],
+        "answer": "HyperText Transfer Protocol",
+        "difficulty": "Easy",
+        "explanation": "HTTP stands for HyperText Transfer Protocol, the foundation of data communication on the web."
+    },
+    {
+        "id": 251,
+        "section": "Computer",
+        "question": "Which network covers a small area, such as a single building or office?",
+        "options": [
+            "WAN",
+            "LAN",
+            "MAN",
+            "Internet"
+        ],
+        "answer": "LAN",
+        "difficulty": "Easy",
+        "explanation": "A LAN (Local Area Network) covers a small geographical area like a single building or office."
+    },
+    {
+        "id": 252,
+        "section": "Computer",
+        "question": "What is 'phishing'?",
+        "options": [
+            "A method to speed up downloads",
+            "A fraudulent attempt to obtain sensitive information",
+            "A type of antivirus software",
+            "A network protocol"
+        ],
+        "answer": "A fraudulent attempt to obtain sensitive information",
+        "difficulty": "Medium",
+        "explanation": "Phishing is a fraudulent technique used to trick users into revealing sensitive information like passwords."
+    },
+    {
+        "id": 253,
+        "section": "Computer",
+        "question": "Which of the following is an example of an instant messaging application?",
+        "options": [
+            "WhatsApp",
+            "MS Excel",
+            "Adobe Reader",
+            "Windows Explorer"
+        ],
+        "answer": "WhatsApp",
+        "difficulty": "Easy",
+        "explanation": "WhatsApp is an instant messaging application used for communication."
+    },
+    {
+        "id": 254,
+        "section": "Computer",
+        "question": "What is the function of an 'access point' in a wireless network?",
+        "options": [
+            "Allow wireless devices to connect to a wired network",
+            "Store files permanently",
+            "Print documents wirelessly",
+            "Compress data"
+        ],
+        "answer": "Allow wireless devices to connect to a wired network",
+        "difficulty": "Hard",
+        "explanation": "An access point allows wireless devices to connect to a wired network, extending Wi-Fi coverage."
+    },
+    {
+        "id": 255,
+        "section": "Computer",
+        "question": "In MS Word, which key is used to start a new paragraph?",
+        "options": [
+            "Tab",
+            "Enter",
+            "Shift",
+            "Ctrl"
+        ],
+        "answer": "Enter",
+        "difficulty": "Easy",
+        "explanation": "Pressing Enter in MS Word starts a new paragraph."
+    },
+    {
+        "id": 256,
+        "section": "Computer",
+        "question": "Which Excel function adds up a range of numbers?",
+        "options": [
+            "AVERAGE",
+            "SUM",
+            "COUNT",
+            "MAX"
+        ],
+        "answer": "SUM",
+        "difficulty": "Easy",
+        "explanation": "The SUM function adds up all the numbers in a specified range."
+    },
+    {
+        "id": 257,
+        "section": "Computer",
+        "question": "What is the default file extension for a Microsoft Word document (modern versions)?",
+        "options": [
+            ".doc",
+            ".docx",
+            ".txt",
+            ".pdf"
+        ],
+        "answer": ".docx",
+        "difficulty": "Easy",
+        "explanation": "Modern versions of MS Word save documents with the .docx extension by default."
+    },
+    {
+        "id": 258,
+        "section": "Computer",
+        "question": "In MS Excel, which symbol is used to start a formula?",
+        "options": [
+            "@",
+            "#",
+            "=",
+            "&"
+        ],
+        "answer": "=",
+        "difficulty": "Easy",
+        "explanation": "In Excel, every formula begins with an equal sign (=)."
+    },
+    {
+        "id": 259,
+        "section": "Computer",
+        "question": "Which shortcut key is used to save a document in MS Word?",
+        "options": [
+            "Ctrl + S",
+            "Ctrl + P",
+            "Ctrl + N",
+            "Ctrl + O"
+        ],
+        "answer": "Ctrl + S",
+        "difficulty": "Easy",
+        "explanation": "Ctrl + S is the shortcut key used to save a document."
+    },
+    {
+        "id": 260,
+        "section": "Computer",
+        "question": "In PowerPoint, what is a single page of a presentation called?",
+        "options": [
+            "Sheet",
+            "Slide",
+            "Page",
+            "Frame"
+        ],
+        "answer": "Slide",
+        "difficulty": "Easy",
+        "explanation": "Each individual page in a PowerPoint presentation is called a slide."
+    },
+    {
+        "id": 261,
+        "section": "Computer",
+        "question": "Which Excel function is used to find the highest value in a range?",
+        "options": [
+            "MIN",
+            "MAX",
+            "SUM",
+            "COUNT"
+        ],
+        "answer": "MAX",
+        "difficulty": "Easy",
+        "explanation": "The MAX function returns the largest value in a given range of numbers."
+    },
+    {
+        "id": 262,
+        "section": "Computer",
+        "question": "What is the shortcut key to print a document?",
+        "options": [
+            "Ctrl + P",
+            "Ctrl + S",
+            "Ctrl + F",
+            "Ctrl + Z"
+        ],
+        "answer": "Ctrl + P",
+        "difficulty": "Easy",
+        "explanation": "Ctrl + P is the standard shortcut key to open the print dialog."
+    },
+    {
+        "id": 263,
+        "section": "Computer",
+        "question": "In MS Word, which feature is used to check for spelling and grammar mistakes?",
+        "options": [
+            "Find and Replace",
+            "Spelling and Grammar Check",
+            "Mail Merge",
+            "Track Changes"
+        ],
+        "answer": "Spelling and Grammar Check",
+        "difficulty": "Easy",
+        "explanation": "The Spelling and Grammar Check feature identifies and helps correct writing errors."
+    },
+    {
+        "id": 264,
+        "section": "Computer",
+        "question": "Which Excel function counts the number of cells containing numbers?",
+        "options": [
+            "COUNT",
+            "SUM",
+            "AVERAGE",
+            "COUNTA"
+        ],
+        "answer": "COUNT",
+        "difficulty": "Medium",
+        "explanation": "The COUNT function counts the number of cells that contain numeric values."
+    },
+    {
+        "id": 265,
+        "section": "Computer",
+        "question": "What does 'Mail Merge' in MS Word allow you to do?",
+        "options": [
+            "Merge multiple documents into one",
+            "Send personalized letters/emails to multiple recipients",
+            "Combine images",
+            "Check spelling"
+        ],
+        "answer": "Send personalized letters/emails to multiple recipients",
+        "difficulty": "Medium",
+        "explanation": "Mail Merge lets users create personalized documents like letters or emails for multiple recipients using a data source."
+    },
+    {
+        "id": 266,
+        "section": "Computer",
+        "question": "In PowerPoint, which view shows all slides as thumbnails?",
+        "options": [
+            "Normal View",
+            "Slide Sorter View",
+            "Reading View",
+            "Notes Page View"
+        ],
+        "answer": "Slide Sorter View",
+        "difficulty": "Medium",
+        "explanation": "Slide Sorter View displays all slides as thumbnails for easy rearrangement."
+    },
+    {
+        "id": 267,
+        "section": "Computer",
+        "question": "Which shortcut key is used to undo the last action?",
+        "options": [
+            "Ctrl + Y",
+            "Ctrl + Z",
+            "Ctrl + U",
+            "Ctrl + X"
+        ],
+        "answer": "Ctrl + Z",
+        "difficulty": "Easy",
+        "explanation": "Ctrl + Z is the shortcut key used to undo the last action."
+    },
+    {
+        "id": 268,
+        "section": "Computer",
+        "question": "In Excel, what is a group of one or more worksheets called?",
+        "options": [
+            "Workbook",
+            "Worksheet",
+            "Cell",
+            "Range"
+        ],
+        "answer": "Workbook",
+        "difficulty": "Easy",
+        "explanation": "A Workbook is a file containing one or more worksheets in Excel."
+    },
+    {
+        "id": 269,
+        "section": "Computer",
+        "question": "Which of the following is used to apply a design theme to a PowerPoint presentation?",
+        "options": [
+            "Slide Master",
+            "Themes",
+            "Transitions",
+            "Animations"
+        ],
+        "answer": "Themes",
+        "difficulty": "Medium",
+        "explanation": "Themes in PowerPoint apply consistent design elements like colors and fonts across slides."
+    },
+    {
+        "id": 270,
+        "section": "Computer",
+        "question": "What is the intersection of a row and column in Excel called?",
+        "options": [
+            "Field",
+            "Cell",
+            "Range",
+            "Tab"
+        ],
+        "answer": "Cell",
+        "difficulty": "Easy",
+        "explanation": "The intersection of a row and column in Excel is called a cell."
+    },
+    {
+        "id": 271,
+        "section": "Computer",
+        "question": "Which shortcut key is used to select all content in a document?",
+        "options": [
+            "Ctrl + A",
+            "Ctrl + S",
+            "Ctrl + D",
+            "Ctrl + F"
+        ],
+        "answer": "Ctrl + A",
+        "difficulty": "Easy",
+        "explanation": "Ctrl + A selects all content within the current document or window."
+    },
+    {
+        "id": 272,
+        "section": "Computer",
+        "question": "In MS Word, what does the 'Track Changes' feature do?",
+        "options": [
+            "Automatically saves the document",
+            "Records edits made to a document for review",
+            "Checks spelling",
+            "Prints the document"
+        ],
+        "answer": "Records edits made to a document for review",
+        "difficulty": "Medium",
+        "explanation": "Track Changes records all edits made to a document, allowing reviewers to accept or reject them."
+    },
+    {
+        "id": 273,
+        "section": "Computer",
+        "question": "Which Excel function is used to count non-empty cells, including text?",
+        "options": [
+            "COUNT",
+            "COUNTA",
+            "SUM",
+            "AVERAGE"
+        ],
+        "answer": "COUNTA",
+        "difficulty": "Hard",
+        "explanation": "COUNTA counts all non-empty cells, including those with text, unlike COUNT which counts only numeric cells."
+    },
+    {
+        "id": 274,
+        "section": "Computer",
+        "question": "What is the default number of columns in an MS Word document page?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "Depends on the template"
+        ],
+        "answer": "1",
+        "difficulty": "Medium",
+        "explanation": "By default, an MS Word page has a single column of text unless changed by the user."
+    },
+    {
+        "id": 275,
+        "section": "Computer",
+        "question": "Which PowerPoint feature is used to control how a slide moves to the next one?",
+        "options": [
+            "Animation",
+            "Transition",
+            "Slide Master",
+            "Layout"
+        ],
+        "answer": "Transition",
+        "difficulty": "Medium",
+        "explanation": "Transitions control how one slide changes to the next during a presentation."
+    },
+    {
+        "id": 276,
+        "section": "Computer",
+        "question": "What does the 'Freeze Panes' feature in Excel do?",
+        "options": [
+            "Delete selected cells",
+            "Keep specific rows/columns visible while scrolling",
+            "Merge cells",
+            "Sort data"
+        ],
+        "answer": "Keep specific rows/columns visible while scrolling",
+        "difficulty": "Hard",
+        "explanation": "Freeze Panes keeps selected rows or columns visible on screen while scrolling through the rest of the worksheet."
+    },
+    {
+        "id": 277,
+        "section": "Computer",
+        "question": "Which shortcut key is used to open a new blank document in MS Word?",
+        "options": [
+            "Ctrl + N",
+            "Ctrl + O",
+            "Ctrl + W",
+            "Ctrl + M"
+        ],
+        "answer": "Ctrl + N",
+        "difficulty": "Easy",
+        "explanation": "Ctrl + N opens a new blank document in MS Word."
+    },
+    {
+        "id": 278,
+        "section": "Computer",
+        "question": "In Excel, what symbol is used to make a cell reference absolute?",
+        "options": [
+            "$",
+            "#",
+            "%",
+            "&"
+        ],
+        "answer": "$",
+        "difficulty": "Hard",
+        "explanation": "The dollar sign ($) is used before the column and/or row reference to make it absolute in Excel."
+    },
+    {
+        "id": 279,
+        "section": "Computer",
+        "question": "What is the purpose of the 'Format Painter' tool in MS Word/Excel?",
+        "options": [
+            "Copy formatting from one place and apply it elsewhere",
+            "Paint pictures",
+            "Change the file format",
+            "Print documents"
+        ],
+        "answer": "Copy formatting from one place and apply it elsewhere",
+        "difficulty": "Medium",
+        "explanation": "The Format Painter tool copies formatting from one selection and applies it to another."
+    },
+    {
+        "id": 280,
+        "section": "Computer",
+        "question": "Which view in MS Word shows the document as it will appear when printed?",
+        "options": [
+            "Draft View",
+            "Print Layout View",
+            "Web Layout View",
+            "Outline View"
+        ],
+        "answer": "Print Layout View",
+        "difficulty": "Medium",
+        "explanation": "Print Layout View displays the document as it will look on a printed page."
+    },
+    {
+        "id": 281,
+        "section": "Computer",
+        "question": "In PowerPoint, what is used to add speaker notes to a slide?",
+        "options": [
+            "Notes Pane",
+            "Slide Sorter",
+            "Outline View",
+            "Handout Master"
+        ],
+        "answer": "Notes Pane",
+        "difficulty": "Medium",
+        "explanation": "The Notes Pane allows presenters to add speaker notes for each slide."
+    },
+    {
+        "id": 282,
+        "section": "Computer",
+        "question": "Which Excel feature allows data to be arranged in ascending or descending order?",
+        "options": [
+            "Filter",
+            "Sort",
+            "Freeze Panes",
+            "Merge Cells"
+        ],
+        "answer": "Sort",
+        "difficulty": "Easy",
+        "explanation": "The Sort feature arranges data in ascending or descending order based on selected columns."
+    },
+    {
+        "id": 283,
+        "section": "Computer",
+        "question": "What does the 'IF' function in Excel do?",
+        "options": [
+            "Adds numbers",
+            "Performs a logical test and returns one value if true, another if false",
+            "Counts cells",
+            "Finds the average"
+        ],
+        "answer": "Performs a logical test and returns one value if true, another if false",
+        "difficulty": "Hard",
+        "explanation": "The IF function evaluates a condition and returns one value if the condition is true and another if false."
+    },
+    {
+        "id": 284,
+        "section": "Computer",
+        "question": "Which of the following is a high-level programming language?",
+        "options": [
+            "Assembly",
+            "Machine Code",
+            "Python",
+            "Binary"
+        ],
+        "answer": "Python",
+        "difficulty": "Easy",
+        "explanation": "Python is a high-level programming language, easier to read and write than machine code or assembly."
+    },
+    {
+        "id": 285,
+        "section": "Computer",
+        "question": "What is a 'variable' in programming?",
+        "options": [
+            "A fixed value",
+            "A named storage location for data that can change",
+            "A type of loop",
+            "A syntax error"
+        ],
+        "answer": "A named storage location for data that can change",
+        "difficulty": "Easy",
+        "explanation": "A variable is a named storage location used to hold data that can change during program execution."
+    },
+    {
+        "id": 286,
+        "section": "Computer",
+        "question": "Which data structure follows the Last In First Out (LIFO) principle?",
+        "options": [
+            "Queue",
+            "Stack",
+            "Array",
+            "Linked List"
+        ],
+        "answer": "Stack",
+        "difficulty": "Medium",
+        "explanation": "A Stack follows the LIFO (Last In First Out) principle, where the last element added is the first removed."
+    },
+    {
+        "id": 287,
+        "section": "Computer",
+        "question": "Which data structure follows the First In First Out (FIFO) principle?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Tree",
+            "Graph"
+        ],
+        "answer": "Queue",
+        "difficulty": "Medium",
+        "explanation": "A Queue follows the FIFO (First In First Out) principle, where the first element added is the first removed."
+    },
+    {
+        "id": 288,
+        "section": "Computer",
+        "question": "What is a 'loop' used for in programming?",
+        "options": [
+            "To store data",
+            "To repeat a block of code multiple times",
+            "To declare variables",
+            "To connect to the internet"
+        ],
+        "answer": "To repeat a block of code multiple times",
+        "difficulty": "Easy",
+        "explanation": "A loop is used to execute a block of code repeatedly based on a condition."
+    },
+    {
+        "id": 289,
+        "section": "Computer",
+        "question": "Which of the following is a valid data type in most programming languages?",
+        "options": [
+            "Integer",
+            "Circle",
+            "Square",
+            "Triangle"
+        ],
+        "answer": "Integer",
+        "difficulty": "Easy",
+        "explanation": "Integer is a common data type used to represent whole numbers in programming."
+    },
+    {
+        "id": 290,
+        "section": "Computer",
+        "question": "What does 'debugging' mean in programming?",
+        "options": [
+            "Writing new code",
+            "Finding and fixing errors in code",
+            "Compiling a program",
+            "Deleting a program"
+        ],
+        "answer": "Finding and fixing errors in code",
+        "difficulty": "Easy",
+        "explanation": "Debugging is the process of identifying and fixing errors (bugs) in a program."
+    },
+    {
+        "id": 291,
+        "section": "Computer",
+        "question": "Which symbol is commonly used to denote a comment in Python?",
+        "options": [
+            "//",
+            "#",
+            "<!--",
+            "/*"
+        ],
+        "answer": "#",
+        "difficulty": "Medium",
+        "explanation": "In Python, the hash symbol (#) is used to denote a single-line comment."
+    },
+    {
+        "id": 292,
+        "section": "Computer",
+        "question": "What is an 'array'?",
+        "options": [
+            "A single variable",
+            "A collection of elements stored at contiguous memory locations",
+            "A type of loop",
+            "A network protocol"
+        ],
+        "answer": "A collection of elements stored at contiguous memory locations",
+        "difficulty": "Medium",
+        "explanation": "An array is a data structure that stores a collection of elements, typically of the same type, in contiguous memory."
+    },
+    {
+        "id": 293,
+        "section": "Computer",
+        "question": "Which of the following best describes 'object-oriented programming'?",
+        "options": [
+            "A programming paradigm based on objects containing data and methods",
+            "A method of hardware assembly",
+            "A type of network topology",
+            "A file storage format"
+        ],
+        "answer": "A programming paradigm based on objects containing data and methods",
+        "difficulty": "Hard",
+        "explanation": "Object-oriented programming (OOP) organizes code around objects that combine data and behavior (methods)."
+    },
+    {
+        "id": 294,
+        "section": "Computer",
+        "question": "What is the purpose of a 'function' in programming?",
+        "options": [
+            "To store the entire program",
+            "To group reusable code that performs a specific task",
+            "To connect to a database",
+            "To design a webpage"
+        ],
+        "answer": "To group reusable code that performs a specific task",
+        "difficulty": "Medium",
+        "explanation": "A function groups a set of instructions to perform a specific task, which can be reused throughout a program."
+    },
+    {
+        "id": 295,
+        "section": "Computer",
+        "question": "Which of the following is used to store a collection of key-value pairs in many programming languages?",
+        "options": [
+            "Array",
+            "Dictionary/Map",
+            "Stack",
+            "Queue"
+        ],
+        "answer": "Dictionary/Map",
+        "difficulty": "Hard",
+        "explanation": "A Dictionary (or Map) stores data as key-value pairs, allowing lookup of values via unique keys."
+    },
+    {
+        "id": 296,
+        "section": "Computer",
+        "question": "What does 'syntax error' mean in programming?",
+        "options": [
+            "An error in the logic of the program",
+            "An error that violates the grammar rules of a programming language",
+            "A hardware failure",
+            "A network error"
+        ],
+        "answer": "An error that violates the grammar rules of a programming language",
+        "difficulty": "Medium",
+        "explanation": "A syntax error occurs when code violates the grammatical rules of the programming language."
+    },
+    {
+        "id": 297,
+        "section": "Computer",
+        "question": "Which of the following is a widely used markup language for creating web pages?",
+        "options": [
+            "HTML",
+            "Python",
+            "SQL",
+            "C++"
+        ],
+        "answer": "HTML",
+        "difficulty": "Easy",
+        "explanation": "HTML (HyperText Markup Language) is used to structure content on web pages."
+    },
+    {
+        "id": 298,
+        "section": "Computer",
+        "question": "What is the primary purpose of SQL?",
+        "options": [
+            "Design graphics",
+            "Manage and query relational databases",
+            "Create presentations",
+            "Browse the internet"
+        ],
+        "answer": "Manage and query relational databases",
+        "difficulty": "Medium",
+        "explanation": "SQL (Structured Query Language) is used to manage and query data in relational databases."
+    },
+    {
+        "id": 299,
+        "section": "Computer",
+        "question": "Which of the following best describes an 'algorithm'?",
+        "options": [
+            "A programming language",
+            "A step-by-step procedure for solving a problem",
+            "A type of hardware",
+            "A network protocol"
+        ],
+        "answer": "A step-by-step procedure for solving a problem",
+        "difficulty": "Easy",
+        "explanation": "An algorithm is a well-defined, step-by-step procedure for solving a problem or performing a task."
+    },
+    {
+        "id": 300,
+        "section": "Computer",
+        "question": "What is 'recursion' in programming?",
+        "options": [
+            "A function calling itself to solve a problem",
+            "A type of error",
+            "A hardware feature",
+            "A network protocol"
+        ],
+        "answer": "A function calling itself to solve a problem",
+        "difficulty": "Hard",
+        "explanation": "Recursion occurs when a function calls itself to break a problem down into smaller sub-problems."
+    },
+    {
+        "id": 301,
+        "section": "Computer",
+        "question": "Which of the following is a version of a programming paradigm focused on functions without changing state?",
+        "options": [
+            "Object-Oriented Programming",
+            "Functional Programming",
+            "Procedural Programming",
+            "Assembly Programming"
+        ],
+        "answer": "Functional Programming",
+        "difficulty": "Hard",
+        "explanation": "Functional Programming emphasizes the use of pure functions and avoids changing state or mutable data."
+    },
+    {
+        "id": 302,
+        "section": "Computer",
+        "question": "What does 'IDE' stand for in software development?",
+        "options": [
+            "Integrated Development Environment",
+            "Internal Data Editor",
+            "Interactive Design Engine",
+            "Internet Data Exchange"
+        ],
+        "answer": "Integrated Development Environment",
+        "difficulty": "Medium",
+        "explanation": "IDE stands for Integrated Development Environment, a software application for writing and testing code."
+    },
+    {
+        "id": 303,
+        "section": "Computer",
+        "question": "Which of the following is used to store multiple values of different types together as one unit in many languages?",
+        "options": [
+            "Array",
+            "Structure/Object",
+            "Loop",
+            "Function"
+        ],
+        "answer": "Structure/Object",
+        "difficulty": "Hard",
+        "explanation": "A structure (or object) groups multiple values, potentially of different types, into a single unit."
+    },
+    {
+        "id": 304,
+        "section": "Computer",
+        "question": "What is a 'computer virus'?",
+        "options": [
+            "A helpful software program",
+            "A malicious program that can replicate and spread",
+            "A type of hardware",
+            "A network cable"
+        ],
+        "answer": "A malicious program that can replicate and spread",
+        "difficulty": "Easy",
+        "explanation": "A computer virus is a malicious program designed to replicate itself and spread to other systems, often causing harm."
+    },
+    {
+        "id": 305,
+        "section": "Computer",
+        "question": "What is the purpose of antivirus software?",
+        "options": [
+            "Speed up the computer",
+            "Detect and remove malicious software",
+            "Create documents",
+            "Browse the internet"
+        ],
+        "answer": "Detect and remove malicious software",
+        "difficulty": "Easy",
+        "explanation": "Antivirus software detects, blocks, and removes malicious software such as viruses and malware."
+    },
+    {
+        "id": 306,
+        "section": "Computer",
+        "question": "What is 'ransomware'?",
+        "options": [
+            "Free software",
+            "Malware that encrypts data and demands payment for its release",
+            "A type of antivirus",
+            "A search engine"
+        ],
+        "answer": "Malware that encrypts data and demands payment for its release",
+        "difficulty": "Medium",
+        "explanation": "Ransomware is malicious software that encrypts a victim's data and demands a ransom for its release."
+    },
+    {
+        "id": 307,
+        "section": "Computer",
+        "question": "Which of the following is a good practice for creating a strong password?",
+        "options": [
+            "Using your name",
+            "Using a combination of letters, numbers, and symbols",
+            "Using '1234'",
+            "Using the same password everywhere"
+        ],
+        "answer": "Using a combination of letters, numbers, and symbols",
+        "difficulty": "Easy",
+        "explanation": "A strong password combines uppercase/lowercase letters, numbers, and symbols to increase security."
+    },
+    {
+        "id": 308,
+        "section": "Computer",
+        "question": "What is 'two-factor authentication'?",
+        "options": [
+            "Using two different passwords for the same account",
+            "A security process requiring two different forms of verification",
+            "Logging in twice",
+            "A type of firewall"
+        ],
+        "answer": "A security process requiring two different forms of verification",
+        "difficulty": "Medium",
+        "explanation": "Two-factor authentication requires two different forms of identification to verify a user's identity."
+    },
+    {
+        "id": 309,
+        "section": "Computer",
+        "question": "What is a 'Trojan horse' in computer security?",
+        "options": [
+            "A helpful utility program",
+            "Malware disguised as legitimate software",
+            "A hardware device",
+            "A network protocol"
+        ],
+        "answer": "Malware disguised as legitimate software",
+        "difficulty": "Medium",
+        "explanation": "A Trojan horse is malware disguised as legitimate software to trick users into installing it."
+    },
+    {
+        "id": 310,
+        "section": "Computer",
+        "question": "What does 'encryption' do to data?",
+        "options": [
+            "Deletes data permanently",
+            "Converts data into a coded format to prevent unauthorized access",
+            "Compresses data for storage",
+            "Duplicates data"
+        ],
+        "answer": "Converts data into a coded format to prevent unauthorized access",
+        "difficulty": "Medium",
+        "explanation": "Encryption converts readable data into a coded format that can only be read with the correct decryption key."
+    },
+    {
+        "id": 311,
+        "section": "Computer",
+        "question": "What is a 'worm' in the context of computer security?",
+        "options": [
+            "A hardware component",
+            "A self-replicating malware that spreads without user action",
+            "An antivirus tool",
+            "A type of firewall"
+        ],
+        "answer": "A self-replicating malware that spreads without user action",
+        "difficulty": "Hard",
+        "explanation": "A worm is a type of malware that self-replicates and spreads across networks without needing to attach to a program."
+    },
+    {
+        "id": 312,
+        "section": "Computer",
+        "question": "What is 'spyware'?",
+        "options": [
+            "Software that helps improve computer performance",
+            "Software that secretly monitors user activity",
+            "A type of hardware",
+            "A search engine"
+        ],
+        "answer": "Software that secretly monitors user activity",
+        "difficulty": "Medium",
+        "explanation": "Spyware secretly monitors and collects information about a user's activity without their consent."
+    },
+    {
+        "id": 313,
+        "section": "Computer",
+        "question": "What is the purpose of a 'CAPTCHA'?",
+        "options": [
+            "Speed up webpage loading",
+            "Verify that a user is human, not a bot",
+            "Store passwords",
+            "Encrypt files"
+        ],
+        "answer": "Verify that a user is human, not a bot",
+        "difficulty": "Medium",
+        "explanation": "A CAPTCHA is used to verify that a user interacting with a website is a human and not an automated bot."
+    },
+    {
+        "id": 314,
+        "section": "Computer",
+        "question": "What is 'social engineering' in cybersecurity?",
+        "options": [
+            "A method of designing social media apps",
+            "Manipulating people into revealing confidential information",
+            "A programming technique",
+            "A network topology"
+        ],
+        "answer": "Manipulating people into revealing confidential information",
+        "difficulty": "Hard",
+        "explanation": "Social engineering involves manipulating individuals into divulging confidential information or performing actions that compromise security."
+    },
+    {
+        "id": 315,
+        "section": "Computer",
+        "question": "What does a firewall primarily filter?",
+        "options": [
+            "Printed documents",
+            "Network traffic",
+            "Video files",
+            "Audio files"
+        ],
+        "answer": "Network traffic",
+        "difficulty": "Easy",
+        "explanation": "A firewall filters incoming and outgoing network traffic based on security rules."
+    },
+    {
+        "id": 316,
+        "section": "Computer",
+        "question": "What is 'data backup'?",
+        "options": [
+            "Deleting old files",
+            "Creating a copy of data to prevent loss",
+            "Compressing files",
+            "Formatting a hard disk"
+        ],
+        "answer": "Creating a copy of data to prevent loss",
+        "difficulty": "Easy",
+        "explanation": "Data backup is the process of copying data to a secondary location to protect against loss."
+    },
+    {
+        "id": 317,
+        "section": "Computer",
+        "question": "What is the primary risk of using public Wi-Fi without a VPN?",
+        "options": [
+            "Slower internet speed only",
+            "Data can be intercepted by malicious actors",
+            "Higher electricity bills",
+            "No risk at all"
+        ],
+        "answer": "Data can be intercepted by malicious actors",
+        "difficulty": "Medium",
+        "explanation": "Public Wi-Fi networks are often unsecured, making it easier for attackers to intercept transmitted data."
+    },
+    {
+        "id": 318,
+        "section": "Computer",
+        "question": "What is a 'digital signature' used for?",
+        "options": [
+            "Decorating documents",
+            "Verifying the authenticity and integrity of a digital message",
+            "Compressing files",
+            "Formatting text"
+        ],
+        "answer": "Verifying the authenticity and integrity of a digital message",
+        "difficulty": "Hard",
+        "explanation": "A digital signature verifies the authenticity and integrity of a digital message or document."
+    },
+    {
+        "id": 319,
+        "section": "Computer",
+        "question": "How many bits make up one byte?",
+        "options": [
+            "4",
+            "8",
+            "16",
+            "32"
+        ],
+        "answer": "8",
+        "difficulty": "Easy",
+        "explanation": "One byte is made up of 8 bits."
+    },
+    {
+        "id": 320,
+        "section": "Computer",
+        "question": "Which number system does a computer use internally to process data?",
+        "options": [
+            "Decimal",
+            "Binary",
+            "Octal",
+            "Hexadecimal"
+        ],
+        "answer": "Binary",
+        "difficulty": "Easy",
+        "explanation": "Computers internally process data using the binary number system (0s and 1s)."
+    },
+    {
+        "id": 321,
+        "section": "Computer",
+        "question": "What comes after Gigabyte (GB) in the data storage hierarchy?",
+        "options": [
+            "Megabyte",
+            "Terabyte",
+            "Kilobyte",
+            "Byte"
+        ],
+        "answer": "Terabyte",
+        "difficulty": "Medium",
+        "explanation": "The hierarchy is Byte < Kilobyte < Megabyte < Gigabyte < Terabyte."
+    },
+    {
+        "id": 322,
+        "section": "Computer",
+        "question": "How many bytes are there in 1 Kilobyte (using the common binary convention)?",
+        "options": [
+            "100",
+            "1000",
+            "1024",
+            "2048"
+        ],
+        "answer": "1024",
+        "difficulty": "Medium",
+        "explanation": "In the binary convention, 1 Kilobyte equals 1024 bytes (2^10)."
+    },
+    {
+        "id": 323,
+        "section": "Computer",
+        "question": "Which number system uses digits 0-7?",
+        "options": [
+            "Binary",
+            "Octal",
+            "Decimal",
+            "Hexadecimal"
+        ],
+        "answer": "Octal",
+        "difficulty": "Medium",
+        "explanation": "The Octal number system uses digits ranging from 0 to 7."
+    },
+    {
+        "id": 324,
+        "section": "Computer",
+        "question": "Which number system uses digits 0-9 and letters A-F?",
+        "options": [
+            "Binary",
+            "Octal",
+            "Decimal",
+            "Hexadecimal"
+        ],
+        "answer": "Hexadecimal",
+        "difficulty": "Medium",
+        "explanation": "The Hexadecimal number system uses digits 0-9 and letters A-F to represent values 10-15."
+    },
+    {
+        "id": 325,
+        "section": "Computer",
+        "question": "What is the binary equivalent of the decimal number 2?",
+        "options": [
+            "01",
+            "10",
+            "11",
+            "100"
+        ],
+        "answer": "10",
+        "difficulty": "Medium",
+        "explanation": "The decimal number 2 is represented as '10' in binary."
+    },
+    {
+        "id": 326,
+        "section": "Computer",
+        "question": "Which unit is larger: Megabyte or Kilobyte?",
+        "options": [
+            "Kilobyte",
+            "Megabyte",
+            "They are equal",
+            "Cannot be determined"
+        ],
+        "answer": "Megabyte",
+        "difficulty": "Easy",
+        "explanation": "A Megabyte (MB) is larger than a Kilobyte (KB); 1 MB equals 1024 KB."
+    },
+    {
+        "id": 327,
+        "section": "Computer",
+        "question": "What does 'ASCII' stand for?",
+        "options": [
+            "American Standard Code for Information Interchange",
+            "Automated System for Computer Information Interchange",
+            "American System for Computer Information Interface",
+            "Advanced Standard Code for International Information"
+        ],
+        "answer": "American Standard Code for Information Interchange",
+        "difficulty": "Hard",
+        "explanation": "ASCII stands for American Standard Code for Information Interchange, used to represent text in computers."
+    },
+    {
+        "id": 328,
+        "section": "Computer",
+        "question": "How many bits are typically used to represent one ASCII character?",
+        "options": [
+            "4 bits",
+            "7 or 8 bits",
+            "16 bits",
+            "32 bits"
+        ],
+        "answer": "7 or 8 bits",
+        "difficulty": "Hard",
+        "explanation": "Standard ASCII uses 7 bits, while Extended ASCII uses 8 bits to represent characters."
+    },
+    {
+        "id": 329,
+        "section": "Computer",
+        "question": "Which is the correct order of storage units from smallest to largest?",
+        "options": [
+            "Byte, Bit, KB, MB",
+            "Bit, Byte, KB, MB",
+            "KB, Byte, Bit, MB",
+            "MB, KB, Byte, Bit"
+        ],
+        "answer": "Bit, Byte, KB, MB",
+        "difficulty": "Medium",
+        "explanation": "The correct order from smallest to largest is Bit, Byte, Kilobyte, Megabyte."
+    },
+    {
+        "id": 330,
+        "section": "Computer",
+        "question": "What is the decimal equivalent of the binary number 101?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "answer": "5",
+        "difficulty": "Medium",
+        "explanation": "Binary 101 = (1\u00d74) + (0\u00d72) + (1\u00d71) = 5 in decimal."
+    },
+    {
+        "id": 331,
+        "section": "Computer",
+        "question": "Which of the following represents 1 Terabyte?",
+        "options": [
+            "1024 Bytes",
+            "1024 Kilobytes",
+            "1024 Megabytes",
+            "1024 Gigabytes"
+        ],
+        "answer": "1024 Gigabytes",
+        "difficulty": "Medium",
+        "explanation": "1 Terabyte (TB) is equal to 1024 Gigabytes (GB)."
+    },
+    {
+        "id": 332,
+        "section": "Computer",
+        "question": "What is the purpose of the 'parity bit' in data transmission?",
+        "options": [
+            "Increase storage capacity",
+            "Detect errors in transmitted data",
+            "Encrypt data",
+            "Compress data"
+        ],
+        "answer": "Detect errors in transmitted data",
+        "difficulty": "Hard",
+        "explanation": "A parity bit is used to detect errors that may have occurred during data transmission."
+    },
+    {
+        "id": 333,
+        "section": "Computer",
+        "question": "How many possible values can a single bit represent?",
+        "options": [
+            "1",
+            "2",
+            "4",
+            "8"
+        ],
+        "answer": "2",
+        "difficulty": "Easy",
+        "explanation": "A single bit can represent two possible values: 0 or 1."
+    },
+    {
+        "id": 334,
+        "section": "Computer",
+        "question": "What does 'PDF' stand for?",
+        "options": [
+            "Portable Document Format",
+            "Personal Data File",
+            "Printed Document Format",
+            "Program Data Format"
+        ],
+        "answer": "Portable Document Format",
+        "difficulty": "Easy",
+        "explanation": "PDF stands for Portable Document Format, used for sharing documents reliably across platforms."
+    },
+    {
+        "id": 335,
+        "section": "Computer",
+        "question": "What does 'USB' stand for?",
+        "options": [
+            "Universal Serial Bus",
+            "Unified System Bus",
+            "Universal System Board",
+            "United Serial Board"
+        ],
+        "answer": "Universal Serial Bus",
+        "difficulty": "Easy",
+        "explanation": "USB stands for Universal Serial Bus, a common standard for connecting peripherals."
+    },
+    {
+        "id": 336,
+        "section": "Computer",
+        "question": "What does 'RAM' stand for?",
+        "options": [
+            "Random Access Memory",
+            "Read Access Memory",
+            "Rapid Access Module",
+            "Random Allocation Memory"
+        ],
+        "answer": "Random Access Memory",
+        "difficulty": "Easy",
+        "explanation": "RAM stands for Random Access Memory, used for temporary data storage while a computer is running."
+    },
+    {
+        "id": 337,
+        "section": "Computer",
+        "question": "What does 'ROM' stand for?",
+        "options": [
+            "Read-Only Memory",
+            "Random-Order Memory",
+            "Read-Optimized Memory",
+            "Rapid-Output Memory"
+        ],
+        "answer": "Read-Only Memory",
+        "difficulty": "Easy",
+        "explanation": "ROM stands for Read-Only Memory, non-volatile memory that generally cannot be modified."
+    },
+    {
+        "id": 338,
+        "section": "Computer",
+        "question": "What does 'GIF' stand for?",
+        "options": [
+            "Graphics Interchange Format",
+            "General Image File",
+            "Global Interchange Format",
+            "Graphic Information File"
+        ],
+        "answer": "Graphics Interchange Format",
+        "difficulty": "Medium",
+        "explanation": "GIF stands for Graphics Interchange Format, commonly used for simple animated images."
+    },
+    {
+        "id": 339,
+        "section": "Computer",
+        "question": "What does 'HTML' stand for?",
+        "options": [
+            "HyperText Markup Language",
+            "High Text Markup Language",
+            "HyperTransfer Markup Language",
+            "Home Tool Markup Language"
+        ],
+        "answer": "HyperText Markup Language",
+        "difficulty": "Easy",
+        "explanation": "HTML stands for HyperText Markup Language, used to create the structure of web pages."
+    },
+    {
+        "id": 340,
+        "section": "Computer",
+        "question": "What does 'CD-ROM' stand for?",
+        "options": [
+            "Compact Disc Read-Only Memory",
+            "Compact Data Read-Only Memory",
+            "Computer Disc Read-Only Memory",
+            "Compact Disc Random Output Memory"
+        ],
+        "answer": "Compact Disc Read-Only Memory",
+        "difficulty": "Medium",
+        "explanation": "CD-ROM stands for Compact Disc Read-Only Memory, a storage medium that cannot be rewritten."
+    },
+    {
+        "id": 341,
+        "section": "Computer",
+        "question": "What does 'VPN' stand for?",
+        "options": [
+            "Virtual Private Network",
+            "Verified Public Network",
+            "Virtual Personal Node",
+            "Verified Private Node"
+        ],
+        "answer": "Virtual Private Network",
+        "difficulty": "Medium",
+        "explanation": "VPN stands for Virtual Private Network, used to create a secure connection over the internet."
+    },
+    {
+        "id": 342,
+        "section": "Computer",
+        "question": "What does 'JPEG' stand for?",
+        "options": [
+            "Joint Photographic Experts Group",
+            "Java Programming Expert Group",
+            "Joint Program Executable Graphics",
+            "Java Photographic Enhanced Graphics"
+        ],
+        "answer": "Joint Photographic Experts Group",
+        "difficulty": "Hard",
+        "explanation": "JPEG stands for Joint Photographic Experts Group, the organization that created this common image format."
+    },
+    {
+        "id": 343,
+        "section": "Computer",
+        "question": "What does 'RAM' memory get erased when the computer is turned off, known as being what?",
+        "options": [
+            "Volatile",
+            "Non-volatile",
+            "Permanent",
+            "Static"
+        ],
+        "answer": "Volatile",
+        "difficulty": "Medium",
+        "explanation": "RAM is volatile memory, meaning its contents are lost when the power is turned off."
+    },
+    {
+        "id": 344,
+        "section": "Computer",
+        "question": "What does 'IoT' stand for?",
+        "options": [
+            "Internet of Things",
+            "Interconnection of Technology",
+            "Internal Operating Technology",
+            "Internet Operating Terminal"
+        ],
+        "answer": "Internet of Things",
+        "difficulty": "Medium",
+        "explanation": "IoT stands for Internet of Things, referring to interconnected physical devices that communicate over the internet."
+    },
+    {
+        "id": 345,
+        "section": "Computer",
+        "question": "What does 'API' stand for?",
+        "options": [
+            "Application Programming Interface",
+            "Automated Program Instruction",
+            "Application Process Integration",
+            "Advanced Programming Interface"
+        ],
+        "answer": "Application Programming Interface",
+        "difficulty": "Medium",
+        "explanation": "API stands for Application Programming Interface, allowing different software applications to communicate."
+    },
+    {
+        "id": 346,
+        "section": "Computer",
+        "question": "What does 'PNG' stand for?",
+        "options": [
+            "Portable Network Graphics",
+            "Personal Network Graphics",
+            "Printed Network Graphic",
+            "Portable Node Graphics"
+        ],
+        "answer": "Portable Network Graphics",
+        "difficulty": "Medium",
+        "explanation": "PNG stands for Portable Network Graphics, an image format supporting lossless compression."
+    },
+    {
+        "id": 347,
+        "section": "Computer",
+        "question": "What does 'OCR' stand for?",
+        "options": [
+            "Optical Character Recognition",
+            "Online Character Reader",
+            "Optimal Code Reader",
+            "Operating Character Recognition"
+        ],
+        "answer": "Optical Character Recognition",
+        "difficulty": "Hard",
+        "explanation": "OCR stands for Optical Character Recognition, technology used to convert images of text into editable text."
+    },
+    {
+        "id": 348,
+        "section": "Computer",
+        "question": "What does 'SIM' stand for in 'SIM card'?",
+        "options": [
+            "Subscriber Identity Module",
+            "System Information Module",
+            "Secure Internet Module",
+            "Subscriber Information Memory"
+        ],
+        "answer": "Subscriber Identity Module",
+        "difficulty": "Medium",
+        "explanation": "SIM stands for Subscriber Identity Module, a card used to identify a subscriber on a mobile network."
+    },
+    {
+        "id": 349,
+        "section": "Computer",
+        "question": "What does 'GPS' stand for?",
+        "options": [
+            "Global Positioning System",
+            "General Positioning Service",
+            "Global Program Software",
+            "Geographic Positioning System"
+        ],
+        "answer": "Global Positioning System",
+        "difficulty": "Easy",
+        "explanation": "GPS stands for Global Positioning System, used for determining geographic location."
+    },
+    {
+        "id": 350,
+        "section": "Computer",
+        "question": "What does 'CC' stand for in email (as in 'CC' a recipient)?",
+        "options": [
+            "Carbon Copy",
+            "Computer Copy",
+            "Central Copy",
+            "Confirmed Copy"
+        ],
+        "answer": "Carbon Copy",
+        "difficulty": "Medium",
+        "explanation": "CC stands for Carbon Copy, used to send a copy of an email to additional recipients."
+    },
+    {
+        "id": 351,
+        "section": "Computer",
+        "question": "What does 'BCC' stand for in email?",
+        "options": [
+            "Blind Carbon Copy",
+            "Basic Carbon Copy",
+            "Blocked Copy Contact",
+            "Business Carbon Copy"
+        ],
+        "answer": "Blind Carbon Copy",
+        "difficulty": "Medium",
+        "explanation": "BCC stands for Blind Carbon Copy, which sends a copy of an email without other recipients seeing that address."
+    },
+    {
+        "id": 352,
+        "section": "Computer",
+        "question": "What does 'SaaS' stand for?",
+        "options": [
+            "Software as a Service",
+            "System as a Service",
+            "Storage as a Service",
+            "Server as a Service"
+        ],
+        "answer": "Software as a Service",
+        "difficulty": "Hard",
+        "explanation": "SaaS stands for Software as a Service, a software distribution model hosted in the cloud."
+    },
+    {
+        "id": 353,
+        "section": "Computer",
+        "question": "What does 'AI' stand for in modern computing?",
+        "options": [
+            "Artificial Intelligence",
+            "Automated Interface",
+            "Applied Informatics",
+            "Advanced Internet"
+        ],
+        "answer": "Artificial Intelligence",
+        "difficulty": "Easy",
+        "explanation": "AI stands for Artificial Intelligence, referring to computer systems designed to perform tasks that typically require human intelligence."
+    },
+    {
+        "id": 354,
+        "section": "Computer",
+        "question": "Which shortcut key is used to cut selected text?",
+        "options": [
+            "Ctrl + C",
+            "Ctrl + X",
+            "Ctrl + V",
+            "Ctrl + Z"
+        ],
+        "answer": "Ctrl + X",
+        "difficulty": "Easy",
+        "explanation": "Ctrl + X is the standard shortcut key to cut selected content."
+    },
+    {
+        "id": 355,
+        "section": "Computer",
+        "question": "Which shortcut key is used to paste copied or cut content?",
+        "options": [
+            "Ctrl + C",
+            "Ctrl + V",
+            "Ctrl + P",
+            "Ctrl + X"
+        ],
+        "answer": "Ctrl + V",
+        "difficulty": "Easy",
+        "explanation": "Ctrl + V is the standard shortcut key to paste content from the clipboard."
+    },
+    {
+        "id": 356,
+        "section": "Computer",
+        "question": "Which shortcut key is used to redo an action that was undone?",
+        "options": [
+            "Ctrl + Y",
+            "Ctrl + Z",
+            "Ctrl + R",
+            "Ctrl + U"
+        ],
+        "answer": "Ctrl + Y",
+        "difficulty": "Medium",
+        "explanation": "Ctrl + Y is commonly used to redo an action after it has been undone."
+    },
+    {
+        "id": 357,
+        "section": "Computer",
+        "question": "Which shortcut key opens the 'Find' dialog box in most applications?",
+        "options": [
+            "Ctrl + F",
+            "Ctrl + H",
+            "Ctrl + G",
+            "Ctrl + E"
+        ],
+        "answer": "Ctrl + F",
+        "difficulty": "Easy",
+        "explanation": "Ctrl + F opens the Find dialog box to search for text within a document or webpage."
+    },
+    {
+        "id": 358,
+        "section": "Computer",
+        "question": "Which shortcut key is used to close the current window or application?",
+        "options": [
+            "Alt + F4",
+            "Ctrl + F4",
+            "Ctrl + W",
+            "Alt + W"
+        ],
+        "answer": "Alt + F4",
+        "difficulty": "Medium",
+        "explanation": "Alt + F4 is the standard shortcut key to close the currently active window in Windows."
+    },
+    {
+        "id": 359,
+        "section": "Computer",
+        "question": "Which shortcut key is used to switch between open applications in Windows?",
+        "options": [
+            "Alt + Tab",
+            "Ctrl + Tab",
+            "Shift + Tab",
+            "Windows + Tab"
+        ],
+        "answer": "Alt + Tab",
+        "difficulty": "Easy",
+        "explanation": "Alt + Tab allows users to quickly switch between open applications in Windows."
+    },
+    {
+        "id": 360,
+        "section": "Computer",
+        "question": "Which shortcut key is used to open the 'Find and Replace' dialog box in MS Word?",
+        "options": [
+            "Ctrl + F",
+            "Ctrl + H",
+            "Ctrl + R",
+            "Ctrl + E"
+        ],
+        "answer": "Ctrl + H",
+        "difficulty": "Medium",
+        "explanation": "Ctrl + H opens the Find and Replace dialog box in MS Word."
+    },
+    {
+        "id": 361,
+        "section": "Computer",
+        "question": "Which shortcut key is used to take a full screenshot in Windows?",
+        "options": [
+            "Print Screen",
+            "Ctrl + P",
+            "Alt + S",
+            "Ctrl + Shift + S"
+        ],
+        "answer": "Print Screen",
+        "difficulty": "Easy",
+        "explanation": "The Print Screen key captures a screenshot of the entire screen in Windows."
+    },
+    {
+        "id": 362,
+        "section": "Computer",
+        "question": "Which shortcut key is used to lock a Windows computer?",
+        "options": [
+            "Windows + L",
+            "Ctrl + L",
+            "Alt + L",
+            "Windows + K"
+        ],
+        "answer": "Windows + L",
+        "difficulty": "Medium",
+        "explanation": "Windows + L locks the computer, requiring a password to unlock it again."
+    },
+    {
+        "id": 363,
+        "section": "Computer",
+        "question": "Which shortcut key is used to open a new tab in most web browsers?",
+        "options": [
+            "Ctrl + T",
+            "Ctrl + N",
+            "Ctrl + W",
+            "Ctrl + Tab"
+        ],
+        "answer": "Ctrl + T",
+        "difficulty": "Easy",
+        "explanation": "Ctrl + T opens a new tab in most modern web browsers."
+    },
+    {
+        "id": 364,
+        "section": "Computer",
+        "question": "Which shortcut key is used to close the current tab in a web browser?",
+        "options": [
+            "Ctrl + W",
+            "Ctrl + T",
+            "Ctrl + N",
+            "Ctrl + Q"
+        ],
+        "answer": "Ctrl + W",
+        "difficulty": "Easy",
+        "explanation": "Ctrl + W closes the currently active tab in most web browsers."
+    },
+    {
+        "id": 365,
+        "section": "Computer",
+        "question": "Which function key is commonly used to refresh a webpage?",
+        "options": [
+            "F1",
+            "F5",
+            "F10",
+            "F12"
+        ],
+        "answer": "F5",
+        "difficulty": "Easy",
+        "explanation": "F5 is commonly used to refresh or reload the current webpage."
+    },
+    {
+        "id": 366,
+        "section": "Computer",
+        "question": "Which shortcut key is used to open Developer Tools in most web browsers?",
+        "options": [
+            "F12",
+            "F5",
+            "F1",
+            "F2"
+        ],
+        "answer": "F12",
+        "difficulty": "Medium",
+        "explanation": "F12 is commonly used to open Developer Tools in most modern web browsers."
+    },
+    {
+        "id": 367,
+        "section": "Computer",
+        "question": "Which shortcut key combination is used to open the Windows Task Manager directly?",
+        "options": [
+            "Ctrl + Shift + Esc",
+            "Ctrl + Alt + Del",
+            "Alt + Esc",
+            "Ctrl + Esc"
+        ],
+        "answer": "Ctrl + Shift + Esc",
+        "difficulty": "Medium",
+        "explanation": "Ctrl + Shift + Esc directly opens the Windows Task Manager."
+    },
+    {
+        "id": 368,
+        "section": "Computer",
+        "question": "Which shortcut key is used to rename a selected file or folder in Windows?",
+        "options": [
+            "F2",
+            "F1",
+            "F5",
+            "F6"
+        ],
+        "answer": "F2",
+        "difficulty": "Medium",
+        "explanation": "F2 is the standard shortcut key used to rename a selected file or folder in Windows."
+    },
+    {
+        "id": 369,
+        "section": "Computer",
+        "question": "Which shortcut key is used to minimize all open windows and show the desktop in Windows?",
+        "options": [
+            "Windows + D",
+            "Windows + M",
+            "Windows + Tab",
+            "Windows + E"
+        ],
+        "answer": "Windows + D",
+        "difficulty": "Medium",
+        "explanation": "Windows + D minimizes all open windows and shows the desktop."
+    }
+]

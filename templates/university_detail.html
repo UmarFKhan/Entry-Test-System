@@ -1,0 +1,454 @@
+{% extends "base.html" %}
+
+{% block title %}{{ university.name }} | Admission Criteria, Fees & Test Guide{% endblock %}
+
+{% block extra_head %}
+<style>
+  /* ── University Detail Header ───────────────────────── */
+  .uni-hero {
+    background: linear-gradient(135deg, #0b1727 0%, #1e293b 60%, #0f172a 100%);
+    color: #ffffff;
+    padding: 2.75rem 3rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .uni-hero::after {
+    content: '';
+    position: absolute;
+    top: -40%; right: -10%;
+    width: 450px; height: 450px;
+    background: radial-gradient(circle, {{ university.badge_color }}33 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .uni-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: {{ university.badge_bg }};
+    border: 1px solid {{ university.badge_color }}66;
+    color: {{ university.badge_color }};
+    padding: 0.35rem 0.95rem;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 800;
+    margin-bottom: 0.85rem;
+  }
+  .uni-hero h1 { color: #ffffff; font-size: 2.2rem; margin-bottom: 0.4rem; letter-spacing: -0.02em; }
+  .uni-hero p { color: #94a3b8; font-size: 1.05rem; max-width: 760px; line-height: 1.6; }
+
+  /* ── Program Navigation Tabs ───────────────────────── */
+  .prog-selector-box {
+    margin-bottom: 2rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-xs);
+  }
+  .prog-tabs-label {
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 0.85rem;
+  }
+  .prog-tabs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .prog-tab {
+    padding: 0.65rem 1.25rem;
+    border-radius: var(--radius-sm);
+    border: 1.5px solid var(--border-muted);
+    background: var(--bg-body);
+    color: var(--text-secondary);
+    font-weight: 700;
+    font-size: 0.92rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .prog-tab:hover {
+    border-color: {{ university.badge_color }};
+    color: {{ university.badge_color }};
+    transform: translateY(-1px);
+  }
+  .prog-tab.active {
+    background: {{ university.badge_color }};
+    color: #ffffff;
+    border-color: {{ university.badge_color }};
+    box-shadow: 0 4px 12px {{ university.badge_color }}40;
+  }
+
+  /* ── Content Layout Grid ───────────────────────────── */
+  .criteria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .info-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-xs);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  }
+  .info-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  .card-header-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--brand-navy);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1.5px solid var(--border-subtle);
+  }
+
+  /* Fee Table Styling */
+  .fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 0.92rem;
+  }
+  .fee-table td {
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .fee-table tr:last-child td { border-bottom: none; }
+  .fee-table .fee-name { color: var(--text-secondary); font-weight: 600; }
+  .fee-table .fee-val { text-align: right; font-weight: 800; color: var(--brand-navy); font-family: 'JetBrains Mono', monospace; }
+  .fee-table .highlight-row td { background: #eff6ff; font-weight: 900; }
+
+  /* Alert Callouts */
+  .eng-warning-box {
+    background: #fff1f2;
+    border: 1.5px solid #fecdd3;
+    border-left: 5px solid #e11d48;
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-sm);
+    margin-bottom: 1rem;
+    color: #9f1239;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  /* ── Vertical Process Progress Tracker UI (Matching Screenshot) ───────── */
+  .progress-section {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .progress-header-bar {
+    background: linear-gradient(90deg, #059669 0%, #10b981 100%);
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-sm);
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.25);
+  }
+
+  .timeline-container {
+    position: relative;
+    max-width: 820px;
+    margin: 0 auto;
+    padding-left: 2.5rem;
+  }
+
+  /* Vertical Connecting Line */
+  .timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    bottom: 24px;
+    width: 3px;
+    background: #cbd5e1;
+    z-index: 1;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    z-index: 2;
+  }
+
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Green Check Icon Circle */
+  .timeline-node {
+    position: absolute;
+    left: -2.5rem;
+    top: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #10b981;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.25rem;
+    box-shadow: 0 0 0 5px #ffffff, 0 4px 10px rgba(16, 185, 129, 0.3);
+    z-index: 3;
+  }
+
+  /* Content Card Box */
+  .timeline-card {
+    background: #ffffff;
+    border: 1.5px solid #cbd5e1;
+    border-radius: var(--radius-md);
+    padding: 1.5rem 1.75rem;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .timeline-card:hover {
+    border-color: #10b981;
+    transform: translateX(4px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  }
+
+  .step-date-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #475569;
+    background: #f1f5f9;
+    padding: 0.2rem 0.65rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .step-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 0.4rem;
+  }
+
+  .step-summary {
+    font-size: 0.95rem;
+    color: #334155;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+  }
+
+  .step-details {
+    font-size: 0.88rem;
+    color: #64748b;
+    line-height: 1.6;
+    white-space: pre-line;
+    border-top: 1px dashed #e2e8f0;
+    padding-top: 0.6rem;
+    margin-top: 0.6rem;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- University Header Hero Card -->
+<div class="uni-hero">
+  <div class="uni-badge-pill">
+    {{ university.icon }} {{ university.name }}
+  </div>
+  <h1>{{ program.name }}</h1>
+  <p>{{ university.description }}</p>
+  <div style="display: flex; gap: 1rem; margin-top: 1.25rem; flex-wrap: wrap;">
+    <a href="{{ university.portal_url }}" target="_blank" class="btn btn-secondary" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2);">🌐 Official Admission Portal</a>
+    <a href="#admissionTimeline" class="btn btn-secondary" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2);">📊 View Step-by-Step Admission Tracker</a>
+  </div>
+</div>
+
+<!-- Program Selector Tabs -->
+<div class="prog-selector-box">
+  <div class="prog-tabs-label">Select Degree Program for Criteria & Fee Breakdown:</div>
+  <div class="prog-tabs-grid">
+    {% for prog_key, prog_data in university.programs.items() %}
+    <a href="{{ url_for('university_detail', uni_id=university.id, program_id=prog_key) }}" class="prog-tab {% if prog_key == program.id %}active{% endif %}">
+      <span>🎓</span> {{ prog_data.name }}
+    </a>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Main Information Grid (Eligibility, Transfer, Fees, Entry Test) -->
+<div class="criteria-grid">
+
+  <!-- 1. Eligibility Criteria Box -->
+  <div class="info-card">
+    <div class="card-header-title">
+      <span>📌</span> Eligibility Criteria
+    </div>
+    
+    <div style="margin-bottom: 1.25rem;">
+      <h4 style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted); font-weight: 800; margin-bottom: 0.35rem;">SSC / Matriculation Requirements:</h4>
+      <p style="font-size: 0.95rem; color: var(--text-primary); font-weight: 600; line-height: 1.5; background: var(--bg-body); padding: 0.75rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+        {{ program.ssc_criteria }}
+      </p>
+    </div>
+
+    <div>
+      <h4 style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted); font-weight: 800; margin-bottom: 0.35rem;">HSSC / Intermediate Requirements:</h4>
+      <p style="font-size: 0.95rem; color: var(--text-primary); font-weight: 600; line-height: 1.5; background: var(--bg-body); padding: 0.75rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+        {{ program.hssc_criteria }}
+      </p>
+    </div>
+  </div>
+
+  <!-- 2. Transfer / Migration Details Box -->
+  <div class="info-card">
+    <div class="card-header-title">
+      <span>🔄</span> Transfer & Migration Policy
+    </div>
+
+    {% if program.engineering_transfer_rule %}
+    <div class="eng-warning-box">
+      {{ program.engineering_transfer_rule }}
+    </div>
+    {% endif %}
+
+    <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+      {{ program.transfer_policy }}
+    </p>
+
+    <div style="margin-top: auto; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: var(--radius-sm); padding: 0.85rem 1rem; font-size: 0.85rem; color: #1e40af;">
+      <strong>ℹ️ Migration Approval Note:</strong> Transfer students must present previous official transcripts directly to the Department HOD for course credit mapping.
+    </div>
+  </div>
+
+  <!-- 3. Fee Structure Breakdown Box -->
+  <div class="info-card">
+    <div class="card-header-title">
+      <span>💳</span> Program Fee Structure
+    </div>
+
+    <table class="fee-table">
+      <tbody>
+        <tr>
+          <td class="fee-name">Tuition Fee (Per Semester)</td>
+          <td class="fee-val">{{ program.tuition_fee }}</td>
+        </tr>
+        <tr>
+          <td class="fee-name">Mandatory Misc Dues</td>
+          <td class="fee-val">{{ program.misc_fee }}</td>
+        </tr>
+        <tr>
+          <td class="fee-name">Admission Fee (One-Time)</td>
+          <td class="fee-val">{{ program.admission_fee }}</td>
+        </tr>
+        <tr>
+          <td class="fee-name">Security Deposit (Refundable)</td>
+          <td class="fee-val">{{ program.security_fee }}</td>
+        </tr>
+        <tr class="highlight-row">
+          <td class="fee-name" style="color: var(--brand-blue);">Est. First Semester Total</td>
+          <td class="fee-val" style="color: var(--brand-blue); font-size: 1.05rem;">{{ program.total_first_semester }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; margin-top: 0.5rem;">
+      {{ program.fee_notes }}
+    </p>
+  </div>
+
+  <!-- 4. Entry Test Details & Practice Launch Card -->
+  <div class="info-card" style="border-color: {{ university.badge_color }}66;">
+    <div class="card-header-title" style="color: {{ university.badge_color }};">
+      <span>🎯</span> Admission Test Details
+    </div>
+
+    <div style="margin-bottom: 1rem;">
+      <div style="font-weight: 800; font-size: 1.1rem; color: var(--brand-navy); margin-bottom: 0.2rem;">
+        {{ university.test_name }}
+      </div>
+      <div style="font-size: 0.88rem; color: var(--text-muted); font-weight: 600;">
+        {{ university.test_format }}
+      </div>
+    </div>
+
+    <div style="margin-bottom: 1.25rem;">
+      <span class="rule-pill rule-no-neg" style="font-size: 0.82rem;">{{ university.negative_marking }}</span>
+    </div>
+
+    <!-- Subject Breakdown List -->
+    <div style="margin-bottom: 1.5rem;">
+      <h5 style="font-size: 0.82rem; text-transform: uppercase; color: var(--text-muted); font-weight: 800; margin-bottom: 0.5rem;">Subject Pattern Breakdown:</h5>
+      <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+        {% for b in program.test_breakdown %}
+        <div style="display: flex; justify-content: space-between; font-size: 0.88rem; padding: 0.35rem 0.75rem; background: var(--bg-body); border-radius: var(--radius-xs); border: 1px solid var(--border-subtle);">
+          <span>{{ b.subject }}</span>
+          <strong style="color: var(--brand-blue);">{{ b.questions }} MCQs</strong>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <a href="{{ url_for('practice') }}" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.85rem; font-weight: 800; font-size: 1rem;">
+      🚀 Start Practice Test Now
+    </a>
+  </div>
+
+</div>
+
+<!-- Step-by-Step Progress Tracker Section (Matching Screenshot Design) -->
+<div class="progress-section" id="admissionTimeline">
+  <div class="progress-header-bar">
+    IN PROGRESS - COMPLETE ADMISSION & MIGRATION PROCESS TRACKER
+  </div>
+
+  <div class="timeline-container">
+    {% for step in university.timeline_steps %}
+    <div class="timeline-item">
+      <!-- Checkmark Node Icon -->
+      <div class="timeline-node">
+        ✓
+      </div>
+
+      <!-- Step Card Box -->
+      <div class="timeline-card">
+        <div class="step-date-badge">{{ step.date_badge }}</div>
+        <div class="step-title">{{ step.title }}</div>
+        <div class="step-summary">{{ step.summary }}</div>
+        <div class="step-details">{{ step.details }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

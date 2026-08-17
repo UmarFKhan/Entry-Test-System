@@ -1,0 +1,292 @@
+{% extends "base.html" %}
+{% block title %}Quiz Madness Mode | Atechabad Testing System{% endblock %}
+
+{% block extra_head %}
+<style>
+  /* ── Quiz Madness Hero Section ──────────────────── */
+  .madness-hero {
+    background: linear-gradient(135deg, #1e1b4b 0%, #311042 50%, #450a0a 100%);
+    color: #fff;
+    padding: 2.5rem 3rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(244, 63, 94, 0.3);
+    box-shadow: 0 10px 30px rgba(225, 29, 72, 0.15);
+  }
+  .madness-hero::after {
+    content: '';
+    position: absolute;
+    top: -40%; right: -10%;
+    width: 450px; height: 450px;
+    background: radial-gradient(circle, rgba(244, 63, 94, 0.25) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .madness-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(244, 63, 94, 0.2);
+    border: 1px solid rgba(244, 63, 94, 0.5);
+    padding: 0.35rem 0.95rem;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #fca5a5;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(244, 63, 94, 0.5);
+  }
+  .madness-hero h2 { color: #fff; font-size: 2.2rem; margin-bottom: .4rem; letter-spacing: -0.02em; }
+  .madness-hero p  { color: #cbd5e1; font-size: 1.05rem; max-width: 680px; }
+
+  /* ── Grid Layout ──────────────────────────────────── */
+  .madness-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  /* ── Subject Selection Cards ──────────────────────── */
+  .subj-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .subj-card {
+    background: var(--bg-surface);
+    border: 2px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    user-select: none;
+  }
+
+  .subj-card:hover {
+    border-color: #f43f5e;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(244, 63, 94, 0.15);
+  }
+
+  .subj-card.active {
+    border-color: #e11d48;
+    background: linear-gradient(145deg, rgba(225, 29, 72, 0.04), var(--bg-surface));
+    box-shadow: 0 0 0 4px rgba(225, 29, 72, 0.15), 0 12px 28px rgba(225, 29, 72, 0.18);
+  }
+
+  .subj-card .icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+    display: inline-block;
+  }
+
+  .subj-card .title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--brand-navy);
+    margin-bottom: 0.25rem;
+  }
+
+  .subj-card .q-count {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: #e11d48;
+    background: rgba(225, 29, 72, 0.1);
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border-radius: var(--radius-full);
+  }
+
+  .subj-card .desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 0.6rem;
+  }
+
+  /* ── Sidebar Summary ────────────────────────────── */
+  .madness-summary {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    position: sticky;
+    top: 1.5rem;
+  }
+
+  @media (max-width: 900px) {
+    .madness-grid { grid-template-columns: 1fr; }
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="madness-hero">
+  <div class="madness-badge">
+    🔥 UNLIMITED EXHAUSTIVE TEST MODE
+  </div>
+  <h2>Quiz Madness Mode</h2>
+  <p>Play 100% of the questions in any chosen subject (or every single MCQ in the entire system) with <strong>zero repeats</strong>. Test your absolute endurance and subject mastery!</p>
+</div>
+
+<form id="madnessForm" action="{{ url_for('madness_start') }}" method="POST">
+  <input type="hidden" name="section" id="selectedSectionInput" value="All">
+
+  <div class="madness-grid">
+    <!-- Left Column: Config & Subject Selection -->
+    <div>
+      <!-- Candidate Profile Input -->
+      <div class="glass-panel" style="padding: 1.75rem; margin-bottom: 1.75rem; background: var(--bg-surface);">
+        <label for="candidateName" style="display: block; font-weight: 800; margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--brand-navy);">
+          👤 Candidate Full Name:
+        </label>
+        <input type="text" id="candidateName" name="candidate_name" value="Candidate Name" placeholder="Enter your full name..." style="width: 100%; padding: 0.8rem 1rem; border: 1.5px solid var(--border-muted); border-radius: var(--radius-sm); font-size: 1.05rem; font-weight: 600; font-family: inherit; color: var(--text-primary); background: var(--bg-body); outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#e11d48'" onblur="this.style.borderColor='var(--border-muted)'">
+      </div>
+
+      <!-- Subject Selection Section -->
+      <div class="glass-panel" style="padding: 1.75rem; background: var(--bg-surface);">
+        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">🎯 Select Subject Bank for Madness Mode</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          Choose a subject to load <strong>all of its MCQs without repeating any</strong>:
+        </p>
+
+        <div class="subj-card-grid">
+          <!-- All Subjects -->
+          <div class="subj-card active" data-section="All" data-count="{{ total_available }}" data-time="{{ (total_available * 1.2)|round|int }}">
+            <div class="icon">⚡</div>
+            <div class="title">All Subjects</div>
+            <div class="q-count">{{ total_available }} MCQs</div>
+            <div class="desc">Ultimate 100% Marathon across all banks</div>
+          </div>
+
+          <!-- English -->
+          <div class="subj-card" data-section="English" data-count="{{ section_counts.get('English', 300) }}" data-time="{{ (section_counts.get('English', 300) * 1.2)|round|int }}">
+            <div class="icon">📚</div>
+            <div class="title">English</div>
+            <div class="q-count">{{ section_counts.get('English', 300) }} MCQs</div>
+            <div class="desc">Grammar, Synonyms, Narration & Idioms</div>
+          </div>
+
+          <!-- Computer -->
+          <div class="subj-card" data-section="Computer" data-count="{{ section_counts.get('Computer', 234) }}" data-time="{{ (section_counts.get('Computer', 234) * 1.2)|round|int }}">
+            <div class="icon">💻</div>
+            <div class="title">Computer Science</div>
+            <div class="q-count">{{ section_counts.get('Computer', 234) }} MCQs</div>
+            <div class="desc">Hardware, Networking, DB & Programming</div>
+          </div>
+
+          <!-- Analytical -->
+          <div class="subj-card" data-section="Analytical" data-count="{{ section_counts.get('Analytical', 215) }}" data-time="{{ (section_counts.get('Analytical', 215) * 1.2)|round|int }}">
+            <div class="icon">🧩</div>
+            <div class="title">Analytical Reasoning</div>
+            <div class="q-count">{{ section_counts.get('Analytical', 215) }} MCQs</div>
+            <div class="desc">Logic, Sequences & Pattern Analysis</div>
+          </div>
+
+          <!-- Physics -->
+          <div class="subj-card" data-section="Physics" data-count="{{ section_counts.get('Physics', 210) }}" data-time="{{ (section_counts.get('Physics', 210) * 1.2)|round|int }}">
+            <div class="icon">⚛️</div>
+            <div class="title">Physics</div>
+            <div class="q-count">{{ section_counts.get('Physics', 210) }} MCQs</div>
+            <div class="desc">Mechanics, Electricity & Thermodynamics</div>
+          </div>
+
+          <!-- Maths -->
+          <div class="subj-card" data-section="Maths" data-count="{{ section_counts.get('Maths', 180) }}" data-time="{{ (section_counts.get('Maths', 180) * 1.2)|round|int }}">
+            <div class="icon">📐</div>
+            <div class="title">Mathematics</div>
+            <div class="q-count">{{ section_counts.get('Maths', 180) }} MCQs</div>
+            <div class="desc">Algebra, Calculus, Trigonometry & Matrices</div>
+          </div>
+        </div>
+
+        <!-- Custom Timer Setting -->
+        <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+          <label for="customTime" style="display: block; font-weight: 800; font-size: 0.9rem; color: var(--brand-navy); margin-bottom: 0.4rem;">
+            ⏱️ Timer Duration Override (Minutes - Optional):
+          </label>
+          <input type="number" id="customTime" name="custom_time" placeholder="Auto calculated time" min="1" max="1000" style="width: 220px; padding: 0.65rem 0.9rem; border-radius: var(--radius-sm); border: 1.5px solid var(--border-muted); font-size: 1rem; font-weight: 700; font-family: inherit; background: var(--bg-body); outline: none;">
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.35rem;">Leave empty to use recommended auto-time based on question count.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Summary Card & Launch -->
+    <div class="madness-summary">
+      <h4 style="font-size: 1.15rem; color: var(--brand-navy); margin-bottom: 1rem;">🔥 Quiz Madness Summary</h4>
+
+      <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.75rem; font-size: 0.95rem;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
+          <span style="color: var(--text-secondary);">Selected Target:</span>
+          <strong id="summaryTargetName" style="color: #e11d48;">All Subjects</strong>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
+          <span style="color: var(--text-secondary);">Total Questions:</span>
+          <strong id="summaryQCount" style="font-size: 1.1rem; color: var(--brand-blue);">{{ total_available }} MCQs</strong>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
+          <span style="color: var(--text-secondary);">Repeat Policy:</span>
+          <strong style="color: #059669;">Zero Repeats 🚫🔁</strong>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
+          <span style="color: var(--text-secondary);">Time Allowed:</span>
+          <strong id="summaryTimeMinutes" style="color: #d97706;">{{ (total_available * 1.2)|round|int }} Mins</strong>
+        </div>
+      </div>
+
+      <button type="submit" class="btn" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem; font-weight: 800; background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); color: #fff; border: none; border-radius: var(--radius-sm); box-shadow: 0 4px 15px rgba(225, 29, 72, 0.35); cursor: pointer; transition: transform 0.15s ease;">
+        🚀 Launch Quiz Madness
+      </button>
+    </div>
+  </div>
+</form>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/storage.js') }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedName = sessionStorage.getItem('ats_candidate_name') || sessionStorage.getItem('bu_candidate_name');
+    if (savedName) {
+      document.getElementById('candidateName').value = savedName;
+    }
+
+    const cards = document.querySelectorAll('.subj-card');
+    const selectedInput = document.getElementById('selectedSectionInput');
+    const summaryTargetName = document.getElementById('summaryTargetName');
+    const summaryQCount = document.getElementById('summaryQCount');
+    const summaryTimeMinutes = document.getElementById('summaryTimeMinutes');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        cards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+
+        const sec = card.dataset.section;
+        const count = card.dataset.count;
+        const autoTime = card.dataset.time;
+
+        selectedInput.value = sec;
+        summaryTargetName.textContent = sec === 'All' ? 'All Subjects (Marathon)' : sec;
+        summaryQCount.textContent = `${count} MCQs`;
+        summaryTimeMinutes.textContent = `${autoTime} Mins`;
+      });
+    });
+
+    document.getElementById('madnessForm').addEventListener('submit', () => {
+      const cName = document.getElementById('candidateName').value.trim() || 'Candidate Name';
+      CBTStorage.clearExamState();
+      sessionStorage.setItem('ats_candidate_name', cName);
+    });
+  });
+</script>
+{% endblock %}

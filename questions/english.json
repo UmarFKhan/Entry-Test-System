@@ -1,0 +1,4202 @@
+[
+  {
+    "id": 1,
+    "section": "English",
+    "question": "She has been working here __________ 2019.",
+    "options": [
+      "since",
+      "for",
+      "from",
+      "at"
+    ],
+    "answer": "since",
+    "difficulty": "Easy",
+    "explanation": "'Since' is used to denote a specific starting point in time."
+  },
+  {
+    "id": 2,
+    "section": "English",
+    "question": "Neither of the two candidates __________ qualified for the post.",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "have been"
+    ],
+    "answer": "is",
+    "difficulty": "Easy",
+    "explanation": "'Neither' is singular and requires the singular verb 'is'."
+  },
+  {
+    "id": 3,
+    "section": "English",
+    "question": "He is allergic __________ dust and pollen.",
+    "options": [
+      "of",
+      "with",
+      "to",
+      "from"
+    ],
+    "answer": "to",
+    "difficulty": "Easy",
+    "explanation": "The adjective 'allergic' takes the preposition 'to'."
+  },
+  {
+    "id": 4,
+    "section": "English",
+    "question": "If I __________ you, I would accept the offer.",
+    "options": [
+      "am",
+      "was",
+      "were",
+      "will be"
+    ],
+    "answer": "were",
+    "difficulty": "Medium",
+    "explanation": "Subjunctive mood uses 'were' for hypothetical conditions."
+  },
+  {
+    "id": 5,
+    "section": "English",
+    "question": "The manager, along with his employees, __________ present at the meeting.",
+    "options": [
+      "was",
+      "were",
+      "are",
+      "have been"
+    ],
+    "answer": "was",
+    "difficulty": "Medium",
+    "explanation": "When subject is joined by 'along with', the verb agrees with the primary subject ('manager' -> 'was')."
+  },
+  {
+    "id": 6,
+    "section": "English",
+    "question": "Choose the correctly punctuated sentence.",
+    "options": [
+      "Its a beautiful day, isnt it",
+      "It's a beautiful day, isn't it?",
+      "Its' a beautiful day isn't it",
+      "It is a beautiful, day isn't it"
+    ],
+    "answer": "It's a beautiful day, isn't it?",
+    "difficulty": "Easy",
+    "explanation": "A sentence ending with a question tag requires apostrophes for contractions and a question mark at the end."
+  },
+  {
+    "id": 7,
+    "section": "English",
+    "question": "Find the error: 'Each of the students have submitted their assignment on time.'",
+    "options": [
+      "Each of the students",
+      "have",
+      "submitted their assignment",
+      "on time"
+    ],
+    "answer": "have",
+    "difficulty": "Medium",
+    "explanation": "'Each' is singular and requires 'has' instead of 'have'."
+  },
+  {
+    "id": 8,
+    "section": "English",
+    "question": "Find the error: 'The news are very shocking to everyone in the office.'",
+    "options": [
+      "The news",
+      "are very shocking",
+      "to everyone",
+      "in the office"
+    ],
+    "answer": "are very shocking",
+    "difficulty": "Easy",
+    "explanation": "'News' is an uncountable singular noun, so it should be 'is very shocking'."
+  },
+  {
+    "id": 9,
+    "section": "English",
+    "question": "Find the error: 'Between you and I, this plan will not work.'",
+    "options": [
+      "Between",
+      "you and I",
+      "this plan",
+      "will not work"
+    ],
+    "answer": "you and I",
+    "difficulty": "Medium",
+    "explanation": "'Between' is a preposition and requires objective pronouns ('between you and me')."
+  },
+  {
+    "id": 10,
+    "section": "English",
+    "question": "Choose the sentence with no error.",
+    "options": [
+      "He don't like tea.",
+      "He doesn't likes tea.",
+      "He doesn't like tea.",
+      "He not like tea."
+    ],
+    "answer": "He doesn't like tea.",
+    "difficulty": "Easy",
+    "explanation": "'He doesn't like tea' correctly uses auxiliary 'doesn't' + base verb 'like'."
+  },
+  {
+    "id": 11,
+    "section": "English",
+    "question": "Synonym of 'Meticulous':",
+    "options": [
+      "Careless",
+      "Precise",
+      "Lazy",
+      "Hasty"
+    ],
+    "answer": "Precise",
+    "difficulty": "Medium",
+    "explanation": "'Meticulous' means showing great attention to detail; precise."
+  },
+  {
+    "id": 12,
+    "section": "English",
+    "question": "Synonym of 'Candid':",
+    "options": [
+      "Deceptive",
+      "Frank",
+      "Shy",
+      "Angry"
+    ],
+    "answer": "Frank",
+    "difficulty": "Easy",
+    "explanation": "'Candid' means truthful, open, and frank."
+  },
+  {
+    "id": 13,
+    "section": "English",
+    "question": "Antonym of 'Benevolent':",
+    "options": [
+      "Kind",
+      "Generous",
+      "Cruel",
+      "Wealthy"
+    ],
+    "answer": "Cruel",
+    "difficulty": "Medium",
+    "explanation": "'Benevolent' means well-meaning and kindly; 'Cruel' is its opposite."
+  },
+  {
+    "id": 14,
+    "section": "English",
+    "question": "Antonym of 'Abundant':",
+    "options": [
+      "Plentiful",
+      "Scarce",
+      "Rich",
+      "Huge"
+    ],
+    "answer": "Scarce",
+    "difficulty": "Easy",
+    "explanation": "'Abundant' means existing in large quantities; 'Scarce' means insufficient."
+  },
+  {
+    "id": 15,
+    "section": "English",
+    "question": "One word for 'A person who loves and collects books':",
+    "options": [
+      "Bibliophile",
+      "Philanthropist",
+      "Linguist",
+      "Author"
+    ],
+    "answer": "Bibliophile",
+    "difficulty": "Easy",
+    "explanation": "A 'Bibliophile' is a person who collects or has a great love of books."
+  },
+  {
+    "id": 16,
+    "section": "English",
+    "question": "One word for 'Government by the people':",
+    "options": [
+      "Monarchy",
+      "Democracy",
+      "Autocracy",
+      "Theocracy"
+    ],
+    "answer": "Democracy",
+    "difficulty": "Easy",
+    "explanation": "A system of government by the whole population is a 'Democracy'."
+  },
+  {
+    "id": 17,
+    "section": "English",
+    "question": "Idiom 'Once in a blue moon' means:",
+    "options": [
+      "Very often",
+      "Rarely",
+      "At night",
+      "Every month"
+    ],
+    "answer": "Rarely",
+    "difficulty": "Easy",
+    "explanation": "'Once in a blue moon' refers to something that happens very rarely."
+  },
+  {
+    "id": 18,
+    "section": "English",
+    "question": "Idiom 'To bite the bullet' means:",
+    "options": [
+      "To avoid a hard task",
+      "To face a difficult situation bravely",
+      "To eat quickly",
+      "To shoot someone"
+    ],
+    "answer": "To face a difficult situation bravely",
+    "difficulty": "Medium",
+    "explanation": "'Bite the bullet' means deciding to do something difficult or unpleasant that one has been putting off."
+  },
+  {
+    "id": 19,
+    "section": "English",
+    "question": "I am fond __________ playing chess.",
+    "options": [
+      "at",
+      "of",
+      "with",
+      "to"
+    ],
+    "answer": "of",
+    "difficulty": "Easy",
+    "explanation": "The adjective 'fond' is followed by the preposition 'of'."
+  },
+  {
+    "id": 20,
+    "section": "English",
+    "question": "She insisted __________ paying the bill herself.",
+    "options": [
+      "on",
+      "for",
+      "at",
+      "to"
+    ],
+    "answer": "on",
+    "difficulty": "Medium",
+    "explanation": "The verb 'insisted' takes the preposition 'on'."
+  },
+  {
+    "id": 21,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'They are building a new bridge.'",
+    "options": [
+      "A new bridge is built by them.",
+      "A new bridge is being built by them.",
+      "A new bridge was being built by them.",
+      "A new bridge has been built by them."
+    ],
+    "answer": "A new bridge is being built by them.",
+    "difficulty": "Medium",
+    "explanation": "Present continuous active 'are building' changes to present continuous passive 'is being built'."
+  },
+  {
+    "id": 22,
+    "section": "English",
+    "question": "Choose the correct indirect speech: He said, 'I am going to the market.'",
+    "options": [
+      "He said that he is going to the market.",
+      "He said that he was going to the market.",
+      "He says that he went to the market.",
+      "He told that he is going."
+    ],
+    "answer": "He said that he was going to the market.",
+    "difficulty": "Medium",
+    "explanation": "Direct present continuous 'am going' changes to past continuous 'was going' in indirect reporting."
+  },
+  {
+    "id": 23,
+    "section": "English",
+    "question": "Complete the analogy: Doctor : Hospital :: Teacher : ______",
+    "options": [
+      "Book",
+      "School",
+      "Chalk",
+      "Student"
+    ],
+    "answer": "School",
+    "difficulty": "Easy",
+    "explanation": "A doctor works in a hospital; a teacher works in a school."
+  },
+  {
+    "id": 24,
+    "section": "English",
+    "question": "Complete the analogy: Pen : Write :: Knife : ______",
+    "options": [
+      "Sharp",
+      "Cut",
+      "Kitchen",
+      "Blade"
+    ],
+    "answer": "Cut",
+    "difficulty": "Easy",
+    "explanation": "A pen is used to write; a knife is used to cut."
+  },
+  {
+    "id": 25,
+    "section": "English",
+    "question": "Choose the word closest in meaning to 'Ephemeral':",
+    "options": [
+      "Permanent",
+      "Short-lived",
+      "Eternal",
+      "Strong"
+    ],
+    "answer": "Short-lived",
+    "difficulty": "Hard",
+    "explanation": "'Ephemeral' means lasting for a very short time; transient."
+  },
+  {
+    "id": 26,
+    "section": "English",
+    "question": "Choose the word opposite in meaning to 'Frugal':",
+    "options": [
+      "Thrifty",
+      "Economical",
+      "Extravagant",
+      "Careful"
+    ],
+    "answer": "Extravagant",
+    "difficulty": "Medium",
+    "explanation": "'Frugal' means economical/sparing; 'Extravagant' is its antonym."
+  },
+  {
+    "id": 27,
+    "section": "English",
+    "question": "Reading Comprehension: 'Renewable energy sources, such as solar and wind power, are gaining popularity because they produce little to no greenhouse gas emissions.' According to the passage, renewable energy is popular because it:",
+    "options": [
+      "is cheaper than oil",
+      "produces low emissions",
+      "is easier to store",
+      "requires no technology"
+    ],
+    "answer": "produces low emissions",
+    "difficulty": "Easy",
+    "explanation": "The text directly states they are popular because they produce little to no emissions."
+  },
+  {
+    "id": 28,
+    "section": "English",
+    "question": "Which of the following is an example of renewable energy mentioned?",
+    "options": [
+      "Coal",
+      "Natural gas",
+      "Solar power",
+      "Diesel"
+    ],
+    "answer": "Solar power",
+    "difficulty": "Easy",
+    "explanation": "Solar power is explicitly listed in the passage as a renewable energy source."
+  },
+  {
+    "id": 29,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Ocassion",
+      "Occassion",
+      "Occasion",
+      "Occation"
+    ],
+    "answer": "Occasion",
+    "difficulty": "Easy",
+    "explanation": "'Occasion' is spelled with double 'c' and single 's'."
+  },
+  {
+    "id": 30,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Recieve",
+      "Receive",
+      "Receve",
+      "Receeve"
+    ],
+    "answer": "Receive",
+    "difficulty": "Easy",
+    "explanation": "Follow the rule 'i before e except after c': 'Receive'."
+  },
+  {
+    "id": 31,
+    "section": "English",
+    "question": "She is good ______ mathematics.",
+    "options": [
+      "in",
+      "at",
+      "on",
+      "with"
+    ],
+    "answer": "at",
+    "difficulty": "Easy",
+    "explanation": "'Good at' is the correct preposition phrase used with skills or subjects."
+  },
+  {
+    "id": 32,
+    "section": "English",
+    "question": "He insisted ______ going alone.",
+    "options": [
+      "on",
+      "at",
+      "with",
+      "for"
+    ],
+    "answer": "on",
+    "difficulty": "Easy",
+    "explanation": "'Insist on' is the correct prepositional verb."
+  },
+  {
+    "id": 33,
+    "section": "English",
+    "question": "The train arrived ______ time.",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "by"
+    ],
+    "answer": "on",
+    "difficulty": "Easy",
+    "explanation": "'On time' means punctually, at the scheduled time."
+  },
+  {
+    "id": 34,
+    "section": "English",
+    "question": "I am fond ______ music.",
+    "options": [
+      "of",
+      "with",
+      "for",
+      "to"
+    ],
+    "answer": "of",
+    "difficulty": "Easy",
+    "explanation": "'Fond of' is the correct prepositional phrase."
+  },
+  {
+    "id": 35,
+    "section": "English",
+    "question": "He was accused ______ theft.",
+    "options": [
+      "with",
+      "of",
+      "for",
+      "on"
+    ],
+    "answer": "of",
+    "difficulty": "Easy",
+    "explanation": "'Accused of' is the correct prepositional verb phrase."
+  },
+  {
+    "id": 36,
+    "section": "English",
+    "question": "She apologized ______ her mistake.",
+    "options": [
+      "for",
+      "of",
+      "with",
+      "about"
+    ],
+    "answer": "for",
+    "difficulty": "Easy",
+    "explanation": "'Apologize for' is the correct prepositional phrase."
+  },
+  {
+    "id": 37,
+    "section": "English",
+    "question": "They congratulated him ______ his success.",
+    "options": [
+      "on",
+      "for",
+      "at",
+      "with"
+    ],
+    "answer": "on",
+    "difficulty": "Easy",
+    "explanation": "'Congratulate on' is the correct prepositional verb."
+  },
+  {
+    "id": 38,
+    "section": "English",
+    "question": "He is capable ______ doing it.",
+    "options": [
+      "of",
+      "to",
+      "for",
+      "with"
+    ],
+    "answer": "of",
+    "difficulty": "Easy",
+    "explanation": "'Capable of' is the correct adjective-preposition collocation."
+  },
+  {
+    "id": 39,
+    "section": "English",
+    "question": "She was absent ______ school yesterday.",
+    "options": [
+      "in",
+      "from",
+      "at",
+      "on"
+    ],
+    "answer": "from",
+    "difficulty": "Easy",
+    "explanation": "'Absent from' is the correct prepositional phrase."
+  },
+  {
+    "id": 40,
+    "section": "English",
+    "question": "He is married ______ a doctor.",
+    "options": [
+      "with",
+      "to",
+      "for",
+      "by"
+    ],
+    "answer": "to",
+    "difficulty": "Easy",
+    "explanation": "'Married to' is the correct prepositional phrase in standard English."
+  },
+  {
+    "id": 41,
+    "section": "English",
+    "question": "They arrived ______ the airport late.",
+    "options": [
+      "in",
+      "at",
+      "on",
+      "to"
+    ],
+    "answer": "at",
+    "difficulty": "Easy",
+    "explanation": "'At' is used for specific locations like airports, stations, etc."
+  },
+  {
+    "id": 42,
+    "section": "English",
+    "question": "He is angry ______ me.",
+    "options": [
+      "with",
+      "on",
+      "at",
+      "for"
+    ],
+    "answer": "with",
+    "difficulty": "Easy",
+    "explanation": "'Angry with' is used when the object is a person."
+  },
+  {
+    "id": 43,
+    "section": "English",
+    "question": "I am interested ______ painting.",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "for"
+    ],
+    "answer": "in",
+    "difficulty": "Easy",
+    "explanation": "'Interested in' is the correct prepositional phrase."
+  },
+  {
+    "id": 44,
+    "section": "English",
+    "question": "She differs ______ me on this issue.",
+    "options": [
+      "with",
+      "from",
+      "to",
+      "at"
+    ],
+    "answer": "from",
+    "difficulty": "Medium",
+    "explanation": "'Differ from' is the correct prepositional verb."
+  },
+  {
+    "id": 45,
+    "section": "English",
+    "question": "He was deprived ______ his rights.",
+    "options": [
+      "from",
+      "of",
+      "with",
+      "for"
+    ],
+    "answer": "of",
+    "difficulty": "Medium",
+    "explanation": "'Deprived of' is the correct passive prepositional phrase."
+  },
+  {
+    "id": 46,
+    "section": "English",
+    "question": "The book consists ______ ten chapters.",
+    "options": [
+      "in",
+      "of",
+      "with",
+      "at"
+    ],
+    "answer": "of",
+    "difficulty": "Easy",
+    "explanation": "'Consist of' means to be composed of."
+  },
+  {
+    "id": 47,
+    "section": "English",
+    "question": "He is known ______ his honesty.",
+    "options": [
+      "for",
+      "with",
+      "to",
+      "at"
+    ],
+    "answer": "for",
+    "difficulty": "Easy",
+    "explanation": "'Known for' means recognized or famous for a quality."
+  },
+  {
+    "id": 48,
+    "section": "English",
+    "question": "She is superior ______ him in intelligence.",
+    "options": [
+      "than",
+      "to",
+      "from",
+      "over"
+    ],
+    "answer": "to",
+    "difficulty": "Medium",
+    "explanation": "'Superior to' is the correct comparative prepositional phrase."
+  },
+  {
+    "id": 49,
+    "section": "English",
+    "question": "He was killed ______ a snake bite.",
+    "options": [
+      "by",
+      "with",
+      "from",
+      "through"
+    ],
+    "answer": "by",
+    "difficulty": "Medium",
+    "explanation": "'Killed by' indicates the agent or cause of death."
+  },
+  {
+    "id": 50,
+    "section": "English",
+    "question": "I look forward ______ hearing from you.",
+    "options": [
+      "to",
+      "for",
+      "at",
+      "on"
+    ],
+    "answer": "to",
+    "difficulty": "Easy",
+    "explanation": "'Look forward to' is a fixed phrasal verb requiring 'to'."
+  },
+  {
+    "id": 51,
+    "section": "English",
+    "question": "Synonym of BENEVOLENT:",
+    "options": [
+      "Cruel",
+      "Kind",
+      "Selfish",
+      "Rude"
+    ],
+    "answer": "Kind",
+    "difficulty": "Easy",
+    "explanation": "'Benevolent' means well-meaning and kindly; synonym is 'Kind'."
+  },
+  {
+    "id": 52,
+    "section": "English",
+    "question": "Synonym of AUDACIOUS:",
+    "options": [
+      "Timid",
+      "Bold",
+      "Shy",
+      "Weak"
+    ],
+    "answer": "Bold",
+    "difficulty": "Medium",
+    "explanation": "'Audacious' means showing willingness to take bold risks; synonym is 'Bold'."
+  },
+  {
+    "id": 53,
+    "section": "English",
+    "question": "Synonym of DILIGENT:",
+    "options": [
+      "Lazy",
+      "Hardworking",
+      "Careless",
+      "Slow"
+    ],
+    "answer": "Hardworking",
+    "difficulty": "Easy",
+    "explanation": "'Diligent' means having or showing care and conscientiousness; synonym is 'Hardworking'."
+  },
+  {
+    "id": 54,
+    "section": "English",
+    "question": "Synonym of ELOQUENT:",
+    "options": [
+      "Silent",
+      "Articulate",
+      "Confused",
+      "Dull"
+    ],
+    "answer": "Articulate",
+    "difficulty": "Medium",
+    "explanation": "'Eloquent' means fluent or persuasive in speaking; synonym is 'Articulate'."
+  },
+  {
+    "id": 55,
+    "section": "English",
+    "question": "Synonym of FRUGAL:",
+    "options": [
+      "Wasteful",
+      "Thrifty",
+      "Generous",
+      "Rich"
+    ],
+    "answer": "Thrifty",
+    "difficulty": "Medium",
+    "explanation": "'Frugal' means sparing or economical; synonym is 'Thrifty'."
+  },
+  {
+    "id": 56,
+    "section": "English",
+    "question": "Synonym of GRIM:",
+    "options": [
+      "Cheerful",
+      "Stern",
+      "Bright",
+      "Kind"
+    ],
+    "answer": "Stern",
+    "difficulty": "Medium",
+    "explanation": "'Grim' means forbidding or stern in appearance; synonym is 'Stern'."
+  },
+  {
+    "id": 57,
+    "section": "English",
+    "question": "Synonym of HOSTILE:",
+    "options": [
+      "Friendly",
+      "Antagonistic",
+      "Peaceful",
+      "Calm"
+    ],
+    "answer": "Antagonistic",
+    "difficulty": "Medium",
+    "explanation": "'Hostile' means unfriendly or opposed; synonym is 'Antagonistic'."
+  },
+  {
+    "id": 58,
+    "section": "English",
+    "question": "Synonym of IMMINENT:",
+    "options": [
+      "Distant",
+      "Impending",
+      "Unlikely",
+      "Past"
+    ],
+    "answer": "Impending",
+    "difficulty": "Medium",
+    "explanation": "'Imminent' means about to happen; synonym is 'Impending'."
+  },
+  {
+    "id": 59,
+    "section": "English",
+    "question": "Synonym of JUBILANT:",
+    "options": [
+      "Sad",
+      "Joyful",
+      "Angry",
+      "Bored"
+    ],
+    "answer": "Joyful",
+    "difficulty": "Easy",
+    "explanation": "'Jubilant' means feeling or expressing great happiness; synonym is 'Joyful'."
+  },
+  {
+    "id": 60,
+    "section": "English",
+    "question": "Synonym of LETHARGIC:",
+    "options": [
+      "Energetic",
+      "Sluggish",
+      "Active",
+      "Fast"
+    ],
+    "answer": "Sluggish",
+    "difficulty": "Medium",
+    "explanation": "'Lethargic' means affected by lethargy, lacking energy; synonym is 'Sluggish'."
+  },
+  {
+    "id": 61,
+    "section": "English",
+    "question": "Synonym of MALICE:",
+    "options": [
+      "Kindness",
+      "Spite",
+      "Love",
+      "Charity"
+    ],
+    "answer": "Spite",
+    "difficulty": "Medium",
+    "explanation": "'Malice' means the desire to harm someone; synonym is 'Spite'."
+  },
+  {
+    "id": 62,
+    "section": "English",
+    "question": "Synonym of NAIVE:",
+    "options": [
+      "Experienced",
+      "Innocent",
+      "Cunning",
+      "Wise"
+    ],
+    "answer": "Innocent",
+    "difficulty": "Easy",
+    "explanation": "'Naive' means lacking experience or judgement; synonym is 'Innocent'."
+  },
+  {
+    "id": 63,
+    "section": "English",
+    "question": "Synonym of OBSOLETE:",
+    "options": [
+      "Modern",
+      "Outdated",
+      "New",
+      "Current"
+    ],
+    "answer": "Outdated",
+    "difficulty": "Easy",
+    "explanation": "'Obsolete' means no longer in use or out of date; synonym is 'Outdated'."
+  },
+  {
+    "id": 64,
+    "section": "English",
+    "question": "Synonym of PLAUSIBLE:",
+    "options": [
+      "Impossible",
+      "Believable",
+      "False",
+      "Absurd"
+    ],
+    "answer": "Believable",
+    "difficulty": "Medium",
+    "explanation": "'Plausible' means seeming reasonable or probable; synonym is 'Believable'."
+  },
+  {
+    "id": 65,
+    "section": "English",
+    "question": "Antonym of BENIGN:",
+    "options": [
+      "Kind",
+      "Malignant",
+      "Gentle",
+      "Mild"
+    ],
+    "answer": "Malignant",
+    "difficulty": "Medium",
+    "explanation": "'Benign' means gentle and kindly; 'Malignant' is its antonym meaning harmful."
+  },
+  {
+    "id": 66,
+    "section": "English",
+    "question": "Antonym of COMPLEX:",
+    "options": [
+      "Simple",
+      "Difficult",
+      "Hard",
+      "Intricate"
+    ],
+    "answer": "Simple",
+    "difficulty": "Easy",
+    "explanation": "'Complex' means complicated; its antonym is 'Simple'."
+  },
+  {
+    "id": 67,
+    "section": "English",
+    "question": "Antonym of DILIGENT:",
+    "options": [
+      "Hardworking",
+      "Lazy",
+      "Active",
+      "Sincere"
+    ],
+    "answer": "Lazy",
+    "difficulty": "Easy",
+    "explanation": "'Diligent' means hardworking; its antonym is 'Lazy'."
+  },
+  {
+    "id": 68,
+    "section": "English",
+    "question": "Antonym of EXPAND:",
+    "options": [
+      "Grow",
+      "Contract",
+      "Increase",
+      "Extend"
+    ],
+    "answer": "Contract",
+    "difficulty": "Easy",
+    "explanation": "'Expand' means to increase in size; 'Contract' means to decrease in size."
+  },
+  {
+    "id": 69,
+    "section": "English",
+    "question": "Antonym of GENUINE:",
+    "options": [
+      "Real",
+      "Fake",
+      "True",
+      "Authentic"
+    ],
+    "answer": "Fake",
+    "difficulty": "Easy",
+    "explanation": "'Genuine' means authentic; its antonym is 'Fake'."
+  },
+  {
+    "id": 70,
+    "section": "English",
+    "question": "Antonym of HUMBLE:",
+    "options": [
+      "Modest",
+      "Arrogant",
+      "Shy",
+      "Simple"
+    ],
+    "answer": "Arrogant",
+    "difficulty": "Easy",
+    "explanation": "'Humble' means modest; its antonym is 'Arrogant'."
+  },
+  {
+    "id": 71,
+    "section": "English",
+    "question": "Antonym of IGNORANT:",
+    "options": [
+      "Unaware",
+      "Knowledgeable",
+      "Foolish",
+      "Dull"
+    ],
+    "answer": "Knowledgeable",
+    "difficulty": "Easy",
+    "explanation": "'Ignorant' means lacking knowledge; 'Knowledgeable' is its antonym."
+  },
+  {
+    "id": 72,
+    "section": "English",
+    "question": "Antonym of JOVIAL:",
+    "options": [
+      "Happy",
+      "Gloomy",
+      "Cheerful",
+      "Merry"
+    ],
+    "answer": "Gloomy",
+    "difficulty": "Medium",
+    "explanation": "'Jovial' means cheerful and friendly; 'Gloomy' is its antonym."
+  },
+  {
+    "id": 73,
+    "section": "English",
+    "question": "Antonym of KIND:",
+    "options": [
+      "Gentle",
+      "Cruel",
+      "Nice",
+      "Caring"
+    ],
+    "answer": "Cruel",
+    "difficulty": "Easy",
+    "explanation": "'Kind' means friendly and generous; its antonym is 'Cruel'."
+  },
+  {
+    "id": 74,
+    "section": "English",
+    "question": "Antonym of LENIENT:",
+    "options": [
+      "Strict",
+      "Soft",
+      "Mild",
+      "Easy"
+    ],
+    "answer": "Strict",
+    "difficulty": "Easy",
+    "explanation": "'Lenient' means merciful or tolerant; its antonym is 'Strict'."
+  },
+  {
+    "id": 75,
+    "section": "English",
+    "question": "Antonym of MERCIFUL:",
+    "options": [
+      "Kind",
+      "Ruthless",
+      "Gentle",
+      "Forgiving"
+    ],
+    "answer": "Ruthless",
+    "difficulty": "Easy",
+    "explanation": "'Merciful' means showing compassion; its antonym is 'Ruthless'."
+  },
+  {
+    "id": 76,
+    "section": "English",
+    "question": "Antonym of NOBLE:",
+    "options": [
+      "Honorable",
+      "Ignoble",
+      "Dignified",
+      "Great"
+    ],
+    "answer": "Ignoble",
+    "difficulty": "Medium",
+    "explanation": "'Noble' means having fine personal qualities; 'Ignoble' means not noble in character."
+  },
+  {
+    "id": 77,
+    "section": "English",
+    "question": "Antonym of OPTIMISTIC:",
+    "options": [
+      "Hopeful",
+      "Pessimistic",
+      "Positive",
+      "Cheerful"
+    ],
+    "answer": "Pessimistic",
+    "difficulty": "Easy",
+    "explanation": "'Optimistic' means hopeful; its antonym is 'Pessimistic'."
+  },
+  {
+    "id": 78,
+    "section": "English",
+    "question": "She ______ to school every day.",
+    "options": [
+      "go",
+      "goes",
+      "going",
+      "gone"
+    ],
+    "answer": "goes",
+    "difficulty": "Easy",
+    "explanation": "Third person singular (she) uses 'goes' in simple present tense."
+  },
+  {
+    "id": 79,
+    "section": "English",
+    "question": "They ______ playing football when it started raining.",
+    "options": [
+      "were",
+      "was",
+      "is",
+      "are"
+    ],
+    "answer": "were",
+    "difficulty": "Easy",
+    "explanation": "'They' is plural and takes 'were' in past continuous tense."
+  },
+  {
+    "id": 80,
+    "section": "English",
+    "question": "By next year, he ______ his degree.",
+    "options": [
+      "will complete",
+      "will have completed",
+      "completes",
+      "completed"
+    ],
+    "answer": "will have completed",
+    "difficulty": "Medium",
+    "explanation": "Future perfect tense is used for an action that will be completed before a future point."
+  },
+  {
+    "id": 81,
+    "section": "English",
+    "question": "I ______ this book since morning.",
+    "options": [
+      "am reading",
+      "have been reading",
+      "read",
+      "reads"
+    ],
+    "answer": "have been reading",
+    "difficulty": "Medium",
+    "explanation": "Present perfect continuous is used for an action started in the past and still continuing."
+  },
+  {
+    "id": 82,
+    "section": "English",
+    "question": "If it ______ tomorrow, we will cancel the trip.",
+    "options": [
+      "rain",
+      "rains",
+      "rained",
+      "raining"
+    ],
+    "answer": "rains",
+    "difficulty": "Easy",
+    "explanation": "In a first conditional sentence (real condition), the 'if' clause uses simple present."
+  },
+  {
+    "id": 83,
+    "section": "English",
+    "question": "He ______ here since 2015.",
+    "options": [
+      "lives",
+      "is living",
+      "has been living",
+      "lived"
+    ],
+    "answer": "has been living",
+    "difficulty": "Medium",
+    "explanation": "Present perfect continuous is used for an action ongoing from a past point until now."
+  },
+  {
+    "id": 84,
+    "section": "English",
+    "question": "The train ______ before we reached the station.",
+    "options": [
+      "had left",
+      "has left",
+      "left",
+      "leaves"
+    ],
+    "answer": "had left",
+    "difficulty": "Medium",
+    "explanation": "Past perfect is used for an action completed before another past action."
+  },
+  {
+    "id": 85,
+    "section": "English",
+    "question": "I wish I ______ taller.",
+    "options": [
+      "am",
+      "was",
+      "were",
+      "be"
+    ],
+    "answer": "were",
+    "difficulty": "Medium",
+    "explanation": "The subjunctive mood uses 'were' with all subjects in wishes and hypotheticals."
+  },
+  {
+    "id": 86,
+    "section": "English",
+    "question": "He said, 'I am busy now.' (Choose the correct indirect speech)",
+    "options": [
+      "He said that he is busy now.",
+      "He said that he was busy then.",
+      "He said that he was busy now.",
+      "He says that he was busy then."
+    ],
+    "answer": "He said that he was busy then.",
+    "difficulty": "Medium",
+    "explanation": "In indirect speech, 'am' changes to 'was' and 'now' changes to 'then'."
+  },
+  {
+    "id": 87,
+    "section": "English",
+    "question": "She said, 'I will go there tomorrow.' (Choose the correct indirect speech)",
+    "options": [
+      "She said that she would go there the next day.",
+      "She said that she will go there tomorrow.",
+      "She said that she would go there tomorrow.",
+      "She said she goes there tomorrow."
+    ],
+    "answer": "She said that she would go there the next day.",
+    "difficulty": "Medium",
+    "explanation": "'Will' changes to 'would' and 'tomorrow' changes to 'the next day' in indirect speech."
+  },
+  {
+    "id": 88,
+    "section": "English",
+    "question": "He said to me, 'Where are you going?' (Choose the correct indirect speech)",
+    "options": [
+      "He asked me where I was going.",
+      "He asked me where you are going.",
+      "He said where I was going.",
+      "He asked me where was I going."
+    ],
+    "answer": "He asked me where I was going.",
+    "difficulty": "Medium",
+    "explanation": "In indirect questions, the tense shifts back and word order becomes statement order."
+  },
+  {
+    "id": 89,
+    "section": "English",
+    "question": "The teacher said, 'The earth revolves around the sun.' (Choose the correct indirect speech)",
+    "options": [
+      "The teacher said that the earth revolved around the sun.",
+      "The teacher said that the earth revolves around the sun.",
+      "The teacher said that the earth had revolved around the sun.",
+      "The teacher told that earth revolves around sun."
+    ],
+    "answer": "The teacher said that the earth revolves around the sun.",
+    "difficulty": "Medium",
+    "explanation": "Universal or scientific truths are not changed in indirect speech — present tense remains."
+  },
+  {
+    "id": 90,
+    "section": "English",
+    "question": "She said, 'Please help me.' (Choose the correct indirect speech)",
+    "options": [
+      "She requested me to help her.",
+      "She said to help her.",
+      "She ordered me to help her.",
+      "She told me please help her."
+    ],
+    "answer": "She requested me to help her.",
+    "difficulty": "Easy",
+    "explanation": "Polite requests with 'please' are reported using 'requested + infinitive'."
+  },
+  {
+    "id": 91,
+    "section": "English",
+    "question": "Choose the correct sentence:",
+    "options": [
+      "Neither of the boys were present.",
+      "Neither of the boys was present.",
+      "Neither of the boys are present.",
+      "Neither of the boys is present, were they."
+    ],
+    "answer": "Neither of the boys was present.",
+    "difficulty": "Medium",
+    "explanation": "'Neither of' takes a singular verb, so 'was' is correct."
+  },
+  {
+    "id": 92,
+    "section": "English",
+    "question": "Choose the correct sentence about subject-verb agreement:",
+    "options": [
+      "Each of the students have submitted their assignment.",
+      "Each of the students has submitted his assignment.",
+      "Each of the student have submit assignment.",
+      "Each of the students submit assignment."
+    ],
+    "answer": "Each of the students has submitted his assignment.",
+    "difficulty": "Medium",
+    "explanation": "'Each' is singular and requires the singular verb 'has'."
+  },
+  {
+    "id": 93,
+    "section": "English",
+    "question": "Choose the correct sentence:",
+    "options": [
+      "I have been living here since five years.",
+      "I have been living here for five years.",
+      "I am living here since five years.",
+      "I live here since five years."
+    ],
+    "answer": "I have been living here for five years.",
+    "difficulty": "Easy",
+    "explanation": "'For' is used with a duration/period of time; 'since' is used with a specific point in time."
+  },
+  {
+    "id": 94,
+    "section": "English",
+    "question": "Choose the correct sentence about news as a noun:",
+    "options": [
+      "The news are surprising.",
+      "The news is surprising.",
+      "The news were surprising.",
+      "The news be surprising."
+    ],
+    "answer": "The news is surprising.",
+    "difficulty": "Easy",
+    "explanation": "'News' is an uncountable singular noun and takes the singular verb 'is'."
+  },
+  {
+    "id": 95,
+    "section": "English",
+    "question": "Choose the correct sentence:",
+    "options": [
+      "Mathematics are my favorite subject.",
+      "Mathematics is my favorite subject.",
+      "Mathematics were my favorite subject.",
+      "Mathematics be my favorite subject."
+    ],
+    "answer": "Mathematics is my favorite subject.",
+    "difficulty": "Easy",
+    "explanation": "Subjects ending in '-ics' like 'Mathematics' take a singular verb."
+  },
+  {
+    "id": 96,
+    "section": "English",
+    "question": "'To burn the midnight oil' means:",
+    "options": [
+      "To waste time",
+      "To work late into the night",
+      "To cause a fire",
+      "To sleep early"
+    ],
+    "answer": "To work late into the night",
+    "difficulty": "Easy",
+    "explanation": "This idiom means to study or work very late at night."
+  },
+  {
+    "id": 97,
+    "section": "English",
+    "question": "'To let the cat out of the bag' means:",
+    "options": [
+      "To hide a secret",
+      "To reveal a secret",
+      "To adopt a cat",
+      "To lose something"
+    ],
+    "answer": "To reveal a secret",
+    "difficulty": "Easy",
+    "explanation": "This idiom means to accidentally reveal a secret or surprise."
+  },
+  {
+    "id": 98,
+    "section": "English",
+    "question": "'To beat around the bush' means:",
+    "options": [
+      "To speak directly",
+      "To avoid the main topic",
+      "To garden",
+      "To exercise"
+    ],
+    "answer": "To avoid the main topic",
+    "difficulty": "Easy",
+    "explanation": "This idiom means to avoid coming to the main point of a discussion."
+  },
+  {
+    "id": 99,
+    "section": "English",
+    "question": "'Under the weather' means:",
+    "options": [
+      "Feeling great",
+      "Feeling unwell",
+      "Outdoors",
+      "In a storm"
+    ],
+    "answer": "Feeling unwell",
+    "difficulty": "Easy",
+    "explanation": "This idiom means to feel sick or not well."
+  },
+  {
+    "id": 100,
+    "section": "English",
+    "question": "'To keep an eye on' means:",
+    "options": [
+      "To watch carefully",
+      "To ignore",
+      "To close eyes",
+      "To look away"
+    ],
+    "answer": "To watch carefully",
+    "difficulty": "Easy",
+    "explanation": "This idiom means to watch or monitor something or someone carefully."
+  },
+  {
+    "id": 101,
+    "section": "English",
+    "question": "He is proud ______ his achievements.",
+    "options": [
+      "of",
+      "for",
+      "with",
+      "at"
+    ],
+    "answer": "of",
+    "difficulty": "Easy",
+    "explanation": "'Proud of' is the correct prepositional phrase."
+  },
+  {
+    "id": 102,
+    "section": "English",
+    "question": "She is afraid ______ spiders.",
+    "options": [
+      "from",
+      "of",
+      "with",
+      "at"
+    ],
+    "answer": "of",
+    "difficulty": "Easy",
+    "explanation": "'Afraid of' is the correct prepositional phrase."
+  },
+  {
+    "id": 103,
+    "section": "English",
+    "question": "He is skilled ______ carpentry.",
+    "options": [
+      "at",
+      "in",
+      "of",
+      "with"
+    ],
+    "answer": "in",
+    "difficulty": "Medium",
+    "explanation": "'Skilled in' is used with a field or craft."
+  },
+  {
+    "id": 104,
+    "section": "English",
+    "question": "They congratulated her ______ winning the prize.",
+    "options": [
+      "for",
+      "on",
+      "at",
+      "of"
+    ],
+    "answer": "on",
+    "difficulty": "Easy",
+    "explanation": "'Congratulate on' is the standard collocation."
+  },
+  {
+    "id": 105,
+    "section": "English",
+    "question": "The cat jumped ______ the wall.",
+    "options": [
+      "over",
+      "in",
+      "at",
+      "by"
+    ],
+    "answer": "over",
+    "difficulty": "Easy",
+    "explanation": "'Over' indicates movement from one side to the other across the top of something."
+  },
+  {
+    "id": 106,
+    "section": "English",
+    "question": "She was surprised ______ the news.",
+    "options": [
+      "at",
+      "of",
+      "for",
+      "with"
+    ],
+    "answer": "at",
+    "difficulty": "Easy",
+    "explanation": "'Surprised at' is the correct prepositional phrase."
+  },
+  {
+    "id": 107,
+    "section": "English",
+    "question": "He is dependent ______ his parents.",
+    "options": [
+      "on",
+      "of",
+      "with",
+      "for"
+    ],
+    "answer": "on",
+    "difficulty": "Easy",
+    "explanation": "'Dependent on' is the correct prepositional phrase."
+  },
+  {
+    "id": 108,
+    "section": "English",
+    "question": "I am tired ______ waiting.",
+    "options": [
+      "of",
+      "from",
+      "with",
+      "for"
+    ],
+    "answer": "of",
+    "difficulty": "Medium",
+    "explanation": "'Tired of' expresses being fed up with something."
+  },
+  {
+    "id": 109,
+    "section": "English",
+    "question": "She was born ______ 1990.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "by"
+    ],
+    "answer": "in",
+    "difficulty": "Easy",
+    "explanation": "'In' is used with years and months."
+  },
+  {
+    "id": 110,
+    "section": "English",
+    "question": "He arrived ______ the station just in time.",
+    "options": [
+      "in",
+      "at",
+      "on",
+      "to"
+    ],
+    "answer": "at",
+    "difficulty": "Easy",
+    "explanation": "'At' is used for specific points like stations."
+  },
+  {
+    "id": 111,
+    "section": "English",
+    "question": "The children were playing ______ the park.",
+    "options": [
+      "in",
+      "at",
+      "on",
+      "by"
+    ],
+    "answer": "in",
+    "difficulty": "Easy",
+    "explanation": "'In' is used with enclosed or bounded areas like a park."
+  },
+  {
+    "id": 112,
+    "section": "English",
+    "question": "She is different ______ her sister in many ways.",
+    "options": [
+      "from",
+      "with",
+      "to",
+      "of"
+    ],
+    "answer": "from",
+    "difficulty": "Medium",
+    "explanation": "'Different from' is the standard and most widely accepted form."
+  },
+  {
+    "id": 113,
+    "section": "English",
+    "question": "He was born ______ a small village.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "by"
+    ],
+    "answer": "in",
+    "difficulty": "Easy",
+    "explanation": "'In' is used for larger enclosed places like villages, cities, or countries."
+  },
+  {
+    "id": 114,
+    "section": "English",
+    "question": "They quarreled ______ each other over trivial matters.",
+    "options": [
+      "with",
+      "against",
+      "to",
+      "for"
+    ],
+    "answer": "with",
+    "difficulty": "Medium",
+    "explanation": "'Quarrel with' is the correct prepositional verb."
+  },
+  {
+    "id": 115,
+    "section": "English",
+    "question": "The teacher was pleased ______ the students' performance.",
+    "options": [
+      "with",
+      "of",
+      "at",
+      "for"
+    ],
+    "answer": "with",
+    "difficulty": "Medium",
+    "explanation": "'Pleased with' is used when referring to satisfaction about something."
+  },
+  {
+    "id": 116,
+    "section": "English",
+    "question": "She succeeded ______ passing the exam.",
+    "options": [
+      "in",
+      "at",
+      "with",
+      "on"
+    ],
+    "answer": "in",
+    "difficulty": "Medium",
+    "explanation": "'Succeed in' is the correct prepositional phrase."
+  },
+  {
+    "id": 117,
+    "section": "English",
+    "question": "He was charged ______ murder.",
+    "options": [
+      "of",
+      "with",
+      "for",
+      "by"
+    ],
+    "answer": "with",
+    "difficulty": "Hard",
+    "explanation": "'Charged with' is the correct legal collocation."
+  },
+  {
+    "id": 118,
+    "section": "English",
+    "question": "I congratulate you ______ your promotion.",
+    "options": [
+      "for",
+      "on",
+      "at",
+      "with"
+    ],
+    "answer": "on",
+    "difficulty": "Easy",
+    "explanation": "'Congratulate on' is the standard collocation for achievements."
+  },
+  {
+    "id": 119,
+    "section": "English",
+    "question": "The child is scared ______ the dark.",
+    "options": [
+      "of",
+      "from",
+      "at",
+      "with"
+    ],
+    "answer": "of",
+    "difficulty": "Easy",
+    "explanation": "'Scared of' is the correct prepositional phrase."
+  },
+  {
+    "id": 120,
+    "section": "English",
+    "question": "He prevented me ______ leaving early.",
+    "options": [
+      "from",
+      "of",
+      "for",
+      "with"
+    ],
+    "answer": "from",
+    "difficulty": "Medium",
+    "explanation": "'Prevent from' is the correct prepositional verb."
+  },
+  {
+    "id": 121,
+    "section": "English",
+    "question": "Synonym of ADAMANT:",
+    "options": [
+      "Flexible",
+      "Stubborn",
+      "Weak",
+      "Gentle"
+    ],
+    "answer": "Stubborn",
+    "difficulty": "Medium",
+    "explanation": "'Adamant' means refusing to change one's mind; synonym is 'Stubborn'."
+  },
+  {
+    "id": 122,
+    "section": "English",
+    "question": "Synonym of BLEAK:",
+    "options": [
+      "Bright",
+      "Cheerful",
+      "Dismal",
+      "Warm"
+    ],
+    "answer": "Dismal",
+    "difficulty": "Medium",
+    "explanation": "'Bleak' means depressing or dreary; synonym is 'Dismal'."
+  },
+  {
+    "id": 123,
+    "section": "English",
+    "question": "Synonym of CANDOR:",
+    "options": [
+      "Deceit",
+      "Honesty",
+      "Anger",
+      "Fear"
+    ],
+    "answer": "Honesty",
+    "difficulty": "Easy",
+    "explanation": "'Candor' means the quality of being open and honest; synonym is 'Honesty'."
+  },
+  {
+    "id": 124,
+    "section": "English",
+    "question": "Synonym of DEXTEROUS:",
+    "options": [
+      "Clumsy",
+      "Skillful",
+      "Slow",
+      "Weak"
+    ],
+    "answer": "Skillful",
+    "difficulty": "Medium",
+    "explanation": "'Dexterous' means showing skill, especially with the hands; synonym is 'Skillful'."
+  },
+  {
+    "id": 125,
+    "section": "English",
+    "question": "Synonym of EXUBERANT:",
+    "options": [
+      "Dull",
+      "Energetic",
+      "Tired",
+      "Sad"
+    ],
+    "answer": "Energetic",
+    "difficulty": "Medium",
+    "explanation": "'Exuberant' means full of energy and enthusiasm; synonym is 'Energetic'."
+  },
+  {
+    "id": 126,
+    "section": "English",
+    "question": "Synonym of FRIVOLOUS:",
+    "options": [
+      "Serious",
+      "Trivial",
+      "Important",
+      "Wise"
+    ],
+    "answer": "Trivial",
+    "difficulty": "Medium",
+    "explanation": "'Frivolous' means not having any serious purpose; synonym is 'Trivial'."
+  },
+  {
+    "id": 127,
+    "section": "English",
+    "question": "Synonym of GULLIBLE:",
+    "options": [
+      "Suspicious",
+      "Naive",
+      "Clever",
+      "Careful"
+    ],
+    "answer": "Naive",
+    "difficulty": "Medium",
+    "explanation": "'Gullible' means easily deceived; synonym is 'Naive'."
+  },
+  {
+    "id": 128,
+    "section": "English",
+    "question": "Synonym of HAUGHTY:",
+    "options": [
+      "Humble",
+      "Arrogant",
+      "Kind",
+      "Shy"
+    ],
+    "answer": "Arrogant",
+    "difficulty": "Medium",
+    "explanation": "'Haughty' means arrogantly superior and disdainful; synonym is 'Arrogant'."
+  },
+  {
+    "id": 129,
+    "section": "English",
+    "question": "Synonym of IMPETUOUS:",
+    "options": [
+      "Cautious",
+      "Reckless",
+      "Patient",
+      "Calm"
+    ],
+    "answer": "Reckless",
+    "difficulty": "Hard",
+    "explanation": "'Impetuous' means acting without thinking; synonym is 'Reckless'."
+  },
+  {
+    "id": 130,
+    "section": "English",
+    "question": "Synonym of JOCULAR:",
+    "options": [
+      "Serious",
+      "Humorous",
+      "Sad",
+      "Angry"
+    ],
+    "answer": "Humorous",
+    "difficulty": "Medium",
+    "explanation": "'Jocular' means fond of joking; humorous; synonym is 'Humorous'."
+  },
+  {
+    "id": 131,
+    "section": "English",
+    "question": "Synonym of KEEN:",
+    "options": [
+      "Uninterested",
+      "Enthusiastic",
+      "Lazy",
+      "Dull"
+    ],
+    "answer": "Enthusiastic",
+    "difficulty": "Easy",
+    "explanation": "'Keen' means having or showing eagerness; synonym is 'Enthusiastic'."
+  },
+  {
+    "id": 132,
+    "section": "English",
+    "question": "Synonym of LUCID:",
+    "options": [
+      "Confusing",
+      "Clear",
+      "Vague",
+      "Dark"
+    ],
+    "answer": "Clear",
+    "difficulty": "Medium",
+    "explanation": "'Lucid' means expressed clearly, easy to understand; synonym is 'Clear'."
+  },
+  {
+    "id": 133,
+    "section": "English",
+    "question": "Synonym of MERGE:",
+    "options": [
+      "Separate",
+      "Combine",
+      "Divide",
+      "Split"
+    ],
+    "answer": "Combine",
+    "difficulty": "Easy",
+    "explanation": "'Merge' means to combine or unite; synonym is 'Combine'."
+  },
+  {
+    "id": 134,
+    "section": "English",
+    "question": "Synonym of NOTORIOUS:",
+    "options": [
+      "Famous (in a good way)",
+      "Infamous",
+      "Unknown",
+      "Respected"
+    ],
+    "answer": "Infamous",
+    "difficulty": "Medium",
+    "explanation": "'Notorious' means famous for a bad reason; synonym is 'Infamous'."
+  },
+  {
+    "id": 135,
+    "section": "English",
+    "question": "Synonym of OBSTINATE:",
+    "options": [
+      "Flexible",
+      "Stubborn",
+      "Kind",
+      "Weak"
+    ],
+    "answer": "Stubborn",
+    "difficulty": "Medium",
+    "explanation": "'Obstinate' means stubbornly refusing to change; synonym is 'Stubborn'."
+  },
+  {
+    "id": 136,
+    "section": "English",
+    "question": "Synonym of PONDER:",
+    "options": [
+      "Ignore",
+      "Think deeply",
+      "Forget",
+      "Rush"
+    ],
+    "answer": "Think deeply",
+    "difficulty": "Easy",
+    "explanation": "'Ponder' means to think about something carefully; synonym is 'Think deeply'."
+  },
+  {
+    "id": 137,
+    "section": "English",
+    "question": "Synonym of QUAINT:",
+    "options": [
+      "Modern",
+      "Charming and old-fashioned",
+      "Ugly",
+      "Boring"
+    ],
+    "answer": "Charming and old-fashioned",
+    "difficulty": "Medium",
+    "explanation": "'Quaint' means attractively unusual or old-fashioned; synonym is 'Charming and old-fashioned'."
+  },
+  {
+    "id": 138,
+    "section": "English",
+    "question": "Synonym of RETICENT:",
+    "options": [
+      "Talkative",
+      "Reserved",
+      "Loud",
+      "Friendly"
+    ],
+    "answer": "Reserved",
+    "difficulty": "Hard",
+    "explanation": "'Reticent' means not revealing thoughts or feelings readily; synonym is 'Reserved'."
+  },
+  {
+    "id": 139,
+    "section": "English",
+    "question": "Synonym of SPARSE:",
+    "options": [
+      "Dense",
+      "Thin/scattered",
+      "Full",
+      "Thick"
+    ],
+    "answer": "Thin/scattered",
+    "difficulty": "Medium",
+    "explanation": "'Sparse' means thinly dispersed or scattered; synonym is 'Thin/scattered'."
+  },
+  {
+    "id": 140,
+    "section": "English",
+    "question": "Synonym of TEDIOUS:",
+    "options": [
+      "Exciting",
+      "Boring",
+      "Fast",
+      "Short"
+    ],
+    "answer": "Boring",
+    "difficulty": "Easy",
+    "explanation": "'Tedious' means too long, slow, or dull; synonym is 'Boring'."
+  },
+  {
+    "id": 141,
+    "section": "English",
+    "question": "Antonym of ABUNDANT:",
+    "options": [
+      "Plentiful",
+      "Scarce",
+      "Rich",
+      "Huge"
+    ],
+    "answer": "Scarce",
+    "difficulty": "Easy",
+    "explanation": "'Abundant' means existing in large quantities; antonym is 'Scarce'."
+  },
+  {
+    "id": 142,
+    "section": "English",
+    "question": "Antonym of BRAVE:",
+    "options": [
+      "Courageous",
+      "Cowardly",
+      "Bold",
+      "Fearless"
+    ],
+    "answer": "Cowardly",
+    "difficulty": "Easy",
+    "explanation": "'Brave' means showing courage; antonym is 'Cowardly'."
+  },
+  {
+    "id": 143,
+    "section": "English",
+    "question": "Antonym of COARSE:",
+    "options": [
+      "Rough",
+      "Smooth",
+      "Hard",
+      "Thick"
+    ],
+    "answer": "Smooth",
+    "difficulty": "Easy",
+    "explanation": "'Coarse' means rough in texture; antonym is 'Smooth'."
+  },
+  {
+    "id": 144,
+    "section": "English",
+    "question": "Antonym of DENSE:",
+    "options": [
+      "Thick",
+      "Sparse",
+      "Heavy",
+      "Solid"
+    ],
+    "answer": "Sparse",
+    "difficulty": "Medium",
+    "explanation": "'Dense' means closely packed together; antonym is 'Sparse'."
+  },
+  {
+    "id": 145,
+    "section": "English",
+    "question": "Antonym of EXPAND:",
+    "options": [
+      "Grow",
+      "Shrink",
+      "Increase",
+      "Widen"
+    ],
+    "answer": "Shrink",
+    "difficulty": "Easy",
+    "explanation": "'Expand' means to increase in size; antonym is 'Shrink'."
+  },
+  {
+    "id": 146,
+    "section": "English",
+    "question": "Antonym of FERTILE:",
+    "options": [
+      "Productive",
+      "Barren",
+      "Rich",
+      "Lush"
+    ],
+    "answer": "Barren",
+    "difficulty": "Medium",
+    "explanation": "'Fertile' means capable of producing abundant growth; antonym is 'Barren'."
+  },
+  {
+    "id": 147,
+    "section": "English",
+    "question": "Antonym of GENEROUS:",
+    "options": [
+      "Kind",
+      "Stingy",
+      "Charitable",
+      "Giving"
+    ],
+    "answer": "Stingy",
+    "difficulty": "Easy",
+    "explanation": "'Generous' means willing to give freely; antonym is 'Stingy'."
+  },
+  {
+    "id": 148,
+    "section": "English",
+    "question": "Antonym of HOSTILE:",
+    "options": [
+      "Unfriendly",
+      "Friendly",
+      "Aggressive",
+      "Opposed"
+    ],
+    "answer": "Friendly",
+    "difficulty": "Medium",
+    "explanation": "'Hostile' means unfriendly or antagonistic; antonym is 'Friendly'."
+  },
+  {
+    "id": 149,
+    "section": "English",
+    "question": "Antonym of INNOCENT:",
+    "options": [
+      "Guiltless",
+      "Guilty",
+      "Pure",
+      "Naive"
+    ],
+    "answer": "Guilty",
+    "difficulty": "Easy",
+    "explanation": "'Innocent' means not guilty of a crime; antonym is 'Guilty'."
+  },
+  {
+    "id": 150,
+    "section": "English",
+    "question": "Antonym of JUSTICE:",
+    "options": [
+      "Fairness",
+      "Injustice",
+      "Equity",
+      "Law"
+    ],
+    "answer": "Injustice",
+    "difficulty": "Easy",
+    "explanation": "'Justice' means fairness and equity; antonym is 'Injustice'."
+  },
+  {
+    "id": 151,
+    "section": "English",
+    "question": "Antonym of KIND:",
+    "options": [
+      "Gentle",
+      "Cruel",
+      "Caring",
+      "Nice"
+    ],
+    "answer": "Cruel",
+    "difficulty": "Easy",
+    "explanation": "'Kind' means friendly and considerate; antonym is 'Cruel'."
+  },
+  {
+    "id": 152,
+    "section": "English",
+    "question": "Antonym of LOYAL:",
+    "options": [
+      "Faithful",
+      "Treacherous",
+      "Devoted",
+      "True"
+    ],
+    "answer": "Treacherous",
+    "difficulty": "Medium",
+    "explanation": "'Loyal' means faithful to a cause; antonym is 'Treacherous'."
+  },
+  {
+    "id": 153,
+    "section": "English",
+    "question": "Antonym of MODEST:",
+    "options": [
+      "Humble",
+      "Arrogant",
+      "Shy",
+      "Simple"
+    ],
+    "answer": "Arrogant",
+    "difficulty": "Easy",
+    "explanation": "'Modest' means not boastful; antonym is 'Arrogant'."
+  },
+  {
+    "id": 154,
+    "section": "English",
+    "question": "Antonym of NEGLECT:",
+    "options": [
+      "Ignore",
+      "Care for",
+      "Abandon",
+      "Overlook"
+    ],
+    "answer": "Care for",
+    "difficulty": "Medium",
+    "explanation": "'Neglect' means to fail to care for; antonym is 'Care for'."
+  },
+  {
+    "id": 155,
+    "section": "English",
+    "question": "Antonym of OPAQUE:",
+    "options": [
+      "Non-transparent",
+      "Transparent",
+      "Clear",
+      "Cloudy"
+    ],
+    "answer": "Transparent",
+    "difficulty": "Medium",
+    "explanation": "'Opaque' means not able to be seen through; antonym is 'Transparent'."
+  },
+  {
+    "id": 156,
+    "section": "English",
+    "question": "Antonym of PRAISE:",
+    "options": [
+      "Compliment",
+      "Criticize",
+      "Admire",
+      "Applaud"
+    ],
+    "answer": "Criticize",
+    "difficulty": "Easy",
+    "explanation": "'Praise' means to express approval; antonym is 'Criticize'."
+  },
+  {
+    "id": 157,
+    "section": "English",
+    "question": "Antonym of QUIET:",
+    "options": [
+      "Silent",
+      "Noisy",
+      "Calm",
+      "Peaceful"
+    ],
+    "answer": "Noisy",
+    "difficulty": "Easy",
+    "explanation": "'Quiet' means making little or no noise; antonym is 'Noisy'."
+  },
+  {
+    "id": 158,
+    "section": "English",
+    "question": "Antonym of RIGID:",
+    "options": [
+      "Stiff",
+      "Flexible",
+      "Firm",
+      "Strict"
+    ],
+    "answer": "Flexible",
+    "difficulty": "Medium",
+    "explanation": "'Rigid' means unable to bend; antonym is 'Flexible'."
+  },
+  {
+    "id": 159,
+    "section": "English",
+    "question": "Antonym of SINCERE:",
+    "options": [
+      "Genuine",
+      "Insincere",
+      "Honest",
+      "True"
+    ],
+    "answer": "Insincere",
+    "difficulty": "Easy",
+    "explanation": "'Sincere' means free from pretense; antonym is 'Insincere'."
+  },
+  {
+    "id": 160,
+    "section": "English",
+    "question": "Antonym of TRANQUIL:",
+    "options": [
+      "Calm",
+      "Turbulent",
+      "Peaceful",
+      "Serene"
+    ],
+    "answer": "Turbulent",
+    "difficulty": "Medium",
+    "explanation": "'Tranquil' means free from disturbance; antonym is 'Turbulent'."
+  },
+  {
+    "id": 161,
+    "section": "English",
+    "question": "She ______ dinner when I called her.",
+    "options": [
+      "cooks",
+      "was cooking",
+      "cooked",
+      "has cooked"
+    ],
+    "answer": "was cooking",
+    "difficulty": "Easy",
+    "explanation": "Past continuous tense describes an ongoing action interrupted by another past action."
+  },
+  {
+    "id": 162,
+    "section": "English",
+    "question": "By the time you arrive, we ______ the meeting.",
+    "options": [
+      "will start",
+      "will have started",
+      "start",
+      "started"
+    ],
+    "answer": "will have started",
+    "difficulty": "Medium",
+    "explanation": "Future perfect tense describes an action that will be completed before a future point."
+  },
+  {
+    "id": 163,
+    "section": "English",
+    "question": "He ______ to Paris three times this year.",
+    "options": [
+      "went",
+      "has gone",
+      "have gone",
+      "goes"
+    ],
+    "answer": "has gone",
+    "difficulty": "Medium",
+    "explanation": "Present perfect tense is used for actions repeated up to the present time (with 'this year')."
+  },
+  {
+    "id": 164,
+    "section": "English",
+    "question": "They ______ football every Sunday.",
+    "options": [
+      "play",
+      "played",
+      "plays",
+      "playing"
+    ],
+    "answer": "play",
+    "difficulty": "Easy",
+    "explanation": "Simple present tense is used for habitual or routine actions."
+  },
+  {
+    "id": 165,
+    "section": "English",
+    "question": "I ______ my homework before dinner yesterday.",
+    "options": [
+      "finish",
+      "finished",
+      "had finished",
+      "have finished"
+    ],
+    "answer": "had finished",
+    "difficulty": "Medium",
+    "explanation": "Past perfect tense describes an action completed before another past action (before dinner)."
+  },
+  {
+    "id": 166,
+    "section": "English",
+    "question": "She ______ in this company for ten years.",
+    "options": [
+      "works",
+      "is working",
+      "has been working",
+      "worked"
+    ],
+    "answer": "has been working",
+    "difficulty": "Medium",
+    "explanation": "Present perfect continuous shows an action that started in the past and continues to the present."
+  },
+  {
+    "id": 167,
+    "section": "English",
+    "question": "Look! The children ______ in the garden.",
+    "options": [
+      "play",
+      "are playing",
+      "played",
+      "have played"
+    ],
+    "answer": "are playing",
+    "difficulty": "Easy",
+    "explanation": "Present continuous is used for actions happening right now."
+  },
+  {
+    "id": 168,
+    "section": "English",
+    "question": "He usually ______ tea in the morning.",
+    "options": [
+      "drink",
+      "drinks",
+      "drank",
+      "is drinking"
+    ],
+    "answer": "drinks",
+    "difficulty": "Easy",
+    "explanation": "Simple present with 'usually' describes habitual actions; third person singular takes 's'."
+  },
+  {
+    "id": 169,
+    "section": "English",
+    "question": "We ______ the movie by the time you get home.",
+    "options": [
+      "will watch",
+      "will have watched",
+      "watch",
+      "watched"
+    ],
+    "answer": "will have watched",
+    "difficulty": "Medium",
+    "explanation": "Future perfect tense expresses an action that will be finished before a specific future time."
+  },
+  {
+    "id": 170,
+    "section": "English",
+    "question": "She ______ her keys yesterday and couldn't find them.",
+    "options": [
+      "loses",
+      "lost",
+      "has lost",
+      "was losing"
+    ],
+    "answer": "lost",
+    "difficulty": "Easy",
+    "explanation": "Simple past tense is used for a completed action at a specific time in the past (yesterday)."
+  },
+  {
+    "id": 171,
+    "section": "English",
+    "question": "I ______ this song many times before.",
+    "options": [
+      "heard",
+      "have heard",
+      "hear",
+      "was hearing"
+    ],
+    "answer": "have heard",
+    "difficulty": "Medium",
+    "explanation": "Present perfect tense is used for experiences without a specific time reference."
+  },
+  {
+    "id": 172,
+    "section": "English",
+    "question": "While she ______ dinner, the phone rang.",
+    "options": [
+      "cooked",
+      "was cooking",
+      "cooks",
+      "has cooked"
+    ],
+    "answer": "was cooking",
+    "difficulty": "Medium",
+    "explanation": "Past continuous describes an ongoing action at the moment another action (the phone ringing) occurred."
+  },
+  {
+    "id": 173,
+    "section": "English",
+    "question": "They ______ here since last Monday.",
+    "options": [
+      "stay",
+      "stayed",
+      "have been staying",
+      "are staying"
+    ],
+    "answer": "have been staying",
+    "difficulty": "Medium",
+    "explanation": "Present perfect continuous is used with 'since' to show an action continuing from a point in the past."
+  },
+  {
+    "id": 174,
+    "section": "English",
+    "question": "He will call you as soon as he ______ home.",
+    "options": [
+      "reaches",
+      "will reach",
+      "reached",
+      "is reaching"
+    ],
+    "answer": "reaches",
+    "difficulty": "Medium",
+    "explanation": "In time clauses with 'as soon as', the simple present is used to refer to future time."
+  },
+  {
+    "id": 175,
+    "section": "English",
+    "question": "By next month, she ______ here for five years.",
+    "options": [
+      "will work",
+      "will have worked",
+      "works",
+      "worked"
+    ],
+    "answer": "will have worked",
+    "difficulty": "Hard",
+    "explanation": "Future perfect tense is used to describe a duration completed by a specific future time."
+  },
+  {
+    "id": 176,
+    "section": "English",
+    "question": "The sun ______ in the east.",
+    "options": [
+      "rise",
+      "rises",
+      "rose",
+      "is rising"
+    ],
+    "answer": "rises",
+    "difficulty": "Easy",
+    "explanation": "Simple present tense is used for universal truths or facts."
+  },
+  {
+    "id": 177,
+    "section": "English",
+    "question": "I ______ television when the lights went out.",
+    "options": [
+      "watch",
+      "was watching",
+      "watched",
+      "have watched"
+    ],
+    "answer": "was watching",
+    "difficulty": "Easy",
+    "explanation": "Past continuous tense describes an action in progress when another action interrupted it."
+  },
+  {
+    "id": 178,
+    "section": "English",
+    "question": "She ______ never ______ such a beautiful place before.",
+    "options": [
+      "has / seen",
+      "have / seen",
+      "had / see",
+      "was / seeing"
+    ],
+    "answer": "has / seen",
+    "difficulty": "Medium",
+    "explanation": "Present perfect tense ('has seen') is used for life experiences up to now."
+  },
+  {
+    "id": 179,
+    "section": "English",
+    "question": "We ______ to the beach next weekend.",
+    "options": [
+      "go",
+      "are going",
+      "went",
+      "have gone"
+    ],
+    "answer": "are going",
+    "difficulty": "Easy",
+    "explanation": "Present continuous can be used to express planned future actions."
+  },
+  {
+    "id": 180,
+    "section": "English",
+    "question": "He ______ his car before he sold it.",
+    "options": [
+      "repaired",
+      "had repaired",
+      "repairs",
+      "has repaired"
+    ],
+    "answer": "had repaired",
+    "difficulty": "Medium",
+    "explanation": "Past perfect tense shows an action completed before another past action (selling the car)."
+  },
+  {
+    "id": 181,
+    "section": "English",
+    "question": "'A piece of cake' means:",
+    "options": [
+      "Something difficult",
+      "Something very easy",
+      "A dessert",
+      "A small task that fails"
+    ],
+    "answer": "Something very easy",
+    "difficulty": "Easy",
+    "explanation": "This idiom describes a task that is very easy to accomplish."
+  },
+  {
+    "id": 182,
+    "section": "English",
+    "question": "'Break the ice' means:",
+    "options": [
+      "To start a conversation in a social setting",
+      "To cause an argument",
+      "To end a friendship",
+      "To cool down a room"
+    ],
+    "answer": "To start a conversation in a social setting",
+    "difficulty": "Easy",
+    "explanation": "This idiom means to initiate conversation or ease tension in a social setting."
+  },
+  {
+    "id": 183,
+    "section": "English",
+    "question": "'Cost an arm and a leg' means:",
+    "options": [
+      "To be very cheap",
+      "To be very expensive",
+      "To injure oneself",
+      "To bargain well"
+    ],
+    "answer": "To be very expensive",
+    "difficulty": "Easy",
+    "explanation": "This idiom means something is extremely expensive."
+  },
+  {
+    "id": 184,
+    "section": "English",
+    "question": "'Hit the nail on the head' means:",
+    "options": [
+      "To be exactly right",
+      "To make a mistake",
+      "To hurt someone",
+      "To finish a task"
+    ],
+    "answer": "To be exactly right",
+    "difficulty": "Medium",
+    "explanation": "This idiom means to describe or identify something exactly and correctly."
+  },
+  {
+    "id": 185,
+    "section": "English",
+    "question": "'Speak of the devil' means:",
+    "options": [
+      "To talk about something evil",
+      "The person just mentioned appears",
+      "To lie about someone",
+      "To gossip"
+    ],
+    "answer": "The person just mentioned appears",
+    "difficulty": "Medium",
+    "explanation": "This idiom is said when a person who was just being discussed arrives."
+  },
+  {
+    "id": 186,
+    "section": "English",
+    "question": "'The ball is in your court' means:",
+    "options": [
+      "It is your decision or responsibility now",
+      "You have lost the game",
+      "It is someone else's turn",
+      "You need to apologize"
+    ],
+    "answer": "It is your decision or responsibility now",
+    "difficulty": "Medium",
+    "explanation": "This idiom means it is now up to a particular person to take action or make a decision."
+  },
+  {
+    "id": 187,
+    "section": "English",
+    "question": "'To add insult to injury' means:",
+    "options": [
+      "To apologize sincerely",
+      "To make a bad situation even worse",
+      "To help someone recover",
+      "To praise someone"
+    ],
+    "answer": "To make a bad situation even worse",
+    "difficulty": "Medium",
+    "explanation": "This idiom means to worsen a bad situation further."
+  },
+  {
+    "id": 188,
+    "section": "English",
+    "question": "'To hit the sack' means:",
+    "options": [
+      "To go to sleep",
+      "To attack someone",
+      "To lose a job",
+      "To carry heavy bags"
+    ],
+    "answer": "To go to sleep",
+    "difficulty": "Easy",
+    "explanation": "This idiom means to go to bed."
+  },
+  {
+    "id": 189,
+    "section": "English",
+    "question": "'To spill the beans' means:",
+    "options": [
+      "To cook a meal",
+      "To reveal a secret",
+      "To waste food",
+      "To argue loudly"
+    ],
+    "answer": "To reveal a secret",
+    "difficulty": "Easy",
+    "explanation": "This idiom means to reveal secret information, often unintentionally."
+  },
+  {
+    "id": 190,
+    "section": "English",
+    "question": "'To pull someone's leg' means:",
+    "options": [
+      "To help someone walk",
+      "To joke or tease someone",
+      "To trip someone",
+      "To injure someone"
+    ],
+    "answer": "To joke or tease someone",
+    "difficulty": "Easy",
+    "explanation": "This idiom means to playfully joke with or tease someone."
+  },
+  {
+    "id": 191,
+    "section": "English",
+    "question": "'To be in hot water' means:",
+    "options": [
+      "To be in trouble",
+      "To take a bath",
+      "To cook something",
+      "To feel relaxed"
+    ],
+    "answer": "To be in trouble",
+    "difficulty": "Medium",
+    "explanation": "This idiom means to be in a difficult or troublesome situation."
+  },
+  {
+    "id": 192,
+    "section": "English",
+    "question": "'To go the extra mile' means:",
+    "options": [
+      "To travel far",
+      "To make more effort than expected",
+      "To take a shortcut",
+      "To give up easily"
+    ],
+    "answer": "To make more effort than expected",
+    "difficulty": "Medium",
+    "explanation": "This idiom means to put in more effort than is required or expected."
+  },
+  {
+    "id": 193,
+    "section": "English",
+    "question": "'To hold your horses' means:",
+    "options": [
+      "To wait or be patient",
+      "To ride quickly",
+      "To stop working",
+      "To argue"
+    ],
+    "answer": "To wait or be patient",
+    "difficulty": "Easy",
+    "explanation": "This idiom means to wait and be patient before acting."
+  },
+  {
+    "id": 194,
+    "section": "English",
+    "question": "'To kill two birds with one stone' means:",
+    "options": [
+      "To harm two people at once",
+      "To achieve two goals with a single action",
+      "To fail at two tasks",
+      "To waste resources"
+    ],
+    "answer": "To achieve two goals with a single action",
+    "difficulty": "Medium",
+    "explanation": "This idiom means to accomplish two objectives with a single action."
+  },
+  {
+    "id": 195,
+    "section": "English",
+    "question": "'To be on cloud nine' means:",
+    "options": [
+      "To be very sad",
+      "To be extremely happy",
+      "To be confused",
+      "To be very tired"
+    ],
+    "answer": "To be extremely happy",
+    "difficulty": "Easy",
+    "explanation": "This idiom means to feel extremely happy or elated."
+  },
+  {
+    "id": 196,
+    "section": "English",
+    "question": "'To bite off more than you can chew' means:",
+    "options": [
+      "To eat too much food",
+      "To take on more than you can handle",
+      "To speak too much",
+      "To finish a task quickly"
+    ],
+    "answer": "To take on more than you can handle",
+    "difficulty": "Medium",
+    "explanation": "This idiom means to attempt something beyond one's capability."
+  },
+  {
+    "id": 197,
+    "section": "English",
+    "question": "'To turn over a new leaf' means:",
+    "options": [
+      "To start behaving in a better way",
+      "To read a new book",
+      "To change jobs",
+      "To move to a new house"
+    ],
+    "answer": "To start behaving in a better way",
+    "difficulty": "Medium",
+    "explanation": "This idiom means to change one's behavior for the better."
+  },
+  {
+    "id": 198,
+    "section": "English",
+    "question": "'To have butterflies in your stomach' means:",
+    "options": [
+      "To feel nervous or anxious",
+      "To feel hungry",
+      "To feel sick",
+      "To feel excited only"
+    ],
+    "answer": "To feel nervous or anxious",
+    "difficulty": "Easy",
+    "explanation": "This idiom describes the nervous feeling one gets before something important."
+  },
+  {
+    "id": 199,
+    "section": "English",
+    "question": "'To cut corners' means:",
+    "options": [
+      "To do something the correct, thorough way",
+      "To do something cheaply or carelessly to save time/money",
+      "To shape a room",
+      "To finish early properly"
+    ],
+    "answer": "To do something cheaply or carelessly to save time/money",
+    "difficulty": "Hard",
+    "explanation": "This idiom means to do something in the easiest or cheapest way, often sacrificing quality."
+  },
+  {
+    "id": 200,
+    "section": "English",
+    "question": "'To take something with a grain of salt' means:",
+    "options": [
+      "To season food properly",
+      "To not take something too seriously or literally",
+      "To trust something completely",
+      "To add flavor to a statement"
+    ],
+    "answer": "To not take something too seriously or literally",
+    "difficulty": "Hard",
+    "explanation": "This idiom means to view something with skepticism, not taking it as entirely true."
+  },
+  {
+    "id": 201,
+    "section": "English",
+    "question": "One of the students ______ absent today.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "answer": "is",
+    "difficulty": "Medium",
+    "explanation": "'One of the students' takes a singular verb since 'one' is the subject."
+  },
+  {
+    "id": 202,
+    "section": "English",
+    "question": "The jury ______ divided in their opinion.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "has been"
+    ],
+    "answer": "are",
+    "difficulty": "Hard",
+    "explanation": "'Jury' can take a plural verb when its members are considered as individuals acting separately."
+  },
+  {
+    "id": 203,
+    "section": "English",
+    "question": "A number of students ______ absent from class.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "has been"
+    ],
+    "answer": "are",
+    "difficulty": "Medium",
+    "explanation": "'A number of' takes a plural verb when referring to multiple individuals."
+  },
+  {
+    "id": 204,
+    "section": "English",
+    "question": "The number of accidents ______ increasing.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "answer": "is",
+    "difficulty": "Medium",
+    "explanation": "'The number of' takes a singular verb, unlike 'a number of'."
+  },
+  {
+    "id": 205,
+    "section": "English",
+    "question": "Either of the two answers ______ correct.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "answer": "is",
+    "difficulty": "Medium",
+    "explanation": "'Either' is singular and requires a singular verb."
+  },
+  {
+    "id": 206,
+    "section": "English",
+    "question": "The committee ______ meeting tomorrow.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "answer": "is",
+    "difficulty": "Easy",
+    "explanation": "'Committee' is treated as a singular collective noun when acting as one unit."
+  },
+  {
+    "id": 207,
+    "section": "English",
+    "question": "Neither the manager nor the employees ______ satisfied.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "has been"
+    ],
+    "answer": "were",
+    "difficulty": "Hard",
+    "explanation": "When 'neither...nor' joins subjects of different number, the verb agrees with the nearer subject ('employees', plural)."
+  },
+  {
+    "id": 208,
+    "section": "English",
+    "question": "Everyone in the class ______ present today.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "answer": "is",
+    "difficulty": "Easy",
+    "explanation": "'Everyone' is an indefinite pronoun that takes a singular verb."
+  },
+  {
+    "id": 209,
+    "section": "English",
+    "question": "The team ______ playing well this season.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "answer": "is",
+    "difficulty": "Easy",
+    "explanation": "'Team' is treated as singular when referring to the group as a whole."
+  },
+  {
+    "id": 210,
+    "section": "English",
+    "question": "Ten miles ______ a long distance to walk.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "answer": "is",
+    "difficulty": "Hard",
+    "explanation": "Distances, when treated as a single unit, take a singular verb."
+  },
+  {
+    "id": 211,
+    "section": "English",
+    "question": "Bread and butter ______ his favorite breakfast.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "answer": "is",
+    "difficulty": "Hard",
+    "explanation": "When two nouns together represent a single idea, the verb is singular."
+  },
+  {
+    "id": 212,
+    "section": "English",
+    "question": "The scissors ______ on the table.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "has been"
+    ],
+    "answer": "are",
+    "difficulty": "Medium",
+    "explanation": "'Scissors' is a plural noun that always takes a plural verb."
+  },
+  {
+    "id": 213,
+    "section": "English",
+    "question": "Physics ______ a difficult subject for many students.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "answer": "is",
+    "difficulty": "Easy",
+    "explanation": "Subjects ending in '-ics' like 'Physics' typically take a singular verb."
+  },
+  {
+    "id": 214,
+    "section": "English",
+    "question": "Many a student ______ failed the exam.",
+    "options": [
+      "has",
+      "have",
+      "were",
+      "are"
+    ],
+    "answer": "has",
+    "difficulty": "Hard",
+    "explanation": "'Many a' is followed by a singular noun and takes a singular verb."
+  },
+  {
+    "id": 215,
+    "section": "English",
+    "question": "The police ______ investigating the case.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "has been"
+    ],
+    "answer": "are",
+    "difficulty": "Medium",
+    "explanation": "'Police' is always treated as a plural noun in English."
+  },
+  {
+    "id": 216,
+    "section": "English",
+    "question": "Find the error: 'She don't know the answer to this question.'",
+    "options": [
+      "She don't know",
+      "the answer",
+      "to this question",
+      "No error"
+    ],
+    "answer": "She don't know",
+    "difficulty": "Easy",
+    "explanation": "'She' is third person singular and requires 'doesn't', not 'don't'."
+  },
+  {
+    "id": 217,
+    "section": "English",
+    "question": "Find the error: 'He is one of the best player in the team.'",
+    "options": [
+      "He is one of",
+      "the best player",
+      "in the team",
+      "No error"
+    ],
+    "answer": "the best player",
+    "difficulty": "Medium",
+    "explanation": "After 'one of the', a plural noun is required: 'the best players'."
+  },
+  {
+    "id": 218,
+    "section": "English",
+    "question": "Find the error: 'Everyone should do their best to help.'",
+    "options": [
+      "Everyone should",
+      "do their best",
+      "to help",
+      "No error"
+    ],
+    "answer": "No error",
+    "difficulty": "Medium",
+    "explanation": "'Their' is commonly accepted as a gender-neutral singular pronoun referring to 'everyone' in modern usage."
+  },
+  {
+    "id": 219,
+    "section": "English",
+    "question": "Find the error: 'I have visited London last year.'",
+    "options": [
+      "I have visited",
+      "London",
+      "last year",
+      "No error"
+    ],
+    "answer": "I have visited",
+    "difficulty": "Medium",
+    "explanation": "'Last year' indicates a definite past time, so simple past ('I visited') should be used, not present perfect."
+  },
+  {
+    "id": 220,
+    "section": "English",
+    "question": "Find the error: 'She is more taller than her brother.'",
+    "options": [
+      "She is",
+      "more taller",
+      "than her brother",
+      "No error"
+    ],
+    "answer": "more taller",
+    "difficulty": "Easy",
+    "explanation": "'Taller' is already comparative; adding 'more' creates a double comparative, which is incorrect."
+  },
+  {
+    "id": 221,
+    "section": "English",
+    "question": "Find the error: 'He is senior than me in the office.'",
+    "options": [
+      "He is",
+      "senior than me",
+      "in the office",
+      "No error"
+    ],
+    "answer": "senior than me",
+    "difficulty": "Medium",
+    "explanation": "'Senior' should be followed by 'to', not 'than': 'senior to me'."
+  },
+  {
+    "id": 222,
+    "section": "English",
+    "question": "Find the error: 'Each of the boys have their own bag.'",
+    "options": [
+      "Each of the boys",
+      "have their own bag",
+      "",
+      "No error"
+    ],
+    "answer": "have their own bag",
+    "difficulty": "Medium",
+    "explanation": "'Each' is singular and requires 'has', not 'have'."
+  },
+  {
+    "id": 223,
+    "section": "English",
+    "question": "Find the error: 'The furnitures in this house are very old.'",
+    "options": [
+      "The furnitures",
+      "in this house",
+      "are very old",
+      "No error"
+    ],
+    "answer": "The furnitures",
+    "difficulty": "Medium",
+    "explanation": "'Furniture' is an uncountable noun and does not take a plural 's'."
+  },
+  {
+    "id": 224,
+    "section": "English",
+    "question": "Find the error: 'I am knowing him since childhood.'",
+    "options": [
+      "I am knowing him",
+      "since childhood",
+      "",
+      "No error"
+    ],
+    "answer": "I am knowing him",
+    "difficulty": "Hard",
+    "explanation": "'Know' is a stative verb and is not used in continuous form; it should be 'I have known him'."
+  },
+  {
+    "id": 225,
+    "section": "English",
+    "question": "Find the error: 'She is having a car.'",
+    "options": [
+      "She is having",
+      "a car",
+      "",
+      "No error"
+    ],
+    "answer": "She is having",
+    "difficulty": "Hard",
+    "explanation": "'Have' expressing possession is a stative verb and should not be used in continuous form; it should be 'She has a car'."
+  },
+  {
+    "id": 226,
+    "section": "English",
+    "question": "Find the error: 'He suggested me to see a doctor.'",
+    "options": [
+      "He suggested me",
+      "to see a doctor",
+      "",
+      "No error"
+    ],
+    "answer": "He suggested me",
+    "difficulty": "Hard",
+    "explanation": "'Suggest' is not followed by an object + infinitive; correct form is 'He suggested that I see a doctor' or 'He suggested seeing a doctor'."
+  },
+  {
+    "id": 227,
+    "section": "English",
+    "question": "Find the error: 'Please explain me the rules of this game.'",
+    "options": [
+      "Please explain me",
+      "the rules",
+      "of this game",
+      "No error"
+    ],
+    "answer": "Please explain me",
+    "difficulty": "Hard",
+    "explanation": "'Explain' cannot take an indirect object directly; correct form is 'explain the rules to me'."
+  },
+  {
+    "id": 228,
+    "section": "English",
+    "question": "Find the error: 'I am agree with your opinion.'",
+    "options": [
+      "I am agree",
+      "with your opinion",
+      "",
+      "No error"
+    ],
+    "answer": "I am agree",
+    "difficulty": "Medium",
+    "explanation": "'Agree' is a verb itself and should not be preceded by 'am'; correct form is 'I agree'."
+  },
+  {
+    "id": 229,
+    "section": "English",
+    "question": "Find the error: 'She is married with a doctor.'",
+    "options": [
+      "She is married",
+      "with a doctor",
+      "",
+      "No error"
+    ],
+    "answer": "with a doctor",
+    "difficulty": "Medium",
+    "explanation": "'Married to' is the correct preposition, not 'married with'."
+  },
+  {
+    "id": 230,
+    "section": "English",
+    "question": "Find the error: 'Although he was tired, but he continued working.'",
+    "options": [
+      "Although he was tired",
+      "but he continued",
+      "working",
+      "No error"
+    ],
+    "answer": "but he continued",
+    "difficulty": "Medium",
+    "explanation": "'Although' and 'but' should not be used together in the same sentence; one should be removed."
+  },
+  {
+    "id": 231,
+    "section": "English",
+    "question": "One word for 'A person who can speak two languages':",
+    "options": [
+      "Monolingual",
+      "Bilingual",
+      "Linguist",
+      "Translator"
+    ],
+    "answer": "Bilingual",
+    "difficulty": "Easy",
+    "explanation": "A person who can speak two languages fluently is called 'Bilingual'."
+  },
+  {
+    "id": 232,
+    "section": "English",
+    "question": "One word for 'A place where animals are kept for public display':",
+    "options": [
+      "Sanctuary",
+      "Zoo",
+      "Farm",
+      "Reserve"
+    ],
+    "answer": "Zoo",
+    "difficulty": "Easy",
+    "explanation": "A place where wild animals are kept for public viewing is called a 'Zoo'."
+  },
+  {
+    "id": 233,
+    "section": "English",
+    "question": "One word for 'One who studies the stars and planets':",
+    "options": [
+      "Astronomer",
+      "Astrologer",
+      "Geologist",
+      "Biologist"
+    ],
+    "answer": "Astronomer",
+    "difficulty": "Medium",
+    "explanation": "An 'Astronomer' is a scientist who studies celestial bodies like stars and planets."
+  },
+  {
+    "id": 234,
+    "section": "English",
+    "question": "One word for 'A person who does not believe in the existence of God':",
+    "options": [
+      "Theist",
+      "Atheist",
+      "Agnostic",
+      "Pantheist"
+    ],
+    "answer": "Atheist",
+    "difficulty": "Medium",
+    "explanation": "An 'Atheist' is a person who does not believe in the existence of any god."
+  },
+  {
+    "id": 235,
+    "section": "English",
+    "question": "One word for 'A statement that is difficult to understand':",
+    "options": [
+      "Ambiguous",
+      "Cryptic",
+      "Simple",
+      "Clear"
+    ],
+    "answer": "Cryptic",
+    "difficulty": "Medium",
+    "explanation": "Something 'Cryptic' has a meaning that is mysterious or difficult to understand."
+  },
+  {
+    "id": 236,
+    "section": "English",
+    "question": "One word for 'A person who works with their hands skillfully':",
+    "options": [
+      "Artisan",
+      "Laborer",
+      "Farmer",
+      "Clerk"
+    ],
+    "answer": "Artisan",
+    "difficulty": "Medium",
+    "explanation": "An 'Artisan' is a skilled worker who makes things by hand."
+  },
+  {
+    "id": 237,
+    "section": "English",
+    "question": "One word for 'A place where coins are made':",
+    "options": [
+      "Bank",
+      "Mint",
+      "Treasury",
+      "Vault"
+    ],
+    "answer": "Mint",
+    "difficulty": "Medium",
+    "explanation": "A 'Mint' is a place where coins are officially manufactured."
+  },
+  {
+    "id": 238,
+    "section": "English",
+    "question": "One word for 'A person who is new to a field or activity':",
+    "options": [
+      "Expert",
+      "Novice",
+      "Veteran",
+      "Specialist"
+    ],
+    "answer": "Novice",
+    "difficulty": "Easy",
+    "explanation": "A 'Novice' is a person who is new to and inexperienced in a field."
+  },
+  {
+    "id": 239,
+    "section": "English",
+    "question": "One word for 'Handwriting that cannot be read':",
+    "options": [
+      "Illegible",
+      "Legible",
+      "Cursive",
+      "Clear"
+    ],
+    "answer": "Illegible",
+    "difficulty": "Medium",
+    "explanation": "'Illegible' describes writing that cannot be read clearly."
+  },
+  {
+    "id": 240,
+    "section": "English",
+    "question": "One word for 'A person who eats too much':",
+    "options": [
+      "Glutton",
+      "Gourmet",
+      "Vegetarian",
+      "Chef"
+    ],
+    "answer": "Glutton",
+    "difficulty": "Medium",
+    "explanation": "A 'Glutton' is a person who eats and drinks excessively."
+  },
+  {
+    "id": 241,
+    "section": "English",
+    "question": "One word for 'One who is unable to pay their debts':",
+    "options": [
+      "Debtor",
+      "Insolvent",
+      "Creditor",
+      "Bankrupt"
+    ],
+    "answer": "Insolvent",
+    "difficulty": "Hard",
+    "explanation": "'Insolvent' describes a person or organization unable to pay their debts."
+  },
+  {
+    "id": 242,
+    "section": "English",
+    "question": "One word for 'A word that is opposite in meaning to another':",
+    "options": [
+      "Synonym",
+      "Antonym",
+      "Homonym",
+      "Acronym"
+    ],
+    "answer": "Antonym",
+    "difficulty": "Easy",
+    "explanation": "An 'Antonym' is a word opposite in meaning to another word."
+  },
+  {
+    "id": 243,
+    "section": "English",
+    "question": "One word for 'A speech delivered without preparation':",
+    "options": [
+      "Extempore",
+      "Rehearsed",
+      "Scripted",
+      "Recital"
+    ],
+    "answer": "Extempore",
+    "difficulty": "Hard",
+    "explanation": "An 'Extempore' speech is delivered without prior preparation."
+  },
+  {
+    "id": 244,
+    "section": "English",
+    "question": "One word for 'A person who leaves their country to settle in another':",
+    "options": [
+      "Immigrant",
+      "Emigrant",
+      "Tourist",
+      "Refugee"
+    ],
+    "answer": "Emigrant",
+    "difficulty": "Hard",
+    "explanation": "An 'Emigrant' is a person who leaves their own country to settle in another."
+  },
+  {
+    "id": 245,
+    "section": "English",
+    "question": "One word for 'A list of books referred to in a text':",
+    "options": [
+      "Index",
+      "Glossary",
+      "Bibliography",
+      "Appendix"
+    ],
+    "answer": "Bibliography",
+    "difficulty": "Medium",
+    "explanation": "A 'Bibliography' is a list of sources or books referred to or used in a piece of writing."
+  },
+  {
+    "id": 246,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'She writes a letter.'",
+    "options": [
+      "A letter is written by her.",
+      "A letter was written by her.",
+      "A letter is being written by her.",
+      "A letter has written by her."
+    ],
+    "answer": "A letter is written by her.",
+    "difficulty": "Easy",
+    "explanation": "Simple present active changes to simple present passive: 'is written'."
+  },
+  {
+    "id": 247,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'They will complete the project.'",
+    "options": [
+      "The project will complete by them.",
+      "The project will be completed by them.",
+      "The project is completed by them.",
+      "The project was completed by them."
+    ],
+    "answer": "The project will be completed by them.",
+    "difficulty": "Medium",
+    "explanation": "Simple future active changes to simple future passive: 'will be completed'."
+  },
+  {
+    "id": 248,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'The chef cooked the meal.'",
+    "options": [
+      "The meal is cooked by the chef.",
+      "The meal was cooked by the chef.",
+      "The meal has cooked by the chef.",
+      "The meal cooks by the chef."
+    ],
+    "answer": "The meal was cooked by the chef.",
+    "difficulty": "Easy",
+    "explanation": "Simple past active changes to simple past passive: 'was cooked'."
+  },
+  {
+    "id": 249,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'She has finished her homework.'",
+    "options": [
+      "Her homework is finished by her.",
+      "Her homework was finished by her.",
+      "Her homework has been finished by her.",
+      "Her homework had finished by her."
+    ],
+    "answer": "Her homework has been finished by her.",
+    "difficulty": "Medium",
+    "explanation": "Present perfect active changes to present perfect passive: 'has been finished'."
+  },
+  {
+    "id": 250,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'He is reading a novel.'",
+    "options": [
+      "A novel is read by him.",
+      "A novel is being read by him.",
+      "A novel was being read by him.",
+      "A novel has been read by him."
+    ],
+    "answer": "A novel is being read by him.",
+    "difficulty": "Medium",
+    "explanation": "Present continuous active changes to present continuous passive: 'is being read'."
+  },
+  {
+    "id": 251,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'They had completed the task.'",
+    "options": [
+      "The task was completed by them.",
+      "The task had been completed by them.",
+      "The task has been completed by them.",
+      "The task is completed by them."
+    ],
+    "answer": "The task had been completed by them.",
+    "difficulty": "Hard",
+    "explanation": "Past perfect active changes to past perfect passive: 'had been completed'."
+  },
+  {
+    "id": 252,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'Open the door.' (imperative)",
+    "options": [
+      "The door is opened.",
+      "Let the door be opened.",
+      "The door was opened.",
+      "The door will be opened."
+    ],
+    "answer": "Let the door be opened.",
+    "difficulty": "Hard",
+    "explanation": "Imperative sentences use 'Let + object + be + past participle' in passive voice."
+  },
+  {
+    "id": 253,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'She is teaching the students.'",
+    "options": [
+      "The students are taught by her.",
+      "The students are being taught by her.",
+      "The students were being taught by her.",
+      "The students have been taught by her."
+    ],
+    "answer": "The students are being taught by her.",
+    "difficulty": "Medium",
+    "explanation": "Present continuous active changes to present continuous passive: 'are being taught'."
+  },
+  {
+    "id": 254,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'The manager will have signed the contract.'",
+    "options": [
+      "The contract will be signed by the manager.",
+      "The contract will have been signed by the manager.",
+      "The contract is signed by the manager.",
+      "The contract has been signed by the manager."
+    ],
+    "answer": "The contract will have been signed by the manager.",
+    "difficulty": "Hard",
+    "explanation": "Future perfect active changes to future perfect passive: 'will have been signed'."
+  },
+  {
+    "id": 255,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'People speak English all over the world.'",
+    "options": [
+      "English is spoken all over the world.",
+      "English was spoken all over the world.",
+      "English speaks all over the world.",
+      "English has spoken all over the world."
+    ],
+    "answer": "English is spoken all over the world.",
+    "difficulty": "Easy",
+    "explanation": "Simple present active with a general subject changes to simple present passive: 'is spoken'."
+  },
+  {
+    "id": 256,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'The workers were building the bridge.'",
+    "options": [
+      "The bridge was built by the workers.",
+      "The bridge was being built by the workers.",
+      "The bridge is built by the workers.",
+      "The bridge has been built by the workers."
+    ],
+    "answer": "The bridge was being built by the workers.",
+    "difficulty": "Medium",
+    "explanation": "Past continuous active changes to past continuous passive: 'was being built'."
+  },
+  {
+    "id": 257,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'You must submit the report by Friday.'",
+    "options": [
+      "The report must submit by Friday.",
+      "The report must be submitted by Friday.",
+      "The report is submitted by Friday.",
+      "The report was submitted by Friday."
+    ],
+    "answer": "The report must be submitted by Friday.",
+    "difficulty": "Medium",
+    "explanation": "Modal verb 'must' in active voice changes to 'must be + past participle' in passive."
+  },
+  {
+    "id": 258,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'I saw him crossing the road.'",
+    "options": [
+      "He was seen crossing the road by me.",
+      "He is seen crossing the road by me.",
+      "He has been seen crossing the road by me.",
+      "He will be seen crossing the road by me."
+    ],
+    "answer": "He was seen crossing the road by me.",
+    "difficulty": "Hard",
+    "explanation": "Simple past active with a perception verb changes to simple past passive: 'was seen'."
+  },
+  {
+    "id": 259,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'Someone has stolen my bicycle.'",
+    "options": [
+      "My bicycle is stolen.",
+      "My bicycle was stolen.",
+      "My bicycle has been stolen.",
+      "My bicycle had been stolen."
+    ],
+    "answer": "My bicycle has been stolen.",
+    "difficulty": "Medium",
+    "explanation": "Present perfect active with an indefinite subject changes to present perfect passive: 'has been stolen'."
+  },
+  {
+    "id": 260,
+    "section": "English",
+    "question": "Choose the correct passive voice: 'The company is going to launch a new product.'",
+    "options": [
+      "A new product is going to be launched by the company.",
+      "A new product will launch by the company.",
+      "A new product is launched by the company.",
+      "A new product was launched by the company."
+    ],
+    "answer": "A new product is going to be launched by the company.",
+    "difficulty": "Hard",
+    "explanation": "'Going to' future active changes to 'going to be + past participle' in passive voice."
+  },
+  {
+    "id": 261,
+    "section": "English",
+    "question": "He said, 'I have finished my work.'",
+    "options": [
+      "He said that he has finished his work.",
+      "He said that he had finished his work.",
+      "He said that he finished his work.",
+      "He says that he had finished his work."
+    ],
+    "answer": "He said that he had finished his work.",
+    "difficulty": "Medium",
+    "explanation": "Present perfect in direct speech ('have finished') changes to past perfect ('had finished') in indirect speech."
+  },
+  {
+    "id": 262,
+    "section": "English",
+    "question": "She said, 'I can swim well.'",
+    "options": [
+      "She said that she can swim well.",
+      "She said that she could swim well.",
+      "She said that she could swam well.",
+      "She says that she could swim well."
+    ],
+    "answer": "She said that she could swim well.",
+    "difficulty": "Medium",
+    "explanation": "The modal 'can' changes to 'could' in indirect speech when the reporting verb is in the past tense."
+  },
+  {
+    "id": 263,
+    "section": "English",
+    "question": "He said to her, 'Please close the window.'",
+    "options": [
+      "He requested her to close the window.",
+      "He said her to close the window.",
+      "He told her close the window.",
+      "He asked her closing the window."
+    ],
+    "answer": "He requested her to close the window.",
+    "difficulty": "Easy",
+    "explanation": "Polite requests using 'please' are reported using 'requested + infinitive'."
+  },
+  {
+    "id": 264,
+    "section": "English",
+    "question": "The teacher said, 'Do not make noise in the class.'",
+    "options": [
+      "The teacher told not to make noise in the class.",
+      "The teacher ordered them not to make noise in the class.",
+      "The teacher said not making noise in class.",
+      "The teacher asked to not made noise."
+    ],
+    "answer": "The teacher ordered them not to make noise in the class.",
+    "difficulty": "Medium",
+    "explanation": "Negative imperative sentences are reported using 'ordered/told + object + not to + infinitive'."
+  },
+  {
+    "id": 265,
+    "section": "English",
+    "question": "She said, 'What a beautiful painting this is!'",
+    "options": [
+      "She exclaimed that the painting was beautiful.",
+      "She said that what a beautiful painting it was.",
+      "She exclaimed what a beautiful painting it was.",
+      "She said the painting is beautiful."
+    ],
+    "answer": "She exclaimed that the painting was beautiful.",
+    "difficulty": "Hard",
+    "explanation": "Exclamatory sentences are reported using 'exclaimed that' and converting the exclamation into a statement."
+  },
+  {
+    "id": 266,
+    "section": "English",
+    "question": "He asked, 'Did you complete the assignment?'",
+    "options": [
+      "He asked if I completed the assignment.",
+      "He asked if I had completed the assignment.",
+      "He asked did I complete the assignment.",
+      "He asked that I had completed the assignment."
+    ],
+    "answer": "He asked if I had completed the assignment.",
+    "difficulty": "Medium",
+    "explanation": "Simple past in a direct yes/no question changes to past perfect in indirect speech, introduced by 'if' or 'whether'."
+  },
+  {
+    "id": 267,
+    "section": "English",
+    "question": "She said, 'I am going to buy a new car next month.'",
+    "options": [
+      "She said that she was going to buy a new car the next month.",
+      "She said that she is going to buy a new car next month.",
+      "She said she will buy a new car next month.",
+      "She said that she going to buy a car next month."
+    ],
+    "answer": "She said that she was going to buy a new car the next month.",
+    "difficulty": "Medium",
+    "explanation": "'Am going to' changes to 'was going to', and 'next month' changes to 'the next month' in indirect speech."
+  },
+  {
+    "id": 268,
+    "section": "English",
+    "question": "He said, 'Let us go for a walk.'",
+    "options": [
+      "He suggested going for a walk.",
+      "He said let us go for a walk.",
+      "He told to go for a walk.",
+      "He ordered to go for a walk."
+    ],
+    "answer": "He suggested going for a walk.",
+    "difficulty": "Medium",
+    "explanation": "Sentences beginning with 'Let us' are reported using 'suggested + gerund'."
+  },
+  {
+    "id": 269,
+    "section": "English",
+    "question": "The boy said, 'Alas! I have failed the exam.'",
+    "options": [
+      "The boy exclaimed with sorrow that he had failed the exam.",
+      "The boy said alas he failed the exam.",
+      "The boy said that he has failed the exam.",
+      "The boy exclaimed that he failed the exam."
+    ],
+    "answer": "The boy exclaimed with sorrow that he had failed the exam.",
+    "difficulty": "Hard",
+    "explanation": "Exclamations of sorrow ('Alas!') are reported using 'exclaimed with sorrow that', with tense shifted back."
+  },
+  {
+    "id": 270,
+    "section": "English",
+    "question": "She said to me, 'I met you yesterday.'",
+    "options": [
+      "She told me that she had met me the day before.",
+      "She said that she met me yesterday.",
+      "She told me she meets me yesterday.",
+      "She said she has met me yesterday."
+    ],
+    "answer": "She told me that she had met me the day before.",
+    "difficulty": "Medium",
+    "explanation": "Simple past changes to past perfect, and 'yesterday' changes to 'the day before' in indirect speech."
+  },
+  {
+    "id": 271,
+    "section": "English",
+    "question": "He said, 'I will help you if I can.'",
+    "options": [
+      "He said that he would help me if he could.",
+      "He said that he will help me if he can.",
+      "He said he would help if he can.",
+      "He said he helps if he could."
+    ],
+    "answer": "He said that he would help me if he could.",
+    "difficulty": "Hard",
+    "explanation": "In conditional reported speech, 'will' changes to 'would' and 'can' changes to 'could'."
+  },
+  {
+    "id": 272,
+    "section": "English",
+    "question": "The mother said to her son, 'Do not tell a lie.'",
+    "options": [
+      "The mother told her son not to tell a lie.",
+      "The mother said her son not to tell a lie.",
+      "The mother ordered not tell a lie.",
+      "The mother asked her son do not tell lie."
+    ],
+    "answer": "The mother told her son not to tell a lie.",
+    "difficulty": "Easy",
+    "explanation": "Negative commands are reported using 'told + object + not to + infinitive'."
+  },
+  {
+    "id": 273,
+    "section": "English",
+    "question": "He said, 'How clever you are!'",
+    "options": [
+      "He exclaimed that I was very clever.",
+      "He said how clever I am.",
+      "He exclaimed how clever I was.",
+      "He said that how clever I was."
+    ],
+    "answer": "He exclaimed that I was very clever.",
+    "difficulty": "Hard",
+    "explanation": "Exclamatory sentences with 'how/what' are reported using 'exclaimed that' with an intensifier like 'very'."
+  },
+  {
+    "id": 274,
+    "section": "English",
+    "question": "She said, 'I shall be there by six o'clock.'",
+    "options": [
+      "She said that she would be there by six o'clock.",
+      "She said that she shall be there by six o'clock.",
+      "She said she will be there by six.",
+      "She said that she is there by six."
+    ],
+    "answer": "She said that she would be there by six o'clock.",
+    "difficulty": "Medium",
+    "explanation": "'Shall' changes to 'would' in indirect speech when reporting a future intention."
+  },
+  {
+    "id": 275,
+    "section": "English",
+    "question": "The officer said, 'Stand up and salute.'",
+    "options": [
+      "The officer ordered them to stand up and salute.",
+      "The officer said stand up and salute.",
+      "The officer told to standing up and saluting.",
+      "The officer asked they stand up and salute."
+    ],
+    "answer": "The officer ordered them to stand up and salute.",
+    "difficulty": "Medium",
+    "explanation": "Commands are reported using 'ordered + object + to + infinitive'."
+  },
+  {
+    "id": 276,
+    "section": "English",
+    "question": "Bird : Nest :: Bee : ______",
+    "options": [
+      "Flower",
+      "Hive",
+      "Honey",
+      "Sting"
+    ],
+    "answer": "Hive",
+    "difficulty": "Easy",
+    "explanation": "A bird lives in a nest; a bee lives in a hive."
+  },
+  {
+    "id": 277,
+    "section": "English",
+    "question": "Author : Book :: Composer : ______",
+    "options": [
+      "Orchestra",
+      "Music",
+      "Instrument",
+      "Concert"
+    ],
+    "answer": "Music",
+    "difficulty": "Easy",
+    "explanation": "An author writes a book; a composer creates music."
+  },
+  {
+    "id": 278,
+    "section": "English",
+    "question": "Fish : Gills :: Human : ______",
+    "options": [
+      "Skin",
+      "Lungs",
+      "Heart",
+      "Blood"
+    ],
+    "answer": "Lungs",
+    "difficulty": "Easy",
+    "explanation": "A fish breathes through gills; a human breathes through lungs."
+  },
+  {
+    "id": 279,
+    "section": "English",
+    "question": "Sculptor : Chisel :: Painter : ______",
+    "options": [
+      "Canvas",
+      "Brush",
+      "Frame",
+      "Easel"
+    ],
+    "answer": "Brush",
+    "difficulty": "Easy",
+    "explanation": "A sculptor uses a chisel to create art; a painter uses a brush."
+  },
+  {
+    "id": 280,
+    "section": "English",
+    "question": "Ship : Captain :: School : ______",
+    "options": [
+      "Teacher",
+      "Principal",
+      "Student",
+      "Classroom"
+    ],
+    "answer": "Principal",
+    "difficulty": "Medium",
+    "explanation": "A ship is led by a captain; a school is led by a principal."
+  },
+  {
+    "id": 281,
+    "section": "English",
+    "question": "Water : Thirst :: Food : ______",
+    "options": [
+      "Taste",
+      "Hunger",
+      "Nutrition",
+      "Health"
+    ],
+    "answer": "Hunger",
+    "difficulty": "Easy",
+    "explanation": "Water quenches thirst; food satisfies hunger."
+  },
+  {
+    "id": 282,
+    "section": "English",
+    "question": "Diamond : Hard :: Cotton : ______",
+    "options": [
+      "Rough",
+      "Soft",
+      "Heavy",
+      "Colorful"
+    ],
+    "answer": "Soft",
+    "difficulty": "Easy",
+    "explanation": "Diamond is characterized by being hard; cotton is characterized by being soft."
+  },
+  {
+    "id": 283,
+    "section": "English",
+    "question": "Actor : Stage :: Athlete : ______",
+    "options": [
+      "Trophy",
+      "Field",
+      "Coach",
+      "Team"
+    ],
+    "answer": "Field",
+    "difficulty": "Easy",
+    "explanation": "An actor performs on a stage; an athlete performs on a field."
+  },
+  {
+    "id": 284,
+    "section": "English",
+    "question": "Judge : Court :: Doctor : ______",
+    "options": [
+      "Clinic",
+      "Patient",
+      "Medicine",
+      "Nurse"
+    ],
+    "answer": "Clinic",
+    "difficulty": "Easy",
+    "explanation": "A judge presides in a court; a doctor practices in a clinic."
+  },
+  {
+    "id": 285,
+    "section": "English",
+    "question": "Seed : Tree :: Egg : ______",
+    "options": [
+      "Nest",
+      "Bird",
+      "Shell",
+      "Feather"
+    ],
+    "answer": "Bird",
+    "difficulty": "Easy",
+    "explanation": "A seed grows into a tree; an egg develops into a bird."
+  },
+  {
+    "id": 286,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Necessary",
+      "Neccessary",
+      "Necesary",
+      "Neccesary"
+    ],
+    "answer": "Necessary",
+    "difficulty": "Easy",
+    "explanation": "'Necessary' has one 'c' and two 's's."
+  },
+  {
+    "id": 287,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Definately",
+      "Definitely",
+      "Definitly",
+      "Definetly"
+    ],
+    "answer": "Definitely",
+    "difficulty": "Easy",
+    "explanation": "'Definitely' is spelled with 'finite' in the middle, not 'finate' or 'finit'."
+  },
+  {
+    "id": 288,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Embarass",
+      "Embarrass",
+      "Embaras",
+      "Embarrasse"
+    ],
+    "answer": "Embarrass",
+    "difficulty": "Medium",
+    "explanation": "'Embarrass' has double 'r' and double 's'."
+  },
+  {
+    "id": 289,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Accomodate",
+      "Acommodate",
+      "Accommodate",
+      "Acomodate"
+    ],
+    "answer": "Accommodate",
+    "difficulty": "Medium",
+    "explanation": "'Accommodate' has double 'c' and double 'm'."
+  },
+  {
+    "id": 290,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Rythm",
+      "Rhythm",
+      "Rhithm",
+      "Rhythem"
+    ],
+    "answer": "Rhythm",
+    "difficulty": "Hard",
+    "explanation": "'Rhythm' is spelled with 'rh' at the start and no vowel between 'th' and 'm'."
+  },
+  {
+    "id": 291,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Maintainance",
+      "Maintenance",
+      "Maintanance",
+      "Maintenence"
+    ],
+    "answer": "Maintenance",
+    "difficulty": "Medium",
+    "explanation": "'Maintenance' is spelled with 'ten' in the middle, not 'tain' or 'tan'."
+  },
+  {
+    "id": 292,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Priviledge",
+      "Privilege",
+      "Privelege",
+      "Privillege"
+    ],
+    "answer": "Privilege",
+    "difficulty": "Medium",
+    "explanation": "'Privilege' has no 'd' and is spelled with a single 'l' followed by 'ege'."
+  },
+  {
+    "id": 293,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Concious",
+      "Conscious",
+      "Consious",
+      "Conscius"
+    ],
+    "answer": "Conscious",
+    "difficulty": "Medium",
+    "explanation": "'Conscious' includes the letters 's-c-i' together, unlike common misspellings."
+  },
+  {
+    "id": 294,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Questionaire",
+      "Questionnaire",
+      "Questionair",
+      "Questionnair"
+    ],
+    "answer": "Questionnaire",
+    "difficulty": "Hard",
+    "explanation": "'Questionnaire' has double 'n' before 'aire'."
+  },
+  {
+    "id": 295,
+    "section": "English",
+    "question": "Choose the correctly spelled word:",
+    "options": [
+      "Wierd",
+      "Weird",
+      "Weerd",
+      "Weid"
+    ],
+    "answer": "Weird",
+    "difficulty": "Easy",
+    "explanation": "'Weird' is an exception to the 'i before e except after c' rule."
+  },
+  {
+    "id": 296,
+    "section": "English",
+    "question": "Choose the grammatically correct sentence:",
+    "options": [
+      "He asked me that where I was going.",
+      "He asked me where I was going.",
+      "He asked me where was I going.",
+      "He asked that where I going."
+    ],
+    "answer": "He asked me where I was going.",
+    "difficulty": "Medium",
+    "explanation": "Indirect questions use statement word order without 'that' before a question word."
+  },
+  {
+    "id": 297,
+    "section": "English",
+    "question": "Choose the grammatically correct sentence:",
+    "options": [
+      "I have not received any reply yet.",
+      "I have not received no reply yet.",
+      "I haven't received any reply yet, isn't it.",
+      "I not received any reply."
+    ],
+    "answer": "I have not received any reply yet.",
+    "difficulty": "Easy",
+    "explanation": "'Any' is correctly used with a negative verb ('have not'); using 'no' with 'not' creates a double negative."
+  },
+  {
+    "id": 298,
+    "section": "English",
+    "question": "Choose the grammatically correct sentence:",
+    "options": [
+      "Neither he nor his friends was invited.",
+      "Neither he nor his friends were invited.",
+      "Neither he or his friends were invited.",
+      "Neither him nor his friends were invited."
+    ],
+    "answer": "Neither he nor his friends were invited.",
+    "difficulty": "Hard",
+    "explanation": "With 'neither...nor', the verb agrees with the nearer subject; here 'friends' is plural, so 'were' is used, and 'he' (subject form) is correct."
+  },
+  {
+    "id": 299,
+    "section": "English",
+    "question": "Choose the grammatically correct sentence:",
+    "options": [
+      "This is the more beautiful of the two paintings.",
+      "This is the most beautiful of the two paintings.",
+      "This is more beautiful of the two paintings.",
+      "This is the beautifullest of the two paintings."
+    ],
+    "answer": "This is the more beautiful of the two paintings.",
+    "difficulty": "Medium",
+    "explanation": "When comparing exactly two things, the comparative form ('more beautiful') is used, not the superlative."
+  },
+  {
+    "id": 300,
+    "section": "English",
+    "question": "Choose the grammatically correct sentence:",
+    "options": [
+      "Scarcely had he left when it started raining.",
+      "Scarcely he had left when it started raining.",
+      "Scarcely had he left than it started raining.",
+      "Scarcely did he left when it started raining."
+    ],
+    "answer": "Scarcely had he left when it started raining.",
+    "difficulty": "Hard",
+    "explanation": "'Scarcely' is followed by 'when' (not 'than'), and requires inversion of the auxiliary verb ('had he left')."
+  }
+]

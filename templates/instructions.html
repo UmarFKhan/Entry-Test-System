@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}Exam Instructions | Atechabad Testing System{% endblock %}
+
+{% block content %}
+<div style="max-width: 820px; margin: 0 auto;">
+  <div class="glass-panel" style="padding: 2.5rem;">
+    <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+      <div>
+        <h2 style="font-size: 1.8rem;">📋 Entry Test Instructions & Rules</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.2rem;">
+          Please review the official testing procedures before beginning your Computer-Based Test.
+        </p>
+      </div>
+      <span class="section-badge">Atechabad Testing System 2026</span>
+    </div>
+
+    <!-- Candidate Input Box -->
+    <div style="background: var(--bg-body); padding: 1.25rem 1.5rem; border-radius: var(--radius-sm); margin-bottom: 1.75rem; border: 1px solid var(--border-muted);">
+      <label for="candidateName" style="display: block; font-weight: 800; margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--brand-navy);">
+        👤 Candidate Full Name:
+      </label>
+      <input type="text" id="candidateName" value="Candidate Name" placeholder="Enter your full name..." style="width: 100%; padding: 0.75rem 1rem; border: 1.5px solid var(--border-muted); border-radius: var(--radius-sm); font-size: 1rem; font-weight: 600; font-family: inherit; color: var(--text-primary); background: var(--bg-surface); outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--brand-blue)'" onblur="this.style.borderColor='var(--border-muted)'">
+    </div>
+
+    <!-- Exam Parameters Cards Grid -->
+    <div class="stats-grid" style="margin-bottom: 1.75rem; grid-template-columns: repeat(3, 1fr);">
+      <div class="stat-card">
+        <div class="val" style="font-size: 2rem;">{{ total_questions }}</div>
+        <div class="lbl">Total Questions</div>
+      </div>
+      <div class="stat-card">
+        <div class="val" style="font-size: 2rem; color: #2563eb;">{{ exam_time }} min</div>
+        <div class="lbl">Time Allowed</div>
+      </div>
+      <div class="stat-card">
+        <div class="val" style="font-size: 2rem; color: #059669;">{{ passing_pct }}%</div>
+        <div class="lbl">Passing Mark</div>
+      </div>
+    </div>
+
+    <!-- Key Rules Bullet Card -->
+    <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.5rem; margin-bottom: 2rem;">
+      <h4 style="margin-bottom: 1rem; color: var(--brand-navy); font-size: 1.05rem;">Examination Guidelines & Shortcuts:</h4>
+      <ul style="margin-left: 1.25rem; color: var(--text-secondary); line-height: 1.8; font-size: 0.95rem;">
+        <li style="margin-bottom: 0.5rem;"><strong>Timer & Auto-Submit:</strong> The total examination duration is {{ exam_time }} minutes. When the timer hits 00:00, your test will automatically submit.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Auto-Save Progress:</strong> All selected answers save instantly in background. Refreshing or switching windows will preserve your state.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>No Negative Marking in Full Mock:</strong> 0.0 penalty for wrong choices in general mock mode. Ensure you answer all questions before submitting.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Interactive Question Palette:</strong> Use the right-hand panel to skip between questions anytime:
+          <div style="display: flex; gap: 0.75rem; margin-top: 0.4rem; font-size: 0.82rem; font-weight: 700;">
+            <span style="color: #059669; background: #d1fae5; padding: 0.2rem 0.6rem; border-radius: 4px;">🟩 Answered</span>
+            <span style="color: #2563eb; background: #dbeafe; padding: 0.2rem 0.6rem; border-radius: 4px;">🟦 Current</span>
+            <span style="color: #d97706; background: #fef3c7; padding: 0.2rem 0.6rem; border-radius: 4px;">🟨 Flagged</span>
+            <span style="color: #64748b; background: #f1f5f9; padding: 0.2rem 0.6rem; border-radius: 4px;">⬜ Unanswered</span>
+          </div>
+        </li>
+        <li><strong>Keyboard Shortcuts:</strong> Press <kbd class="kbd">1</kbd> <kbd class="kbd">2</kbd> <kbd class="kbd">3</kbd> <kbd class="kbd">4</kbd> for options, <kbd class="kbd">N</kbd> / <kbd class="kbd">→</kbd> for Next, <kbd class="kbd">P</kbd> / <kbd class="kbd">←</kbd> for Previous, <kbd class="kbd">F</kbd> to Flag, and <kbd class="kbd">S</kbd> to Submit.</li>
+      </ul>
+    </div>
+
+    <!-- Start Button -->
+    <div style="text-align: center;">
+      <button id="startTestBtn" class="btn btn-primary" style="font-size: 1.1rem; padding: 0.9rem 2.5rem; border-radius: var(--radius-sm); font-weight: 800;">
+        🚀 Begin Examination Now
+      </button>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/storage.js') }}"></script>
+<script>
+  document.getElementById('startTestBtn').addEventListener('click', () => {
+    const candidateName = document.getElementById('candidateName').value.trim() || 'Candidate Name';
+    // Clear old exam state when starting fresh
+    CBTStorage.clearExamState();
+    // Save candidate name in session storage
+    sessionStorage.setItem('ats_candidate_name', candidateName);
+    window.location.href = "{{ url_for('exam') }}";
+  });
+</script>
+{% endblock %}

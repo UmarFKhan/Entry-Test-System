@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Atechabad Testing System | University Entry Test Portal{% endblock %}</title>
+  <meta name="description" content="Atechabad Testing System (ATS) - Premier University Entry Test Simulator, Practice Modes, and Guides for NUST, FAST, ECAT, MDCAT, NTS, GIKI, Bahria & Air University.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dark.css') }}">
+  
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  
+  <style>
+    .brand-logo-img {
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+  </style>
+
+  {% block extra_head %}{% endblock %}
+</head>
+<body class="{% if system_settings.get('theme') == 'dark' %}dark-mode{% endif %}">
+
+  <!-- Application Header -->
+  <header class="app-header">
+    <div class="brand-section">
+      <a href="{{ url_for('home') }}" style="text-decoration: none; display: flex; align-items: center; gap: 0.85rem; color: inherit;">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Atechabad Academy" class="brand-logo-img">
+        <div class="brand-title-group">
+          <h1>Atechabad Testing System</h1>
+          <p>Universities Entry Test & CBT Portal</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="header-controls">
+      <button id="soundToggleBtn" class="btn btn-secondary btn-icon" title="Toggle Sound FX">
+        🔊
+      </button>
+      <button id="themeToggleBtn" class="btn btn-secondary btn-icon" title="Toggle Theme">
+        🌙
+      </button>
+      <a href="{{ url_for('guides') }}" class="btn btn-secondary" style="border-color: rgba(56,189,248,0.4); color: #38bdf8;">📚 Test Guides</a>
+      <a href="{{ url_for('practice') }}" class="btn btn-secondary" style="border-color: rgba(56,189,248,0.4); color: var(--brand-blue);">🎯 Practice Test</a>
+      <a href="{{ url_for('madness') }}" class="btn" style="background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); color: #fff; border: none; font-weight: 800;">🔥 Quiz Madness</a>
+      <a href="{{ url_for('home') }}" class="btn btn-secondary">🏠 Home</a>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Application Footer -->
+  <footer class="app-footer">
+    <p>&copy; 2026 Atechabad Testing System (ATS). Prepared for University Entrance Exams Excellence.</p>
+  </footer>
+
+  <script class="theme-script">
+    // Theme toggle handler
+    const themeBtn = document.getElementById('themeToggleBtn');
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      themeBtn.textContent = isDark ? '☀️' : '🌙';
+
+      fetch('{{ url_for("api_save_settings") }}', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ theme: isDark ? 'dark' : 'light' })
+      });
+    });
+
+    // Sound toggle handler
+    window.CBT_SOUND_MUTED = localStorage.getItem('ats_cbt_muted') === 'true';
+    const soundBtn = document.getElementById('soundToggleBtn');
+    if (soundBtn) {
+      soundBtn.textContent = window.CBT_SOUND_MUTED ? '🔇' : '🔊';
+      soundBtn.addEventListener('click', () => {
+        window.CBT_SOUND_MUTED = !window.CBT_SOUND_MUTED;
+        localStorage.setItem('ats_cbt_muted', window.CBT_SOUND_MUTED);
+        soundBtn.textContent = window.CBT_SOUND_MUTED ? '🔇' : '🔊';
+      });
+    }
+  </script>
+
+  {% block extra_js %}{% endblock %}
+</body>
+</html>

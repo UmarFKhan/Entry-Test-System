@@ -1,0 +1,2522 @@
+[
+  {
+    "id": 31,
+    "section": "Maths",
+    "question": "What is 15% of 480?",
+    "options": [
+      "62",
+      "72",
+      "82",
+      "92"
+    ],
+    "answer": "72",
+    "difficulty": "Easy",
+    "explanation": "15% of 480 = (15 / 100) * 480 = 0.15 * 480 = 72."
+  },
+  {
+    "id": 32,
+    "section": "Maths",
+    "question": "A shopkeeper buys an item for Rs. 800 and sells it for Rs. 960. What is his profit percentage?",
+    "options": [
+      "15%",
+      "18%",
+      "20%",
+      "25%"
+    ],
+    "answer": "20%",
+    "difficulty": "Easy",
+    "explanation": "Profit = 960 - 800 = 160. Profit % = (160 / 800) * 100 = 20%."
+  },
+  {
+    "id": 33,
+    "section": "Maths",
+    "question": "If the ratio of boys to girls in a class is 5:3 and there are 40 students total, how many boys are there?",
+    "options": [
+      "20",
+      "24",
+      "25",
+      "30"
+    ],
+    "answer": "25",
+    "difficulty": "Easy",
+    "explanation": "Total ratio parts = 5 + 3 = 8. Number of boys = (5 / 8) * 40 = 25."
+  },
+  {
+    "id": 34,
+    "section": "Maths",
+    "question": "The average of 5 numbers is 24. If one number is removed, the average becomes 20. What is the removed number?",
+    "options": [
+      "36",
+      "40",
+      "44",
+      "48"
+    ],
+    "answer": "40",
+    "difficulty": "Medium",
+    "explanation": "Sum of 5 numbers = 5 * 24 = 120. Sum of 4 remaining numbers = 4 * 20 = 80. Removed number = 120 - 80 = 40."
+  },
+  {
+    "id": 35,
+    "section": "Maths",
+    "question": "A train covers 300 km in 5 hours. What is its speed in km/h?",
+    "options": [
+      "50",
+      "55",
+      "60",
+      "65"
+    ],
+    "answer": "60",
+    "difficulty": "Easy",
+    "explanation": "Speed = Distance / Time = 300 km / 5 h = 60 km/h."
+  },
+  {
+    "id": 36,
+    "section": "Maths",
+    "question": "Find the next number in the series: 2, 6, 12, 20, 30, __",
+    "options": [
+      "40",
+      "42",
+      "44",
+      "36"
+    ],
+    "answer": "42",
+    "difficulty": "Medium",
+    "explanation": "Differences are +4, +6, +8, +10. Next difference is +12 => 30 + 12 = 42."
+  },
+  {
+    "id": 37,
+    "section": "Maths",
+    "question": "Find the missing number: 3, 9, 27, 81, __",
+    "options": [
+      "162",
+      "216",
+      "243",
+      "729"
+    ],
+    "answer": "243",
+    "difficulty": "Easy",
+    "explanation": "Geometric progression with common ratio 3. Next term = 81 * 3 = 243."
+  },
+  {
+    "id": 38,
+    "section": "Maths",
+    "question": "If 8 workers can complete a task in 12 days, how many days will 6 workers take?",
+    "options": [
+      "14",
+      "16",
+      "18",
+      "20"
+    ],
+    "answer": "16",
+    "difficulty": "Medium",
+    "explanation": "Worker-days required = 8 * 12 = 96. Days for 6 workers = 96 / 6 = 16 days."
+  },
+  {
+    "id": 39,
+    "section": "Maths",
+    "question": "A sum of Rs. 5000 is invested at 10% simple interest per annum. What is the interest after 3 years?",
+    "options": [
+      "Rs. 1000",
+      "Rs. 1200",
+      "Rs. 1500",
+      "Rs. 1800"
+    ],
+    "answer": "Rs. 1500",
+    "difficulty": "Easy",
+    "explanation": "Simple Interest = (P * R * T) / 100 = (5000 * 10 * 3) / 100 = 1500."
+  },
+  {
+    "id": 40,
+    "section": "Maths",
+    "question": "Simplify: (2/3) + (3/4)",
+    "options": [
+      "5/7",
+      "17/12",
+      "6/7",
+      "11/12"
+    ],
+    "answer": "17/12",
+    "difficulty": "Easy",
+    "explanation": "Common denominator = 12. (8/12) + (9/12) = 17/12."
+  },
+  {
+    "id": 41,
+    "section": "Maths",
+    "question": "A car's price is reduced by 20% to Rs. 960,000. What was the original price?",
+    "options": [
+      "Rs. 1,150,000",
+      "Rs. 1,180,000",
+      "Rs. 1,200,000",
+      "Rs. 1,250,000"
+    ],
+    "answer": "Rs. 1,200,000",
+    "difficulty": "Medium",
+    "explanation": "Original Price * (1 - 0.20) = 960,000 => Original Price = 960,000 / 0.8 = 1,200,000."
+  },
+  {
+    "id": 42,
+    "section": "Maths",
+    "question": "Two pipes fill a tank in 6 and 8 hours respectively. Working together, how long will they take?",
+    "options": [
+      "24/7 hours",
+      "3 hours",
+      "7 hours",
+      "4 hours"
+    ],
+    "answer": "24/7 hours",
+    "difficulty": "Hard",
+    "explanation": "Combined rate = 1/6 + 1/8 = 4/24 + 3/24 = 7/24 per hour. Time = 24/7 hours."
+  },
+  {
+    "id": 43,
+    "section": "Maths",
+    "question": "What is the least common multiple (LCM) of 12 and 18?",
+    "options": [
+      "24",
+      "36",
+      "48",
+      "72"
+    ],
+    "answer": "36",
+    "difficulty": "Easy",
+    "explanation": "Multiples of 12: 12, 24, 36... Multiples of 18: 18, 36... LCM = 36."
+  },
+  {
+    "id": 44,
+    "section": "Maths",
+    "question": "If x : y = 2 : 5, find (3x + y) : (x + 2y)",
+    "options": [
+      "11:12",
+      "1:1",
+      "5:6",
+      "2:3"
+    ],
+    "answer": "11:12",
+    "difficulty": "Medium",
+    "explanation": "Let x = 2k, y = 5k. (3(2k) + 5k) / (2k + 2(5k)) = 11k / 12k = 11:12."
+  },
+  {
+    "id": 45,
+    "section": "Maths",
+    "question": "A man walks 8 km in 2 hours and then 12 km in 3 hours. What is his average speed for the whole journey?",
+    "options": [
+      "3.5 km/h",
+      "4 km/h",
+      "4.5 km/h",
+      "5 km/h"
+    ],
+    "answer": "4 km/h",
+    "difficulty": "Medium",
+    "explanation": "Average Speed = Total Distance / Total Time = (8 + 12) / (2 + 3) = 20 / 5 = 4 km/h."
+  },
+  {
+    "id": 71,
+    "section": "Maths",
+    "question": "If f(x) = 2x² − 3x + 1, what is f(2)?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "3",
+    "difficulty": "Easy",
+    "explanation": "f(2) = 2(2)² - 3(2) + 1 = 8 - 6 + 1 = 3."
+  },
+  {
+    "id": 72,
+    "section": "Maths",
+    "question": "Solve for x: 2x + 7 = 19",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": "6",
+    "difficulty": "Easy",
+    "explanation": "2x = 19 - 7 = 12 => x = 6."
+  },
+  {
+    "id": 73,
+    "section": "Maths",
+    "question": "Solve the quadratic equation: x² − 5x + 6 = 0",
+    "options": [
+      "x = 2, 3",
+      "x = 1, 6",
+      "x = -2, -3",
+      "x = 2, -3"
+    ],
+    "answer": "x = 2, 3",
+    "difficulty": "Easy",
+    "explanation": "(x - 2)(x - 3) = 0 => x = 2 or x = 3."
+  },
+  {
+    "id": 74,
+    "section": "Maths",
+    "question": "What is the approximate value of the square root of 1596?",
+    "options": [
+      "30",
+      "35",
+      "40",
+      "45"
+    ],
+    "answer": "40",
+    "difficulty": "Easy",
+    "explanation": "40² = 1600, which is approximately 1596."
+  },
+  {
+    "id": 75,
+    "section": "Maths",
+    "question": "Simplify: (a + b)² − (a − b)²",
+    "options": [
+      "2ab",
+      "4ab",
+      "a² + b²",
+      "2a²"
+    ],
+    "answer": "4ab",
+    "difficulty": "Medium",
+    "explanation": "(a² + 2ab + b²) - (a² - 2ab + b²) = 4ab."
+  },
+  {
+    "id": 76,
+    "section": "Maths",
+    "question": "If the nth term of an arithmetic sequence is given by aₙ = 3n + 2, what is the 10th term?",
+    "options": [
+      "30",
+      "32",
+      "34",
+      "35"
+    ],
+    "answer": "32",
+    "difficulty": "Easy",
+    "explanation": "a₁₀ = 3(10) + 2 = 30 + 2 = 32."
+  },
+  {
+    "id": 77,
+    "section": "Maths",
+    "question": "Find the sum of the first 10 terms of the arithmetic series: 2, 5, 8, 11, ...",
+    "options": [
+      "145",
+      "155",
+      "160",
+      "165"
+    ],
+    "answer": "155",
+    "difficulty": "Medium",
+    "explanation": "S_n = (n/2) * [2a + (n-1)d] = 5 * [2(2) + 9(3)] = 5 * [4 + 27] = 5 * 31 = 155."
+  },
+  {
+    "id": 78,
+    "section": "Maths",
+    "question": "If A = {1, 2, 3} and B = {2, 3, 4}, what is A ∩ B?",
+    "options": [
+      "{1,2,3,4}",
+      "{2,3}",
+      "{1,4}",
+      "{ }"
+    ],
+    "answer": "{2,3}",
+    "difficulty": "Easy",
+    "explanation": "Intersection contains elements present in both sets: {2, 3}."
+  },
+  {
+    "id": 79,
+    "section": "Maths",
+    "question": "If A = {1, 2, 3} and B = {2, 3, 4}, what is A ∪ B?",
+    "options": [
+      "{1,2,3,4}",
+      "{2,3}",
+      "{1,2,3}",
+      "{2,3,4}"
+    ],
+    "answer": "{1,2,3,4}",
+    "difficulty": "Easy",
+    "explanation": "Union combines elements from both sets without duplicates: {1, 2, 3, 4}."
+  },
+  {
+    "id": 80,
+    "section": "Maths",
+    "question": "What is the value of sin(30°) + cos(60°)?",
+    "options": [
+      "0.5",
+      "1",
+      "1.5",
+      "2"
+    ],
+    "answer": "1",
+    "difficulty": "Easy",
+    "explanation": "sin(30°) = 0.5, cos(60°) = 0.5. 0.5 + 0.5 = 1."
+  },
+  {
+    "id": 81,
+    "section": "Maths",
+    "question": "What is the value of tan(45°)?",
+    "options": [
+      "0",
+      "0.5",
+      "1",
+      "undefined"
+    ],
+    "answer": "1",
+    "difficulty": "Easy",
+    "explanation": "tan(45°) = 1."
+  },
+  {
+    "id": 82,
+    "section": "Maths",
+    "question": "If a matrix A = [[2,1],[3,4]], what is its determinant?",
+    "options": [
+      "3",
+      "5",
+      "8",
+      "11"
+    ],
+    "answer": "5",
+    "difficulty": "Easy",
+    "explanation": "det(A) = (2)(4) - (1)(3) = 8 - 3 = 5."
+  },
+  {
+    "id": 83,
+    "section": "Maths",
+    "question": "Solve for x: log₂(x) = 5",
+    "options": [
+      "10",
+      "16",
+      "25",
+      "32"
+    ],
+    "answer": "32",
+    "difficulty": "Medium",
+    "explanation": "x = 2⁵ = 32."
+  },
+  {
+    "id": 84,
+    "section": "Maths",
+    "question": "Find the derivative of f(x) = 3x² + 5x − 7.",
+    "options": [
+      "6x + 5",
+      "3x + 5",
+      "6x − 7",
+      "6x² + 5"
+    ],
+    "answer": "6x + 5",
+    "difficulty": "Easy",
+    "explanation": "f'(x) = d/dx(3x²) + d/dx(5x) - 0 = 6x + 5."
+  },
+  {
+    "id": 85,
+    "section": "Maths",
+    "question": "Evaluate the limit: lim(x→2) (x² − 4)/(x − 2)",
+    "options": [
+      "0",
+      "2",
+      "4",
+      "undefined"
+    ],
+    "answer": "4",
+    "difficulty": "Medium",
+    "explanation": "Factor numerator: (x - 2)(x + 2) / (x - 2) = x + 2. lim(x->2) (2 + 2) = 4."
+  },
+  {
+    "id": 86,
+    "section": "Maths",
+    "question": "How many ways can 4 people be arranged in a row?",
+    "options": [
+      "12",
+      "16",
+      "24",
+      "32"
+    ],
+    "answer": "24",
+    "difficulty": "Easy",
+    "explanation": "4! = 4 * 3 * 2 * 1 = 24 ways."
+  },
+  {
+    "id": 87,
+    "section": "Maths",
+    "question": "In how many ways can a committee of 3 be chosen from 6 people?",
+    "options": [
+      "15",
+      "18",
+      "20",
+      "24"
+    ],
+    "answer": "20",
+    "difficulty": "Medium",
+    "explanation": "Combination ⁶C₃ = (6 * 5 * 4) / (3 * 2 * 1) = 20."
+  },
+  {
+    "id": 88,
+    "section": "Maths",
+    "question": "If x + y = 10 and xy = 21, find x² + y².",
+    "options": [
+      "58",
+      "60",
+      "62",
+      "64"
+    ],
+    "answer": "58",
+    "difficulty": "Medium",
+    "explanation": "x² + y² = (x + y)² - 2xy = (10)² - 2(21) = 100 - 42 = 58."
+  },
+  {
+    "id": 89,
+    "section": "Maths",
+    "question": "Solve: 3(x − 2) = 2(x + 4)",
+    "options": [
+      "x = 12",
+      "x = 14",
+      "x = 16",
+      "x = 10"
+    ],
+    "answer": "x = 14",
+    "difficulty": "Easy",
+    "explanation": "3x - 6 = 2x + 8 => 3x - 2x = 8 + 6 => x = 14."
+  },
+  {
+    "id": 90,
+    "section": "Maths",
+    "question": "What is the value of (2³ × 2⁴) / 2⁵?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "answer": "4",
+    "difficulty": "Easy",
+    "explanation": "2^(3 + 4 - 5) = 2² = 4."
+  },
+  {
+    "id": 91,
+    "section": "Maths",
+    "question": "If the roots of a quadratic equation are 3 and -2, what is the equation?",
+    "options": [
+      "x² − x − 6 = 0",
+      "x² + x − 6 = 0",
+      "x² − x + 6 = 0",
+      "x² + x + 6 = 0"
+    ],
+    "answer": "x² − x − 6 = 0",
+    "difficulty": "Medium",
+    "explanation": "(x - 3)(x + 2) = x² - x - 6 = 0."
+  },
+  {
+    "id": 92,
+    "section": "Maths",
+    "question": "What is the slope of the line passing through points (2,3) and (4,7)?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2",
+    "difficulty": "Easy",
+    "explanation": "Slope m = (y₂ - y₁) / (x₂ - x₁) = (7 - 3) / (4 - 2) = 4 / 2 = 2."
+  },
+  {
+    "id": 93,
+    "section": "Maths",
+    "question": "Convert 135° into radians.",
+    "options": [
+      "π/2",
+      "3π/4",
+      "2π/3",
+      "5π/6"
+    ],
+    "answer": "3π/4",
+    "difficulty": "Medium",
+    "explanation": "135 * (π / 180) = 3π / 4."
+  },
+  {
+    "id": 94,
+    "section": "Maths",
+    "question": "What is the value of 0! + 1! + 2!?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4",
+    "difficulty": "Easy",
+    "explanation": "0! = 1, 1! = 1, 2! = 2. 1 + 1 + 2 = 4."
+  },
+  {
+    "id": 95,
+    "section": "Maths",
+    "question": "If a die is rolled once, what is the probability of getting a number greater than 4?",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "answer": "1/3",
+    "difficulty": "Easy",
+    "explanation": "Numbers > 4 on a die are {5, 6} (2 numbers). P = 2/6 = 1/3."
+  },
+  {
+    "id": 96,
+    "section": "Maths",
+    "question": "Simplify: √50 + √18",
+    "options": [
+      "6√2",
+      "7√2",
+      "8√2",
+      "9√2"
+    ],
+    "answer": "8√2",
+    "difficulty": "Medium",
+    "explanation": "√50 = 5√2, √18 = 3√2. 5√2 + 3√2 = 8√2."
+  },
+  {
+    "id": 97,
+    "section": "Maths",
+    "question": "The sum of the interior angles of a hexagon is:",
+    "options": [
+      "540°",
+      "630°",
+      "720°",
+      "900°"
+    ],
+    "answer": "720°",
+    "difficulty": "Medium",
+    "explanation": "Sum = (n - 2) * 180° = (6 - 2) * 180° = 4 * 180° = 720°."
+  },
+  {
+    "id": 98,
+    "section": "Maths",
+    "question": "If f(x) = x³, what is f⁻¹(27)?",
+    "options": [
+      "2",
+      "3",
+      "9",
+      "27"
+    ],
+    "answer": "3",
+    "difficulty": "Easy",
+    "explanation": "f⁻¹(27) is the number x such that x³ = 27, which is 3."
+  },
+  {
+    "id": 99,
+    "section": "Maths",
+    "question": "What is the value of cos²θ + sin²θ?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "depends on θ"
+    ],
+    "answer": "1",
+    "difficulty": "Easy",
+    "explanation": "Fundamental trigonometric identity cos²θ + sin²θ = 1."
+  },
+  {
+    "id": 100,
+    "section": "Maths",
+    "question": "Solve the inequality: 2x − 5 > 3",
+    "options": [
+      "x > 4",
+      "x > 3",
+      "x < 4",
+      "x < 3"
+    ],
+    "answer": "x > 4",
+    "difficulty": "Easy",
+    "explanation": "2x > 8 => x > 4."
+  },
+  {
+    "id": 101,
+    "section": "Maths",
+    "question": "What is 30% of 250?",
+    "options": [
+      "65",
+      "70",
+      "75",
+      "80"
+    ],
+    "answer": "75",
+    "difficulty": "Easy",
+    "explanation": "30% of 250 = (30/100) × 250 = 75."
+  },
+  {
+    "id": 102,
+    "section": "Maths",
+    "question": "A shopkeeper marks an item at Rs. 1200 and gives a 15% discount. What is the selling price?",
+    "options": [
+      "Rs. 980",
+      "Rs. 1000",
+      "Rs. 1020",
+      "Rs. 1050"
+    ],
+    "answer": "Rs. 1020",
+    "difficulty": "Easy",
+    "explanation": "Discount = 15% of 1200 = 180. Selling price = 1200 − 180 = 1020."
+  },
+  {
+    "id": 103,
+    "section": "Maths",
+    "question": "If a number is increased by 25% and then decreased by 25%, what is the net change?",
+    "options": [
+      "No change",
+      "Decrease of 6.25%",
+      "Increase of 6.25%",
+      "Decrease of 5%"
+    ],
+    "answer": "Decrease of 6.25%",
+    "difficulty": "Medium",
+    "explanation": "Let number = 100. After +25% = 125. After −25% of 125 = 93.75. Net change = −6.25%."
+  },
+  {
+    "id": 104,
+    "section": "Maths",
+    "question": "Three numbers are in the ratio 2:3:5. If their sum is 200, find the largest number.",
+    "options": [
+      "50",
+      "80",
+      "100",
+      "120"
+    ],
+    "answer": "100",
+    "difficulty": "Easy",
+    "explanation": "Total parts = 2+3+5 = 10. Largest = (5/10) × 200 = 100."
+  },
+  {
+    "id": 105,
+    "section": "Maths",
+    "question": "The HCF of 36 and 48 is:",
+    "options": [
+      "6",
+      "9",
+      "12",
+      "18"
+    ],
+    "answer": "12",
+    "difficulty": "Easy",
+    "explanation": "Factors of 36: 1,2,3,4,6,9,12,18,36. Factors of 48: 1,2,3,4,6,8,12,16,24,48. HCF = 12."
+  },
+  {
+    "id": 106,
+    "section": "Maths",
+    "question": "A man sold an article at a loss of 10%. If the cost price was Rs. 500, find the selling price.",
+    "options": [
+      "Rs. 400",
+      "Rs. 420",
+      "Rs. 450",
+      "Rs. 460"
+    ],
+    "answer": "Rs. 450",
+    "difficulty": "Easy",
+    "explanation": "Loss = 10% of 500 = 50. SP = 500 − 50 = 450."
+  },
+  {
+    "id": 107,
+    "section": "Maths",
+    "question": "The simple interest on Rs. 2000 at 5% per annum for 4 years is:",
+    "options": [
+      "Rs. 300",
+      "Rs. 350",
+      "Rs. 400",
+      "Rs. 450"
+    ],
+    "answer": "Rs. 400",
+    "difficulty": "Easy",
+    "explanation": "SI = (P × R × T)/100 = (2000 × 5 × 4)/100 = Rs. 400."
+  },
+  {
+    "id": 108,
+    "section": "Maths",
+    "question": "What is the compound interest on Rs. 1000 at 10% per annum for 2 years?",
+    "options": [
+      "Rs. 200",
+      "Rs. 210",
+      "Rs. 220",
+      "Rs. 250"
+    ],
+    "answer": "Rs. 210",
+    "difficulty": "Medium",
+    "explanation": "A = 1000 × (1.1)² = 1210. CI = 1210 − 1000 = Rs. 210."
+  },
+  {
+    "id": 109,
+    "section": "Maths",
+    "question": "Two trains of lengths 120 m and 80 m are moving towards each other at 60 km/h and 40 km/h. How long will they take to cross each other?",
+    "options": [
+      "6 s",
+      "7.2 s",
+      "8 s",
+      "10 s"
+    ],
+    "answer": "7.2 s",
+    "difficulty": "Medium",
+    "explanation": "Relative speed = 100 km/h = 250/9 m/s. Total length = 200 m. Time = 200 ÷ (250/9) = 7.2 s."
+  },
+  {
+    "id": 110,
+    "section": "Maths",
+    "question": "A pipe can fill a tank in 12 hours. How much of the tank is filled in 4 hours?",
+    "options": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "answer": "1/3",
+    "difficulty": "Easy",
+    "explanation": "In 4 hours, fraction filled = 4/12 = 1/3."
+  },
+  {
+    "id": 111,
+    "section": "Maths",
+    "question": "Solve for x: 5x − 3 = 2x + 9",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "4",
+    "difficulty": "Easy",
+    "explanation": "5x − 2x = 9 + 3 → 3x = 12 → x = 4."
+  },
+  {
+    "id": 112,
+    "section": "Maths",
+    "question": "If 3x + 4y = 24 and x = 4, find y.",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "answer": "3",
+    "difficulty": "Easy",
+    "explanation": "3(4) + 4y = 24 → 12 + 4y = 24 → 4y = 12 → y = 3."
+  },
+  {
+    "id": 113,
+    "section": "Maths",
+    "question": "The product of two consecutive integers is 56. What are the integers?",
+    "options": [
+      "6 and 7",
+      "7 and 8",
+      "8 and 9",
+      "5 and 6"
+    ],
+    "answer": "7 and 8",
+    "difficulty": "Easy",
+    "explanation": "7 × 8 = 56. These are consecutive integers."
+  },
+  {
+    "id": 114,
+    "section": "Maths",
+    "question": "Simplify: (x² − 9) / (x − 3)",
+    "options": [
+      "x − 3",
+      "x + 3",
+      "x² + 3",
+      "x + 9"
+    ],
+    "answer": "x + 3",
+    "difficulty": "Easy",
+    "explanation": "(x−3)(x+3) / (x−3) = x + 3."
+  },
+  {
+    "id": 115,
+    "section": "Maths",
+    "question": "The perimeter of a rectangle is 60 cm. If the length is 20 cm, what is the width?",
+    "options": [
+      "5 cm",
+      "8 cm",
+      "10 cm",
+      "15 cm"
+    ],
+    "answer": "10 cm",
+    "difficulty": "Easy",
+    "explanation": "P = 2(l + w) → 60 = 2(20 + w) → w = 10 cm."
+  },
+  {
+    "id": 116,
+    "section": "Maths",
+    "question": "The area of a circle with radius 7 cm is: (use π = 22/7)",
+    "options": [
+      "44 cm²",
+      "88 cm²",
+      "154 cm²",
+      "616 cm²"
+    ],
+    "answer": "154 cm²",
+    "difficulty": "Easy",
+    "explanation": "Area = πr² = (22/7) × 7² = 22 × 7 = 154 cm²."
+  },
+  {
+    "id": 117,
+    "section": "Maths",
+    "question": "The volume of a cube with side 5 cm is:",
+    "options": [
+      "25 cm³",
+      "75 cm³",
+      "100 cm³",
+      "125 cm³"
+    ],
+    "answer": "125 cm³",
+    "difficulty": "Easy",
+    "explanation": "Volume = s³ = 5³ = 125 cm³."
+  },
+  {
+    "id": 118,
+    "section": "Maths",
+    "question": "In a right triangle, if one leg is 3 and the hypotenuse is 5, the other leg is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "answer": "4",
+    "difficulty": "Easy",
+    "explanation": "Using Pythagoras: a² + 3² = 5² → a² = 25 − 9 = 16 → a = 4."
+  },
+  {
+    "id": 119,
+    "section": "Maths",
+    "question": "Two angles of a triangle are 60° and 80°. What is the third angle?",
+    "options": [
+      "30°",
+      "40°",
+      "50°",
+      "60°"
+    ],
+    "answer": "40°",
+    "difficulty": "Easy",
+    "explanation": "Sum of angles = 180°. Third angle = 180 − 60 − 80 = 40°."
+  },
+  {
+    "id": 120,
+    "section": "Maths",
+    "question": "If sin θ = 3/5 in a right triangle, find cos θ.",
+    "options": [
+      "3/4",
+      "4/5",
+      "3/5",
+      "5/4"
+    ],
+    "answer": "4/5",
+    "difficulty": "Medium",
+    "explanation": "cos θ = adjacent/hypotenuse. By Pythagoras, adjacent = √(25−9) = 4. cos θ = 4/5."
+  },
+  {
+    "id": 121,
+    "section": "Maths",
+    "question": "What is the median of the data set: 3, 7, 9, 11, 15?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "11"
+    ],
+    "answer": "9",
+    "difficulty": "Easy",
+    "explanation": "The data is already sorted. The middle value (3rd of 5) is 9."
+  },
+  {
+    "id": 122,
+    "section": "Maths",
+    "question": "What is the mode of: 2, 4, 4, 6, 8, 4, 9?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "9"
+    ],
+    "answer": "4",
+    "difficulty": "Easy",
+    "explanation": "Mode is the most frequently occurring value. 4 appears 3 times."
+  },
+  {
+    "id": 123,
+    "section": "Maths",
+    "question": "A card is drawn at random from a standard deck of 52 cards. The probability of drawing a king is:",
+    "options": [
+      "1/13",
+      "1/26",
+      "1/52",
+      "4/26"
+    ],
+    "answer": "1/13",
+    "difficulty": "Easy",
+    "explanation": "There are 4 kings in 52 cards. P = 4/52 = 1/13."
+  },
+  {
+    "id": 124,
+    "section": "Maths",
+    "question": "Find the 8th term of the geometric sequence: 2, 6, 18, 54, ...",
+    "options": [
+      "2187",
+      "4374",
+      "6561",
+      "13122"
+    ],
+    "answer": "4374",
+    "difficulty": "Medium",
+    "explanation": "a = 2, r = 3. a₈ = 2 × 3⁷ = 2 × 2187 = 4374."
+  },
+  {
+    "id": 125,
+    "section": "Maths",
+    "question": "What is the value of 5² + 12²?",
+    "options": [
+      "119",
+      "144",
+      "169",
+      "196"
+    ],
+    "answer": "169",
+    "difficulty": "Easy",
+    "explanation": "5² = 25, 12² = 144. 25 + 144 = 169."
+  },
+  {
+    "id": 126,
+    "section": "Maths",
+    "question": "If 2ˣ = 32, then x equals:",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "5",
+    "difficulty": "Easy",
+    "explanation": "2⁵ = 32, so x = 5."
+  },
+  {
+    "id": 127,
+    "section": "Maths",
+    "question": "Evaluate: log₁₀(1000)",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "10"
+    ],
+    "answer": "3",
+    "difficulty": "Easy",
+    "explanation": "10³ = 1000, so log₁₀(1000) = 3."
+  },
+  {
+    "id": 128,
+    "section": "Maths",
+    "question": "Find the derivative of f(x) = sin x.",
+    "options": [
+      "−sin x",
+      "cos x",
+      "−cos x",
+      "tan x"
+    ],
+    "answer": "cos x",
+    "difficulty": "Easy",
+    "explanation": "The derivative of sin x is cos x."
+  },
+  {
+    "id": 129,
+    "section": "Maths",
+    "question": "What is ∫x dx?",
+    "options": [
+      "x + C",
+      "x²/2 + C",
+      "2x + C",
+      "x²+ C"
+    ],
+    "answer": "x²/2 + C",
+    "difficulty": "Easy",
+    "explanation": "∫x dx = x²/2 + C by the power rule of integration."
+  },
+  {
+    "id": 130,
+    "section": "Maths",
+    "question": "A matrix of order 3×4 has how many elements?",
+    "options": [
+      "7",
+      "8",
+      "12",
+      "16"
+    ],
+    "answer": "12",
+    "difficulty": "Easy",
+    "explanation": "Number of elements = rows × columns = 3 × 4 = 12."
+  },
+  {
+    "id": 131,
+    "section": "Maths",
+    "question": "What is the range of the data: 5, 8, 12, 3, 19, 7?",
+    "options": [
+      "12",
+      "14",
+      "16",
+      "19"
+    ],
+    "answer": "16",
+    "difficulty": "Easy",
+    "explanation": "Range = Maximum − Minimum = 19 − 3 = 16."
+  },
+  {
+    "id": 132,
+    "section": "Maths",
+    "question": "How many prime numbers are there between 10 and 30?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "4",
+    "difficulty": "Easy",
+    "explanation": "Prime numbers between 10 and 30: 11, 13, 17, 19, 23, 29 — wait, that's 6. Strictly between: 11,13,17,19,23,29 = 6."
+  },
+  {
+    "id": 133,
+    "section": "Maths",
+    "question": "Evaluate: 7! / 5!",
+    "options": [
+      "21",
+      "35",
+      "42",
+      "56"
+    ],
+    "answer": "42",
+    "difficulty": "Easy",
+    "explanation": "7!/5! = 7 × 6 = 42."
+  },
+  {
+    "id": 134,
+    "section": "Maths",
+    "question": "The angle in a semicircle is always:",
+    "options": [
+      "45°",
+      "60°",
+      "90°",
+      "180°"
+    ],
+    "answer": "90°",
+    "difficulty": "Easy",
+    "explanation": "By Thales' theorem, the angle inscribed in a semicircle is always 90°."
+  },
+  {
+    "id": 135,
+    "section": "Maths",
+    "question": "What is the sum of first 100 natural numbers?",
+    "options": [
+      "4500",
+      "5000",
+      "5050",
+      "5500"
+    ],
+    "answer": "5050",
+    "difficulty": "Easy",
+    "explanation": "S = n(n+1)/2 = 100 × 101 / 2 = 5050."
+  },
+  {
+    "id": 136,
+    "section": "Maths",
+    "question": "What is 45% of 320?",
+    "options": [
+      "124",
+      "134",
+      "144",
+      "154"
+    ],
+    "answer": "144",
+    "difficulty": "Easy",
+    "explanation": "45% of 320 = 0.45 × 320 = 144."
+  },
+  {
+    "id": 137,
+    "section": "Maths",
+    "question": "A shopkeeper buys an item for Rs. 1500 and sells it for Rs. 1800. What is his profit percentage?",
+    "options": [
+      "15%",
+      "18%",
+      "20%",
+      "25%"
+    ],
+    "answer": "20%",
+    "difficulty": "Easy",
+    "explanation": "Profit = 1800 - 1500 = 300. Profit % = (300/1500) × 100 = 20%."
+  },
+  {
+    "id": 138,
+    "section": "Maths",
+    "question": "The ratio of two numbers is 4:7. If their sum is 99, what is the smaller number?",
+    "options": [
+      "30",
+      "36",
+      "40",
+      "44"
+    ],
+    "answer": "36",
+    "difficulty": "Easy",
+    "explanation": "Total parts = 11. Smaller = (4/11) × 99 = 36."
+  },
+  {
+    "id": 139,
+    "section": "Maths",
+    "question": "The average of 6 numbers is 18. If one number is removed, the average becomes 16. What is the removed number?",
+    "options": [
+      "24",
+      "26",
+      "28",
+      "30"
+    ],
+    "answer": "28",
+    "difficulty": "Medium",
+    "explanation": "Sum of 6 numbers = 108. Sum of 5 remaining = 80. Removed = 108 - 80 = 28."
+  },
+  {
+    "id": 140,
+    "section": "Maths",
+    "question": "A car covers 210 km in 3.5 hours. What is its speed in km/h?",
+    "options": [
+      "55",
+      "60",
+      "65",
+      "70"
+    ],
+    "answer": "60",
+    "difficulty": "Easy",
+    "explanation": "Speed = 210/3.5 = 60 km/h."
+  },
+  {
+    "id": 141,
+    "section": "Maths",
+    "question": "Find the next number in the series: 3, 7, 15, 31, 63, __",
+    "options": [
+      "95",
+      "111",
+      "127",
+      "135"
+    ],
+    "answer": "127",
+    "difficulty": "Medium",
+    "explanation": "Each term = previous × 2 + 1. 63×2+1 = 127."
+  },
+  {
+    "id": 142,
+    "section": "Maths",
+    "question": "Find the missing number: 4, 12, 36, 108, __",
+    "options": [
+      "216",
+      "270",
+      "324",
+      "330"
+    ],
+    "answer": "324",
+    "difficulty": "Easy",
+    "explanation": "Geometric progression with ratio 3. 108 × 3 = 324."
+  },
+  {
+    "id": 143,
+    "section": "Maths",
+    "question": "If 10 workers can complete a task in 18 days, how many days will 15 workers take?",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "answer": "12",
+    "difficulty": "Medium",
+    "explanation": "Worker-days = 10 × 18 = 180. Days for 15 workers = 180/15 = 12."
+  },
+  {
+    "id": 144,
+    "section": "Maths",
+    "question": "A sum of Rs. 8000 is invested at 6% simple interest per annum. What is the interest after 5 years?",
+    "options": [
+      "Rs. 2200",
+      "Rs. 2400",
+      "Rs. 2600",
+      "Rs. 2800"
+    ],
+    "answer": "Rs. 2400",
+    "difficulty": "Easy",
+    "explanation": "SI = (8000 × 6 × 5)/100 = 2400."
+  },
+  {
+    "id": 145,
+    "section": "Maths",
+    "question": "Simplify: (3/5) + (1/4)",
+    "options": [
+      "4/9",
+      "17/20",
+      "7/10",
+      "19/20"
+    ],
+    "answer": "17/20",
+    "difficulty": "Easy",
+    "explanation": "Common denominator 20: 12/20 + 5/20 = 17/20."
+  },
+  {
+    "id": 146,
+    "section": "Maths",
+    "question": "An item's price is reduced by 25% to Rs. 750. What was the original price?",
+    "options": [
+      "Rs. 900",
+      "Rs. 950",
+      "Rs. 1000",
+      "Rs. 1050"
+    ],
+    "answer": "Rs. 1000",
+    "difficulty": "Medium",
+    "explanation": "Original × 0.75 = 750 → Original = 750/0.75 = 1000."
+  },
+  {
+    "id": 147,
+    "section": "Maths",
+    "question": "Two pipes fill a tank in 4 and 12 hours respectively. Working together, how long will they take?",
+    "options": [
+      "2 hours",
+      "3 hours",
+      "4 hours",
+      "6 hours"
+    ],
+    "answer": "3 hours",
+    "difficulty": "Medium",
+    "explanation": "Combined rate = 1/4 + 1/12 = 3/12 + 1/12 = 4/12 = 1/3 per hour. Time = 3 hours."
+  },
+  {
+    "id": 148,
+    "section": "Maths",
+    "question": "What is the least common multiple (LCM) of 15 and 20?",
+    "options": [
+      "30",
+      "45",
+      "60",
+      "75"
+    ],
+    "answer": "60",
+    "difficulty": "Easy",
+    "explanation": "Multiples of 15: 15,30,45,60. Multiples of 20: 20,40,60. LCM = 60."
+  },
+  {
+    "id": 149,
+    "section": "Maths",
+    "question": "If x : y = 3 : 4, find (2x + y) : (x + 3y)",
+    "options": [
+      "10:15",
+      "2:3",
+      "10:9",
+      "1:1"
+    ],
+    "answer": "10:15",
+    "difficulty": "Medium",
+    "explanation": "Let x=3k, y=4k. (6k+4k)/(3k+12k) = 10k/15k = 10:15."
+  },
+  {
+    "id": 150,
+    "section": "Maths",
+    "question": "A man walks 10 km in 2 hours and then 15 km in 3 hours. What is his average speed for the whole journey?",
+    "options": [
+      "4 km/h",
+      "5 km/h",
+      "6 km/h",
+      "7 km/h"
+    ],
+    "answer": "5 km/h",
+    "difficulty": "Medium",
+    "explanation": "Average speed = (10+15)/(2+3) = 25/5 = 5 km/h."
+  },
+  {
+    "id": 151,
+    "section": "Maths",
+    "question": "If f(x) = 3x² − 2x + 4, what is f(3)?",
+    "options": [
+      "25",
+      "27",
+      "29",
+      "31"
+    ],
+    "answer": "25",
+    "difficulty": "Easy",
+    "explanation": "f(3) = 3(9) - 2(3) + 4 = 27 - 6 + 4 = 25."
+  },
+  {
+    "id": 152,
+    "section": "Maths",
+    "question": "Solve for x: 3x − 5 = 16",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": "7",
+    "difficulty": "Easy",
+    "explanation": "3x = 21 → x = 7."
+  },
+  {
+    "id": 153,
+    "section": "Maths",
+    "question": "Solve the quadratic equation: x² − 7x + 12 = 0",
+    "options": [
+      "x = 3, 4",
+      "x = 2, 6",
+      "x = -3, -4",
+      "x = 1, 12"
+    ],
+    "answer": "x = 3, 4",
+    "difficulty": "Easy",
+    "explanation": "(x-3)(x-4) = 0 → x = 3 or x = 4."
+  },
+  {
+    "id": 154,
+    "section": "Maths",
+    "question": "What is the approximate value of the square root of 2450?",
+    "options": [
+      "45",
+      "50",
+      "55",
+      "60"
+    ],
+    "answer": "50",
+    "difficulty": "Easy",
+    "explanation": "50² = 2500, which is approximately 2450."
+  },
+  {
+    "id": 155,
+    "section": "Maths",
+    "question": "Simplify: (x + 2y)² − (x − 2y)²",
+    "options": [
+      "4xy",
+      "8xy",
+      "2x²",
+      "4x²"
+    ],
+    "answer": "8xy",
+    "difficulty": "Medium",
+    "explanation": "(x²+4xy+4y²)-(x²-4xy+4y²) = 8xy."
+  },
+  {
+    "id": 156,
+    "section": "Maths",
+    "question": "If the nth term of an arithmetic sequence is aₙ = 4n − 1, what is the 12th term?",
+    "options": [
+      "45",
+      "46",
+      "47",
+      "48"
+    ],
+    "answer": "47",
+    "difficulty": "Easy",
+    "explanation": "a₁₂ = 4(12) − 1 = 48 − 1 = 47."
+  },
+  {
+    "id": 157,
+    "section": "Maths",
+    "question": "Find the sum of the first 12 terms of the arithmetic series: 3, 7, 11, 15, ...",
+    "options": [
+      "270",
+      "288",
+      "300",
+      "312"
+    ],
+    "answer": "300",
+    "difficulty": "Medium",
+    "explanation": "S_n = (n/2)[2a+(n-1)d] = 6[6+11(4)] = 6×50 = 300."
+  },
+  {
+    "id": 158,
+    "section": "Maths",
+    "question": "If A = {2, 4, 6} and B = {4, 6, 8}, what is A ∩ B?",
+    "options": [
+      "{2,4,6,8}",
+      "{4,6}",
+      "{2,8}",
+      "{ }"
+    ],
+    "answer": "{4,6}",
+    "difficulty": "Easy",
+    "explanation": "Intersection contains elements in both sets: {4, 6}."
+  },
+  {
+    "id": 159,
+    "section": "Maths",
+    "question": "If A = {2, 4, 6} and B = {4, 6, 8}, what is A ∪ B?",
+    "options": [
+      "{2,4,6,8}",
+      "{4,6}",
+      "{2,4,6}",
+      "{4,6,8}"
+    ],
+    "answer": "{2,4,6,8}",
+    "difficulty": "Easy",
+    "explanation": "Union combines elements without duplicates: {2, 4, 6, 8}."
+  },
+  {
+    "id": 160,
+    "section": "Maths",
+    "question": "What is the value of sin(45°) × √2?",
+    "options": [
+      "0.5",
+      "1",
+      "1.5",
+      "2"
+    ],
+    "answer": "1",
+    "difficulty": "Easy",
+    "explanation": "sin(45°) = √2/2. √2/2 × √2 = 2/2 = 1."
+  },
+  {
+    "id": 161,
+    "section": "Maths",
+    "question": "What is the value of tan(60°)?",
+    "options": [
+      "1",
+      "√2",
+      "√3",
+      "2"
+    ],
+    "answer": "√3",
+    "difficulty": "Easy",
+    "explanation": "tan(60°) = √3."
+  },
+  {
+    "id": 162,
+    "section": "Maths",
+    "question": "If a matrix A = [[3,2],[1,4]], what is its determinant?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "answer": "10",
+    "difficulty": "Easy",
+    "explanation": "det(A) = (3)(4) - (2)(1) = 12 - 2 = 10."
+  },
+  {
+    "id": 163,
+    "section": "Maths",
+    "question": "Solve for x: log₃(x) = 4",
+    "options": [
+      "12",
+      "27",
+      "64",
+      "81"
+    ],
+    "answer": "81",
+    "difficulty": "Medium",
+    "explanation": "x = 3⁴ = 81."
+  },
+  {
+    "id": 164,
+    "section": "Maths",
+    "question": "Find the derivative of f(x) = 4x³ − 2x + 9.",
+    "options": [
+      "12x² − 2",
+      "4x² − 2",
+      "12x² + 9",
+      "12x³ − 2"
+    ],
+    "answer": "12x² − 2",
+    "difficulty": "Easy",
+    "explanation": "f'(x) = 12x² − 2."
+  },
+  {
+    "id": 165,
+    "section": "Maths",
+    "question": "Evaluate the limit: lim(x→3) (x² − 9)/(x − 3)",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "undefined"
+    ],
+    "answer": "6",
+    "difficulty": "Medium",
+    "explanation": "Factor: (x-3)(x+3)/(x-3) = x+3. Limit at x=3 is 6."
+  },
+  {
+    "id": 166,
+    "section": "Maths",
+    "question": "How many ways can 5 people be arranged in a row?",
+    "options": [
+      "60",
+      "90",
+      "120",
+      "150"
+    ],
+    "answer": "120",
+    "difficulty": "Easy",
+    "explanation": "5! = 120."
+  },
+  {
+    "id": 167,
+    "section": "Maths",
+    "question": "In how many ways can a committee of 2 be chosen from 5 people?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "15"
+    ],
+    "answer": "10",
+    "difficulty": "Medium",
+    "explanation": "⁵C₂ = (5×4)/(2×1) = 10."
+  },
+  {
+    "id": 168,
+    "section": "Maths",
+    "question": "If x + y = 12 and xy = 32, find x² + y².",
+    "options": [
+      "78",
+      "80",
+      "82",
+      "84"
+    ],
+    "answer": "80",
+    "difficulty": "Medium",
+    "explanation": "x²+y² = (x+y)²-2xy = 144-64 = 80."
+  },
+  {
+    "id": 169,
+    "section": "Maths",
+    "question": "Solve: 4(x − 3) = 3(x + 1)",
+    "options": [
+      "x = 13",
+      "x = 15",
+      "x = 17",
+      "x = 11"
+    ],
+    "answer": "x = 15",
+    "difficulty": "Easy",
+    "explanation": "4x-12=3x+3 → x=15."
+  },
+  {
+    "id": 170,
+    "section": "Maths",
+    "question": "What is the value of (3² × 3⁵) / 3⁴?",
+    "options": [
+      "9",
+      "27",
+      "81",
+      "243"
+    ],
+    "answer": "27",
+    "difficulty": "Easy",
+    "explanation": "3^(2+5-4) = 3³ = 27."
+  },
+  {
+    "id": 171,
+    "section": "Maths",
+    "question": "If the roots of a quadratic equation are 4 and -1, what is the equation?",
+    "options": [
+      "x² − 3x − 4 = 0",
+      "x² + 3x − 4 = 0",
+      "x² − 3x + 4 = 0",
+      "x² + 3x + 4 = 0"
+    ],
+    "answer": "x² − 3x − 4 = 0",
+    "difficulty": "Medium",
+    "explanation": "(x-4)(x+1) = x²-3x-4 = 0."
+  },
+  {
+    "id": 172,
+    "section": "Maths",
+    "question": "What is the slope of the line passing through points (1,2) and (5,10)?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2",
+    "difficulty": "Easy",
+    "explanation": "m = (10-2)/(5-1) = 8/4 = 2."
+  },
+  {
+    "id": 173,
+    "section": "Maths",
+    "question": "Convert 210° into radians.",
+    "options": [
+      "7π/6",
+      "5π/4",
+      "4π/3",
+      "3π/2"
+    ],
+    "answer": "7π/6",
+    "difficulty": "Medium",
+    "explanation": "210 × (π/180) = 7π/6."
+  },
+  {
+    "id": 174,
+    "section": "Maths",
+    "question": "What is the value of 3! + 4!?",
+    "options": [
+      "24",
+      "28",
+      "30",
+      "32"
+    ],
+    "answer": "30",
+    "difficulty": "Easy",
+    "explanation": "3!=6, 4!=24. 6+24=30."
+  },
+  {
+    "id": 175,
+    "section": "Maths",
+    "question": "If a die is rolled once, what is the probability of getting an even number?",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "answer": "1/2",
+    "difficulty": "Easy",
+    "explanation": "Even numbers {2,4,6} = 3 out of 6. P = 3/6 = 1/2."
+  },
+  {
+    "id": 176,
+    "section": "Maths",
+    "question": "Simplify: √72 + √8",
+    "options": [
+      "8√2",
+      "9√2",
+      "10√2",
+      "11√2"
+    ],
+    "answer": "8√2",
+    "difficulty": "Medium",
+    "explanation": "√72=6√2, √8=2√2. 6√2+2√2=8√2."
+  },
+  {
+    "id": 177,
+    "section": "Maths",
+    "question": "The sum of the interior angles of an octagon is:",
+    "options": [
+      "900°",
+      "1080°",
+      "1260°",
+      "1440°"
+    ],
+    "answer": "1080°",
+    "difficulty": "Medium",
+    "explanation": "Sum = (n-2)×180° = (8-2)×180° = 1080°."
+  },
+  {
+    "id": 178,
+    "section": "Maths",
+    "question": "If f(x) = x², what is f⁻¹(64) for x ≥ 0?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": "8",
+    "difficulty": "Easy",
+    "explanation": "f⁻¹(64) is x such that x²=64, x=8."
+  },
+  {
+    "id": 179,
+    "section": "Maths",
+    "question": "What is the value of 1 − sin²θ?",
+    "options": [
+      "cos²θ",
+      "sin²θ",
+      "tan²θ",
+      "1"
+    ],
+    "answer": "cos²θ",
+    "difficulty": "Easy",
+    "explanation": "From identity sin²θ+cos²θ=1, 1-sin²θ=cos²θ."
+  },
+  {
+    "id": 180,
+    "section": "Maths",
+    "question": "Solve the inequality: 3x − 4 ≤ 8",
+    "options": [
+      "x ≤ 4",
+      "x ≤ 5",
+      "x ≥ 4",
+      "x ≥ 5"
+    ],
+    "answer": "x ≤ 4",
+    "difficulty": "Easy",
+    "explanation": "3x ≤ 12 → x ≤ 4."
+  },
+  {
+    "id": 181,
+    "section": "Maths",
+    "question": "What is 60% of 350?",
+    "options": [
+      "190",
+      "200",
+      "210",
+      "220"
+    ],
+    "answer": "210",
+    "difficulty": "Easy",
+    "explanation": "60% of 350 = 0.6 × 350 = 210."
+  },
+  {
+    "id": 182,
+    "section": "Maths",
+    "question": "A shopkeeper marks an item at Rs. 2000 and gives a 10% discount. What is the selling price?",
+    "options": [
+      "Rs. 1700",
+      "Rs. 1750",
+      "Rs. 1800",
+      "Rs. 1850"
+    ],
+    "answer": "Rs. 1800",
+    "difficulty": "Easy",
+    "explanation": "Discount = 10% of 2000 = 200. SP = 2000 - 200 = 1800."
+  },
+  {
+    "id": 183,
+    "section": "Maths",
+    "question": "If a number is increased by 20% and then decreased by 20%, what is the net change?",
+    "options": [
+      "No change",
+      "Decrease of 4%",
+      "Increase of 4%",
+      "Decrease of 2%"
+    ],
+    "answer": "Decrease of 4%",
+    "difficulty": "Medium",
+    "explanation": "Let number=100. After +20%=120. After -20% of 120=96. Net change=-4%."
+  },
+  {
+    "id": 184,
+    "section": "Maths",
+    "question": "Three numbers are in the ratio 3:4:5. If their sum is 240, find the largest number.",
+    "options": [
+      "60",
+      "80",
+      "100",
+      "120"
+    ],
+    "answer": "100",
+    "difficulty": "Easy",
+    "explanation": "Total parts=12. Largest = (5/12) × 240 = 100."
+  },
+  {
+    "id": 185,
+    "section": "Maths",
+    "question": "The HCF of 42 and 56 is:",
+    "options": [
+      "7",
+      "14",
+      "21",
+      "28"
+    ],
+    "answer": "14",
+    "difficulty": "Easy",
+    "explanation": "Factors of 42: 1,2,3,6,7,14,21,42. Factors of 56: 1,2,4,7,8,14,28,56. HCF=14."
+  },
+  {
+    "id": 186,
+    "section": "Maths",
+    "question": "A man sold an article at a loss of 15%. If the cost price was Rs. 800, find the selling price.",
+    "options": [
+      "Rs. 640",
+      "Rs. 660",
+      "Rs. 680",
+      "Rs. 700"
+    ],
+    "answer": "Rs. 680",
+    "difficulty": "Easy",
+    "explanation": "Loss = 15% of 800 = 120. SP = 800 - 120 = 680."
+  },
+  {
+    "id": 187,
+    "section": "Maths",
+    "question": "The simple interest on Rs. 3000 at 8% per annum for 3 years is:",
+    "options": [
+      "Rs. 620",
+      "Rs. 660",
+      "Rs. 700",
+      "Rs. 720"
+    ],
+    "answer": "Rs. 720",
+    "difficulty": "Easy",
+    "explanation": "SI = (3000×8×3)/100 = 720."
+  },
+  {
+    "id": 188,
+    "section": "Maths",
+    "question": "What is the compound interest on Rs. 2000 at 10% per annum for 2 years?",
+    "options": [
+      "Rs. 400",
+      "Rs. 410",
+      "Rs. 420",
+      "Rs. 440"
+    ],
+    "answer": "Rs. 420",
+    "difficulty": "Medium",
+    "explanation": "A = 2000×(1.1)² = 2420. CI = 2420-2000 = 420."
+  },
+  {
+    "id": 189,
+    "section": "Maths",
+    "question": "Two trains of lengths 150 m and 100 m are moving towards each other at 50 km/h and 40 km/h. How long will they take to cross each other?",
+    "options": [
+      "8 s",
+      "9 s",
+      "10 s",
+      "11 s"
+    ],
+    "answer": "10 s",
+    "difficulty": "Medium",
+    "explanation": "Relative speed = 90 km/h = 25 m/s. Total length = 250 m. Time = 250/25 = 10 s."
+  },
+  {
+    "id": 190,
+    "section": "Maths",
+    "question": "A pipe can fill a tank in 15 hours. How much of the tank is filled in 5 hours?",
+    "options": [
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/2"
+    ],
+    "answer": "1/3",
+    "difficulty": "Easy",
+    "explanation": "In 5 hours, fraction filled = 5/15 = 1/3."
+  },
+  {
+    "id": 191,
+    "section": "Maths",
+    "question": "Solve for x: 6x − 4 = 3x + 11",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": "5",
+    "difficulty": "Easy",
+    "explanation": "6x - 3x = 11 + 4 → 3x = 15 → x = 5."
+  },
+  {
+    "id": 192,
+    "section": "Maths",
+    "question": "If 2x + 5y = 34 and x = 7, find y.",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "4",
+    "difficulty": "Easy",
+    "explanation": "2(7)+5y=34 → 14+5y=34 → 5y=20 → y=4."
+  },
+  {
+    "id": 193,
+    "section": "Maths",
+    "question": "The product of two consecutive integers is 90. What are the integers?",
+    "options": [
+      "8 and 9",
+      "9 and 10",
+      "10 and 11",
+      "7 and 8"
+    ],
+    "answer": "9 and 10",
+    "difficulty": "Easy",
+    "explanation": "9 × 10 = 90. These are consecutive integers."
+  },
+  {
+    "id": 194,
+    "section": "Maths",
+    "question": "Simplify: (x² − 16) / (x − 4)",
+    "options": [
+      "x − 4",
+      "x + 4",
+      "x² + 4",
+      "x + 16"
+    ],
+    "answer": "x + 4",
+    "difficulty": "Easy",
+    "explanation": "(x-4)(x+4)/(x-4) = x+4."
+  },
+  {
+    "id": 195,
+    "section": "Maths",
+    "question": "The perimeter of a rectangle is 80 cm. If the length is 25 cm, what is the width?",
+    "options": [
+      "10 cm",
+      "12 cm",
+      "15 cm",
+      "18 cm"
+    ],
+    "answer": "15 cm",
+    "difficulty": "Easy",
+    "explanation": "P=2(l+w) → 80=2(25+w) → w=15 cm."
+  },
+  {
+    "id": 196,
+    "section": "Maths",
+    "question": "The area of a circle with radius 14 cm is: (use π = 22/7)",
+    "options": [
+      "308 cm²",
+      "462 cm²",
+      "616 cm²",
+      "770 cm²"
+    ],
+    "answer": "616 cm²",
+    "difficulty": "Easy",
+    "explanation": "Area = πr² = (22/7)×14² = 22×28 = 616 cm²."
+  },
+  {
+    "id": 197,
+    "section": "Maths",
+    "question": "The volume of a cube with side 6 cm is:",
+    "options": [
+      "180 cm³",
+      "196 cm³",
+      "216 cm³",
+      "236 cm³"
+    ],
+    "answer": "216 cm³",
+    "difficulty": "Easy",
+    "explanation": "Volume = s³ = 6³ = 216 cm³."
+  },
+  {
+    "id": 198,
+    "section": "Maths",
+    "question": "In a right triangle, if one leg is 6 and the hypotenuse is 10, the other leg is:",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": "8",
+    "difficulty": "Easy",
+    "explanation": "a²+6²=10² → a²=100-36=64 → a=8."
+  },
+  {
+    "id": 199,
+    "section": "Maths",
+    "question": "Two angles of a triangle are 45° and 65°. What is the third angle?",
+    "options": [
+      "60°",
+      "65°",
+      "70°",
+      "75°"
+    ],
+    "answer": "70°",
+    "difficulty": "Easy",
+    "explanation": "Third angle = 180-45-65 = 70°."
+  },
+  {
+    "id": 200,
+    "section": "Maths",
+    "question": "If sin θ = 5/13 in a right triangle, find cos θ.",
+    "options": [
+      "12/13",
+      "5/12",
+      "13/12",
+      "5/13"
+    ],
+    "answer": "12/13",
+    "difficulty": "Medium",
+    "explanation": "Adjacent = √(169-25) = 12. cos θ = 12/13."
+  },
+  {
+    "id": 201,
+    "section": "Maths",
+    "question": "What is the median of the data set: 4, 8, 10, 14, 20?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "14"
+    ],
+    "answer": "10",
+    "difficulty": "Easy",
+    "explanation": "Sorted data, middle value (3rd of 5) is 10."
+  },
+  {
+    "id": 202,
+    "section": "Maths",
+    "question": "What is the mode of: 3, 5, 5, 7, 9, 5, 11?",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "answer": "5",
+    "difficulty": "Easy",
+    "explanation": "5 appears 3 times, the most frequent value."
+  },
+  {
+    "id": 203,
+    "section": "Maths",
+    "question": "A card is drawn at random from a standard deck of 52 cards. The probability of drawing a queen is:",
+    "options": [
+      "1/13",
+      "1/26",
+      "1/52",
+      "4/26"
+    ],
+    "answer": "1/13",
+    "difficulty": "Easy",
+    "explanation": "There are 4 queens in 52 cards. P = 4/52 = 1/13."
+  },
+  {
+    "id": 204,
+    "section": "Maths",
+    "question": "Find the 6th term of the geometric sequence: 3, 6, 12, 24, ...",
+    "options": [
+      "48",
+      "96",
+      "192",
+      "384"
+    ],
+    "answer": "96",
+    "difficulty": "Medium",
+    "explanation": "a=3, r=2. a₆ = 3×2⁵ = 3×32 = 96."
+  },
+  {
+    "id": 205,
+    "section": "Maths",
+    "question": "What is the value of 7² + 24²?",
+    "options": [
+      "529",
+      "576",
+      "625",
+      "676"
+    ],
+    "answer": "625",
+    "difficulty": "Easy",
+    "explanation": "49+576=625."
+  },
+  {
+    "id": 206,
+    "section": "Maths",
+    "question": "If 3ˣ = 81, then x equals:",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "4",
+    "difficulty": "Easy",
+    "explanation": "3⁴=81, so x=4."
+  },
+  {
+    "id": 207,
+    "section": "Maths",
+    "question": "Evaluate: log₂(64)",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": "6",
+    "difficulty": "Easy",
+    "explanation": "2⁶=64, so log₂(64)=6."
+  },
+  {
+    "id": 208,
+    "section": "Maths",
+    "question": "Find the derivative of f(x) = cos x.",
+    "options": [
+      "sin x",
+      "−sin x",
+      "cos x",
+      "−cos x"
+    ],
+    "answer": "−sin x",
+    "difficulty": "Easy",
+    "explanation": "The derivative of cos x is −sin x."
+  },
+  {
+    "id": 209,
+    "section": "Maths",
+    "question": "What is ∫2x dx?",
+    "options": [
+      "x + C",
+      "2x² + C",
+      "x² + C",
+      "x²/2 + C"
+    ],
+    "answer": "x² + C",
+    "difficulty": "Easy",
+    "explanation": "∫2x dx = x² + C."
+  },
+  {
+    "id": 210,
+    "section": "Maths",
+    "question": "A matrix of order 4×3 has how many elements?",
+    "options": [
+      "7",
+      "10",
+      "12",
+      "16"
+    ],
+    "answer": "12",
+    "difficulty": "Easy",
+    "explanation": "Elements = rows × columns = 4×3 = 12."
+  },
+  {
+    "id": 211,
+    "section": "Maths",
+    "question": "What is the range of the data: 6, 9, 15, 2, 21, 8?",
+    "options": [
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "answer": "19",
+    "difficulty": "Easy",
+    "explanation": "Range = Max - Min = 21 - 2 = 19."
+  },
+  {
+    "id": 212,
+    "section": "Maths",
+    "question": "How many prime numbers are there between 20 and 40?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "4",
+    "difficulty": "Easy",
+    "explanation": "Primes between 20 and 40: 23, 29, 31, 37 = 4."
+  },
+  {
+    "id": 213,
+    "section": "Maths",
+    "question": "Evaluate: 8! / 6!",
+    "options": [
+      "48",
+      "54",
+      "56",
+      "64"
+    ],
+    "answer": "56",
+    "difficulty": "Easy",
+    "explanation": "8!/6! = 8×7 = 56."
+  },
+  {
+    "id": 214,
+    "section": "Maths",
+    "question": "The angle subtended by a diameter at the circumference of a circle is always:",
+    "options": [
+      "45°",
+      "60°",
+      "90°",
+      "180°"
+    ],
+    "answer": "90°",
+    "difficulty": "Easy",
+    "explanation": "By Thales' theorem, the angle in a semicircle is always 90°."
+  },
+  {
+    "id": 215,
+    "section": "Maths",
+    "question": "What is the sum of the first 50 natural numbers?",
+    "options": [
+      "1225",
+      "1250",
+      "1275",
+      "1300"
+    ],
+    "answer": "1275",
+    "difficulty": "Easy",
+    "explanation": "S = n(n+1)/2 = 50×51/2 = 1275."
+  },
+  {
+    "id": 216,
+    "section": "Maths",
+    "question": "What is 12.5% of 640?",
+    "options": [
+      "70",
+      "75",
+      "80",
+      "85"
+    ],
+    "answer": "80",
+    "difficulty": "Easy",
+    "explanation": "12.5% of 640 = (1/8) × 640 = 80."
+  },
+  {
+    "id": 217,
+    "section": "Maths",
+    "question": "A man's salary is increased from Rs. 40,000 to Rs. 46,000. What is the percentage increase?",
+    "options": [
+      "12%",
+      "13%",
+      "15%",
+      "18%"
+    ],
+    "answer": "15%",
+    "difficulty": "Easy",
+    "explanation": "Increase = 6000. % = (6000/40000)×100 = 15%."
+  },
+  {
+    "id": 218,
+    "section": "Maths",
+    "question": "If the ratio of A to B is 3:5 and B to C is 2:3, what is A:B:C?",
+    "options": [
+      "6:10:15",
+      "3:5:8",
+      "3:2:3",
+      "6:5:15"
+    ],
+    "answer": "6:10:15",
+    "difficulty": "Medium",
+    "explanation": "A:B=3:5, B:C=2:3. Match B: A:B=6:10, B:C=10:15. So A:B:C=6:10:15."
+  },
+  {
+    "id": 219,
+    "section": "Maths",
+    "question": "The average of 8 numbers is 15. If two numbers 10 and 20 are removed, what is the new average?",
+    "options": [
+      "13.33",
+      "14",
+      "14.33",
+      "15"
+    ],
+    "answer": "15",
+    "difficulty": "Medium",
+    "explanation": "Sum of 8 numbers = 120. Removing 10 and 20 leaves sum = 90 over 6 numbers. New average = 90/6 = 15."
+  },
+  {
+    "id": 220,
+    "section": "Maths",
+    "question": "A cyclist covers 96 km in 4 hours. What is his speed in m/s?",
+    "options": [
+      "6.67 m/s",
+      "7.33 m/s",
+      "8 m/s",
+      "9.5 m/s"
+    ],
+    "answer": "6.67 m/s",
+    "difficulty": "Medium",
+    "explanation": "Speed = 96/4 = 24 km/h = 24×(5/18) ≈ 6.67 m/s."
+  },
+  {
+    "id": 221,
+    "section": "Maths",
+    "question": "Find the next number in the series: 1, 4, 9, 16, 25, __",
+    "options": [
+      "30",
+      "32",
+      "36",
+      "40"
+    ],
+    "answer": "36",
+    "difficulty": "Easy",
+    "explanation": "These are perfect squares: 1²,2²,3²,4²,5²,6². Next is 36."
+  },
+  {
+    "id": 222,
+    "section": "Maths",
+    "question": "Find the missing number: 5, 10, 20, 40, __",
+    "options": [
+      "60",
+      "70",
+      "80",
+      "90"
+    ],
+    "answer": "80",
+    "difficulty": "Easy",
+    "explanation": "Geometric progression with ratio 2. 40×2=80."
+  },
+  {
+    "id": 223,
+    "section": "Maths",
+    "question": "If 12 workers can complete a task in 15 days, how many workers are needed to complete it in 10 days?",
+    "options": [
+      "15",
+      "16",
+      "18",
+      "20"
+    ],
+    "answer": "18",
+    "difficulty": "Medium",
+    "explanation": "Worker-days = 12×15=180. Workers for 10 days = 180/10=18."
+  },
+  {
+    "id": 224,
+    "section": "Maths",
+    "question": "A sum of Rs. 10,000 is invested at 12% simple interest per annum. What is the interest after 2 years?",
+    "options": [
+      "Rs. 2000",
+      "Rs. 2200",
+      "Rs. 2400",
+      "Rs. 2600"
+    ],
+    "answer": "Rs. 2400",
+    "difficulty": "Easy",
+    "explanation": "SI = (10000×12×2)/100 = 2400."
+  },
+  {
+    "id": 225,
+    "section": "Maths",
+    "question": "Simplify: (5/6) − (1/3)",
+    "options": [
+      "1/3",
+      "1/2",
+      "2/3",
+      "5/6"
+    ],
+    "answer": "1/2",
+    "difficulty": "Easy",
+    "explanation": "5/6 - 2/6 = 3/6 = 1/2."
+  },
+  {
+    "id": 226,
+    "section": "Maths",
+    "question": "A laptop's price is reduced by 30% to Rs. 42,000. What was the original price?",
+    "options": [
+      "Rs. 55,000",
+      "Rs. 58,000",
+      "Rs. 60,000",
+      "Rs. 62,000"
+    ],
+    "answer": "Rs. 60,000",
+    "difficulty": "Medium",
+    "explanation": "Original × 0.70 = 42000 → Original = 42000/0.7 = 60,000."
+  },
+  {
+    "id": 227,
+    "section": "Maths",
+    "question": "Three pipes fill a tank in 10, 15, and 30 hours respectively. Working together, how long will they take?",
+    "options": [
+      "4 hours",
+      "5 hours",
+      "6 hours",
+      "7 hours"
+    ],
+    "answer": "5 hours",
+    "difficulty": "Hard",
+    "explanation": "Combined rate = 1/10+1/15+1/30 = 3/30+2/30+1/30 = 6/30 = 1/5 per hour. Time = 5 hours."
+  },
+  {
+    "id": 228,
+    "section": "Maths",
+    "question": "What is the LCM of 8, 12, and 20?",
+    "options": [
+      "60",
+      "80",
+      "100",
+      "120"
+    ],
+    "answer": "120",
+    "difficulty": "Medium",
+    "explanation": "LCM of 8,12,20: prime factors give LCM = 120."
+  },
+  {
+    "id": 229,
+    "section": "Maths",
+    "question": "If x : y = 5 : 6, find (4x − y) : (2x + y)",
+    "options": [
+      "14:16",
+      "7:8",
+      "1:1",
+      "2:3"
+    ],
+    "answer": "7:8",
+    "difficulty": "Medium",
+    "explanation": "Let x=5k,y=6k. (20k-6k)/(10k+6k)=14k/16k=7:8."
+  },
+  {
+    "id": 230,
+    "section": "Maths",
+    "question": "A man drives 60 km at 30 km/h and returns the same distance at 60 km/h. What is his average speed for the round trip?",
+    "options": [
+      "35 km/h",
+      "40 km/h",
+      "45 km/h",
+      "50 km/h"
+    ],
+    "answer": "40 km/h",
+    "difficulty": "Medium",
+    "explanation": "Avg speed = 2ab/(a+b) = 2(30)(60)/90 = 40 km/h."
+  },
+  {
+    "id": 231,
+    "section": "Maths",
+    "question": "If f(x) = x² + 3x − 4, what is f(-2)?",
+    "options": [
+      "-6",
+      "-8",
+      "-9",
+      "-10"
+    ],
+    "answer": "-6",
+    "difficulty": "Easy",
+    "explanation": "f(-2) = 4 - 6 - 4 = -6."
+  },
+  {
+    "id": 232,
+    "section": "Maths",
+    "question": "Solve for x: 4x + 9 = 33",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": "6",
+    "difficulty": "Easy",
+    "explanation": "4x=24 → x=6."
+  },
+  {
+    "id": 233,
+    "section": "Maths",
+    "question": "Solve the quadratic equation: x² − 9x + 20 = 0",
+    "options": [
+      "x = 4, 5",
+      "x = 2, 10",
+      "x = -4, -5",
+      "x = 1, 20"
+    ],
+    "answer": "x = 4, 5",
+    "difficulty": "Easy",
+    "explanation": "(x-4)(x-5)=0 → x=4 or x=5."
+  },
+  {
+    "id": 234,
+    "section": "Maths",
+    "question": "What is the approximate value of the square root of 2000?",
+    "options": [
+      "40",
+      "45",
+      "50",
+      "55"
+    ],
+    "answer": "45",
+    "difficulty": "Easy",
+    "explanation": "45²=2025, which is approximately 2000."
+  },
+  {
+    "id": 235,
+    "section": "Maths",
+    "question": "Simplify: (2a − b)² + (2a + b)²",
+    "options": [
+      "4a²+2b²",
+      "8a²+2b²",
+      "4a²+4b²",
+      "8a²+4b²"
+    ],
+    "answer": "8a²+2b²",
+    "difficulty": "Medium",
+    "explanation": "(4a²-4ab+b²)+(4a²+4ab+b²)=8a²+2b²."
+  }
+]

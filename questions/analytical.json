@@ -1,0 +1,3012 @@
+[
+  {
+    "id": 46,
+    "section": "Analytical",
+    "question": "If FLOWER is coded as GMPXFS, how is CANDLE coded?",
+    "options": [
+      "DBOEMF",
+      "DBOEMD",
+      "EBOEMF",
+      "DCOEMF"
+    ],
+    "answer": "DBOEMF",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted forward by 1 in the alphabet: C->D, A->B, N->O, D->E, L->M, E->F."
+  },
+  {
+    "id": 47,
+    "section": "Analytical",
+    "question": "In a certain code, TABLE is written as UBCMF. How is CHAIR written in that code?",
+    "options": [
+      "DIBJS",
+      "DHBJS",
+      "DIBJT",
+      "EIBJS"
+    ],
+    "answer": "DIBJS",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted forward by 1: C->D, H->I, A->B, I->J, R->S."
+  },
+  {
+    "id": 48,
+    "section": "Analytical",
+    "question": "Pointing to a photograph, a man said, 'She is the daughter of my grandfather's only son.' How is the woman related to the man?",
+    "options": [
+      "Sister",
+      "Mother",
+      "Aunt",
+      "Cousin"
+    ],
+    "answer": "Sister",
+    "difficulty": "Medium",
+    "explanation": "Grandfather's only son is the man's father. The daughter of the man's father is his sister."
+  },
+  {
+    "id": 49,
+    "section": "Analytical",
+    "question": "If South-East becomes North, North-East becomes West, then what will West become?",
+    "options": [
+      "North-East",
+      "South-East",
+      "North-West",
+      "South"
+    ],
+    "answer": "South-East",
+    "difficulty": "Hard",
+    "explanation": "The directional points undergo a 135° counter-clockwise rotation. Rotating West by 135° counter-clockwise yields South-East."
+  },
+  {
+    "id": 50,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Triangle",
+      "Square",
+      "Circle",
+      "Cube"
+    ],
+    "answer": "Cube",
+    "difficulty": "Easy",
+    "explanation": "Triangle, Square, and Circle are 2-dimensional plane shapes, whereas Cube is a 3-dimensional solid."
+  },
+  {
+    "id": 51,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Apple",
+      "Mango",
+      "Potato",
+      "Banana"
+    ],
+    "answer": "Potato",
+    "difficulty": "Easy",
+    "explanation": "Apple, Mango, and Banana are fruits, while Potato is a vegetable."
+  },
+  {
+    "id": 52,
+    "section": "Analytical",
+    "question": "Complete the series: A, C, F, J, O, __",
+    "options": [
+      "S",
+      "T",
+      "U",
+      "V"
+    ],
+    "answer": "U",
+    "difficulty": "Medium",
+    "explanation": "Intervals increase by +2, +3, +4, +5. Next interval is +6: O (15) + 6 = U (21)."
+  },
+  {
+    "id": 53,
+    "section": "Analytical",
+    "question": "Complete the series: Z, X, V, T, __",
+    "options": [
+      "R",
+      "S",
+      "Q",
+      "P"
+    ],
+    "answer": "R",
+    "difficulty": "Easy",
+    "explanation": "Letters decrease by 2 positions backward: Z(26), X(24), V(22), T(20), R(18)."
+  },
+  {
+    "id": 54,
+    "section": "Analytical",
+    "question": "Five friends P, Q, R, S, T are sitting in a row. P is to the left of Q but right of R. S is to the right of Q. T is at one of the ends. Who is sitting in the middle?",
+    "options": [
+      "P",
+      "Q",
+      "R",
+      "S"
+    ],
+    "answer": "Q",
+    "difficulty": "Hard",
+    "explanation": "The order from left to right is T, R, P, Q, S. Q occupies the central position."
+  },
+  {
+    "id": 55,
+    "section": "Analytical",
+    "question": "Statement: All pens are pencils. All pencils are erasers.\nConclusion I: All pens are erasers.\nConclusion II: All erasers are pens.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both follow",
+      "Neither follows"
+    ],
+    "answer": "Only I follows",
+    "difficulty": "Medium",
+    "explanation": "Since all pens are pencils and all pencils are erasers, all pens are erasers (Conclusion I follows). Universal affirmative does not convert simply (Conclusion II fails)."
+  },
+  {
+    "id": 56,
+    "section": "Analytical",
+    "question": "If '+' means '÷', '−' means '×', '×' means '+', and '÷' means '−', what is the value of: 8 + 4 − 2 × 3 ÷ 1?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": "6",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols: 8 ÷ 4 × 2 + 3 - 1 = 2 × 2 + 3 - 1 = 4 + 3 - 1 = 6."
+  },
+  {
+    "id": 57,
+    "section": "Analytical",
+    "question": "A is the brother of B. C is the sister of A. D is the brother of E, who is the daughter of B. How is C related to E?",
+    "options": [
+      "Aunt",
+      "Mother",
+      "Sister",
+      "Cousin"
+    ],
+    "answer": "Aunt",
+    "difficulty": "Hard",
+    "explanation": "C is the sister of B. Since E is B's daughter, C is E's aunt."
+  },
+  {
+    "id": 58,
+    "section": "Analytical",
+    "question": "Which figure completes the analogy: Book is to Library as Painting is to ______?",
+    "options": [
+      "Frame",
+      "Gallery",
+      "Artist",
+      "Wall"
+    ],
+    "answer": "Gallery",
+    "difficulty": "Easy",
+    "explanation": "Books are housed in a library; paintings are displayed in an art gallery."
+  },
+  {
+    "id": 59,
+    "section": "Analytical",
+    "question": "Find the number that does not belong: 4, 9, 16, 25, 30",
+    "options": [
+      "4",
+      "9",
+      "25",
+      "30"
+    ],
+    "answer": "30",
+    "difficulty": "Easy",
+    "explanation": "4 (2²), 9 (3²), 16 (4²), and 25 (5²) are perfect square integers, whereas 30 is not."
+  },
+  {
+    "id": 60,
+    "section": "Analytical",
+    "question": "CALANDER is coded as CLANAEDR. Find the code for CIRCULAR under the same rule.",
+    "options": [
+      "CRIUCALR",
+      "CIRUCALR",
+      "RCIUCALR",
+      "None of these"
+    ],
+    "answer": "CRIUCALR",
+    "difficulty": "Hard",
+    "explanation": "First and last letters remain fixed while inner pairs are swapped."
+  },
+  {
+    "id": 61,
+    "section": "Analytical",
+    "question": "If MOUNTAIN is coded as NPVOUBJO, how is RIVER coded?",
+    "options": [
+      "RIVER",
+      "SJWFS",
+      "TKXGT",
+      "JSWFS"
+    ],
+    "answer": "SJWFS",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) forward in the alphabet, so RIVER becomes SJWFS."
+  },
+  {
+    "id": 62,
+    "section": "Analytical",
+    "question": "If GARDEN is coded as HBSEFO, how is WINDOW coded?",
+    "options": [
+      "JXOEPX",
+      "WINDOW",
+      "XJOEPX",
+      "YKPFQY"
+    ],
+    "answer": "XJOEPX",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) forward in the alphabet, so WINDOW becomes XJOEPX."
+  },
+  {
+    "id": 63,
+    "section": "Analytical",
+    "question": "If PENCIL is coded as QFODJM, how is MARKET coded?",
+    "options": [
+      "MARKET",
+      "OCTMGV",
+      "NBSLFU",
+      "BNSLFU"
+    ],
+    "answer": "NBSLFU",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) forward in the alphabet, so MARKET becomes NBSLFU."
+  },
+  {
+    "id": 64,
+    "section": "Analytical",
+    "question": "If SILVER is coded as UKNXGT, how is GOLDEN coded?",
+    "options": [
+      "IQNFGP",
+      "JROGHQ",
+      "QINFGP",
+      "HPMEFO"
+    ],
+    "answer": "IQNFGP",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) forward in the alphabet, so GOLDEN becomes IQNFGP."
+  },
+  {
+    "id": 65,
+    "section": "Analytical",
+    "question": "If PLANET is coded as RNCPGV, how is ROCKET coded?",
+    "options": [
+      "TQEMGV",
+      "URFNHW",
+      "QTEMGV",
+      "SPDLFU"
+    ],
+    "answer": "TQEMGV",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) forward in the alphabet, so ROCKET becomes TQEMGV."
+  },
+  {
+    "id": 66,
+    "section": "Analytical",
+    "question": "If BASKET is coded as DCUMGV, how is CANDLE coded?",
+    "options": [
+      "DBOEMF",
+      "FDQGOH",
+      "CEPFNG",
+      "ECPFNG"
+    ],
+    "answer": "ECPFNG",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) forward in the alphabet, so CANDLE becomes ECPFNG."
+  },
+  {
+    "id": 67,
+    "section": "Analytical",
+    "question": "If FOREST is coded as IRUHVW, how is ISLAND coded?",
+    "options": [
+      "LVODQG",
+      "MWPERH",
+      "KUNCPF",
+      "VLODQG"
+    ],
+    "answer": "LVODQG",
+    "difficulty": "Hard",
+    "explanation": "Each letter is shifted 3 position(s) forward in the alphabet, so ISLAND becomes LVODQG."
+  },
+  {
+    "id": 68,
+    "section": "Analytical",
+    "question": "If BRIDGE is coded as EULGJH, how is HARBOR coded?",
+    "options": [
+      "KDUERU",
+      "DKUERU",
+      "LEVFSV",
+      "JCTDQT"
+    ],
+    "answer": "KDUERU",
+    "difficulty": "Hard",
+    "explanation": "Each letter is shifted 3 position(s) forward in the alphabet, so HARBOR becomes KDUERU."
+  },
+  {
+    "id": 69,
+    "section": "Analytical",
+    "question": "If TEMPLE is coded as SDLOKD, how is CASTLE coded?",
+    "options": [
+      "AYQRJC",
+      "CASTLE",
+      "ZBRSKD",
+      "BZRSKD"
+    ],
+    "answer": "BZRSKD",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) backward in the alphabet, so CASTLE becomes BZRSKD."
+  },
+  {
+    "id": 70,
+    "section": "Analytical",
+    "question": "If VALLEY is coded as UZKKDX, how is DESERT coded?",
+    "options": [
+      "BCQCPR",
+      "CDRDQS",
+      "DESERT",
+      "DCRDQS"
+    ],
+    "answer": "CDRDQS",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) backward in the alphabet, so DESERT becomes CDRDQS."
+  },
+  {
+    "id": 71,
+    "section": "Analytical",
+    "question": "If CIRCLE is coded as AGPAJC, how is SQUARE coded?",
+    "options": [
+      "OQSYPC",
+      "PNRXOB",
+      "RPTZQD",
+      "QOSYPC"
+    ],
+    "answer": "QOSYPC",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) backward in the alphabet, so SQUARE becomes QOSYPC."
+  },
+  {
+    "id": 72,
+    "section": "Analytical",
+    "question": "If TRIPLE is coded as RPGNJC, how is DOUBLE coded?",
+    "options": [
+      "CNTAKD",
+      "ALRYIB",
+      "MBSZJC",
+      "BMSZJC"
+    ],
+    "answer": "BMSZJC",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) backward in the alphabet, so DOUBLE becomes BMSZJC."
+  },
+  {
+    "id": 73,
+    "section": "Analytical",
+    "question": "If WINTER is coded as ZLQWHU, how is SUMMER coded?",
+    "options": [
+      "VXPPHU",
+      "WYQQIV",
+      "UWOOGT",
+      "XVPPHU"
+    ],
+    "answer": "VXPPHU",
+    "difficulty": "Hard",
+    "explanation": "Each letter is shifted 3 position(s) forward in the alphabet, so SUMMER becomes VXPPHU."
+  },
+  {
+    "id": 74,
+    "section": "Analytical",
+    "question": "If AUTUMN is coded as BVUVNO, how is MORNING coded?",
+    "options": [
+      "NPSOJOH",
+      "MORNING",
+      "OQTPKPI",
+      "PNSOJOH"
+    ],
+    "answer": "NPSOJOH",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) forward in the alphabet, so MORNING becomes NPSOJOH."
+  },
+  {
+    "id": 75,
+    "section": "Analytical",
+    "question": "If EVENING is coded as GXGPKPI, how is PILLOW coded?",
+    "options": [
+      "RKNNQY",
+      "KRNNQY",
+      "SLOORZ",
+      "QJMMPX"
+    ],
+    "answer": "RKNNQY",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) forward in the alphabet, so PILLOW becomes RKNNQY."
+  },
+  {
+    "id": 76,
+    "section": "Analytical",
+    "question": "If BLANKET is coded as CMBOLFU, how is KITCHEN coded?",
+    "options": [
+      "KITCHEN",
+      "LJUDIFO",
+      "JLUDIFO",
+      "MKVEJGP"
+    ],
+    "answer": "LJUDIFO",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) forward in the alphabet, so KITCHEN becomes LJUDIFO."
+  },
+  {
+    "id": 77,
+    "section": "Analytical",
+    "question": "If STATION is coded as UVCVKQP, how is JOURNEY coded?",
+    "options": [
+      "MRXUQHB",
+      "QLWTPGA",
+      "LQWTPGA",
+      "KPVSOFZ"
+    ],
+    "answer": "LQWTPGA",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) forward in the alphabet, so JOURNEY becomes LQWTPGA."
+  },
+  {
+    "id": 78,
+    "section": "Analytical",
+    "question": "If LANTERN is coded as ODQWHUQ, how is MEADOW coded?",
+    "options": [
+      "PHDGRZ",
+      "OGCFQY",
+      "QIEHSA",
+      "HPDGRZ"
+    ],
+    "answer": "PHDGRZ",
+    "difficulty": "Hard",
+    "explanation": "Each letter is shifted 3 position(s) forward in the alphabet, so MEADOW becomes PHDGRZ."
+  },
+  {
+    "id": 79,
+    "section": "Analytical",
+    "question": "If GLACIER is coded as FKZBHDQ, how is VOLCANO coded?",
+    "options": [
+      "NUKBZMN",
+      "VOLCANO",
+      "UNKBZMN",
+      "TMJAYLM"
+    ],
+    "answer": "UNKBZMN",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) backward in the alphabet, so VOLCANO becomes UNKBZMN."
+  },
+  {
+    "id": 80,
+    "section": "Analytical",
+    "question": "If JUNGLE is coded as HSLEJC, how is HORIZON coded?",
+    "options": [
+      "ELOFWLK",
+      "MFPGXML",
+      "GNQHYNM",
+      "FMPGXML"
+    ],
+    "answer": "FMPGXML",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) backward in the alphabet, so HORIZON becomes FMPGXML."
+  },
+  {
+    "id": 81,
+    "section": "Analytical",
+    "question": "If MOUNTAIN is coded as PRXQWDLQ, how is VALLEY coded?",
+    "options": [
+      "XCNNGA",
+      "YDOOHB",
+      "DYOOHB",
+      "ZEPPIC"
+    ],
+    "answer": "YDOOHB",
+    "difficulty": "Hard",
+    "explanation": "Each letter is shifted 3 position(s) forward in the alphabet, so VALLEY becomes YDOOHB."
+  },
+  {
+    "id": 82,
+    "section": "Analytical",
+    "question": "If SUMMER is coded as RTLLDQ, how is LANTERN coded?",
+    "options": [
+      "KZMSDQM",
+      "LANTERN",
+      "JYLRCPL",
+      "ZKMSDQM"
+    ],
+    "answer": "KZMSDQM",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) backward in the alphabet, so LANTERN becomes KZMSDQM."
+  },
+  {
+    "id": 83,
+    "section": "Analytical",
+    "question": "If TEMPLE is coded as SDLOKD, how is STATION coded?",
+    "options": [
+      "QRYRGML",
+      "SRZSHNM",
+      "RSZSHNM",
+      "STATION"
+    ],
+    "answer": "RSZSHNM",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) backward in the alphabet, so STATION becomes RSZSHNM."
+  },
+  {
+    "id": 84,
+    "section": "Analytical",
+    "question": "If DESERT is coded as BCQCPR, how is GLACIER coded?",
+    "options": [
+      "DIXZFBO",
+      "EJYAGCP",
+      "FKZBHDQ",
+      "JEYAGCP"
+    ],
+    "answer": "EJYAGCP",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) backward in the alphabet, so GLACIER becomes EJYAGCP."
+  },
+  {
+    "id": 85,
+    "section": "Analytical",
+    "question": "If SILVER is coded as QGJTCP, how is MORNING coded?",
+    "options": [
+      "MKPLGLE",
+      "KMPLGLE",
+      "LNQMHMF",
+      "JLOKFKD"
+    ],
+    "answer": "KMPLGLE",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) backward in the alphabet, so MORNING becomes KMPLGLE."
+  },
+  {
+    "id": 86,
+    "section": "Analytical",
+    "question": "If BLANKET is coded as EODQNHW, how is MARKET coded?",
+    "options": [
+      "QEVOIX",
+      "PDUNHW",
+      "DPUNHW",
+      "OCTMGV"
+    ],
+    "answer": "PDUNHW",
+    "difficulty": "Hard",
+    "explanation": "Each letter is shifted 3 position(s) forward in the alphabet, so MARKET becomes PDUNHW."
+  },
+  {
+    "id": 87,
+    "section": "Analytical",
+    "question": "If CANDLE is coded as DBOEMF, how is ROCKET coded?",
+    "options": [
+      "PSDLFU",
+      "ROCKET",
+      "TQEMGV",
+      "SPDLFU"
+    ],
+    "answer": "SPDLFU",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) forward in the alphabet, so ROCKET becomes SPDLFU."
+  },
+  {
+    "id": 88,
+    "section": "Analytical",
+    "question": "If WINDOW is coded as YKPFQY, how is GARDEN coded?",
+    "options": [
+      "JDUGHQ",
+      "ICTFGP",
+      "CITFGP",
+      "HBSEFO"
+    ],
+    "answer": "ICTFGP",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) forward in the alphabet, so GARDEN becomes ICTFGP."
+  },
+  {
+    "id": 89,
+    "section": "Analytical",
+    "question": "If EVENING is coded as FWFOJOH, how is PILLOW coded?",
+    "options": [
+      "QJMMPX",
+      "RKNNQY",
+      "JQMMPX",
+      "PILLOW"
+    ],
+    "answer": "QJMMPX",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) forward in the alphabet, so PILLOW becomes QJMMPX."
+  },
+  {
+    "id": 90,
+    "section": "Analytical",
+    "question": "If AUTUMN is coded as CWVWOP, how is JUNGLE coded?",
+    "options": [
+      "KVOHMF",
+      "MXQJOH",
+      "WLPING",
+      "LWPING"
+    ],
+    "answer": "LWPING",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) forward in the alphabet, so JUNGLE becomes LWPING."
+  },
+  {
+    "id": 91,
+    "section": "Analytical",
+    "question": "If WINTER is coded as ZLQWHU, how is RIVER coded?",
+    "options": [
+      "ULYHU",
+      "TKXGT",
+      "VMZIV",
+      "LUYHU"
+    ],
+    "answer": "ULYHU",
+    "difficulty": "Hard",
+    "explanation": "Each letter is shifted 3 position(s) forward in the alphabet, so RIVER becomes ULYHU."
+  },
+  {
+    "id": 92,
+    "section": "Analytical",
+    "question": "If KITCHEN is coded as JHSBGDM, how is SQUARE coded?",
+    "options": [
+      "RPTZQD",
+      "QOSYPC",
+      "SQUARE",
+      "PRTZQD"
+    ],
+    "answer": "RPTZQD",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) backward in the alphabet, so SQUARE becomes RPTZQD."
+  },
+  {
+    "id": 93,
+    "section": "Analytical",
+    "question": "If GOLDEN is coded as EMJBCL, how is MEADOW coded?",
+    "options": [
+      "LDZCNV",
+      "JBXALT",
+      "CKYBMU",
+      "KCYBMU"
+    ],
+    "answer": "KCYBMU",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) backward in the alphabet, so MEADOW becomes KCYBMU."
+  },
+  {
+    "id": 94,
+    "section": "Analytical",
+    "question": "If VOLCANO is coded as WPMDBOP, how is CIRCLE coded?",
+    "options": [
+      "EKTENG",
+      "CIRCLE",
+      "JDSDMF",
+      "DJSDMF"
+    ],
+    "answer": "DJSDMF",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) forward in the alphabet, so CIRCLE becomes DJSDMF."
+  },
+  {
+    "id": 95,
+    "section": "Analytical",
+    "question": "If PLANET is coded as QMBOFU, how is FOREST coded?",
+    "options": [
+      "HQTGUV",
+      "FOREST",
+      "PGSFTU",
+      "GPSFTU"
+    ],
+    "answer": "GPSFTU",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) forward in the alphabet, so FOREST becomes GPSFTU."
+  },
+  {
+    "id": 96,
+    "section": "Analytical",
+    "question": "If BRIDGE is coded as CSJEHF, how is JOURNEY coded?",
+    "options": [
+      "PKVSOFZ",
+      "LQWTPGA",
+      "KPVSOFZ",
+      "JOURNEY"
+    ],
+    "answer": "KPVSOFZ",
+    "difficulty": "Easy",
+    "explanation": "Each letter is shifted 1 position(s) forward in the alphabet, so JOURNEY becomes KPVSOFZ."
+  },
+  {
+    "id": 97,
+    "section": "Analytical",
+    "question": "If HARBOR is coded as JCTDQT, how is HORIZON coded?",
+    "options": [
+      "JQTKBQP",
+      "IPSJAPO",
+      "KRULCRQ",
+      "QJTKBQP"
+    ],
+    "answer": "JQTKBQP",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) forward in the alphabet, so HORIZON becomes JQTKBQP."
+  },
+  {
+    "id": 98,
+    "section": "Analytical",
+    "question": "If PENCIL is coded as RGPEKN, how is CASTLE coded?",
+    "options": [
+      "FDVWOH",
+      "CEUVNG",
+      "DBTUMF",
+      "ECUVNG"
+    ],
+    "answer": "ECUVNG",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) forward in the alphabet, so CASTLE becomes ECUVNG."
+  },
+  {
+    "id": 99,
+    "section": "Analytical",
+    "question": "If ISLAND is coded as KUNCPF, how is TRIPLE coded?",
+    "options": [
+      "VTKRNG",
+      "WULSOH",
+      "TVKRNG",
+      "USJQMF"
+    ],
+    "answer": "VTKRNG",
+    "difficulty": "Medium",
+    "explanation": "Each letter is shifted 2 position(s) forward in the alphabet, so TRIPLE becomes VTKRNG."
+  },
+  {
+    "id": 100,
+    "section": "Analytical",
+    "question": "If DOUBLE is coded as GRXEOH, how is BASKET coded?",
+    "options": [
+      "DCUMGV",
+      "EDVNHW",
+      "FEWOIX",
+      "DEVNHW"
+    ],
+    "answer": "EDVNHW",
+    "difficulty": "Hard",
+    "explanation": "Each letter is shifted 3 position(s) forward in the alphabet, so BASKET becomes EDVNHW."
+  },
+  {
+    "id": 101,
+    "section": "Analytical",
+    "question": "Complete the series: 2, 5, 8, 11, 14, __",
+    "options": [
+      "17",
+      "20",
+      "15",
+      "18"
+    ],
+    "answer": "17",
+    "difficulty": "Easy",
+    "explanation": "Each term increases by a constant difference of 3. The next term is 14 + 3 = 17."
+  },
+  {
+    "id": 102,
+    "section": "Analytical",
+    "question": "Complete the series: 3, 7, 11, 15, 19, __",
+    "options": [
+      "25",
+      "23",
+      "21",
+      "26"
+    ],
+    "answer": "23",
+    "difficulty": "Easy",
+    "explanation": "Each term increases by a constant difference of 4. The next term is 19 + 4 = 23."
+  },
+  {
+    "id": 103,
+    "section": "Analytical",
+    "question": "Complete the series: 5, 10, 15, 20, 25, __",
+    "options": [
+      "33",
+      "29",
+      "30",
+      "31"
+    ],
+    "answer": "30",
+    "difficulty": "Medium",
+    "explanation": "Each term increases by a constant difference of 5. The next term is 25 + 5 = 30."
+  },
+  {
+    "id": 104,
+    "section": "Analytical",
+    "question": "Complete the series: 6, 12, 18, 24, 30, __",
+    "options": [
+      "34",
+      "36",
+      "35",
+      "33"
+    ],
+    "answer": "36",
+    "difficulty": "Medium",
+    "explanation": "Each term increases by a constant difference of 6. The next term is 30 + 6 = 36."
+  },
+  {
+    "id": 105,
+    "section": "Analytical",
+    "question": "Complete the series: 7, 14, 21, 28, 35, __",
+    "options": [
+      "42",
+      "39",
+      "44",
+      "40"
+    ],
+    "answer": "42",
+    "difficulty": "Medium",
+    "explanation": "Each term increases by a constant difference of 7. The next term is 35 + 7 = 42."
+  },
+  {
+    "id": 106,
+    "section": "Analytical",
+    "question": "Complete the series: 9, 11, 13, 15, 17, __",
+    "options": [
+      "17",
+      "19",
+      "18",
+      "16"
+    ],
+    "answer": "19",
+    "difficulty": "Easy",
+    "explanation": "Each term increases by a constant difference of 2. The next term is 17 + 2 = 19."
+  },
+  {
+    "id": 107,
+    "section": "Analytical",
+    "question": "Complete the series: 11, 19, 27, 35, 43, __",
+    "options": [
+      "54",
+      "50",
+      "52",
+      "51"
+    ],
+    "answer": "51",
+    "difficulty": "Hard",
+    "explanation": "Each term increases by a constant difference of 8. The next term is 43 + 8 = 51."
+  },
+  {
+    "id": 108,
+    "section": "Analytical",
+    "question": "Complete the series: 4, 13, 22, 31, 40, __",
+    "options": [
+      "49",
+      "51",
+      "52",
+      "50"
+    ],
+    "answer": "49",
+    "difficulty": "Hard",
+    "explanation": "Each term increases by a constant difference of 9. The next term is 40 + 9 = 49."
+  },
+  {
+    "id": 109,
+    "section": "Analytical",
+    "question": "Complete the series: 8, 11, 14, 17, 20, __",
+    "options": [
+      "26",
+      "21",
+      "20",
+      "23"
+    ],
+    "answer": "23",
+    "difficulty": "Easy",
+    "explanation": "Each term increases by a constant difference of 3. The next term is 20 + 3 = 23."
+  },
+  {
+    "id": 110,
+    "section": "Analytical",
+    "question": "Complete the series: 10, 15, 20, 25, 30, __",
+    "options": [
+      "36",
+      "35",
+      "38",
+      "32"
+    ],
+    "answer": "35",
+    "difficulty": "Medium",
+    "explanation": "Each term increases by a constant difference of 5. The next term is 30 + 5 = 35."
+  },
+  {
+    "id": 111,
+    "section": "Analytical",
+    "question": "Complete the series: 2, 4, 8, 16, __",
+    "options": [
+      "31",
+      "40",
+      "32",
+      "24"
+    ],
+    "answer": "32",
+    "difficulty": "Medium",
+    "explanation": "Each term is multiplied by 2 to get the next term. 16 \u00d7 2 = 32."
+  },
+  {
+    "id": 112,
+    "section": "Analytical",
+    "question": "Complete the series: 3, 9, 27, 81, __",
+    "options": [
+      "244",
+      "243",
+      "241",
+      "245"
+    ],
+    "answer": "243",
+    "difficulty": "Medium",
+    "explanation": "Each term is multiplied by 3 to get the next term. 81 \u00d7 3 = 243."
+  },
+  {
+    "id": 113,
+    "section": "Analytical",
+    "question": "Complete the series: 1, 4, 16, 64, __",
+    "options": [
+      "257",
+      "256",
+      "254",
+      "192"
+    ],
+    "answer": "256",
+    "difficulty": "Hard",
+    "explanation": "Each term is multiplied by 4 to get the next term. 64 \u00d7 4 = 256."
+  },
+  {
+    "id": 114,
+    "section": "Analytical",
+    "question": "Complete the series: 5, 10, 20, 40, __",
+    "options": [
+      "100",
+      "82",
+      "60",
+      "80"
+    ],
+    "answer": "80",
+    "difficulty": "Medium",
+    "explanation": "Each term is multiplied by 2 to get the next term. 40 \u00d7 2 = 80."
+  },
+  {
+    "id": 115,
+    "section": "Analytical",
+    "question": "Complete the series: 4, 12, 36, 108, __",
+    "options": [
+      "324",
+      "322",
+      "325",
+      "243"
+    ],
+    "answer": "324",
+    "difficulty": "Medium",
+    "explanation": "Each term is multiplied by 3 to get the next term. 108 \u00d7 3 = 324."
+  },
+  {
+    "id": 116,
+    "section": "Analytical",
+    "question": "Complete the series: A, C, F, J, O, __",
+    "options": [
+      "W",
+      "V",
+      "T",
+      "U"
+    ],
+    "answer": "U",
+    "difficulty": "Medium",
+    "explanation": "The gap between consecutive letters increases as 2, 3, 4, 5. Next gap is 6, giving 'U'."
+  },
+  {
+    "id": 117,
+    "section": "Analytical",
+    "question": "Complete the series: B, C, E, H, L, __",
+    "options": [
+      "S",
+      "R",
+      "O",
+      "Q"
+    ],
+    "answer": "Q",
+    "difficulty": "Medium",
+    "explanation": "The gap between consecutive letters increases as 1, 2, 3, 4. Next gap is 5, giving 'Q'."
+  },
+  {
+    "id": 118,
+    "section": "Analytical",
+    "question": "Complete the series: C, E, I, O, W, __",
+    "options": [
+      "G",
+      "I",
+      "F",
+      "E"
+    ],
+    "answer": "G",
+    "difficulty": "Medium",
+    "explanation": "The gap between consecutive letters increases as 2, 4, 6, 8. Next gap is 10, giving 'G'."
+  },
+  {
+    "id": 119,
+    "section": "Analytical",
+    "question": "Complete the series: D, G, K, P, V, __",
+    "options": [
+      "D",
+      "C",
+      "A",
+      "E"
+    ],
+    "answer": "C",
+    "difficulty": "Medium",
+    "explanation": "The gap between consecutive letters increases as 3, 4, 5, 6. Next gap is 7, giving 'C'."
+  },
+  {
+    "id": 120,
+    "section": "Analytical",
+    "question": "Complete the series: E, F, I, N, U, __",
+    "options": [
+      "E",
+      "D",
+      "F",
+      "C"
+    ],
+    "answer": "D",
+    "difficulty": "Medium",
+    "explanation": "The gap between consecutive letters increases as 1, 3, 5, 7. Next gap is 9, giving 'D'."
+  },
+  {
+    "id": 121,
+    "section": "Analytical",
+    "question": "Complete the series: Y, V, S, P, __",
+    "options": [
+      "N",
+      "K",
+      "M",
+      "O"
+    ],
+    "answer": "M",
+    "difficulty": "Easy",
+    "explanation": "Letters decrease by 3 positions each time: Y, V, S, P -> next is 'M'."
+  },
+  {
+    "id": 122,
+    "section": "Analytical",
+    "question": "Complete the series: W, U, S, Q, __",
+    "options": [
+      "N",
+      "P",
+      "M",
+      "O"
+    ],
+    "answer": "O",
+    "difficulty": "Easy",
+    "explanation": "Letters decrease by 2 positions each time: W, U, S, Q -> next is 'O'."
+  },
+  {
+    "id": 123,
+    "section": "Analytical",
+    "question": "Complete the series: M, I, E, A, __",
+    "options": [
+      "V",
+      "Y",
+      "X",
+      "W"
+    ],
+    "answer": "W",
+    "difficulty": "Easy",
+    "explanation": "Letters decrease by 4 positions each time: M, I, E, A -> next is 'W'."
+  },
+  {
+    "id": 124,
+    "section": "Analytical",
+    "question": "Complete the series: S, P, M, J, __",
+    "options": [
+      "G",
+      "H",
+      "E",
+      "F"
+    ],
+    "answer": "G",
+    "difficulty": "Easy",
+    "explanation": "Letters decrease by 3 positions each time: S, P, M, J -> next is 'G'."
+  },
+  {
+    "id": 125,
+    "section": "Analytical",
+    "question": "Complete the series: J, H, F, D, __",
+    "options": [
+      "C",
+      "D",
+      "A",
+      "B"
+    ],
+    "answer": "B",
+    "difficulty": "Easy",
+    "explanation": "Letters decrease by 2 positions each time: J, H, F, D -> next is 'B'."
+  },
+  {
+    "id": 126,
+    "section": "Analytical",
+    "question": "Complete the series: 1, 4, 9, 16, __",
+    "options": [
+      "26",
+      "25",
+      "30",
+      "24"
+    ],
+    "answer": "25",
+    "difficulty": "Medium",
+    "explanation": "Each term is a perfect square: 1^2, 2^2, 3^2, 4^2, 5^2. Next term = 5\u00b2 = 25."
+  },
+  {
+    "id": 127,
+    "section": "Analytical",
+    "question": "Complete the series: 4, 9, 16, 25, __",
+    "options": [
+      "41",
+      "36",
+      "35",
+      "34"
+    ],
+    "answer": "36",
+    "difficulty": "Medium",
+    "explanation": "Each term is a perfect square: 2^2, 3^2, 4^2, 5^2, 6^2. Next term = 6\u00b2 = 36."
+  },
+  {
+    "id": 128,
+    "section": "Analytical",
+    "question": "Complete the series: 9, 16, 25, 36, __",
+    "options": [
+      "50",
+      "51",
+      "54",
+      "49"
+    ],
+    "answer": "49",
+    "difficulty": "Medium",
+    "explanation": "Each term is a perfect square: 3^2, 4^2, 5^2, 6^2, 7^2. Next term = 7\u00b2 = 49."
+  },
+  {
+    "id": 129,
+    "section": "Analytical",
+    "question": "Complete the series: 16, 25, 36, 49, __",
+    "options": [
+      "66",
+      "70",
+      "62",
+      "64"
+    ],
+    "answer": "64",
+    "difficulty": "Medium",
+    "explanation": "Each term is a perfect square: 4^2, 5^2, 6^2, 7^2, 8^2. Next term = 8\u00b2 = 64."
+  },
+  {
+    "id": 130,
+    "section": "Analytical",
+    "question": "Complete the series: 25, 36, 49, 64, __",
+    "options": [
+      "79",
+      "73",
+      "81",
+      "82"
+    ],
+    "answer": "81",
+    "difficulty": "Medium",
+    "explanation": "Each term is a perfect square: 5^2, 6^2, 7^2, 8^2, 9^2. Next term = 9\u00b2 = 81."
+  },
+  {
+    "id": 131,
+    "section": "Analytical",
+    "question": "Complete the series: 10, 15, 13, 18, 16, __",
+    "options": [
+      "21",
+      "24",
+      "20",
+      "19"
+    ],
+    "answer": "21",
+    "difficulty": "Hard",
+    "explanation": "The series alternately adds 5 and subtracts 2. Following this pattern, the next term is 21."
+  },
+  {
+    "id": 132,
+    "section": "Analytical",
+    "question": "Complete the series: 15, 19, 16, 20, 17, __",
+    "options": [
+      "23",
+      "22",
+      "20",
+      "21"
+    ],
+    "answer": "21",
+    "difficulty": "Hard",
+    "explanation": "The series alternately adds 4 and subtracts 3. Following this pattern, the next term is 21."
+  },
+  {
+    "id": 133,
+    "section": "Analytical",
+    "question": "Complete the series: 20, 26, 24, 30, 28, __",
+    "options": [
+      "32",
+      "31",
+      "35",
+      "34"
+    ],
+    "answer": "34",
+    "difficulty": "Hard",
+    "explanation": "The series alternately adds 6 and subtracts 2. Following this pattern, the next term is 34."
+  },
+  {
+    "id": 134,
+    "section": "Analytical",
+    "question": "Complete the series: 25, 28, 27, 30, 29, __",
+    "options": [
+      "33",
+      "30",
+      "32",
+      "35"
+    ],
+    "answer": "32",
+    "difficulty": "Hard",
+    "explanation": "The series alternately adds 3 and subtracts 1. Following this pattern, the next term is 32."
+  },
+  {
+    "id": 135,
+    "section": "Analytical",
+    "question": "Complete the series: 12, 19, 15, 22, 18, __",
+    "options": [
+      "25",
+      "22",
+      "23",
+      "26"
+    ],
+    "answer": "25",
+    "difficulty": "Hard",
+    "explanation": "The series alternately adds 7 and subtracts 4. Following this pattern, the next term is 25."
+  },
+  {
+    "id": 136,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Tiger",
+      "Eagle",
+      "Lion",
+      "Leopard"
+    ],
+    "answer": "Eagle",
+    "difficulty": "Easy",
+    "explanation": "Lion, Tiger, and Leopard are big cats (mammals), while Eagle is a bird."
+  },
+  {
+    "id": 137,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Blue",
+      "Green",
+      "Yellow",
+      "Red"
+    ],
+    "answer": "Green",
+    "difficulty": "Easy",
+    "explanation": "Red, Blue, and Yellow are primary colors, while Green is a secondary color."
+  },
+  {
+    "id": 138,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Guitar",
+      "Flute",
+      "Violin",
+      "Drum"
+    ],
+    "answer": "Drum",
+    "difficulty": "Easy",
+    "explanation": "Guitar, Violin, and Flute produce sound via strings/air columns with melody, while Drum is primarily a percussion instrument (odd one by category of melodic instruments)."
+  },
+  {
+    "id": 139,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Punjab",
+      "Chennai",
+      "Mumbai",
+      "Delhi"
+    ],
+    "answer": "Punjab",
+    "difficulty": "Easy",
+    "explanation": "Delhi, Mumbai, and Chennai are cities, while Punjab is a state."
+  },
+  {
+    "id": 140,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Cricket",
+      "Football",
+      "Hockey",
+      "Chess"
+    ],
+    "answer": "Chess",
+    "difficulty": "Easy",
+    "explanation": "Cricket, Football, and Hockey are outdoor team sports, while Chess is an indoor board game."
+  },
+  {
+    "id": 141,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Lotus",
+      "Lily",
+      "Mango",
+      "Rose"
+    ],
+    "answer": "Mango",
+    "difficulty": "Easy",
+    "explanation": "Rose, Lily, and Lotus are flowers, while Mango is a fruit."
+  },
+  {
+    "id": 142,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Wood",
+      "Iron",
+      "Petrol",
+      "Coal"
+    ],
+    "answer": "Iron",
+    "difficulty": "Easy",
+    "explanation": "Wood, Coal, and Petrol are fuels used for combustion, while Iron is a metal, not a fuel."
+  },
+  {
+    "id": 143,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Engineer",
+      "Teacher",
+      "Hospital",
+      "Doctor"
+    ],
+    "answer": "Hospital",
+    "difficulty": "Easy",
+    "explanation": "Doctor, Teacher, and Engineer are professions (people), while Hospital is a place/institution."
+  },
+  {
+    "id": 144,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Whale",
+      "Dolphin",
+      "Seal",
+      "Shark"
+    ],
+    "answer": "Shark",
+    "difficulty": "Easy",
+    "explanation": "Whale, Dolphin, and Seal are mammals, while Shark is a fish."
+  },
+  {
+    "id": 145,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Aluminium",
+      "Copper",
+      "Iron",
+      "Diamond"
+    ],
+    "answer": "Diamond",
+    "difficulty": "Easy",
+    "explanation": "Copper, Aluminium, and Iron are metals, while Diamond is a non-metal (a form of carbon)."
+  },
+  {
+    "id": 146,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Rhombus",
+      "Rectangle",
+      "Trapezium",
+      "Sphere"
+    ],
+    "answer": "Sphere",
+    "difficulty": "Easy",
+    "explanation": "Rectangle, Rhombus, and Trapezium are 2-dimensional quadrilaterals, while Sphere is a 3-dimensional solid."
+  },
+  {
+    "id": 147,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Playwright",
+      "Novel",
+      "Author",
+      "Poet"
+    ],
+    "answer": "Novel",
+    "difficulty": "Easy",
+    "explanation": "Author, Poet, and Playwright refer to people who write, while Novel is a written work, not a person."
+  },
+  {
+    "id": 148,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Foot",
+      "Litre",
+      "Yard",
+      "Inch"
+    ],
+    "answer": "Litre",
+    "difficulty": "Easy",
+    "explanation": "Inch, Foot, and Yard measure length, while Litre measures volume."
+  },
+  {
+    "id": 149,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Meter",
+      "Kelvin",
+      "Celsius",
+      "Fahrenheit"
+    ],
+    "answer": "Meter",
+    "difficulty": "Easy",
+    "explanation": "Kelvin, Celsius, and Fahrenheit are units of temperature, while Meter is a unit of length."
+  },
+  {
+    "id": 150,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Piano",
+      "Trumpet",
+      "Clarinet",
+      "Saxophone"
+    ],
+    "answer": "Piano",
+    "difficulty": "Easy",
+    "explanation": "Trumpet, Saxophone, and Clarinet are wind instruments, while Piano is a keyboard/percussion-string instrument."
+  },
+  {
+    "id": 151,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Butterfly",
+      "Bee",
+      "Spider",
+      "Ant"
+    ],
+    "answer": "Spider",
+    "difficulty": "Easy",
+    "explanation": "Ant, Bee, and Butterfly are insects with six legs, while Spider is an arachnid with eight legs."
+  },
+  {
+    "id": 152,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Novel",
+      "Magazine",
+      "Pen",
+      "Newspaper"
+    ],
+    "answer": "Pen",
+    "difficulty": "Easy",
+    "explanation": "Novel, Magazine, and Newspaper are reading materials, while Pen is a writing instrument."
+  },
+  {
+    "id": 153,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "January",
+      "Monday",
+      "March",
+      "May"
+    ],
+    "answer": "Monday",
+    "difficulty": "Easy",
+    "explanation": "January, March, and May are months, while Monday is a day of the week."
+  },
+  {
+    "id": 154,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Maple",
+      "Rose",
+      "Oak",
+      "Pine"
+    ],
+    "answer": "Rose",
+    "difficulty": "Easy",
+    "explanation": "Oak, Pine, and Maple are trees, while Rose is a shrub/flowering plant, not a tree."
+  },
+  {
+    "id": 155,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Moon",
+      "Sun",
+      "Earth",
+      "River"
+    ],
+    "answer": "River",
+    "difficulty": "Easy",
+    "explanation": "Sun, Moon, and Earth are celestial bodies, while River is a geographical feature on Earth."
+  },
+  {
+    "id": 156,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Carrot",
+      "Wheat",
+      "Rice",
+      "Barley"
+    ],
+    "answer": "Carrot",
+    "difficulty": "Easy",
+    "explanation": "Wheat, Rice, and Barley are cereal grains, while Carrot is a root vegetable."
+  },
+  {
+    "id": 157,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Telephone",
+      "Envelope",
+      "Letter",
+      "Stamp"
+    ],
+    "answer": "Telephone",
+    "difficulty": "Easy",
+    "explanation": "Envelope, Letter, and Stamp are related to postal mail, while Telephone is a device for verbal communication."
+  },
+  {
+    "id": 158,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Sodium",
+      "Potassium",
+      "Calcium",
+      "Oxygen"
+    ],
+    "answer": "Oxygen",
+    "difficulty": "Easy",
+    "explanation": "Sodium, Potassium, and Calcium are metals, while Oxygen is a non-metal gas."
+  },
+  {
+    "id": 159,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Cow",
+      "Sheep",
+      "Goat",
+      "Crocodile"
+    ],
+    "answer": "Crocodile",
+    "difficulty": "Easy",
+    "explanation": "Cow, Goat, and Sheep are domesticated mammals that give birth to live young, while Crocodile is a reptile that lays eggs."
+  },
+  {
+    "id": 160,
+    "section": "Analytical",
+    "question": "Find the odd one out:",
+    "options": [
+      "Table",
+      "Bulb",
+      "Cupboard",
+      "Chair"
+    ],
+    "answer": "Bulb",
+    "difficulty": "Easy",
+    "explanation": "Table, Chair, and Cupboard are wooden furniture items, while Bulb is an electrical fitting."
+  },
+  {
+    "id": 161,
+    "section": "Analytical",
+    "question": "Find the number that does not belong:",
+    "options": [
+      "28",
+      "9",
+      "25",
+      "16"
+    ],
+    "answer": "28",
+    "difficulty": "Easy",
+    "explanation": "9 (3\u00b2), 16 (4\u00b2), and 25 (5\u00b2) are perfect squares, whereas 28 is not."
+  },
+  {
+    "id": 162,
+    "section": "Analytical",
+    "question": "Find the number that does not belong:",
+    "options": [
+      "2",
+      "3",
+      "9",
+      "5"
+    ],
+    "answer": "9",
+    "difficulty": "Easy",
+    "explanation": "2, 3, and 5 are prime numbers, whereas 9 (=3\u00d73) is composite."
+  },
+  {
+    "id": 163,
+    "section": "Analytical",
+    "question": "Find the number that does not belong:",
+    "options": [
+      "24",
+      "18",
+      "29",
+      "12"
+    ],
+    "answer": "29",
+    "difficulty": "Easy",
+    "explanation": "12, 18, and 24 are multiples of 6, whereas 29 is not."
+  },
+  {
+    "id": 164,
+    "section": "Analytical",
+    "question": "Find the number that does not belong:",
+    "options": [
+      "90",
+      "64",
+      "8",
+      "27"
+    ],
+    "answer": "90",
+    "difficulty": "Easy",
+    "explanation": "8 (2\u00b3), 27 (3\u00b3), and 64 (4\u00b3) are perfect cubes, whereas 90 is not."
+  },
+  {
+    "id": 165,
+    "section": "Analytical",
+    "question": "Find the number that does not belong:",
+    "options": [
+      "21",
+      "35",
+      "40",
+      "15"
+    ],
+    "answer": "40",
+    "difficulty": "Easy",
+    "explanation": "15, 21, and 35 are odd multiples formed by 3,7,5,7 pairing (all odd numbers), whereas 40 is even."
+  },
+  {
+    "id": 166,
+    "section": "Analytical",
+    "question": "Find the number that does not belong:",
+    "options": [
+      "13",
+      "11",
+      "17",
+      "21"
+    ],
+    "answer": "21",
+    "difficulty": "Easy",
+    "explanation": "11, 13, and 17 are prime numbers, whereas 21 (=3\u00d77) is composite."
+  },
+  {
+    "id": 167,
+    "section": "Analytical",
+    "question": "Find the number that does not belong:",
+    "options": [
+      "64",
+      "36",
+      "49",
+      "70"
+    ],
+    "answer": "70",
+    "difficulty": "Easy",
+    "explanation": "36 (6\u00b2), 49 (7\u00b2), and 64 (8\u00b2) are perfect squares, whereas 70 is not."
+  },
+  {
+    "id": 168,
+    "section": "Analytical",
+    "question": "Find the number that does not belong:",
+    "options": [
+      "14",
+      "28",
+      "21",
+      "32"
+    ],
+    "answer": "32",
+    "difficulty": "Easy",
+    "explanation": "14, 21, and 28 are multiples of 7, whereas 32 is not."
+  },
+  {
+    "id": 169,
+    "section": "Analytical",
+    "question": "Find the number that does not belong:",
+    "options": [
+      "30",
+      "27",
+      "1",
+      "8"
+    ],
+    "answer": "30",
+    "difficulty": "Easy",
+    "explanation": "1, 8, and 27 are perfect cubes (1\u00b3, 2\u00b3, 3\u00b3), whereas 30 is not."
+  },
+  {
+    "id": 170,
+    "section": "Analytical",
+    "question": "Find the number that does not belong:",
+    "options": [
+      "31",
+      "33",
+      "29",
+      "23"
+    ],
+    "answer": "33",
+    "difficulty": "Easy",
+    "explanation": "23, 29, and 31 are prime numbers, whereas 33 (=3\u00d711) is composite."
+  },
+  {
+    "id": 171,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '\u00d7', what is the value of: 4 \u00f7 5 \u00d7 3 \u00f7 8?",
+    "options": [
+      "44",
+      "41",
+      "42",
+      "45"
+    ],
+    "answer": "44",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 4 \u00d7 5 + 3 \u00d7 8 = 44 (using standard order of operations)."
+  },
+  {
+    "id": 172,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '\u00d7', what is the value of: 9 \u00f7 2 \u00f7 7 - 6?",
+    "options": [
+      "21",
+      "19",
+      "20",
+      "22"
+    ],
+    "answer": "21",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 9 \u00d7 2 \u00d7 7 \u00f7 6 = 21 (using standard order of operations)."
+  },
+  {
+    "id": 173,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '\u00d7', what is the value of: 7 \u00d7 5 \u00f7 9 \u00d7 7?",
+    "options": [
+      "58",
+      "59",
+      "56",
+      "60"
+    ],
+    "answer": "59",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 7 + 5 \u00d7 9 + 7 = 59 (using standard order of operations)."
+  },
+  {
+    "id": 174,
+    "section": "Analytical",
+    "question": "If '+' means '\u00f7', '-' means '+', '\u00d7' means '-', '\u00f7' means '\u00d7', what is the value of: 5 - 3 - 2 + 2?",
+    "options": [
+      "10",
+      "7",
+      "11",
+      "9"
+    ],
+    "answer": "9",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 5 + 3 + 2 \u00f7 2 = 9 (using standard order of operations)."
+  },
+  {
+    "id": 175,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '\u00d7', what is the value of: 4 \u00f7 6 \u00d7 9 \u00d7 9?",
+    "options": [
+      "42",
+      "41",
+      "40",
+      "39"
+    ],
+    "answer": "42",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 4 \u00d7 6 + 9 + 9 = 42 (using standard order of operations)."
+  },
+  {
+    "id": 176,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '\u00d7', what is the value of: 6 \u00d7 6 - 3 \u00d7 5?",
+    "options": [
+      "12",
+      "10",
+      "13",
+      "11"
+    ],
+    "answer": "13",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 6 + 6 \u00f7 3 + 5 = 13 (using standard order of operations)."
+  },
+  {
+    "id": 177,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '\u00d7', what is the value of: 9 \u00d7 7 \u00f7 4 + 2?",
+    "options": [
+      "35",
+      "36",
+      "37",
+      "32"
+    ],
+    "answer": "35",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 9 + 7 \u00d7 4 - 2 = 35 (using standard order of operations)."
+  },
+  {
+    "id": 178,
+    "section": "Analytical",
+    "question": "If '+' means '\u00f7', '-' means '+', '\u00d7' means '-', '\u00f7' means '\u00d7', what is the value of: 3 + 4 - 5 + 4?",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "5"
+    ],
+    "answer": "2",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 3 \u00f7 4 + 5 \u00f7 4 = 2 (using standard order of operations)."
+  },
+  {
+    "id": 179,
+    "section": "Analytical",
+    "question": "If '+' means '\u00d7', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '-', what is the value of: 6 - 6 \u00d7 9 - 3?",
+    "options": [
+      "6",
+      "1",
+      "5",
+      "4"
+    ],
+    "answer": "4",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 6 \u00f7 6 + 9 \u00f7 3 = 4 (using standard order of operations)."
+  },
+  {
+    "id": 180,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00d7', '\u00d7' means '\u00f7', '\u00f7' means '+', what is the value of: 9 \u00f7 6 \u00f7 8 + 6?",
+    "options": [
+      "17",
+      "18",
+      "14",
+      "19"
+    ],
+    "answer": "17",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 9 + 6 + 8 - 6 = 17 (using standard order of operations)."
+  },
+  {
+    "id": 181,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '\u00d7', what is the value of: 7 \u00d7 7 \u00f7 3 \u00f7 4?",
+    "options": [
+      "92",
+      "94",
+      "91",
+      "90"
+    ],
+    "answer": "91",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 7 + 7 \u00d7 3 \u00d7 4 = 91 (using standard order of operations)."
+  },
+  {
+    "id": 182,
+    "section": "Analytical",
+    "question": "If '+' means '\u00d7', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '-', what is the value of: 6 + 9 - 9 - 3?",
+    "options": [
+      "2",
+      "4",
+      "1",
+      "-1"
+    ],
+    "answer": "2",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 6 \u00d7 9 \u00f7 9 \u00f7 3 = 2 (using standard order of operations)."
+  },
+  {
+    "id": 183,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '\u00d7', what is the value of: 8 + 8 - 4 \u00d7 9?",
+    "options": [
+      "17",
+      "12",
+      "16",
+      "15"
+    ],
+    "answer": "15",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 8 - 8 \u00f7 4 + 9 = 15 (using standard order of operations)."
+  },
+  {
+    "id": 184,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '\u00d7', what is the value of: 4 \u00d7 3 \u00f7 9 + 6?",
+    "options": [
+      "24",
+      "27",
+      "25",
+      "28"
+    ],
+    "answer": "25",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 4 + 3 \u00d7 9 - 6 = 25 (using standard order of operations)."
+  },
+  {
+    "id": 185,
+    "section": "Analytical",
+    "question": "If '+' means '\u00f7', '-' means '+', '\u00d7' means '-', '\u00f7' means '\u00d7', what is the value of: 7 - 7 \u00f7 8 - 4?",
+    "options": [
+      "65",
+      "64",
+      "67",
+      "69"
+    ],
+    "answer": "67",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 7 + 7 \u00d7 8 + 4 = 67 (using standard order of operations)."
+  },
+  {
+    "id": 186,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00f7', '\u00d7' means '+', '\u00f7' means '\u00d7', what is the value of: 4 \u00f7 5 \u00d7 9 + 6?",
+    "options": [
+      "22",
+      "23",
+      "24",
+      "26"
+    ],
+    "answer": "23",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 4 \u00d7 5 + 9 - 6 = 23 (using standard order of operations)."
+  },
+  {
+    "id": 187,
+    "section": "Analytical",
+    "question": "If '+' means '\u00f7', '-' means '+', '\u00d7' means '-', '\u00f7' means '\u00d7', what is the value of: 6 \u00d7 8 - 6 \u00f7 9?",
+    "options": [
+      "49",
+      "50",
+      "52",
+      "53"
+    ],
+    "answer": "52",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 6 - 8 + 6 \u00d7 9 = 52 (using standard order of operations)."
+  },
+  {
+    "id": 188,
+    "section": "Analytical",
+    "question": "If '+' means '\u00f7', '-' means '+', '\u00d7' means '-', '\u00f7' means '\u00d7', what is the value of: 8 \u00d7 4 \u00d7 5 - 4?",
+    "options": [
+      "6",
+      "3",
+      "2",
+      "4"
+    ],
+    "answer": "3",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 8 - 4 - 5 + 4 = 3 (using standard order of operations)."
+  },
+  {
+    "id": 189,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00d7', '\u00d7' means '\u00f7', '\u00f7' means '+', what is the value of: 4 + 5 \u00f7 8 + 7?",
+    "options": [
+      "0",
+      "-3",
+      "2",
+      "-1"
+    ],
+    "answer": "0",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 4 - 5 + 8 - 7 = 0 (using standard order of operations)."
+  },
+  {
+    "id": 190,
+    "section": "Analytical",
+    "question": "If '+' means '-', '-' means '\u00d7', '\u00d7' means '\u00f7', '\u00f7' means '+', what is the value of: 9 - 6 + 8 + 3?",
+    "options": [
+      "42",
+      "43",
+      "44",
+      "40"
+    ],
+    "answer": "43",
+    "difficulty": "Medium",
+    "explanation": "Replacing symbols gives: 9 \u00d7 6 - 8 - 3 = 43 (using standard order of operations)."
+  },
+  {
+    "id": 191,
+    "section": "Analytical",
+    "question": "Pointing to a photograph, a woman said, 'He is the son of my mother's only daughter.' How is the boy related to the woman?",
+    "options": [
+      "Son",
+      "Brother",
+      "Nephew",
+      "Cousin"
+    ],
+    "answer": "Son",
+    "difficulty": "Hard",
+    "explanation": "Mother's only daughter is the woman herself. So the son of the woman is her own son."
+  },
+  {
+    "id": 192,
+    "section": "Analytical",
+    "question": "A man said to a woman, 'Your mother's husband's sister is my aunt.' How is the man related to the woman?",
+    "options": [
+      "Cousin",
+      "Nephew",
+      "Brother",
+      "Son"
+    ],
+    "answer": "Cousin",
+    "difficulty": "Hard",
+    "explanation": "The woman's mother's husband is her father, and his sister is the woman's aunt. If that same aunt is the man's aunt too, the man and the woman are cousins."
+  },
+  {
+    "id": 193,
+    "section": "Analytical",
+    "question": "Introducing a boy, a girl said, 'His mother is the only daughter of my mother.' How is the girl related to the boy?",
+    "options": [
+      "Aunt",
+      "Mother",
+      "Sister",
+      "Cousin"
+    ],
+    "answer": "Mother",
+    "difficulty": "Hard",
+    "explanation": "The only daughter of the girl's mother is the girl herself. So the boy's mother is the girl, meaning the girl is the boy's mother."
+  },
+  {
+    "id": 194,
+    "section": "Analytical",
+    "question": "P is Q's brother. R is Q's mother. S is R's father. T is S's mother. How is P related to S?",
+    "options": [
+      "Grandson",
+      "Son",
+      "Grandfather",
+      "Nephew"
+    ],
+    "answer": "Grandson",
+    "difficulty": "Hard",
+    "explanation": "R is S's daughter (since S is R's father). Since P is Q's brother and Q is R's child, P is also R's child, hence S's grandson."
+  },
+  {
+    "id": 195,
+    "section": "Analytical",
+    "question": "Introducing a man, a woman said, 'He is the only son of my grandfather's only daughter.' How is the man related to the woman?",
+    "options": [
+      "Cousin",
+      "Father",
+      "Brother",
+      "Uncle"
+    ],
+    "answer": "Brother",
+    "difficulty": "Hard",
+    "explanation": "The grandfather's only daughter is the woman's mother. Her only son is therefore the woman's brother."
+  },
+  {
+    "id": 196,
+    "section": "Analytical",
+    "question": "A is B's father. C is B's sister. D is C's husband. How is D related to A?",
+    "options": [
+      "Son-in-law",
+      "Son",
+      "Nephew",
+      "Brother-in-law"
+    ],
+    "answer": "Son-in-law",
+    "difficulty": "Hard",
+    "explanation": "C is A's daughter, and D is C's husband, making D the son-in-law of A."
+  },
+  {
+    "id": 197,
+    "section": "Analytical",
+    "question": "Pointing to a man, a woman said, 'His son is my son's father.' How is the woman related to the man?",
+    "options": [
+      "Mother",
+      "Daughter-in-law",
+      "Sister",
+      "Wife"
+    ],
+    "answer": "Daughter-in-law",
+    "difficulty": "Hard",
+    "explanation": "The man's son is the father of the woman's son, meaning the man's son is the woman's husband, so the woman is the man's daughter-in-law."
+  },
+  {
+    "id": 198,
+    "section": "Analytical",
+    "question": "X and Y are sisters. R is Y's mother. T is X's father. How is T related to R?",
+    "options": [
+      "Husband",
+      "Brother",
+      "Son",
+      "Father"
+    ],
+    "answer": "Husband",
+    "difficulty": "Hard",
+    "explanation": "Since X and Y are sisters, they share the same parents, so R (Y's mother) and T (X's father) are husband and wife."
+  },
+  {
+    "id": 199,
+    "section": "Analytical",
+    "question": "A's mother is the sister of B and has a daughter C. If B has no children, what is the relation between B and C?",
+    "options": [
+      "Cousin",
+      "Brother/Sister",
+      "Father/Mother",
+      "Uncle/Aunt"
+    ],
+    "answer": "Uncle/Aunt",
+    "difficulty": "Hard",
+    "explanation": "A's mother is B's sister, and C is A's mother's daughter, making C the niece of B, so B is C's uncle or aunt."
+  },
+  {
+    "id": 200,
+    "section": "Analytical",
+    "question": "Introducing a lady, a man said, 'She is the daughter of the only son of my father.' How is the lady related to the man?",
+    "options": [
+      "Niece",
+      "Cousin",
+      "Daughter",
+      "Sister"
+    ],
+    "answer": "Daughter",
+    "difficulty": "Hard",
+    "explanation": "The only son of the man's father is the man himself, so the lady, being his daughter, is his own daughter."
+  },
+  {
+    "id": 201,
+    "section": "Analytical",
+    "question": "A is the son of B. B is the sister of C. C is the mother of D. How is A related to D?",
+    "options": [
+      "Brother",
+      "Uncle",
+      "Nephew",
+      "Cousin"
+    ],
+    "answer": "Cousin",
+    "difficulty": "Hard",
+    "explanation": "B and C are sisters, so their children A and D are cousins."
+  },
+  {
+    "id": 202,
+    "section": "Analytical",
+    "question": "P's father is the brother of Q's mother. How is Q related to P?",
+    "options": [
+      "Aunt",
+      "Sister",
+      "Niece",
+      "Cousin"
+    ],
+    "answer": "Cousin",
+    "difficulty": "Hard",
+    "explanation": "P's father and Q's mother are siblings, making P and Q cousins."
+  },
+  {
+    "id": 203,
+    "section": "Analytical",
+    "question": "Introducing a boy, a man said, 'His mother is the only daughter-in-law of my mother.' How is the man related to the boy?",
+    "options": [
+      "Brother",
+      "Grandfather",
+      "Father",
+      "Uncle"
+    ],
+    "answer": "Father",
+    "difficulty": "Hard",
+    "explanation": "The only daughter-in-law of the man's mother is the man's own wife, so the boy's mother is the man's wife, making the man the boy's father."
+  },
+  {
+    "id": 204,
+    "section": "Analytical",
+    "question": "A woman introduces a man as the son of the brother of her mother. How is the man related to the woman?",
+    "options": [
+      "Brother",
+      "Nephew",
+      "Uncle",
+      "Cousin"
+    ],
+    "answer": "Cousin",
+    "difficulty": "Hard",
+    "explanation": "The brother of the woman's mother is her maternal uncle; his son is therefore the woman's cousin."
+  },
+  {
+    "id": 205,
+    "section": "Analytical",
+    "question": "Pointing to a photograph, a boy said, 'This girl is the daughter of the only brother of my father.' How is the girl related to the boy?",
+    "options": [
+      "Niece",
+      "Aunt",
+      "Cousin",
+      "Sister"
+    ],
+    "answer": "Cousin",
+    "difficulty": "Hard",
+    "explanation": "The only brother of the boy's father is the boy's uncle, and the uncle's daughter is therefore the boy's cousin."
+  },
+  {
+    "id": 206,
+    "section": "Analytical",
+    "question": "A man walks 5 km towards North, then turns right and walks 3 km, then turns right again and walks 5 km. How far is he from his starting point?",
+    "options": [
+      "10 km",
+      "3 km",
+      "8 km",
+      "5 km"
+    ],
+    "answer": "3 km",
+    "difficulty": "Medium",
+    "explanation": "The man ends up 3 km to the east of the starting point since the two 5 km legs cancel out (north then south)."
+  },
+  {
+    "id": 207,
+    "section": "Analytical",
+    "question": "Ravi walks 10 km towards East and then turns left and walks 10 km. Which direction is he facing now?",
+    "options": [
+      "South",
+      "West",
+      "North",
+      "East"
+    ],
+    "answer": "North",
+    "difficulty": "Easy",
+    "explanation": "Facing East and turning left (counter-clockwise 90\u00b0) makes him face North."
+  },
+  {
+    "id": 208,
+    "section": "Analytical",
+    "question": "If South-East becomes North-East, North becomes West, then South-West will become?",
+    "options": [
+      "South-East",
+      "South",
+      "North-West",
+      "North-East"
+    ],
+    "answer": "South-East",
+    "difficulty": "Hard",
+    "explanation": "Each direction point is rotated 90\u00b0 counter-clockwise (South-East -> North-East, North -> West). Applying the same 90\u00b0 counter-clockwise rotation to South-West gives South-East."
+  },
+  {
+    "id": 209,
+    "section": "Analytical",
+    "question": "A person walks 4 km North, then 4 km East, then 4 km South. In which direction is he from the starting point?",
+    "options": [
+      "West",
+      "North",
+      "South",
+      "East"
+    ],
+    "answer": "East",
+    "difficulty": "Easy",
+    "explanation": "The North and South legs cancel each other, leaving only the 4 km East displacement."
+  },
+  {
+    "id": 210,
+    "section": "Analytical",
+    "question": "Facing North, a man turns 90\u00b0 clockwise, then 180\u00b0, then 90\u00b0 anticlockwise. Which direction is he facing now?",
+    "options": [
+      "West",
+      "South",
+      "North",
+      "East"
+    ],
+    "answer": "South",
+    "difficulty": "Medium",
+    "explanation": "90\u00b0 CW from North = East; +180\u00b0 = West; -90\u00b0 (anticlockwise) from West = South."
+  },
+  {
+    "id": 211,
+    "section": "Analytical",
+    "question": "Town B is to the South of Town A. Town C is to the East of Town B. In which direction is Town C from Town A?",
+    "options": [
+      "South-West",
+      "North-East",
+      "North-West",
+      "South-East"
+    ],
+    "answer": "South-East",
+    "difficulty": "Easy",
+    "explanation": "Moving South then East places Town C to the South-East of Town A."
+  },
+  {
+    "id": 212,
+    "section": "Analytical",
+    "question": "A cyclist rides 6 km West, then 8 km South. How far is he from the starting point?",
+    "options": [
+      "6 km",
+      "14 km",
+      "8 km",
+      "10 km"
+    ],
+    "answer": "10 km",
+    "difficulty": "Medium",
+    "explanation": "Using the Pythagorean theorem: \u221a(6\u00b2 + 8\u00b2) = \u221a(36+64) = \u221a100 = 10 km."
+  },
+  {
+    "id": 213,
+    "section": "Analytical",
+    "question": "Points P, Q, and R are such that Q is North of P, and R is East of Q. If R is exactly North-East of P, what can be said about the distances PQ and QR?",
+    "options": [
+      "PQ is greater",
+      "Cannot be determined",
+      "QR is greater",
+      "They are equal"
+    ],
+    "answer": "They are equal",
+    "difficulty": "Hard",
+    "explanation": "For R to lie exactly North-East (45\u00b0) of P, the North and East displacements must be equal, so PQ = QR."
+  },
+  {
+    "id": 214,
+    "section": "Analytical",
+    "question": "A man starts from his house, walks 3 km South, then 4 km West to reach the market. What is the shortest distance between his house and the market?",
+    "options": [
+      "5 km",
+      "3 km",
+      "7 km",
+      "4 km"
+    ],
+    "answer": "5 km",
+    "difficulty": "Medium",
+    "explanation": "By the Pythagorean theorem: \u221a(3\u00b2 + 4\u00b2) = \u221a25 = 5 km."
+  },
+  {
+    "id": 215,
+    "section": "Analytical",
+    "question": "Facing South, Neha turns 180\u00b0 and then turns 90\u00b0 to her left. Which direction is she facing now?",
+    "options": [
+      "North",
+      "South",
+      "West",
+      "East"
+    ],
+    "answer": "West",
+    "difficulty": "Easy",
+    "explanation": "Turning 180\u00b0 from South makes her face North. Turning 90\u00b0 to her left (counter-clockwise) from North makes her face West."
+  },
+  {
+    "id": 216,
+    "section": "Analytical",
+    "question": "If North-East becomes South, then South-West will become?",
+    "options": [
+      "West",
+      "South",
+      "East",
+      "North"
+    ],
+    "answer": "North",
+    "difficulty": "Hard",
+    "explanation": "The rotation implied is 135\u00b0, so South-West maps to North under the same transformation."
+  },
+  {
+    "id": 217,
+    "section": "Analytical",
+    "question": "A boy walks 2 km East, then turns South and walks 2 km, then turns West and walks 2 km. In which direction is he from the starting point?",
+    "options": [
+      "North",
+      "South",
+      "East",
+      "West"
+    ],
+    "answer": "South",
+    "difficulty": "Easy",
+    "explanation": "The East and West legs cancel out, leaving only the 2 km South displacement."
+  },
+  {
+    "id": 218,
+    "section": "Analytical",
+    "question": "Village Q is North-East of Village P. Village R is South-East of Village Q. In which direction is Village R from Village P?",
+    "options": [
+      "West",
+      "South",
+      "North",
+      "East"
+    ],
+    "answer": "East",
+    "difficulty": "Medium",
+    "explanation": "Combining a North-East move with a South-East move cancels the North-South components, leaving a net movement to the East."
+  },
+  {
+    "id": 219,
+    "section": "Analytical",
+    "question": "A person facing West turns 45\u00b0 clockwise, then another 90\u00b0 clockwise. Which direction is he facing now?",
+    "options": [
+      "South-East",
+      "North-East",
+      "North-West",
+      "South-West"
+    ],
+    "answer": "North-East",
+    "difficulty": "Hard",
+    "explanation": "45\u00b0 CW from West gives North-West; a further 90\u00b0 CW gives North-East."
+  },
+  {
+    "id": 220,
+    "section": "Analytical",
+    "question": "Rahul walks 5 km towards South and then turns towards West and walks 3 km. Then he again turns towards North and walks 5 km. How far is he from his starting point and in which direction?",
+    "options": [
+      "3 km West",
+      "5 km South",
+      "8 km West",
+      "3 km East"
+    ],
+    "answer": "3 km West",
+    "difficulty": "Medium",
+    "explanation": "The two 5 km legs (South and North) cancel out, leaving only the 3 km West displacement."
+  },
+  {
+    "id": 221,
+    "section": "Analytical",
+    "question": "Statement: All cats are dogs. All dogs are horses.\nConclusion I: All cats are horses.\nConclusion II: Some horses are cats.",
+    "options": [
+      "Both follow",
+      "Only II follows",
+      "Neither follows",
+      "Only I follows"
+    ],
+    "answer": "Both follow",
+    "difficulty": "Medium",
+    "explanation": "Since all cats are dogs and all dogs are horses, all cats are horses (I follows). Since all cats are horses, at least some horses are cats (II follows)."
+  },
+  {
+    "id": 222,
+    "section": "Analytical",
+    "question": "Statement: Some books are pens. All pens are erasers.\nConclusion I: Some books are erasers.\nConclusion II: All erasers are books.",
+    "options": [
+      "Neither follows",
+      "Both follow",
+      "Only I follows",
+      "Only II follows"
+    ],
+    "answer": "Only I follows",
+    "difficulty": "Medium",
+    "explanation": "Since some books are pens and all pens are erasers, some books are erasers (I follows). II does not follow as it overgeneralizes."
+  },
+  {
+    "id": 223,
+    "section": "Analytical",
+    "question": "Statement: No apples are oranges. All oranges are fruits.\nConclusion I: No apples are fruits.\nConclusion II: Some fruits are not apples.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Neither follows",
+      "Both follow"
+    ],
+    "answer": "Only II follows",
+    "difficulty": "Medium",
+    "explanation": "Since all oranges are fruits and no apples are oranges, at least some fruits (the oranges) are not apples (II follows). I does not necessarily follow since apples could still be a type of fruit."
+  },
+  {
+    "id": 224,
+    "section": "Analytical",
+    "question": "Statement: All doctors are engineers. Some engineers are teachers.\nConclusion I: Some doctors are teachers.\nConclusion II: Some teachers are doctors.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both follow",
+      "Neither follows"
+    ],
+    "answer": "Neither follows",
+    "difficulty": "Medium",
+    "explanation": "Since only 'some' engineers are teachers, it cannot be determined whether any doctors fall into that overlapping group, so neither conclusion necessarily follows."
+  },
+  {
+    "id": 225,
+    "section": "Analytical",
+    "question": "Statement: All rivers are lakes. Some lakes are seas.\nConclusion I: Some rivers are seas.\nConclusion II: Some seas are rivers.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both follow",
+      "Neither follows"
+    ],
+    "answer": "Neither follows",
+    "difficulty": "Medium",
+    "explanation": "Since only some lakes are seas, there's no guarantee the rivers fall into that subset, so neither conclusion is certain."
+  },
+  {
+    "id": 226,
+    "section": "Analytical",
+    "question": "Statement: No pens are pencils. All pencils are erasers.\nConclusion I: No erasers are pens.\nConclusion II: Some erasers are not pens.",
+    "options": [
+      "Only II follows",
+      "Neither follows",
+      "Both follow",
+      "Only I follows"
+    ],
+    "answer": "Only II follows",
+    "difficulty": "Medium",
+    "explanation": "Since all pencils are erasers and no pens are pencils, at least the pencils among erasers are not pens (II follows). I is too strong a claim since other erasers could still be pens."
+  },
+  {
+    "id": 227,
+    "section": "Analytical",
+    "question": "Statement: All squares are rectangles. All rectangles are quadrilaterals.\nConclusion I: All squares are quadrilaterals.\nConclusion II: Some quadrilaterals are squares.",
+    "options": [
+      "Only I follows",
+      "Both follow",
+      "Neither follows",
+      "Only II follows"
+    ],
+    "answer": "Both follow",
+    "difficulty": "Medium",
+    "explanation": "All squares are rectangles and all rectangles are quadrilaterals, so all squares are quadrilaterals (I follows), and thus some quadrilaterals are squares (II follows)."
+  },
+  {
+    "id": 228,
+    "section": "Analytical",
+    "question": "Statement: Some students are athletes. No athletes are lazy.\nConclusion I: Some students are not lazy.\nConclusion II: No students are lazy.",
+    "options": [
+      "Only I follows",
+      "Both follow",
+      "Neither follows",
+      "Only II follows"
+    ],
+    "answer": "Only I follows",
+    "difficulty": "Medium",
+    "explanation": "Since some students are athletes and no athletes are lazy, at least those student-athletes are not lazy (I follows). II is too broad since it applies to all students."
+  },
+  {
+    "id": 229,
+    "section": "Analytical",
+    "question": "Statement: All mangoes are sweet. All sweet things are liked by children.\nConclusion I: All mangoes are liked by children.\nConclusion II: Some things liked by children are mangoes.",
+    "options": [
+      "Only I follows",
+      "Both follow",
+      "Only II follows",
+      "Neither follows"
+    ],
+    "answer": "Both follow",
+    "difficulty": "Medium",
+    "explanation": "All mangoes are sweet and all sweet things are liked by children, so all mangoes are liked by children (I follows), meaning some liked things are mangoes (II follows)."
+  },
+  {
+    "id": 230,
+    "section": "Analytical",
+    "question": "Statement: No triangles are circles. Some circles are squares.\nConclusion I: Some squares are not triangles.\nConclusion II: No squares are triangles.",
+    "options": [
+      "Neither follows",
+      "Both follow",
+      "Only II follows",
+      "Only I follows"
+    ],
+    "answer": "Only I follows",
+    "difficulty": "Medium",
+    "explanation": "Since some circles are squares and no triangles are circles, at least those circle-squares are not triangles (I follows). II is too strong since it claims about all squares."
+  },
+  {
+    "id": 231,
+    "section": "Analytical",
+    "question": "Statement: All actors are singers. Some singers are dancers.\nConclusion I: Some actors are dancers.\nConclusion II: All dancers are actors.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Neither follows",
+      "Both follow"
+    ],
+    "answer": "Neither follows",
+    "difficulty": "Medium",
+    "explanation": "The overlap of singers who are dancers may not include any actors, so neither conclusion is guaranteed."
+  },
+  {
+    "id": 232,
+    "section": "Analytical",
+    "question": "Statement: All pilots are brave. No brave people are cowards.\nConclusion I: No pilots are cowards.\nConclusion II: Some brave people are pilots.",
+    "options": [
+      "Neither follows",
+      "Only II follows",
+      "Only I follows",
+      "Both follow"
+    ],
+    "answer": "Both follow",
+    "difficulty": "Medium",
+    "explanation": "Since all pilots are brave and no brave people are cowards, no pilots are cowards (I follows); also, since all pilots are brave, some brave people are pilots (II follows)."
+  },
+  {
+    "id": 233,
+    "section": "Analytical",
+    "question": "Statement: Some flowers are red. All red things fade quickly.\nConclusion I: Some flowers fade quickly.\nConclusion II: All flowers fade quickly.",
+    "options": [
+      "Only II follows",
+      "Both follow",
+      "Neither follows",
+      "Only I follows"
+    ],
+    "answer": "Only I follows",
+    "difficulty": "Medium",
+    "explanation": "Since some flowers are red and all red things fade quickly, at least those red flowers fade quickly (I follows). II overgeneralizes to all flowers."
+  },
+  {
+    "id": 234,
+    "section": "Analytical",
+    "question": "Statement: All coins are metals. No metals are wooden.\nConclusion I: No coins are wooden.\nConclusion II: Some metals are coins.",
+    "options": [
+      "Both follow",
+      "Neither follows",
+      "Only II follows",
+      "Only I follows"
+    ],
+    "answer": "Both follow",
+    "difficulty": "Medium",
+    "explanation": "Since all coins are metals and no metals are wooden, no coins are wooden (I follows); also, since all coins are metals, some metals are coins (II follows)."
+  },
+  {
+    "id": 235,
+    "section": "Analytical",
+    "question": "Statement: Some pens are red. Some red things are bags.\nConclusion I: Some pens are bags.\nConclusion II: Some bags are pens.",
+    "options": [
+      "Only II follows",
+      "Neither follows",
+      "Only I follows",
+      "Both follow"
+    ],
+    "answer": "Neither follows",
+    "difficulty": "Medium",
+    "explanation": "The 'some' overlaps in each statement need not coincide, so neither conclusion can be validly drawn."
+  },
+  {
+    "id": 236,
+    "section": "Analytical",
+    "question": "Pen is to Ink as Lamp is to ______?",
+    "options": [
+      "Electricity",
+      "Light",
+      "Wire",
+      "Bulb"
+    ],
+    "answer": "Electricity",
+    "difficulty": "Easy",
+    "explanation": "A pen requires ink to function, just as a lamp requires electricity to function."
+  },
+  {
+    "id": 237,
+    "section": "Analytical",
+    "question": "Doctor is to Hospital as Teacher is to ______?",
+    "options": [
+      "Student",
+      "Classroom",
+      "School",
+      "Book"
+    ],
+    "answer": "School",
+    "difficulty": "Easy",
+    "explanation": "A doctor works in a hospital, just as a teacher works in a school."
+  },
+  {
+    "id": 238,
+    "section": "Analytical",
+    "question": "Fish is to Water as Bird is to ______?",
+    "options": [
+      "Tree",
+      "Feather",
+      "Sky",
+      "Nest"
+    ],
+    "answer": "Sky",
+    "difficulty": "Easy",
+    "explanation": "A fish's natural habitat is water, just as a bird's natural habitat is the sky."
+  },
+  {
+    "id": 239,
+    "section": "Analytical",
+    "question": "Author is to Book as Sculptor is to ______?",
+    "options": [
+      "Statue",
+      "Museum",
+      "Chisel",
+      "Stone"
+    ],
+    "answer": "Statue",
+    "difficulty": "Easy",
+    "explanation": "An author creates a book, just as a sculptor creates a statue."
+  },
+  {
+    "id": 240,
+    "section": "Analytical",
+    "question": "Thermometer is to Temperature as Speedometer is to ______?",
+    "options": [
+      "Distance",
+      "Fuel",
+      "Time",
+      "Speed"
+    ],
+    "answer": "Speed",
+    "difficulty": "Easy",
+    "explanation": "A thermometer measures temperature, just as a speedometer measures speed."
+  },
+  {
+    "id": 241,
+    "section": "Analytical",
+    "question": "Tailor is to Cloth as Carpenter is to ______?",
+    "options": [
+      "Nail",
+      "House",
+      "Hammer",
+      "Wood"
+    ],
+    "answer": "Wood",
+    "difficulty": "Easy",
+    "explanation": "A tailor works with cloth, just as a carpenter works with wood."
+  },
+  {
+    "id": 242,
+    "section": "Analytical",
+    "question": "Puppy is to Dog as Cub is to ______?",
+    "options": [
+      "Deer",
+      "Lion",
+      "Cat",
+      "Fox"
+    ],
+    "answer": "Lion",
+    "difficulty": "Easy",
+    "explanation": "A puppy is a baby dog, just as a cub is a baby lion."
+  },
+  {
+    "id": 243,
+    "section": "Analytical",
+    "question": "Ocean is to Water as Desert is to ______?",
+    "options": [
+      "Heat",
+      "Cactus",
+      "Camel",
+      "Sand"
+    ],
+    "answer": "Sand",
+    "difficulty": "Easy",
+    "explanation": "An ocean is primarily composed of water, just as a desert is primarily composed of sand."
+  },
+  {
+    "id": 244,
+    "section": "Analytical",
+    "question": "Key is to Lock as Password is to ______?",
+    "options": [
+      "Account",
+      "Login",
+      "Computer",
+      "Security"
+    ],
+    "answer": "Account",
+    "difficulty": "Easy",
+    "explanation": "A key is used to open a lock, just as a password is used to access an account."
+  },
+  {
+    "id": 245,
+    "section": "Analytical",
+    "question": "Chef is to Kitchen as Pilot is to ______?",
+    "options": [
+      "Airport",
+      "Cockpit",
+      "Airplane",
+      "Sky"
+    ],
+    "answer": "Cockpit",
+    "difficulty": "Easy",
+    "explanation": "A chef works within a kitchen, just as a pilot works within a cockpit."
+  },
+  {
+    "id": 246,
+    "section": "Analytical",
+    "question": "Bee is to Hive as Ant is to ______?",
+    "options": [
+      "Ground",
+      "Colony",
+      "Anthill",
+      "Nest"
+    ],
+    "answer": "Anthill",
+    "difficulty": "Easy",
+    "explanation": "Bees live in a hive, just as ants live in an anthill."
+  },
+  {
+    "id": 247,
+    "section": "Analytical",
+    "question": "Novel is to Chapters as House is to ______?",
+    "options": [
+      "Bricks",
+      "Roof",
+      "Rooms",
+      "Doors"
+    ],
+    "answer": "Rooms",
+    "difficulty": "Easy",
+    "explanation": "A novel is divided into chapters, just as a house is divided into rooms."
+  },
+  {
+    "id": 248,
+    "section": "Analytical",
+    "question": "Clock is to Time as Map is to ______?",
+    "options": [
+      "Distance",
+      "Location",
+      "Compass",
+      "Direction"
+    ],
+    "answer": "Location",
+    "difficulty": "Easy",
+    "explanation": "A clock helps determine time, just as a map helps determine location."
+  },
+  {
+    "id": 249,
+    "section": "Analytical",
+    "question": "Caterpillar is to Butterfly as Tadpole is to ______?",
+    "options": [
+      "Frog",
+      "Snake",
+      "Toad",
+      "Fish"
+    ],
+    "answer": "Frog",
+    "difficulty": "Easy",
+    "explanation": "A caterpillar metamorphoses into a butterfly, just as a tadpole metamorphoses into a frog."
+  },
+  {
+    "id": 250,
+    "section": "Analytical",
+    "question": "Musician is to Concert as Athlete is to ______?",
+    "options": [
+      "Gym",
+      "Stadium",
+      "Match",
+      "Trophy"
+    ],
+    "answer": "Match",
+    "difficulty": "Easy",
+    "explanation": "A musician performs at a concert, just as an athlete performs in a match."
+  },
+  {
+    "id": 251,
+    "section": "Analytical",
+    "question": "Six friends A, B, C, D, E, F sit in a row facing North. F is at the extreme left end. D is to the immediate right of F. B is to the immediate right of D. A is to the immediate right of B. C is to the immediate right of A. E is at the extreme right end. Who is sitting third from the left?",
+    "options": [
+      "E",
+      "A",
+      "B",
+      "D"
+    ],
+    "answer": "B",
+    "difficulty": "Medium",
+    "explanation": "The order from left to right is F, D, B, A, C, E, so B is third from the left."
+  },
+  {
+    "id": 252,
+    "section": "Analytical",
+    "question": "Five people P, Q, R, S, T sit in a row. R sits second from the left end. T is not at any end. S sits to the immediate right of T. Q sits at the right end. Who sits at the left end?",
+    "options": [
+      "P",
+      "R",
+      "T",
+      "S"
+    ],
+    "answer": "P",
+    "difficulty": "Medium",
+    "explanation": "With R second from left and Q at the right end, and T-S adjacent in the middle, the only consistent order is P, R, T, S, Q, placing P at the left end."
+  },
+  {
+    "id": 253,
+    "section": "Analytical",
+    "question": "In a row of five students, Meena is to the right of Rita and to the left of Sita. Gita is to the right of Sita, and Tina is at one of the ends. Who is in the middle?",
+    "options": [
+      "Meena",
+      "Sita",
+      "Gita",
+      "Rita"
+    ],
+    "answer": "Meena",
+    "difficulty": "Medium",
+    "explanation": "One consistent left-to-right order is Tina, Rita, Meena, Sita, Gita, placing Meena in the middle position."
+  },
+  {
+    "id": 254,
+    "section": "Analytical",
+    "question": "Four boxes P, Q, R, S are stacked. P is above Q. R is below S. Q is above R. Which box is at the bottom?",
+    "options": [
+      "S",
+      "P",
+      "R",
+      "Q"
+    ],
+    "answer": "R",
+    "difficulty": "Easy",
+    "explanation": "The order from top to bottom is P, Q, S, R (since Q is above R, and R is below S), so R is at the bottom."
+  },
+  {
+    "id": 255,
+    "section": "Analytical",
+    "question": "Seven people sit around a circular table facing the center. A is second to the right of B. C is to the immediate left of A. D is opposite B. Who is immediate right of D?",
+    "options": [
+      "Cannot be determined",
+      "C",
+      "B",
+      "A"
+    ],
+    "answer": "Cannot be determined",
+    "difficulty": "Hard",
+    "explanation": "With the given clues, multiple valid circular arrangements are possible for the person to D's immediate right, so it cannot be determined uniquely without more information."
+  },
+  {
+    "id": 256,
+    "section": "Analytical",
+    "question": "In a row of six people, X is third from the left and Y is third from the right. If there are two people between X and Y, how many people are in the row?",
+    "options": [
+      "6",
+      "8",
+      "7",
+      "9"
+    ],
+    "answer": "7",
+    "difficulty": "Medium",
+    "explanation": "If X is 3rd from left and Y is 3rd from right with 2 people between them, the total count works out to 7 people in the row (positions: 2 + 3 + 2 = 7, adjusting for overlap)."
+  },
+  {
+    "id": 257,
+    "section": "Analytical",
+    "question": "Five books are placed on a shelf. The Physics book is to the left of the Chemistry book. The Biology book is to the right of the Chemistry book. The Math book is at the left end. The English book is at the right end. Which book is in the middle?",
+    "options": [
+      "Biology",
+      "Physics",
+      "Chemistry",
+      "Math"
+    ],
+    "answer": "Chemistry",
+    "difficulty": "Easy",
+    "explanation": "The order from left to right is Math, Physics, Chemistry, Biology, English, so Chemistry is in the middle position."
+  },
+  {
+    "id": 258,
+    "section": "Analytical",
+    "question": "Eight friends sit in a row facing North. A sits fourth from the left end. How many people sit to the right of A?",
+    "options": [
+      "6",
+      "5",
+      "4",
+      "3"
+    ],
+    "answer": "4",
+    "difficulty": "Easy",
+    "explanation": "In a row of 8 people, if A is 4th from the left, then 8 - 4 = 4 people sit to A's right."
+  },
+  {
+    "id": 259,
+    "section": "Analytical",
+    "question": "In a row facing the teacher, Raj is 5th from the left and 8th from the right. How many students are there in the row?",
+    "options": [
+      "14",
+      "13",
+      "12",
+      "11"
+    ],
+    "answer": "12",
+    "difficulty": "Easy",
+    "explanation": "Total students = (position from left) + (position from right) - 1 = 5 + 8 - 1 = 12."
+  },
+  {
+    "id": 260,
+    "section": "Analytical",
+    "question": "Nine students stand in a row. Aman is 4th from the left, and there are 3 students between Aman and Bina. Bina is to the right of Aman. What is Bina's position from the left?",
+    "options": [
+      "8th",
+      "9th",
+      "7th",
+      "6th"
+    ],
+    "answer": "8th",
+    "difficulty": "Medium",
+    "explanation": "Aman is 4th from the left, and with 3 students between him and Bina (to his right), Bina's position is 4 + 3 + 1 = 8th from the left."
+  }
+]

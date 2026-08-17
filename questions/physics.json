@@ -1,0 +1,2942 @@
+[
+  {
+    "id": 61,
+    "section": "Physics",
+    "question": "The SI unit of force is:",
+    "options": [
+      "Joule",
+      "Watt",
+      "Newton",
+      "Pascal"
+    ],
+    "answer": "Newton",
+    "difficulty": "Easy",
+    "explanation": "Force is measured in Newtons (N = kg·m/s²)."
+  },
+  {
+    "id": 62,
+    "section": "Physics",
+    "question": "The escape velocity of a body from Earth's gravitational field is independent of:",
+    "options": [
+      "Mass of the body",
+      "Radius of the Earth",
+      "Mass of the Earth",
+      "Gravitational constant"
+    ],
+    "answer": "Mass of the body",
+    "difficulty": "Medium",
+    "explanation": "Escape velocity formula v_esc = √(2GM/R) depends on Earth's mass M and radius R, but is independent of the projectile's mass m."
+  },
+  {
+    "id": 63,
+    "section": "Physics",
+    "question": "'Bar' is the unit of:",
+    "options": [
+      "Heat",
+      "Atmospheric Pressure",
+      "Current",
+      "Sound"
+    ],
+    "answer": "Atmospheric Pressure",
+    "difficulty": "Easy",
+    "explanation": "Bar is a metric unit of pressure (1 bar = 100,000 Pa)."
+  },
+  {
+    "id": 64,
+    "section": "Physics",
+    "question": "Ohm's Law relates voltage, current, and:",
+    "options": [
+      "Power",
+      "Resistance",
+      "Capacitance",
+      "Frequency"
+    ],
+    "answer": "Resistance",
+    "difficulty": "Easy",
+    "explanation": "Ohm's Law states V = I * R, linking voltage (V), current (I), and electrical resistance (R)."
+  },
+  {
+    "id": 65,
+    "section": "Physics",
+    "question": "The unit of electric power is:",
+    "options": [
+      "Volt",
+      "Ohm",
+      "Watt",
+      "Ampere"
+    ],
+    "answer": "Watt",
+    "difficulty": "Easy",
+    "explanation": "Electric power P = V * I is measured in Watts (W)."
+  },
+  {
+    "id": 66,
+    "section": "Physics",
+    "question": "Which of the following is a vector quantity?",
+    "options": [
+      "Speed",
+      "Mass",
+      "Velocity",
+      "Energy"
+    ],
+    "answer": "Velocity",
+    "difficulty": "Easy",
+    "explanation": "Velocity has both magnitude and direction, making it a vector quantity."
+  },
+  {
+    "id": 67,
+    "section": "Physics",
+    "question": "The speed of light in vacuum is approximately:",
+    "options": [
+      "3 × 10⁵ m/s",
+      "3 × 10⁶ m/s",
+      "3 × 10⁷ m/s",
+      "3 × 10⁸ m/s"
+    ],
+    "answer": "3 × 10⁸ m/s",
+    "difficulty": "Easy",
+    "explanation": "The speed of light in vacuum c ≈ 3 × 10⁸ meters per second."
+  },
+  {
+    "id": 68,
+    "section": "Physics",
+    "question": "Which law states that 'every action has an equal and opposite reaction'?",
+    "options": [
+      "Newton's First Law",
+      "Newton's Second Law",
+      "Newton's Third Law",
+      "Law of Conservation of Energy"
+    ],
+    "answer": "Newton's Third Law",
+    "difficulty": "Easy",
+    "explanation": "Newton's Third Law of Motion states that for every action force, there is an equal and opposite reaction force."
+  },
+  {
+    "id": 69,
+    "section": "Physics",
+    "question": "The phenomenon of bending of light around obstacles is called:",
+    "options": [
+      "Reflection",
+      "Refraction",
+      "Diffraction",
+      "Dispersion"
+    ],
+    "answer": "Diffraction",
+    "difficulty": "Medium",
+    "explanation": "Diffraction is the bending of waves around the corners of an obstacle or through an aperture."
+  },
+  {
+    "id": 70,
+    "section": "Physics",
+    "question": "A capacitor stores energy in the form of:",
+    "options": [
+      "Magnetic field",
+      "Electric field",
+      "Heat",
+      "Chemical energy"
+    ],
+    "answer": "Electric field",
+    "difficulty": "Medium",
+    "explanation": "Capacitors store potential energy in the electrostatic field established between their conducting plates."
+  },
+  {
+    "id": 71,
+    "section": "Physics",
+    "question": "The SI unit of mass is:",
+    "options": [
+      "Gram",
+      "Kilogram",
+      "Pound",
+      "Newton"
+    ],
+    "answer": "Kilogram",
+    "difficulty": "Easy",
+    "explanation": "The kilogram (kg) is the SI base unit of mass."
+  },
+  {
+    "id": 72,
+    "section": "Physics",
+    "question": "Which of Newton's laws explains why a passenger jerks forward when a car suddenly stops?",
+    "options": [
+      "First Law",
+      "Second Law",
+      "Third Law",
+      "Law of Gravitation"
+    ],
+    "answer": "First Law",
+    "difficulty": "Easy",
+    "explanation": "Newton's First Law (inertia) explains why a body continues its state of motion unless acted upon by a force."
+  },
+  {
+    "id": 73,
+    "section": "Physics",
+    "question": "The rate of change of momentum of a body is equal to:",
+    "options": [
+      "Its velocity",
+      "The applied force",
+      "Its acceleration",
+      "Its mass"
+    ],
+    "answer": "The applied force",
+    "difficulty": "Medium",
+    "explanation": "Newton's Second Law states F = dp/dt, the applied force equals the rate of change of momentum."
+  },
+  {
+    "id": 74,
+    "section": "Physics",
+    "question": "Which quantity remains conserved in an elastic collision?",
+    "options": [
+      "Only momentum",
+      "Only kinetic energy",
+      "Both momentum and kinetic energy",
+      "Neither"
+    ],
+    "answer": "Both momentum and kinetic energy",
+    "difficulty": "Medium",
+    "explanation": "In a perfectly elastic collision, both momentum and kinetic energy are conserved."
+  },
+  {
+    "id": 75,
+    "section": "Physics",
+    "question": "A projectile fired at 45° to the horizontal has:",
+    "options": [
+      "Maximum height",
+      "Maximum range",
+      "Minimum range",
+      "Zero range"
+    ],
+    "answer": "Maximum range",
+    "difficulty": "Medium",
+    "explanation": "For a given speed, a projectile launched at 45° achieves the maximum horizontal range (ignoring air resistance)."
+  },
+  {
+    "id": 76,
+    "section": "Physics",
+    "question": "The centripetal force acting on a body in circular motion is directed:",
+    "options": [
+      "Along the tangent",
+      "Away from the center",
+      "Towards the center",
+      "In the direction of motion"
+    ],
+    "answer": "Towards the center",
+    "difficulty": "Medium",
+    "explanation": "Centripetal force always points towards the center of the circular path, keeping the body in orbit."
+  },
+  {
+    "id": 77,
+    "section": "Physics",
+    "question": "Which of the following is a scalar quantity?",
+    "options": [
+      "Displacement",
+      "Momentum",
+      "Work",
+      "Force"
+    ],
+    "answer": "Work",
+    "difficulty": "Easy",
+    "explanation": "Work is defined as the dot product of force and displacement, resulting in a scalar quantity."
+  },
+  {
+    "id": 78,
+    "section": "Physics",
+    "question": "The moment of inertia of a body depends on:",
+    "options": [
+      "Only its mass",
+      "Only its shape",
+      "Mass and distribution of mass about the axis",
+      "Only its velocity"
+    ],
+    "answer": "Mass and distribution of mass about the axis",
+    "difficulty": "Hard",
+    "explanation": "Moment of inertia I = Σmr² depends on both the mass and how that mass is distributed relative to the rotation axis."
+  },
+  {
+    "id": 79,
+    "section": "Physics",
+    "question": "A body in equilibrium under the action of several forces must have:",
+    "options": [
+      "Zero net force only",
+      "Zero net torque only",
+      "Zero net force and zero net torque",
+      "Non-zero net force"
+    ],
+    "answer": "Zero net force and zero net torque",
+    "difficulty": "Medium",
+    "explanation": "For both translational and rotational equilibrium, the net force and net torque on the body must be zero."
+  },
+  {
+    "id": 80,
+    "section": "Physics",
+    "question": "The work done by a centripetal force on a body moving in a circle is:",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Depends on speed"
+    ],
+    "answer": "Zero",
+    "difficulty": "Medium",
+    "explanation": "Centripetal force is always perpendicular to velocity, so it does no work on the moving body."
+  },
+  {
+    "id": 81,
+    "section": "Physics",
+    "question": "Which law of motion is also known as the law of inertia?",
+    "options": [
+      "First Law",
+      "Second Law",
+      "Third Law",
+      "Zeroth Law"
+    ],
+    "answer": "First Law",
+    "difficulty": "Easy",
+    "explanation": "Newton's First Law describes a body's tendency to resist changes in its state of motion, hence called the law of inertia."
+  },
+  {
+    "id": 82,
+    "section": "Physics",
+    "question": "The coefficient of restitution for a perfectly inelastic collision is:",
+    "options": [
+      "1",
+      "0",
+      "Greater than 1",
+      "Negative"
+    ],
+    "answer": "0",
+    "difficulty": "Hard",
+    "explanation": "In a perfectly inelastic collision the bodies stick together, giving a coefficient of restitution of zero."
+  },
+  {
+    "id": 83,
+    "section": "Physics",
+    "question": "If the net external force on a system is zero, its total momentum:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains constant",
+      "Becomes zero"
+    ],
+    "answer": "Remains constant",
+    "difficulty": "Medium",
+    "explanation": "This is the law of conservation of momentum: momentum stays constant when no external force acts."
+  },
+  {
+    "id": 84,
+    "section": "Physics",
+    "question": "The angle of banking of a road is provided to:",
+    "options": [
+      "Reduce friction",
+      "Balance centripetal force",
+      "Increase speed",
+      "Reduce weight of vehicle"
+    ],
+    "answer": "Balance centripetal force",
+    "difficulty": "Medium",
+    "explanation": "Banking the road allows a component of the normal force to supply the necessary centripetal force for turning."
+  },
+  {
+    "id": 85,
+    "section": "Physics",
+    "question": "Torque is the rotational analog of:",
+    "options": [
+      "Force",
+      "Momentum",
+      "Velocity",
+      "Mass"
+    ],
+    "answer": "Force",
+    "difficulty": "Medium",
+    "explanation": "Just as force causes linear acceleration, torque causes angular acceleration, making it the rotational analog of force."
+  },
+  {
+    "id": 86,
+    "section": "Physics",
+    "question": "The SI unit of torque is:",
+    "options": [
+      "Newton",
+      "Newton-meter",
+      "Joule",
+      "Watt"
+    ],
+    "answer": "Newton-meter",
+    "difficulty": "Easy",
+    "explanation": "Torque is the product of force and lever arm, measured in newton-meters (N·m)."
+  },
+  {
+    "id": 87,
+    "section": "Physics",
+    "question": "A body's kinetic energy becomes four times its original value when its speed is:",
+    "options": [
+      "Doubled",
+      "Halved",
+      "Tripled",
+      "Quadrupled"
+    ],
+    "answer": "Doubled",
+    "difficulty": "Medium",
+    "explanation": "Since KE ∝ v², doubling the speed increases kinetic energy by a factor of four."
+  },
+  {
+    "id": 88,
+    "section": "Physics",
+    "question": "Friction that opposes the start of relative motion between two surfaces is called:",
+    "options": [
+      "Kinetic friction",
+      "Static friction",
+      "Rolling friction",
+      "Fluid friction"
+    ],
+    "answer": "Static friction",
+    "difficulty": "Medium",
+    "explanation": "Static friction acts before motion begins and prevents relative sliding between surfaces."
+  },
+  {
+    "id": 89,
+    "section": "Physics",
+    "question": "The law of conservation of energy states that energy:",
+    "options": [
+      "Can be created but not destroyed",
+      "Can be destroyed but not created",
+      "Can neither be created nor destroyed, only transformed",
+      "Is always constant for every object"
+    ],
+    "answer": "Can neither be created nor destroyed, only transformed",
+    "difficulty": "Medium",
+    "explanation": "Energy conservation means the total energy of an isolated system remains constant, though it may change form."
+  },
+  {
+    "id": 90,
+    "section": "Physics",
+    "question": "A ball is thrown vertically upward. At the highest point, its:",
+    "options": [
+      "Velocity and acceleration are both zero",
+      "Velocity is zero but acceleration is g downward",
+      "Velocity is maximum",
+      "Acceleration is zero"
+    ],
+    "answer": "Velocity is zero but acceleration is g downward",
+    "difficulty": "Medium",
+    "explanation": "At the peak of its flight, the ball's velocity momentarily becomes zero, but gravity continues to act, giving it a downward acceleration g."
+  },
+  {
+    "id": 91,
+    "section": "Physics",
+    "question": "Which of the following best describes uniform circular motion?",
+    "options": [
+      "Constant velocity",
+      "Constant speed, changing direction",
+      "Constant acceleration in magnitude and direction",
+      "Zero acceleration"
+    ],
+    "answer": "Constant speed, changing direction",
+    "difficulty": "Medium",
+    "explanation": "In uniform circular motion, speed stays constant while the direction of velocity continuously changes."
+  },
+  {
+    "id": 92,
+    "section": "Physics",
+    "question": "The SI unit of angular velocity is:",
+    "options": [
+      "Meter/second",
+      "Radian/second",
+      "Newton-meter",
+      "Hertz"
+    ],
+    "answer": "Radian/second",
+    "difficulty": "Easy",
+    "explanation": "Angular velocity measures the rate of change of angular displacement, expressed in radians per second."
+  },
+  {
+    "id": 93,
+    "section": "Physics",
+    "question": "Impulse is equal to the change in:",
+    "options": [
+      "Force",
+      "Momentum",
+      "Velocity",
+      "Energy"
+    ],
+    "answer": "Momentum",
+    "difficulty": "Medium",
+    "explanation": "Impulse (J = FΔt) equals the change in momentum of an object."
+  },
+  {
+    "id": 94,
+    "section": "Physics",
+    "question": "A lift is moving upward with acceleration a. The apparent weight of a person inside increases because:",
+    "options": [
+      "Gravity increases",
+      "The normal force must supply extra force for the upward acceleration",
+      "Mass increases",
+      "Friction increases"
+    ],
+    "answer": "The normal force must supply extra force for the upward acceleration",
+    "difficulty": "Medium",
+    "explanation": "By Newton's Second Law, N − mg = ma, so the normal (apparent weight) force increases when the lift accelerates upward."
+  },
+  {
+    "id": 95,
+    "section": "Physics",
+    "question": "The center of mass of a uniform ring lies:",
+    "options": [
+      "On the ring itself",
+      "At its geometric center",
+      "Outside the ring",
+      "At one edge"
+    ],
+    "answer": "At its geometric center",
+    "difficulty": "Medium",
+    "explanation": "For a uniform ring, mass is symmetrically distributed, placing the center of mass at the geometric center, even though no material is there."
+  },
+  {
+    "id": 96,
+    "section": "Physics",
+    "question": "Which quantity is conserved when a spinning ice skater pulls in their arms?",
+    "options": [
+      "Angular velocity",
+      "Moment of inertia",
+      "Angular momentum",
+      "Kinetic energy"
+    ],
+    "answer": "Angular momentum",
+    "difficulty": "Medium",
+    "explanation": "In the absence of external torque, angular momentum L = Iω is conserved, so decreasing I increases ω."
+  },
+  {
+    "id": 97,
+    "section": "Physics",
+    "question": "The maximum height reached by a projectile depends on:",
+    "options": [
+      "Horizontal component of velocity",
+      "Vertical component of velocity",
+      "Total time of flight only",
+      "Mass of the projectile"
+    ],
+    "answer": "Vertical component of velocity",
+    "difficulty": "Medium",
+    "explanation": "Maximum height H = (v sinθ)²/2g depends only on the initial vertical component of velocity."
+  },
+  {
+    "id": 98,
+    "section": "Physics",
+    "question": "A spring obeys Hooke's Law, meaning the restoring force is:",
+    "options": [
+      "Constant",
+      "Proportional to displacement",
+      "Inversely proportional to displacement",
+      "Independent of displacement"
+    ],
+    "answer": "Proportional to displacement",
+    "difficulty": "Medium",
+    "explanation": "Hooke's Law states F = −kx, where the restoring force is directly proportional to displacement from equilibrium."
+  },
+  {
+    "id": 99,
+    "section": "Physics",
+    "question": "The period of a simple pendulum is independent of:",
+    "options": [
+      "Length of the pendulum",
+      "Acceleration due to gravity",
+      "Mass of the bob",
+      "All of these affect it"
+    ],
+    "answer": "Mass of the bob",
+    "difficulty": "Medium",
+    "explanation": "T = 2π√(L/g) shows the period depends only on length and gravity, not the mass of the bob."
+  },
+  {
+    "id": 100,
+    "section": "Physics",
+    "question": "Which of the following has the same SI unit as work?",
+    "options": [
+      "Power",
+      "Torque",
+      "Momentum",
+      "Pressure"
+    ],
+    "answer": "Torque",
+    "difficulty": "Medium",
+    "explanation": "Both work and torque are measured in units of newton-meters, though they are physically distinct quantities."
+  },
+  {
+    "id": 101,
+    "section": "Physics",
+    "question": "The zeroth law of thermodynamics is related to:",
+    "options": [
+      "Conservation of energy",
+      "Thermal equilibrium",
+      "Entropy",
+      "Heat engines"
+    ],
+    "answer": "Thermal equilibrium",
+    "difficulty": "Medium",
+    "explanation": "The zeroth law states that if two systems are each in thermal equilibrium with a third, they are in equilibrium with each other, allowing temperature to be defined."
+  },
+  {
+    "id": 102,
+    "section": "Physics",
+    "question": "The first law of thermodynamics is a statement of:",
+    "options": [
+      "Conservation of momentum",
+      "Conservation of energy",
+      "Conservation of mass",
+      "Increase of entropy"
+    ],
+    "answer": "Conservation of energy",
+    "difficulty": "Medium",
+    "explanation": "The first law states that the change in internal energy equals heat added minus work done, expressing energy conservation."
+  },
+  {
+    "id": 103,
+    "section": "Physics",
+    "question": "An adiabatic process is one in which:",
+    "options": [
+      "Temperature is constant",
+      "Pressure is constant",
+      "No heat is exchanged with surroundings",
+      "Volume is constant"
+    ],
+    "answer": "No heat is exchanged with surroundings",
+    "difficulty": "Hard",
+    "explanation": "In an adiabatic process, the system is thermally insulated, so Q = 0."
+  },
+  {
+    "id": 104,
+    "section": "Physics",
+    "question": "The efficiency of a Carnot engine depends on:",
+    "options": [
+      "Type of working substance",
+      "Temperatures of the source and sink",
+      "Pressure of the gas",
+      "Volume of the cylinder"
+    ],
+    "answer": "Temperatures of the source and sink",
+    "difficulty": "Hard",
+    "explanation": "Carnot efficiency η = 1 − T_cold/T_hot depends only on the absolute temperatures of the two reservoirs."
+  },
+  {
+    "id": 105,
+    "section": "Physics",
+    "question": "According to the second law of thermodynamics, the entropy of an isolated system:",
+    "options": [
+      "Always decreases",
+      "Always increases or remains constant",
+      "Remains constant",
+      "Is always zero"
+    ],
+    "answer": "Always increases or remains constant",
+    "difficulty": "Medium",
+    "explanation": "The second law states that entropy of an isolated system never decreases over time."
+  },
+  {
+    "id": 106,
+    "section": "Physics",
+    "question": "The SI unit of heat is:",
+    "options": [
+      "Calorie",
+      "Joule",
+      "Watt",
+      "Kelvin"
+    ],
+    "answer": "Joule",
+    "difficulty": "Easy",
+    "explanation": "Heat, being a form of energy, is measured in joules in the SI system."
+  },
+  {
+    "id": 107,
+    "section": "Physics",
+    "question": "Which process occurs at constant volume?",
+    "options": [
+      "Isobaric",
+      "Isothermal",
+      "Isochoric",
+      "Adiabatic"
+    ],
+    "answer": "Isochoric",
+    "difficulty": "Medium",
+    "explanation": "An isochoric process is one that takes place at constant volume, so no work is done by or on the gas."
+  },
+  {
+    "id": 108,
+    "section": "Physics",
+    "question": "The triple point of water on the Kelvin scale is:",
+    "options": [
+      "0 K",
+      "100 K",
+      "273.16 K",
+      "373 K"
+    ],
+    "answer": "273.16 K",
+    "difficulty": "Medium",
+    "explanation": "The triple point of water, where solid, liquid, and gas coexist, is defined as exactly 273.16 K."
+  },
+  {
+    "id": 109,
+    "section": "Physics",
+    "question": "Which of the following is an example of heat transfer by radiation?",
+    "options": [
+      "Boiling water in a pot",
+      "Warmth felt from the Sun",
+      "Heating a metal rod at one end",
+      "Wind carrying warm air"
+    ],
+    "answer": "Warmth felt from the Sun",
+    "difficulty": "Medium",
+    "explanation": "Radiation transfers heat through electromagnetic waves without requiring a medium, as with sunlight."
+  },
+  {
+    "id": 110,
+    "section": "Physics",
+    "question": "The specific heat capacity of a substance is defined as the heat required to:",
+    "options": [
+      "Melt one gram of it",
+      "Raise the temperature of unit mass by one degree",
+      "Vaporize unit mass of it",
+      "Freeze unit mass of it"
+    ],
+    "answer": "Raise the temperature of unit mass by one degree",
+    "difficulty": "Medium",
+    "explanation": "Specific heat capacity c is the amount of heat needed to raise the temperature of 1 kg (or 1 g) of a substance by 1°C."
+  },
+  {
+    "id": 111,
+    "section": "Physics",
+    "question": "An ideal gas obeys the equation:",
+    "options": [
+      "PV = nRT",
+      "P = ρgh",
+      "F = ma",
+      "E = mc²"
+    ],
+    "answer": "PV = nRT",
+    "difficulty": "Medium",
+    "explanation": "The ideal gas law PV = nRT relates pressure, volume, moles, and temperature of an ideal gas."
+  },
+  {
+    "id": 112,
+    "section": "Physics",
+    "question": "During melting, the temperature of a substance:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains constant",
+      "Fluctuates randomly"
+    ],
+    "answer": "Remains constant",
+    "difficulty": "Medium",
+    "explanation": "During a phase change like melting, added heat (latent heat) changes the state without changing temperature."
+  },
+  {
+    "id": 113,
+    "section": "Physics",
+    "question": "Which mode of heat transfer requires a material medium?",
+    "options": [
+      "Radiation",
+      "Conduction",
+      "Both conduction and radiation",
+      "None of these"
+    ],
+    "answer": "Conduction",
+    "difficulty": "Medium",
+    "explanation": "Conduction requires direct contact between particles of a medium to transfer heat; radiation does not."
+  },
+  {
+    "id": 114,
+    "section": "Physics",
+    "question": "The Celsius and Fahrenheit scales give the same reading at:",
+    "options": [
+      "0 degrees",
+      "100 degrees",
+      "-40 degrees",
+      "273 degrees"
+    ],
+    "answer": "-40 degrees",
+    "difficulty": "Medium",
+    "explanation": "Solving C = (5/9)(F − 32) for C = F gives −40, where both scales coincide."
+  },
+  {
+    "id": 115,
+    "section": "Physics",
+    "question": "An isothermal process occurs at:",
+    "options": [
+      "Constant pressure",
+      "Constant volume",
+      "Constant temperature",
+      "Constant entropy"
+    ],
+    "answer": "Constant temperature",
+    "difficulty": "Medium",
+    "explanation": "In an isothermal process, temperature remains constant throughout, so internal energy of an ideal gas does not change."
+  },
+  {
+    "id": 116,
+    "section": "Physics",
+    "question": "The concept of entropy is associated with:",
+    "options": [
+      "Order in a system",
+      "Disorder or randomness in a system",
+      "Total energy of a system",
+      "Total mass of a system"
+    ],
+    "answer": "Disorder or randomness in a system",
+    "difficulty": "Medium",
+    "explanation": "Entropy is a measure of the disorder or randomness of a system's microscopic states."
+  },
+  {
+    "id": 117,
+    "section": "Physics",
+    "question": "Which of the following gases would deviate most from ideal gas behavior at high pressure?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Carbon dioxide",
+      "Neon"
+    ],
+    "answer": "Carbon dioxide",
+    "difficulty": "Medium",
+    "explanation": "Heavier polyatomic gases like CO₂ have stronger intermolecular forces and larger molecular volumes, causing greater deviation from ideal behavior."
+  },
+  {
+    "id": 118,
+    "section": "Physics",
+    "question": "The latent heat of vaporization is the energy required to:",
+    "options": [
+      "Raise temperature of a liquid",
+      "Convert a liquid to vapor at constant temperature",
+      "Convert a solid to liquid",
+      "Cool a vapor to liquid"
+    ],
+    "answer": "Convert a liquid to vapor at constant temperature",
+    "difficulty": "Medium",
+    "explanation": "Latent heat of vaporization is the heat absorbed during the liquid-to-gas phase change without a temperature rise."
+  },
+  {
+    "id": 119,
+    "section": "Physics",
+    "question": "A refrigerator works on the principle of:",
+    "options": [
+      "Heat flowing naturally from cold to hot",
+      "Doing work to transfer heat from cold to hot region",
+      "Heat engines producing work",
+      "Conduction only"
+    ],
+    "answer": "Doing work to transfer heat from cold to hot region",
+    "difficulty": "Medium",
+    "explanation": "A refrigerator uses external work to move heat from a colder interior to a warmer exterior, opposite to natural heat flow."
+  },
+  {
+    "id": 120,
+    "section": "Physics",
+    "question": "Which thermodynamic process has zero change in internal energy for an ideal gas?",
+    "options": [
+      "Adiabatic",
+      "Isochoric",
+      "Isobaric",
+      "Isothermal"
+    ],
+    "answer": "Isothermal",
+    "difficulty": "Medium",
+    "explanation": "For an ideal gas, internal energy depends only on temperature, so it remains unchanged in an isothermal process."
+  },
+  {
+    "id": 121,
+    "section": "Physics",
+    "question": "The SI unit of electric charge is:",
+    "options": [
+      "Ampere",
+      "Coulomb",
+      "Volt",
+      "Farad"
+    ],
+    "answer": "Coulomb",
+    "difficulty": "Easy",
+    "explanation": "Electric charge is measured in coulombs (C) in the SI system."
+  },
+  {
+    "id": 122,
+    "section": "Physics",
+    "question": "According to Coulomb's Law, the force between two charges is:",
+    "options": [
+      "Inversely proportional to the product of charges",
+      "Directly proportional to the square of distance",
+      "Inversely proportional to the square of distance",
+      "Independent of distance"
+    ],
+    "answer": "Inversely proportional to the square of distance",
+    "difficulty": "Medium",
+    "explanation": "Coulomb's Law states F = kq₁q₂/r², so force decreases with the square of the separation distance."
+  },
+  {
+    "id": 123,
+    "section": "Physics",
+    "question": "The device used to measure electric current is called a(n):",
+    "options": [
+      "Voltmeter",
+      "Ammeter",
+      "Ohmmeter",
+      "Galvanometer"
+    ],
+    "answer": "Ammeter",
+    "difficulty": "Easy",
+    "explanation": "An ammeter is connected in series in a circuit to measure the flow of electric current."
+  },
+  {
+    "id": 124,
+    "section": "Physics",
+    "question": "Resistors in series have:",
+    "options": [
+      "The same voltage across each",
+      "The same current through each",
+      "Different current through each",
+      "Zero total resistance"
+    ],
+    "answer": "The same current through each",
+    "difficulty": "Medium",
+    "explanation": "In a series circuit, current has only one path, so the same current flows through each resistor."
+  },
+  {
+    "id": 125,
+    "section": "Physics",
+    "question": "The unit of electrical resistance is:",
+    "options": [
+      "Ohm",
+      "Siemens",
+      "Farad",
+      "Henry"
+    ],
+    "answer": "Ohm",
+    "difficulty": "Easy",
+    "explanation": "Electrical resistance is measured in ohms (Ω), named after Georg Ohm."
+  },
+  {
+    "id": 126,
+    "section": "Physics",
+    "question": "Which of the following materials is typically used as an insulator?",
+    "options": [
+      "Copper",
+      "Silver",
+      "Rubber",
+      "Aluminum"
+    ],
+    "answer": "Rubber",
+    "difficulty": "Medium",
+    "explanation": "Rubber has very high resistance to electric current, making it a good electrical insulator."
+  },
+  {
+    "id": 127,
+    "section": "Physics",
+    "question": "The magnetic field around a straight current-carrying conductor forms:",
+    "options": [
+      "Straight lines",
+      "Concentric circles",
+      "Parallel lines",
+      "Random patterns"
+    ],
+    "answer": "Concentric circles",
+    "difficulty": "Medium",
+    "explanation": "By the right-hand rule, the magnetic field lines around a straight wire form concentric circles centered on the wire."
+  },
+  {
+    "id": 128,
+    "section": "Physics",
+    "question": "Which law gives the direction of the induced current in a coil?",
+    "options": [
+      "Coulomb's Law",
+      "Ohm's Law",
+      "Lenz's Law",
+      "Ampere's Law"
+    ],
+    "answer": "Lenz's Law",
+    "difficulty": "Medium",
+    "explanation": "Lenz's Law states that the induced current opposes the change in magnetic flux that produced it."
+  },
+  {
+    "id": 129,
+    "section": "Physics",
+    "question": "The SI unit of capacitance is:",
+    "options": [
+      "Ohm",
+      "Farad",
+      "Henry",
+      "Tesla"
+    ],
+    "answer": "Farad",
+    "difficulty": "Easy",
+    "explanation": "Capacitance, the ability to store charge, is measured in farads (F)."
+  },
+  {
+    "id": 130,
+    "section": "Physics",
+    "question": "A device that converts mechanical energy into electrical energy is called a(n):",
+    "options": [
+      "Motor",
+      "Generator",
+      "Transformer",
+      "Battery"
+    ],
+    "answer": "Generator",
+    "difficulty": "Medium",
+    "explanation": "A generator uses electromagnetic induction to convert mechanical energy into electrical energy."
+  },
+  {
+    "id": 131,
+    "section": "Physics",
+    "question": "The unit of magnetic flux density is:",
+    "options": [
+      "Weber",
+      "Tesla",
+      "Henry",
+      "Gauss only"
+    ],
+    "answer": "Tesla",
+    "difficulty": "Easy",
+    "explanation": "Magnetic flux density (magnetic field strength) is measured in teslas (T) in the SI system."
+  },
+  {
+    "id": 132,
+    "section": "Physics",
+    "question": "Kirchhoff's Current Law is based on the conservation of:",
+    "options": [
+      "Energy",
+      "Charge",
+      "Momentum",
+      "Mass"
+    ],
+    "answer": "Charge",
+    "difficulty": "Medium",
+    "explanation": "Kirchhoff's Current Law states that the total current entering a junction equals the total leaving it, a consequence of charge conservation."
+  },
+  {
+    "id": 133,
+    "section": "Physics",
+    "question": "Kirchhoff's Voltage Law is based on the conservation of:",
+    "options": [
+      "Charge",
+      "Mass",
+      "Energy",
+      "Momentum"
+    ],
+    "answer": "Energy",
+    "difficulty": "Medium",
+    "explanation": "Kirchhoff's Voltage Law states the sum of voltage changes around a closed loop is zero, reflecting energy conservation."
+  },
+  {
+    "id": 134,
+    "section": "Physics",
+    "question": "In a purely resistive AC circuit, the current and voltage are:",
+    "options": [
+      "Out of phase by 90°",
+      "In phase",
+      "Out of phase by 180°",
+      "Out of phase by 45°"
+    ],
+    "answer": "In phase",
+    "difficulty": "Medium",
+    "explanation": "In a purely resistive circuit, voltage and current reach their maximum and zero values simultaneously, so they are in phase."
+  },
+  {
+    "id": 135,
+    "section": "Physics",
+    "question": "The force experienced by a current-carrying conductor in a magnetic field is given by:",
+    "options": [
+      "Coulomb's Law",
+      "Ohm's Law",
+      "F = BIL",
+      "F = mg"
+    ],
+    "answer": "F = BIL",
+    "difficulty": "Medium",
+    "explanation": "The force on a current-carrying conductor in a magnetic field is F = BIL sinθ, where B is field strength, I is current, and L is conductor length."
+  },
+  {
+    "id": 136,
+    "section": "Physics",
+    "question": "A step-up transformer increases:",
+    "options": [
+      "Current",
+      "Voltage",
+      "Power",
+      "Frequency"
+    ],
+    "answer": "Voltage",
+    "difficulty": "Medium",
+    "explanation": "A step-up transformer increases voltage while proportionally decreasing current, keeping power roughly constant."
+  },
+  {
+    "id": 137,
+    "section": "Physics",
+    "question": "Electric field lines around a positive point charge point:",
+    "options": [
+      "Towards the charge",
+      "Away from the charge",
+      "Parallel to each other",
+      "In circles around the charge"
+    ],
+    "answer": "Away from the charge",
+    "difficulty": "Medium",
+    "explanation": "Field lines radiate outward from a positive charge, indicating the direction a positive test charge would move."
+  },
+  {
+    "id": 138,
+    "section": "Physics",
+    "question": "The relationship between electric current, charge, and time is given by:",
+    "options": [
+      "I = Q/t",
+      "I = Qt",
+      "I = Q + t",
+      "I = t/Q"
+    ],
+    "answer": "I = Q/t",
+    "difficulty": "Medium",
+    "explanation": "Electric current is defined as the rate of flow of charge, I = Q/t."
+  },
+  {
+    "id": 139,
+    "section": "Physics",
+    "question": "Which of the following best describes a superconductor?",
+    "options": [
+      "A material with infinite resistance",
+      "A material with zero resistance below a critical temperature",
+      "A perfect insulator",
+      "A material that only conducts AC current"
+    ],
+    "answer": "A material with zero resistance below a critical temperature",
+    "difficulty": "Medium",
+    "explanation": "Superconductors exhibit exactly zero electrical resistance when cooled below their critical temperature."
+  },
+  {
+    "id": 140,
+    "section": "Physics",
+    "question": "The energy stored in a capacitor is given by:",
+    "options": [
+      "E = QV",
+      "E = ½QV",
+      "E = Q/V",
+      "E = V/Q"
+    ],
+    "answer": "E = ½QV",
+    "difficulty": "Medium",
+    "explanation": "The energy stored in a charged capacitor is E = ½QV = ½CV²."
+  },
+  {
+    "id": 141,
+    "section": "Physics",
+    "question": "Electromagnetic induction was discovered by:",
+    "options": [
+      "Isaac Newton",
+      "Michael Faraday",
+      "James Watt",
+      "Nikola Tesla"
+    ],
+    "answer": "Michael Faraday",
+    "difficulty": "Medium",
+    "explanation": "Michael Faraday discovered electromagnetic induction, showing that a changing magnetic field induces an EMF."
+  },
+  {
+    "id": 142,
+    "section": "Physics",
+    "question": "The device used to step up or step down AC voltage is called a(n):",
+    "options": [
+      "Rectifier",
+      "Transformer",
+      "Inverter",
+      "Oscillator"
+    ],
+    "answer": "Transformer",
+    "difficulty": "Medium",
+    "explanation": "A transformer changes AC voltage levels using electromagnetic induction between coupled coils."
+  },
+  {
+    "id": 143,
+    "section": "Physics",
+    "question": "In an RC circuit, the time constant is given by:",
+    "options": [
+      "R/C",
+      "RC",
+      "R+C",
+      "C/R"
+    ],
+    "answer": "RC",
+    "difficulty": "Hard",
+    "explanation": "The time constant τ = RC determines how quickly a capacitor charges or discharges through a resistor."
+  },
+  {
+    "id": 144,
+    "section": "Physics",
+    "question": "Which particle is the primary charge carrier in a metallic conductor?",
+    "options": [
+      "Proton",
+      "Neutron",
+      "Electron",
+      "Positron"
+    ],
+    "answer": "Electron",
+    "difficulty": "Medium",
+    "explanation": "In metals, free (delocalized) electrons move through the lattice and act as the primary charge carriers."
+  },
+  {
+    "id": 145,
+    "section": "Physics",
+    "question": "A galvanometer can be converted into an ammeter by connecting a:",
+    "options": [
+      "High resistance in series",
+      "Low resistance (shunt) in parallel",
+      "Capacitor in series",
+      "Inductor in parallel"
+    ],
+    "answer": "Low resistance (shunt) in parallel",
+    "difficulty": "Easy",
+    "explanation": "A low-resistance shunt connected in parallel diverts most current around the galvanometer, extending its current range."
+  },
+  {
+    "id": 146,
+    "section": "Physics",
+    "question": "The magnetic field inside a long, ideal solenoid is:",
+    "options": [
+      "Zero",
+      "Uniform and parallel to its axis",
+      "Radial",
+      "Circular"
+    ],
+    "answer": "Uniform and parallel to its axis",
+    "difficulty": "Medium",
+    "explanation": "Inside a long solenoid, the magnetic field is nearly uniform and directed along the axis of the solenoid."
+  },
+  {
+    "id": 147,
+    "section": "Physics",
+    "question": "Which quantity does a voltmeter measure, and how is it connected?",
+    "options": [
+      "Current, in series",
+      "Voltage, in parallel",
+      "Resistance, in series",
+      "Power, in parallel"
+    ],
+    "answer": "Voltage, in parallel",
+    "difficulty": "Easy",
+    "explanation": "A voltmeter is connected in parallel across a component to measure the potential difference across it."
+  },
+  {
+    "id": 148,
+    "section": "Physics",
+    "question": "The phenomenon where a changing current in one coil induces an EMF in a neighboring coil is called:",
+    "options": [
+      "Self-induction",
+      "Mutual induction",
+      "Electrostatic induction",
+      "Magnetic hysteresis"
+    ],
+    "answer": "Mutual induction",
+    "difficulty": "Medium",
+    "explanation": "Mutual induction occurs when a changing current in one coil induces an EMF in an adjacent coil due to shared magnetic flux."
+  },
+  {
+    "id": 149,
+    "section": "Physics",
+    "question": "The unit of electromotive force (EMF) is the same as that of:",
+    "options": [
+      "Current",
+      "Charge",
+      "Potential difference",
+      "Resistance"
+    ],
+    "answer": "Potential difference",
+    "difficulty": "Medium",
+    "explanation": "EMF, like potential difference, is measured in volts."
+  },
+  {
+    "id": 150,
+    "section": "Physics",
+    "question": "Which of these is a vector quantity related to magnetism?",
+    "options": [
+      "Magnetic flux",
+      "Magnetic field",
+      "Magnetic energy",
+      "Magnetic permeability"
+    ],
+    "answer": "Magnetic field",
+    "difficulty": "Easy",
+    "explanation": "Magnetic field (B) has both magnitude and direction, making it a vector quantity."
+  },
+  {
+    "id": 151,
+    "section": "Physics",
+    "question": "The image formed by a plane mirror is:",
+    "options": [
+      "Real and inverted",
+      "Virtual and erect",
+      "Real and erect",
+      "Virtual and inverted"
+    ],
+    "answer": "Virtual and erect",
+    "difficulty": "Easy",
+    "explanation": "A plane mirror always forms a virtual, erect image that is the same size as the object."
+  },
+  {
+    "id": 152,
+    "section": "Physics",
+    "question": "A convex lens is also known as a:",
+    "options": [
+      "Diverging lens",
+      "Converging lens",
+      "Plano lens",
+      "Cylindrical lens"
+    ],
+    "answer": "Converging lens",
+    "difficulty": "Easy",
+    "explanation": "A convex lens bends parallel rays of light inward to a focal point, making it a converging lens."
+  },
+  {
+    "id": 153,
+    "section": "Physics",
+    "question": "The bending of light as it passes from one medium to another is called:",
+    "options": [
+      "Reflection",
+      "Refraction",
+      "Diffraction",
+      "Polarization"
+    ],
+    "answer": "Refraction",
+    "difficulty": "Easy",
+    "explanation": "Refraction is the change in direction of light as it passes between media of different optical densities."
+  },
+  {
+    "id": 154,
+    "section": "Physics",
+    "question": "The refractive index of a medium is defined as the ratio of:",
+    "options": [
+      "Speed of light in vacuum to speed in the medium",
+      "Speed of light in the medium to speed in vacuum",
+      "Wavelength in vacuum to wavelength in medium",
+      "Frequency in medium to frequency in vacuum"
+    ],
+    "answer": "Speed of light in vacuum to speed in the medium",
+    "difficulty": "Medium",
+    "explanation": "Refractive index n = c/v, where c is the speed of light in vacuum and v is its speed in the medium."
+  },
+  {
+    "id": 155,
+    "section": "Physics",
+    "question": "Total internal reflection occurs when light travels from a:",
+    "options": [
+      "Denser to rarer medium at an angle greater than critical angle",
+      "Rarer to denser medium",
+      "Denser to rarer medium at any angle",
+      "Vacuum to any medium"
+    ],
+    "answer": "Denser to rarer medium at an angle greater than critical angle",
+    "difficulty": "Medium",
+    "explanation": "Total internal reflection happens when light in a denser medium strikes the boundary at an angle exceeding the critical angle."
+  },
+  {
+    "id": 156,
+    "section": "Physics",
+    "question": "Which phenomenon explains the splitting of white light into its component colors?",
+    "options": [
+      "Reflection",
+      "Dispersion",
+      "Diffraction",
+      "Polarization"
+    ],
+    "answer": "Dispersion",
+    "difficulty": "Medium",
+    "explanation": "Dispersion occurs because different wavelengths of light refract by different amounts, spreading white light into a spectrum."
+  },
+  {
+    "id": 157,
+    "section": "Physics",
+    "question": "The focal length of a plane mirror is:",
+    "options": [
+      "Zero",
+      "Infinite",
+      "Equal to radius of curvature",
+      "Negative"
+    ],
+    "answer": "Infinite",
+    "difficulty": "Medium",
+    "explanation": "Since a plane mirror has no curvature, its radius of curvature and focal length are considered infinite."
+  },
+  {
+    "id": 158,
+    "section": "Physics",
+    "question": "Myopia (nearsightedness) is corrected using a:",
+    "options": [
+      "Convex lens",
+      "Concave lens",
+      "Cylindrical lens",
+      "Bifocal lens only"
+    ],
+    "answer": "Concave lens",
+    "difficulty": "Medium",
+    "explanation": "A concave (diverging) lens diverges incoming rays before they reach the eye, correcting the excessive convergence in myopia."
+  },
+  {
+    "id": 159,
+    "section": "Physics",
+    "question": "The power of a lens is measured in:",
+    "options": [
+      "Watts",
+      "Diopters",
+      "Lumens",
+      "Candela"
+    ],
+    "answer": "Diopters",
+    "difficulty": "Medium",
+    "explanation": "Lens power, the reciprocal of focal length in meters, is measured in diopters (D)."
+  },
+  {
+    "id": 160,
+    "section": "Physics",
+    "question": "Which of the following is an example of interference of light?",
+    "options": [
+      "Rainbow formation",
+      "Young's double-slit experiment",
+      "Mirage",
+      "Shadow formation"
+    ],
+    "answer": "Young's double-slit experiment",
+    "difficulty": "Medium",
+    "explanation": "Young's double-slit experiment demonstrates constructive and destructive interference of coherent light waves."
+  },
+  {
+    "id": 161,
+    "section": "Physics",
+    "question": "The phenomenon of scattering explains why the sky appears:",
+    "options": [
+      "Red",
+      "Blue",
+      "Black",
+      "White"
+    ],
+    "answer": "Blue",
+    "difficulty": "Medium",
+    "explanation": "Rayleigh scattering causes shorter blue wavelengths to scatter more than other colors, giving the sky its blue appearance."
+  },
+  {
+    "id": 162,
+    "section": "Physics",
+    "question": "A concave mirror can produce:",
+    "options": [
+      "Only virtual images",
+      "Only real images",
+      "Both real and virtual images depending on object position",
+      "Neither real nor virtual images"
+    ],
+    "answer": "Both real and virtual images depending on object position",
+    "difficulty": "Medium",
+    "explanation": "A concave mirror forms real images when the object is beyond the focal point, and virtual images when the object is within it."
+  },
+  {
+    "id": 163,
+    "section": "Physics",
+    "question": "Polarization of light demonstrates that light is a:",
+    "options": [
+      "Longitudinal wave",
+      "Transverse wave",
+      "Mechanical wave",
+      "Particle only"
+    ],
+    "answer": "Transverse wave",
+    "difficulty": "Medium",
+    "explanation": "Only transverse waves can be polarized, confirming that light behaves as a transverse electromagnetic wave."
+  },
+  {
+    "id": 164,
+    "section": "Physics",
+    "question": "The critical angle of a medium is related to its refractive index by:",
+    "options": [
+      "sin C = 1/n",
+      "sin C = n",
+      "cos C = 1/n",
+      "tan C = n"
+    ],
+    "answer": "sin C = 1/n",
+    "difficulty": "Medium",
+    "explanation": "The critical angle C for total internal reflection satisfies sin C = 1/n, where n is the refractive index of the denser medium."
+  },
+  {
+    "id": 165,
+    "section": "Physics",
+    "question": "An image formed on a screen is always:",
+    "options": [
+      "Virtual",
+      "Real",
+      "Erect and virtual",
+      "Magnified"
+    ],
+    "answer": "Real",
+    "difficulty": "Medium",
+    "explanation": "A real image can be projected onto a screen because light rays actually converge there."
+  },
+  {
+    "id": 166,
+    "section": "Physics",
+    "question": "Chromatic aberration in a lens arises due to:",
+    "options": [
+      "Different refractive indices for different wavelengths",
+      "Spherical shape of the lens",
+      "Reflection at the lens surface",
+      "Polarization of light"
+    ],
+    "answer": "Different refractive indices for different wavelengths",
+    "difficulty": "Hard",
+    "explanation": "Because refractive index varies with wavelength, different colors focus at slightly different points, causing chromatic aberration."
+  },
+  {
+    "id": 167,
+    "section": "Physics",
+    "question": "A rainbow is formed due to a combination of:",
+    "options": [
+      "Reflection and refraction only",
+      "Refraction, dispersion, and internal reflection in water droplets",
+      "Diffraction only",
+      "Polarization only"
+    ],
+    "answer": "Refraction, dispersion, and internal reflection in water droplets",
+    "difficulty": "Medium",
+    "explanation": "Rainbows form when sunlight is refracted, dispersed into colors, and internally reflected within raindrops."
+  },
+  {
+    "id": 168,
+    "section": "Physics",
+    "question": "The human eye lens primarily forms an image on the:",
+    "options": [
+      "Cornea",
+      "Iris",
+      "Retina",
+      "Pupil"
+    ],
+    "answer": "Retina",
+    "difficulty": "Medium",
+    "explanation": "The eye's lens focuses light onto the retina, where photoreceptor cells convert it into neural signals."
+  },
+  {
+    "id": 169,
+    "section": "Physics",
+    "question": "Optical fibers work on the principle of:",
+    "options": [
+      "Refraction",
+      "Total internal reflection",
+      "Dispersion",
+      "Diffraction"
+    ],
+    "answer": "Total internal reflection",
+    "difficulty": "Medium",
+    "explanation": "Optical fibers transmit light along their length using repeated total internal reflection at the core-cladding boundary."
+  },
+  {
+    "id": 170,
+    "section": "Physics",
+    "question": "The distance between the optical center of a lens and its focal point is called:",
+    "options": [
+      "Radius of curvature",
+      "Focal length",
+      "Aperture",
+      "Principal axis"
+    ],
+    "answer": "Focal length",
+    "difficulty": "Medium",
+    "explanation": "Focal length is defined as the distance from the lens's optical center to the point where parallel rays converge (or appear to diverge from)."
+  },
+  {
+    "id": 171,
+    "section": "Physics",
+    "question": "Sound waves are classified as:",
+    "options": [
+      "Transverse waves",
+      "Longitudinal waves",
+      "Electromagnetic waves",
+      "Standing waves only"
+    ],
+    "answer": "Longitudinal waves",
+    "difficulty": "Medium",
+    "explanation": "Sound propagates as longitudinal waves, where particle vibration is parallel to the direction of wave travel."
+  },
+  {
+    "id": 172,
+    "section": "Physics",
+    "question": "The speed of sound is generally fastest in:",
+    "options": [
+      "Vacuum",
+      "Air",
+      "Water",
+      "Steel"
+    ],
+    "answer": "Steel",
+    "difficulty": "Medium",
+    "explanation": "Sound travels fastest through solids like steel because their particles are closely packed, allowing rapid transmission of vibrations."
+  },
+  {
+    "id": 173,
+    "section": "Physics",
+    "question": "The number of oscillations per second of a wave is called its:",
+    "options": [
+      "Amplitude",
+      "Wavelength",
+      "Frequency",
+      "Period"
+    ],
+    "answer": "Frequency",
+    "difficulty": "Medium",
+    "explanation": "Frequency is defined as the number of complete oscillations or cycles a wave completes per second, measured in hertz."
+  },
+  {
+    "id": 174,
+    "section": "Physics",
+    "question": "The Doppler effect explains the change in:",
+    "options": [
+      "Amplitude of a wave due to motion",
+      "Apparent frequency of a wave due to relative motion between source and observer",
+      "Speed of light",
+      "Wavelength of stationary sources only"
+    ],
+    "answer": "Apparent frequency of a wave due to relative motion between source and observer",
+    "difficulty": "Medium",
+    "explanation": "The Doppler effect describes how the observed frequency of a wave shifts when the source and observer move relative to each other."
+  },
+  {
+    "id": 175,
+    "section": "Physics",
+    "question": "The unit used to measure the loudness (intensity level) of sound is:",
+    "options": [
+      "Hertz",
+      "Decibel",
+      "Watt",
+      "Pascal"
+    ],
+    "answer": "Decibel",
+    "difficulty": "Medium",
+    "explanation": "Sound intensity level is measured in decibels (dB), a logarithmic unit."
+  },
+  {
+    "id": 176,
+    "section": "Physics",
+    "question": "Ultrasonic waves have frequencies:",
+    "options": [
+      "Below 20 Hz",
+      "Between 20 Hz and 20 kHz",
+      "Above 20 kHz",
+      "Exactly 20 kHz"
+    ],
+    "answer": "Above 20 kHz",
+    "difficulty": "Medium",
+    "explanation": "Ultrasonic waves have frequencies above the upper limit of human hearing, roughly 20,000 Hz."
+  },
+  {
+    "id": 177,
+    "section": "Physics",
+    "question": "The distance between two consecutive crests of a wave is called its:",
+    "options": [
+      "Amplitude",
+      "Frequency",
+      "Wavelength",
+      "Period"
+    ],
+    "answer": "Wavelength",
+    "difficulty": "Medium",
+    "explanation": "Wavelength is the spatial distance over which a wave's shape repeats, such as between two successive crests."
+  },
+  {
+    "id": 178,
+    "section": "Physics",
+    "question": "Resonance occurs when a system is driven at its:",
+    "options": [
+      "Random frequency",
+      "Natural frequency",
+      "Zero frequency",
+      "Maximum amplitude only"
+    ],
+    "answer": "Natural frequency",
+    "difficulty": "Medium",
+    "explanation": "Resonance occurs when the driving frequency matches the system's natural frequency, causing a large amplitude response."
+  },
+  {
+    "id": 179,
+    "section": "Physics",
+    "question": "Which property of a wave determines its pitch?",
+    "options": [
+      "Amplitude",
+      "Frequency",
+      "Speed",
+      "Wavelength only"
+    ],
+    "answer": "Frequency",
+    "difficulty": "Medium",
+    "explanation": "Pitch, the perceived highness or lowness of a sound, corresponds directly to the frequency of the sound wave."
+  },
+  {
+    "id": 180,
+    "section": "Physics",
+    "question": "Beats are produced when two sound waves of:",
+    "options": [
+      "Equal frequency interfere",
+      "Slightly different frequencies interfere",
+      "Very different frequencies interfere",
+      "Different amplitudes but same phase interfere"
+    ],
+    "answer": "Slightly different frequencies interfere",
+    "difficulty": "Medium",
+    "explanation": "Beats arise from the periodic constructive and destructive interference of two waves with slightly different frequencies."
+  },
+  {
+    "id": 181,
+    "section": "Physics",
+    "question": "The speed of a wave is related to frequency and wavelength by:",
+    "options": [
+      "v = f/λ",
+      "v = fλ",
+      "v = λ/f",
+      "v = f + λ"
+    ],
+    "answer": "v = fλ",
+    "difficulty": "Medium",
+    "explanation": "Wave speed equals the product of frequency and wavelength, v = fλ."
+  },
+  {
+    "id": 182,
+    "section": "Physics",
+    "question": "Which of the following waves does NOT require a medium to travel?",
+    "options": [
+      "Sound waves",
+      "Water waves",
+      "Electromagnetic waves",
+      "Seismic waves"
+    ],
+    "answer": "Electromagnetic waves",
+    "difficulty": "Medium",
+    "explanation": "Electromagnetic waves can propagate through a vacuum since they do not depend on mechanical particle vibrations."
+  },
+  {
+    "id": 183,
+    "section": "Physics",
+    "question": "Echo is an example of:",
+    "options": [
+      "Refraction of sound",
+      "Reflection of sound",
+      "Diffraction of sound",
+      "Interference of sound"
+    ],
+    "answer": "Reflection of sound",
+    "difficulty": "Medium",
+    "explanation": "An echo occurs when sound waves reflect off a surface and return to the listener after a perceptible delay."
+  },
+  {
+    "id": 184,
+    "section": "Physics",
+    "question": "Infrasonic waves have frequencies:",
+    "options": [
+      "Below 20 Hz",
+      "Between 20 Hz and 20 kHz",
+      "Above 20 kHz",
+      "Exactly 1000 Hz"
+    ],
+    "answer": "Below 20 Hz",
+    "difficulty": "Medium",
+    "explanation": "Infrasonic waves have frequencies lower than the audible range, below approximately 20 Hz."
+  },
+  {
+    "id": 185,
+    "section": "Physics",
+    "question": "A standing wave is formed by the superposition of:",
+    "options": [
+      "Two waves of different frequencies",
+      "Two identical waves traveling in opposite directions",
+      "A single traveling wave",
+      "Two waves of different amplitudes only"
+    ],
+    "answer": "Two identical waves traveling in opposite directions",
+    "difficulty": "Medium",
+    "explanation": "Standing waves result when two waves of the same frequency and amplitude travel in opposite directions and interfere."
+  },
+  {
+    "id": 186,
+    "section": "Physics",
+    "question": "The amplitude of a sound wave determines its:",
+    "options": [
+      "Pitch",
+      "Loudness",
+      "Speed",
+      "Wavelength"
+    ],
+    "answer": "Loudness",
+    "difficulty": "Medium",
+    "explanation": "Loudness is directly related to the amplitude of the sound wave; larger amplitude means louder sound."
+  },
+  {
+    "id": 187,
+    "section": "Physics",
+    "question": "In a transverse wave, particle motion is:",
+    "options": [
+      "Parallel to wave direction",
+      "Perpendicular to wave direction",
+      "Circular",
+      "Random"
+    ],
+    "answer": "Perpendicular to wave direction",
+    "difficulty": "Medium",
+    "explanation": "In transverse waves, such as those on a string, particles oscillate perpendicular to the direction the wave travels."
+  },
+  {
+    "id": 188,
+    "section": "Physics",
+    "question": "The Mach number is used to describe:",
+    "options": [
+      "Sound intensity",
+      "Speed relative to the speed of sound",
+      "Frequency of a wave",
+      "Wavelength of a wave"
+    ],
+    "answer": "Speed relative to the speed of sound",
+    "difficulty": "Medium",
+    "explanation": "The Mach number is the ratio of an object's speed to the local speed of sound."
+  },
+  {
+    "id": 189,
+    "section": "Physics",
+    "question": "Which of the following best explains why we hear thunder after seeing lightning?",
+    "options": [
+      "Sound travels faster than light",
+      "Light travels much faster than sound",
+      "Sound and light travel at the same speed",
+      "Thunder occurs after lightning"
+    ],
+    "answer": "Light travels much faster than sound",
+    "difficulty": "Medium",
+    "explanation": "Light travels nearly a million times faster than sound, so the flash is seen well before the thunder is heard."
+  },
+  {
+    "id": 190,
+    "section": "Physics",
+    "question": "The quality or timbre of a musical sound depends mainly on its:",
+    "options": [
+      "Frequency",
+      "Amplitude",
+      "Waveform (harmonic content)",
+      "Speed"
+    ],
+    "answer": "Waveform (harmonic content)",
+    "difficulty": "Medium",
+    "explanation": "Timbre distinguishes sounds of the same pitch and loudness based on their harmonic content and waveform shape."
+  },
+  {
+    "id": 191,
+    "section": "Physics",
+    "question": "Einstein's mass-energy equivalence is expressed as:",
+    "options": [
+      "E = mc",
+      "E = mc²",
+      "E = m²c",
+      "E = mc³"
+    ],
+    "answer": "E = mc²",
+    "difficulty": "Medium",
+    "explanation": "Einstein's famous equation shows that mass and energy are interchangeable, related by the speed of light squared."
+  },
+  {
+    "id": 192,
+    "section": "Physics",
+    "question": "The photoelectric effect was explained by Einstein using the concept of:",
+    "options": [
+      "Wave nature of light",
+      "Particle nature of light (photons)",
+      "Diffraction of light",
+      "Polarization of light"
+    ],
+    "answer": "Particle nature of light (photons)",
+    "difficulty": "Easy",
+    "explanation": "Einstein explained the photoelectric effect by proposing that light consists of discrete energy packets called photons."
+  },
+  {
+    "id": 193,
+    "section": "Physics",
+    "question": "The nucleus of an atom is composed of:",
+    "options": [
+      "Electrons and protons",
+      "Protons and neutrons",
+      "Electrons and neutrons",
+      "Only protons"
+    ],
+    "answer": "Protons and neutrons",
+    "difficulty": "Easy",
+    "explanation": "The atomic nucleus consists of positively charged protons and electrically neutral neutrons."
+  },
+  {
+    "id": 194,
+    "section": "Physics",
+    "question": "Radioactive decay in which a nucleus emits a helium nucleus is called:",
+    "options": [
+      "Alpha decay",
+      "Beta decay",
+      "Gamma decay",
+      "Fission"
+    ],
+    "answer": "Alpha decay",
+    "difficulty": "Medium",
+    "explanation": "Alpha decay involves the emission of an alpha particle, which is identical to a helium-4 nucleus (2 protons, 2 neutrons)."
+  },
+  {
+    "id": 195,
+    "section": "Physics",
+    "question": "The half-life of a radioactive substance is the time taken for:",
+    "options": [
+      "All atoms to decay",
+      "Half the atoms to decay",
+      "One-quarter of atoms to decay",
+      "The substance to double in mass"
+    ],
+    "answer": "Half the atoms to decay",
+    "difficulty": "Medium",
+    "explanation": "Half-life is defined as the time required for half of the radioactive nuclei in a sample to decay."
+  },
+  {
+    "id": 196,
+    "section": "Physics",
+    "question": "Nuclear fission involves:",
+    "options": [
+      "Combining light nuclei into a heavier one",
+      "Splitting a heavy nucleus into lighter nuclei",
+      "Emission of electrons only",
+      "Absorption of neutrons without change"
+    ],
+    "answer": "Splitting a heavy nucleus into lighter nuclei",
+    "difficulty": "Medium",
+    "explanation": "Nuclear fission is the process where a heavy nucleus splits into two or more lighter nuclei, releasing energy."
+  },
+  {
+    "id": 197,
+    "section": "Physics",
+    "question": "Nuclear fusion powers:",
+    "options": [
+      "Nuclear power plants only",
+      "The Sun and other stars",
+      "Fossil fuel combustion",
+      "Chemical batteries"
+    ],
+    "answer": "The Sun and other stars",
+    "difficulty": "Medium",
+    "explanation": "Stars, including the Sun, generate energy through nuclear fusion, primarily combining hydrogen nuclei into helium."
+  },
+  {
+    "id": 198,
+    "section": "Physics",
+    "question": "The wave-particle duality of matter was proposed by:",
+    "options": [
+      "Albert Einstein",
+      "Louis de Broglie",
+      "Niels Bohr",
+      "Max Planck"
+    ],
+    "answer": "Louis de Broglie",
+    "difficulty": "Hard",
+    "explanation": "Louis de Broglie proposed that particles, like electrons, also exhibit wave-like properties."
+  },
+  {
+    "id": 199,
+    "section": "Physics",
+    "question": "The Bohr model of the atom describes electrons as moving in:",
+    "options": [
+      "Random paths",
+      "Fixed circular orbits with quantized energy",
+      "Straight lines away from the nucleus",
+      "A continuous cloud with no structure"
+    ],
+    "answer": "Fixed circular orbits with quantized energy",
+    "difficulty": "Medium",
+    "explanation": "Bohr's model proposes electrons orbit the nucleus in specific quantized energy levels without radiating energy."
+  },
+  {
+    "id": 200,
+    "section": "Physics",
+    "question": "Which particle has no electric charge?",
+    "options": [
+      "Proton",
+      "Electron",
+      "Neutron",
+      "Positron"
+    ],
+    "answer": "Neutron",
+    "difficulty": "Easy",
+    "explanation": "The neutron is electrically neutral, unlike the positively charged proton or negatively charged electron."
+  },
+  {
+    "id": 201,
+    "section": "Physics",
+    "question": "Planck's constant relates a photon's energy to its:",
+    "options": [
+      "Speed",
+      "Frequency",
+      "Wavelength squared",
+      "Mass"
+    ],
+    "answer": "Frequency",
+    "difficulty": "Medium",
+    "explanation": "According to Planck's equation E = hf, a photon's energy is directly proportional to its frequency."
+  },
+  {
+    "id": 202,
+    "section": "Physics",
+    "question": "The phenomenon in which a nucleus spontaneously emits particles or radiation is called:",
+    "options": [
+      "Ionization",
+      "Radioactivity",
+      "Fusion",
+      "Excitation"
+    ],
+    "answer": "Radioactivity",
+    "difficulty": "Medium",
+    "explanation": "Radioactivity refers to the spontaneous emission of particles or electromagnetic radiation from unstable atomic nuclei."
+  },
+  {
+    "id": 203,
+    "section": "Physics",
+    "question": "X-rays are a form of:",
+    "options": [
+      "Sound waves",
+      "Electromagnetic radiation",
+      "Mechanical waves",
+      "Particle beams only"
+    ],
+    "answer": "Electromagnetic radiation",
+    "difficulty": "Medium",
+    "explanation": "X-rays are high-energy electromagnetic waves with wavelengths shorter than ultraviolet light."
+  },
+  {
+    "id": 204,
+    "section": "Physics",
+    "question": "The unit used to measure atomic and subatomic energies is the:",
+    "options": [
+      "Joule only",
+      "Electron-volt",
+      "Watt",
+      "Newton"
+    ],
+    "answer": "Electron-volt",
+    "difficulty": "Medium",
+    "explanation": "The electron-volt (eV) is a convenient unit for expressing the small energies involved in atomic and particle physics."
+  },
+  {
+    "id": 205,
+    "section": "Physics",
+    "question": "Isotopes of an element have the same number of:",
+    "options": [
+      "Neutrons",
+      "Protons",
+      "Nucleons",
+      "Electrons and neutrons"
+    ],
+    "answer": "Protons",
+    "difficulty": "Medium",
+    "explanation": "Isotopes share the same number of protons (atomic number) but differ in the number of neutrons."
+  },
+  {
+    "id": 206,
+    "section": "Physics",
+    "question": "The Heisenberg Uncertainty Principle states that it is impossible to simultaneously know precisely a particle's:",
+    "options": [
+      "Charge and mass",
+      "Position and momentum",
+      "Energy and charge",
+      "Spin and charge"
+    ],
+    "answer": "Position and momentum",
+    "difficulty": "Hard",
+    "explanation": "The Uncertainty Principle states that the more precisely a particle's position is known, the less precisely its momentum can be known, and vice versa."
+  },
+  {
+    "id": 207,
+    "section": "Physics",
+    "question": "Beta decay involves the emission of a(n):",
+    "options": [
+      "Alpha particle",
+      "Electron or positron",
+      "Neutron",
+      "Photon only"
+    ],
+    "answer": "Electron or positron",
+    "difficulty": "Medium",
+    "explanation": "Beta decay occurs when a neutron converts to a proton (emitting an electron) or a proton converts to a neutron (emitting a positron)."
+  },
+  {
+    "id": 208,
+    "section": "Physics",
+    "question": "Gamma rays are emitted from the nucleus as a result of:",
+    "options": [
+      "Chemical reactions",
+      "The nucleus transitioning to a lower energy state",
+      "Electron transitions",
+      "Loss of protons"
+    ],
+    "answer": "The nucleus transitioning to a lower energy state",
+    "difficulty": "Medium",
+    "explanation": "Gamma decay occurs when an excited nucleus releases energy as high-frequency electromagnetic radiation to reach a more stable state."
+  },
+  {
+    "id": 209,
+    "section": "Physics",
+    "question": "The photoelectric effect demonstrates that light energy is transferred in discrete packets called:",
+    "options": [
+      "Waves",
+      "Photons",
+      "Electrons",
+      "Ions"
+    ],
+    "answer": "Photons",
+    "difficulty": "Medium",
+    "explanation": "The photoelectric effect shows that light delivers energy in discrete quanta, or photons, rather than continuously."
+  },
+  {
+    "id": 210,
+    "section": "Physics",
+    "question": "Which scientist proposed the nuclear model of the atom based on the gold foil experiment?",
+    "options": [
+      "J.J. Thomson",
+      "Ernest Rutherford",
+      "Niels Bohr",
+      "James Chadwick"
+    ],
+    "answer": "Ernest Rutherford",
+    "difficulty": "Medium",
+    "explanation": "Rutherford's gold foil experiment led him to propose that atoms have a small, dense, positively charged nucleus."
+  },
+  {
+    "id": 211,
+    "section": "Physics",
+    "question": "The neutron was discovered by:",
+    "options": [
+      "Ernest Rutherford",
+      "James Chadwick",
+      "J.J. Thomson",
+      "Niels Bohr"
+    ],
+    "answer": "James Chadwick",
+    "difficulty": "Medium",
+    "explanation": "James Chadwick discovered the neutron in 1932, confirming the existence of a neutral nuclear particle."
+  },
+  {
+    "id": 212,
+    "section": "Physics",
+    "question": "Binding energy of a nucleus is related to its:",
+    "options": [
+      "Mass defect",
+      "Electric charge",
+      "Number of electrons",
+      "Volume only"
+    ],
+    "answer": "Mass defect",
+    "difficulty": "Hard",
+    "explanation": "Nuclear binding energy arises from the mass defect, the difference between the mass of separated nucleons and the actual nucleus, via E = mc²."
+  },
+  {
+    "id": 213,
+    "section": "Physics",
+    "question": "A chain reaction in nuclear fission is sustained by:",
+    "options": [
+      "Alpha particles",
+      "Neutrons released from each fission event",
+      "Gamma rays",
+      "Protons"
+    ],
+    "answer": "Neutrons released from each fission event",
+    "difficulty": "Hard",
+    "explanation": "Each fission event releases neutrons that can trigger further fission events, sustaining a chain reaction."
+  },
+  {
+    "id": 214,
+    "section": "Physics",
+    "question": "The energy levels of an electron in a hydrogen atom are:",
+    "options": [
+      "Continuous",
+      "Quantized",
+      "Always zero",
+      "Independent of the atom"
+    ],
+    "answer": "Quantized",
+    "difficulty": "Medium",
+    "explanation": "Electrons in an atom can only occupy specific, discrete (quantized) energy levels, as described by quantum mechanics."
+  },
+  {
+    "id": 215,
+    "section": "Physics",
+    "question": "According to Newton's Law of Gravitation, gravitational force between two masses is:",
+    "options": [
+      "Directly proportional to distance",
+      "Inversely proportional to the square of distance",
+      "Independent of mass",
+      "Inversely proportional to mass"
+    ],
+    "answer": "Inversely proportional to the square of distance",
+    "difficulty": "Medium",
+    "explanation": "Newton's Law of Gravitation states F = Gm₁m₂/r², so force decreases with the square of the distance between masses."
+  },
+  {
+    "id": 216,
+    "section": "Physics",
+    "question": "The value of acceleration due to gravity on the Moon is approximately:",
+    "options": [
+      "Same as Earth",
+      "1/6th of Earth's",
+      "6 times Earth's",
+      "Zero"
+    ],
+    "answer": "1/6th of Earth's",
+    "difficulty": "Medium",
+    "explanation": "The Moon's gravity is about one-sixth that of Earth due to its smaller mass and radius."
+  },
+  {
+    "id": 217,
+    "section": "Physics",
+    "question": "Weightlessness experienced by astronauts in orbit occurs because:",
+    "options": [
+      "Gravity is zero in space",
+      "They are in continuous free fall around Earth",
+      "There is no atmosphere",
+      "Their mass becomes zero"
+    ],
+    "answer": "They are in continuous free fall around Earth",
+    "difficulty": "Medium",
+    "explanation": "Astronauts in orbit are in continuous free fall, so they and their spacecraft accelerate together, creating the sensation of weightlessness."
+  },
+  {
+    "id": 218,
+    "section": "Physics",
+    "question": "Kepler's second law of planetary motion states that a planet sweeps equal areas in equal times, which implies:",
+    "options": [
+      "Constant speed throughout orbit",
+      "Faster speed near the Sun (perihelion)",
+      "Faster speed away from the Sun (aphelion)",
+      "No relation to speed"
+    ],
+    "answer": "Faster speed near the Sun (perihelion)",
+    "difficulty": "Medium",
+    "explanation": "Kepler's second law implies planets move faster when closer to the Sun to sweep out equal areas in equal time."
+  },
+  {
+    "id": 219,
+    "section": "Physics",
+    "question": "The escape velocity from Earth's surface is approximately:",
+    "options": [
+      "1.2 km/s",
+      "5.6 km/s",
+      "11.2 km/s",
+      "22.4 km/s"
+    ],
+    "answer": "11.2 km/s",
+    "difficulty": "Medium",
+    "explanation": "Earth's escape velocity, the minimum speed needed to break free of its gravity without further propulsion, is about 11.2 km/s."
+  },
+  {
+    "id": 220,
+    "section": "Physics",
+    "question": "Geostationary satellites orbit the Earth with a period of:",
+    "options": [
+      "1 hour",
+      "12 hours",
+      "24 hours",
+      "1 week"
+    ],
+    "answer": "24 hours",
+    "difficulty": "Medium",
+    "explanation": "Geostationary satellites match Earth's rotational period of 24 hours, appearing stationary relative to a point on the surface."
+  },
+  {
+    "id": 221,
+    "section": "Physics",
+    "question": "Kepler's third law relates a planet's orbital period to:",
+    "options": [
+      "Its mass",
+      "Its semi-major axis (average distance from the Sun)",
+      "Its eccentricity only",
+      "Its color"
+    ],
+    "answer": "Its semi-major axis (average distance from the Sun)",
+    "difficulty": "Hard",
+    "explanation": "Kepler's Third Law states T² ∝ a³, relating the square of the orbital period to the cube of the semi-major axis."
+  },
+  {
+    "id": 222,
+    "section": "Physics",
+    "question": "The gravitational constant G was first measured experimentally by:",
+    "options": [
+      "Isaac Newton",
+      "Henry Cavendish",
+      "Johannes Kepler",
+      "Galileo Galilei"
+    ],
+    "answer": "Henry Cavendish",
+    "difficulty": "Hard",
+    "explanation": "Henry Cavendish measured the gravitational constant G using a torsion balance experiment in 1798."
+  },
+  {
+    "id": 223,
+    "section": "Physics",
+    "question": "As an object moves from the Earth's surface towards its center, the acceleration due to gravity:",
+    "options": [
+      "Increases",
+      "Decreases and becomes zero at the center",
+      "Remains constant",
+      "Becomes infinite"
+    ],
+    "answer": "Decreases and becomes zero at the center",
+    "difficulty": "Medium",
+    "explanation": "Assuming uniform density, gravitational acceleration decreases linearly with depth, reaching zero at Earth's center."
+  },
+  {
+    "id": 224,
+    "section": "Physics",
+    "question": "A satellite orbiting close to Earth's surface has a period of approximately:",
+    "options": [
+      "24 hours",
+      "90 minutes",
+      "1 hour",
+      "1 week"
+    ],
+    "answer": "90 minutes",
+    "difficulty": "Medium",
+    "explanation": "Low Earth orbit satellites, close to the surface, typically complete one orbit in about 90 minutes."
+  },
+  {
+    "id": 225,
+    "section": "Physics",
+    "question": "Which of the following remains constant for a satellite in a circular orbit?",
+    "options": [
+      "Its velocity direction",
+      "Its speed and distance from Earth",
+      "Its acceleration direction",
+      "Its potential energy is zero"
+    ],
+    "answer": "Its speed and distance from Earth",
+    "difficulty": "Medium",
+    "explanation": "In a circular orbit, a satellite maintains a constant speed and constant distance from the center of the Earth."
+  },
+  {
+    "id": 226,
+    "section": "Physics",
+    "question": "The gravitational potential energy of a mass at infinite distance from Earth is defined as:",
+    "options": [
+      "Maximum positive value",
+      "Zero",
+      "Negative infinity",
+      "Equal to kinetic energy"
+    ],
+    "answer": "Zero",
+    "difficulty": "Medium",
+    "explanation": "By convention, gravitational potential energy is taken to be zero at an infinite distance from the gravitating body."
+  },
+  {
+    "id": 227,
+    "section": "Physics",
+    "question": "Tides on Earth are primarily caused by the gravitational pull of:",
+    "options": [
+      "The Sun only",
+      "The Moon and, to a lesser extent, the Sun",
+      "Nearby planets",
+      "Earth's own rotation"
+    ],
+    "answer": "The Moon and, to a lesser extent, the Sun",
+    "difficulty": "Medium",
+    "explanation": "Tides result mainly from the Moon's gravitational pull on Earth's oceans, with the Sun contributing a smaller effect."
+  },
+  {
+    "id": 228,
+    "section": "Physics",
+    "question": "If the mass of Earth were doubled while its radius stayed the same, the acceleration due to gravity at the surface would:",
+    "options": [
+      "Halve",
+      "Double",
+      "Remain the same",
+      "Quadruple"
+    ],
+    "answer": "Double",
+    "difficulty": "Medium",
+    "explanation": "Since g = GM/R², doubling the mass M while keeping R constant doubles the surface gravitational acceleration."
+  },
+  {
+    "id": 229,
+    "section": "Physics",
+    "question": "The orbit of a planet around the Sun, according to Kepler's first law, is:",
+    "options": [
+      "A perfect circle",
+      "An ellipse with the Sun at one focus",
+      "A parabola",
+      "A straight line"
+    ],
+    "answer": "An ellipse with the Sun at one focus",
+    "difficulty": "Medium",
+    "explanation": "Kepler's First Law states that planetary orbits are ellipses with the Sun located at one of the two foci."
+  },
+  {
+    "id": 230,
+    "section": "Physics",
+    "question": "Pascal's Law states that pressure applied to an enclosed fluid is:",
+    "options": [
+      "Absorbed by the container",
+      "Transmitted equally in all directions",
+      "Lost due to friction",
+      "Only transmitted downward"
+    ],
+    "answer": "Transmitted equally in all directions",
+    "difficulty": "Medium",
+    "explanation": "Pascal's Law states that pressure applied to a confined fluid is transmitted undiminished throughout the fluid in all directions."
+  },
+  {
+    "id": 231,
+    "section": "Physics",
+    "question": "Archimedes' Principle explains why:",
+    "options": [
+      "Objects sink in water",
+      "Objects float or experience buoyant force based on displaced fluid weight",
+      "Water boils at 100°C",
+      "Pressure increases with depth"
+    ],
+    "answer": "Objects float or experience buoyant force based on displaced fluid weight",
+    "difficulty": "Medium",
+    "explanation": "Archimedes' Principle states that the buoyant force on a submerged object equals the weight of the fluid it displaces."
+  },
+  {
+    "id": 232,
+    "section": "Physics",
+    "question": "The SI unit of pressure is:",
+    "options": [
+      "Newton",
+      "Pascal",
+      "Joule",
+      "Bar only"
+    ],
+    "answer": "Pascal",
+    "difficulty": "Easy",
+    "explanation": "Pressure is measured in pascals (Pa), equal to one newton per square meter."
+  },
+  {
+    "id": 233,
+    "section": "Physics",
+    "question": "Bernoulli's principle relates fluid speed to:",
+    "options": [
+      "Temperature",
+      "Pressure",
+      "Density only",
+      "Viscosity"
+    ],
+    "answer": "Pressure",
+    "difficulty": "Medium",
+    "explanation": "Bernoulli's principle states that an increase in fluid speed occurs simultaneously with a decrease in pressure."
+  },
+  {
+    "id": 234,
+    "section": "Physics",
+    "question": "Hydraulic systems, such as car brakes, work based on:",
+    "options": [
+      "Bernoulli's principle",
+      "Pascal's Law",
+      "Archimedes' Principle",
+      "Boyle's Law"
+    ],
+    "answer": "Pascal's Law",
+    "difficulty": "Medium",
+    "explanation": "Hydraulic systems use Pascal's Law to multiply force by transmitting pressure through an incompressible fluid."
+  },
+  {
+    "id": 235,
+    "section": "Physics",
+    "question": "Atmospheric pressure at sea level is approximately:",
+    "options": [
+      "1 Pa",
+      "101.3 kPa",
+      "1000 kPa",
+      "10 kPa"
+    ],
+    "answer": "101.3 kPa",
+    "difficulty": "Medium",
+    "explanation": "Standard atmospheric pressure at sea level is defined as about 101,325 pascals, or 101.3 kPa."
+  },
+  {
+    "id": 236,
+    "section": "Physics",
+    "question": "Viscosity of a fluid is a measure of its:",
+    "options": [
+      "Density",
+      "Resistance to flow",
+      "Pressure",
+      "Buoyancy"
+    ],
+    "answer": "Resistance to flow",
+    "difficulty": "Medium",
+    "explanation": "Viscosity describes a fluid's internal resistance to flow, essentially its 'thickness' or friction between layers."
+  },
+  {
+    "id": 237,
+    "section": "Physics",
+    "question": "The pressure at a depth h in a fluid of density ρ is given by:",
+    "options": [
+      "P = ρgh",
+      "P = ρg/h",
+      "P = gh/ρ",
+      "P = ρh/g"
+    ],
+    "answer": "P = ρgh",
+    "difficulty": "Medium",
+    "explanation": "Hydrostatic pressure at depth h is given by P = ρgh, where ρ is fluid density and g is gravitational acceleration."
+  },
+  {
+    "id": 238,
+    "section": "Physics",
+    "question": "An object floats when its average density is:",
+    "options": [
+      "Greater than the fluid's density",
+      "Equal to or less than the fluid's density",
+      "Independent of the fluid's density",
+      "Always zero"
+    ],
+    "answer": "Equal to or less than the fluid's density",
+    "difficulty": "Medium",
+    "explanation": "An object floats when it is able to displace enough fluid so that the buoyant force balances its weight, which happens when its average density does not exceed the fluid's."
+  },
+  {
+    "id": 239,
+    "section": "Physics",
+    "question": "The working of an airplane wing generating lift is best explained using:",
+    "options": [
+      "Pascal's Law",
+      "Bernoulli's principle",
+      "Archimedes' Principle",
+      "Boyle's Law"
+    ],
+    "answer": "Bernoulli's principle",
+    "difficulty": "Medium",
+    "explanation": "Airplane wings are shaped so air moves faster over the top, lowering pressure there and creating lift, as explained by Bernoulli's principle."
+  },
+  {
+    "id": 240,
+    "section": "Physics",
+    "question": "Surface tension in liquids arises due to:",
+    "options": [
+      "Gravitational forces",
+      "Cohesive forces between liquid molecules",
+      "Atmospheric pressure",
+      "Viscosity alone"
+    ],
+    "answer": "Cohesive forces between liquid molecules",
+    "difficulty": "Medium",
+    "explanation": "Surface tension results from the cohesive attraction between molecules at a liquid's surface, minimizing surface area."
+  },
+  {
+    "id": 241,
+    "section": "Physics",
+    "question": "A barometer is used to measure:",
+    "options": [
+      "Humidity",
+      "Atmospheric pressure",
+      "Wind speed",
+      "Temperature"
+    ],
+    "answer": "Atmospheric pressure",
+    "difficulty": "Easy",
+    "explanation": "A barometer measures atmospheric pressure, commonly using mercury or an aneroid capsule."
+  },
+  {
+    "id": 242,
+    "section": "Physics",
+    "question": "According to the continuity equation, for an incompressible fluid, as the cross-sectional area of a pipe decreases, the fluid speed:",
+    "options": [
+      "Decreases",
+      "Increases",
+      "Remains constant",
+      "Becomes zero"
+    ],
+    "answer": "Increases",
+    "difficulty": "Hard",
+    "explanation": "The continuity equation (A₁v₁ = A₂v₂) shows that fluid speed must increase where the cross-sectional area decreases, to conserve flow rate."
+  },
+  {
+    "id": 243,
+    "section": "Physics",
+    "question": "Which instrument is used to measure the specific gravity of a liquid?",
+    "options": [
+      "Barometer",
+      "Hydrometer",
+      "Manometer",
+      "Thermometer"
+    ],
+    "answer": "Hydrometer",
+    "difficulty": "Medium",
+    "explanation": "A hydrometer measures the specific gravity (relative density) of a liquid by how deep it floats in the liquid."
+  },
+  {
+    "id": 244,
+    "section": "Physics",
+    "question": "The buoyant force acting on a fully submerged object depends on:",
+    "options": [
+      "The object's weight",
+      "The volume of fluid displaced and fluid density",
+      "The object's shape only",
+      "The object's temperature"
+    ],
+    "answer": "The volume of fluid displaced and fluid density",
+    "difficulty": "Medium",
+    "explanation": "Buoyant force equals the weight of displaced fluid, which depends on the volume of the submerged object and the fluid's density."
+  },
+  {
+    "id": 245,
+    "section": "Physics",
+    "question": "Which of the following is a fundamental (base) SI unit?",
+    "options": [
+      "Newton",
+      "Joule",
+      "Kelvin",
+      "Watt"
+    ],
+    "answer": "Kelvin",
+    "difficulty": "Easy",
+    "explanation": "Kelvin is one of the seven SI base units, used to measure thermodynamic temperature."
+  },
+  {
+    "id": 246,
+    "section": "Physics",
+    "question": "The dimensional formula of force is:",
+    "options": [
+      "[MLT⁻¹]",
+      "[MLT⁻²]",
+      "[ML²T⁻²]",
+      "[ML⁻¹T⁻²]"
+    ],
+    "answer": "[MLT⁻²]",
+    "difficulty": "Medium",
+    "explanation": "Force = mass × acceleration, giving the dimensional formula [M][L][T⁻²]."
+  },
+  {
+    "id": 247,
+    "section": "Physics",
+    "question": "Which of the following is NOT an SI base unit?",
+    "options": [
+      "Meter",
+      "Kilogram",
+      "Newton",
+      "Second"
+    ],
+    "answer": "Newton",
+    "difficulty": "Easy",
+    "explanation": "The newton is a derived unit (kg·m/s²), not one of the seven SI base units."
+  },
+  {
+    "id": 248,
+    "section": "Physics",
+    "question": "The precision of a measurement refers to:",
+    "options": [
+      "How close it is to the true value",
+      "How consistent repeated measurements are with each other",
+      "The number of significant figures alone",
+      "The instrument's cost"
+    ],
+    "answer": "How consistent repeated measurements are with each other",
+    "difficulty": "Medium",
+    "explanation": "Precision describes the reproducibility or consistency of repeated measurements, regardless of their closeness to the true value."
+  },
+  {
+    "id": 249,
+    "section": "Physics",
+    "question": "Work done is defined as the product of force and:",
+    "options": [
+      "Time",
+      "Displacement in the direction of force",
+      "Mass",
+      "Velocity"
+    ],
+    "answer": "Displacement in the direction of force",
+    "difficulty": "Easy",
+    "explanation": "Work W = F·d·cosθ, the product of force, displacement, and the cosine of the angle between them."
+  },
+  {
+    "id": 250,
+    "section": "Physics",
+    "question": "The unit of power is:",
+    "options": [
+      "Joule",
+      "Newton",
+      "Watt",
+      "Pascal"
+    ],
+    "answer": "Watt",
+    "difficulty": "Easy",
+    "explanation": "Power, the rate of doing work, is measured in watts, where 1 W = 1 J/s."
+  },
+  {
+    "id": 251,
+    "section": "Physics",
+    "question": "Kinetic energy of an object is given by the formula:",
+    "options": [
+      "mgh",
+      "½mv²",
+      "mv",
+      "Fd"
+    ],
+    "answer": "½mv²",
+    "difficulty": "Easy",
+    "explanation": "Kinetic energy, the energy of motion, is given by KE = ½mv², where m is mass and v is velocity."
+  },
+  {
+    "id": 252,
+    "section": "Physics",
+    "question": "Potential energy due to gravity near Earth's surface is given by:",
+    "options": [
+      "½mv²",
+      "mgh",
+      "Fd",
+      "mc²"
+    ],
+    "answer": "mgh",
+    "difficulty": "Easy",
+    "explanation": "Gravitational potential energy near Earth's surface is PE = mgh, where h is height above a reference level."
+  },
+  {
+    "id": 253,
+    "section": "Physics",
+    "question": "1 horsepower is approximately equal to:",
+    "options": [
+      "746 Watts",
+      "1000 Watts",
+      "500 Watts",
+      "100 Watts"
+    ],
+    "answer": "746 Watts",
+    "difficulty": "Medium",
+    "explanation": "One horsepower is defined as approximately 746 watts of power."
+  },
+  {
+    "id": 254,
+    "section": "Physics",
+    "question": "The number of significant figures in the measurement 0.00520 is:",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "6"
+    ],
+    "answer": "3",
+    "difficulty": "Medium",
+    "explanation": "Leading zeros are not significant, but the trailing zero after the decimal is; 5, 2, and 0 are the three significant figures."
+  },
+  {
+    "id": 255,
+    "section": "Physics",
+    "question": "Dimensional analysis can be used to:",
+    "options": [
+      "Determine exact numerical constants",
+      "Check the consistency of physical equations",
+      "Measure time directly",
+      "Replace experiments entirely"
+    ],
+    "answer": "Check the consistency of physical equations",
+    "difficulty": "Medium",
+    "explanation": "Dimensional analysis verifies that both sides of a physical equation have matching dimensions, though it cannot find dimensionless constants."
+  },
+  {
+    "id": 256,
+    "section": "Physics",
+    "question": "The efficiency of a machine is defined as the ratio of:",
+    "options": [
+      "Input energy to output energy",
+      "Output energy (or work) to input energy",
+      "Force to displacement",
+      "Power to time"
+    ],
+    "answer": "Output energy (or work) to input energy",
+    "difficulty": "Medium",
+    "explanation": "Efficiency = (useful output energy / total input energy) × 100%, indicating how effectively a machine converts energy."
+  },
+  {
+    "id": 257,
+    "section": "Physics",
+    "question": "Which of the following is a derived unit?",
+    "options": [
+      "Meter",
+      "Second",
+      "Newton",
+      "Ampere"
+    ],
+    "answer": "Newton",
+    "difficulty": "Medium",
+    "explanation": "The newton is derived from the base units of mass, length, and time (kg·m/s²)."
+  },
+  {
+    "id": 258,
+    "section": "Physics",
+    "question": "A vernier caliper is used to measure lengths with a precision of about:",
+    "options": [
+      "1 m",
+      "1 cm",
+      "0.1 mm or better",
+      "1 km"
+    ],
+    "answer": "0.1 mm or better",
+    "difficulty": "Medium",
+    "explanation": "A vernier caliper typically provides measurement precision down to about 0.02–0.1 mm, far finer than a standard ruler."
+  },
+  {
+    "id": 259,
+    "section": "Physics",
+    "question": "The conversion of 1 kilowatt-hour is equal to:",
+    "options": [
+      "1000 Joules",
+      "3.6 × 10⁶ Joules",
+      "3600 Joules",
+      "1 Joule"
+    ],
+    "answer": "3.6 × 10⁶ Joules",
+    "difficulty": "Medium",
+    "explanation": "1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ joules."
+  },
+  {
+    "id": 260,
+    "section": "Physics",
+    "question": "Which of these quantities is dimensionless?",
+    "options": [
+      "Velocity",
+      "Refractive index",
+      "Force",
+      "Acceleration"
+    ],
+    "answer": "Refractive index",
+    "difficulty": "Medium",
+    "explanation": "Refractive index is a ratio of two speeds, making it a pure number with no dimensions."
+  },
+  {
+    "id": 261,
+    "section": "Physics",
+    "question": "The mechanical advantage of a simple machine is the ratio of:",
+    "options": [
+      "Input distance to output distance",
+      "Load to effort",
+      "Effort to time",
+      "Power to work"
+    ],
+    "answer": "Load to effort",
+    "difficulty": "Medium",
+    "explanation": "Mechanical advantage is defined as the ratio of the load (resistance force) to the effort (applied force) needed to move it."
+  },
+  {
+    "id": 262,
+    "section": "Physics",
+    "question": "Which of the following best describes accuracy in measurement?",
+    "options": [
+      "Consistency between repeated readings",
+      "Closeness of a measurement to the true value",
+      "The number of decimal places used",
+      "The precision of the instrument only"
+    ],
+    "answer": "Closeness of a measurement to the true value",
+    "difficulty": "Medium",
+    "explanation": "Accuracy refers to how close a measured value is to the actual or accepted true value."
+  },
+  {
+    "id": 263,
+    "section": "Physics",
+    "question": "The energy possessed by a body due to its position or configuration is called:",
+    "options": [
+      "Kinetic energy",
+      "Potential energy",
+      "Thermal energy",
+      "Chemical energy"
+    ],
+    "answer": "Potential energy",
+    "difficulty": "Medium",
+    "explanation": "Potential energy is stored energy that depends on an object's position, height, or configuration within a force field."
+  },
+  {
+    "id": 264,
+    "section": "Physics",
+    "question": "Power can also be expressed as the product of force and:",
+    "options": [
+      "Displacement",
+      "Velocity",
+      "Acceleration",
+      "Mass"
+    ],
+    "answer": "Velocity",
+    "difficulty": "Medium",
+    "explanation": "Power P = Fv, the product of force and the velocity of the object it acts upon, when force is along the direction of motion."
+  },
+  {
+    "id": 265,
+    "section": "Physics",
+    "question": "Which instrument is commonly used to measure very small lengths, such as wire diameter?",
+    "options": [
+      "Meter scale",
+      "Screw gauge",
+      "Measuring tape",
+      "Protractor"
+    ],
+    "answer": "Screw gauge",
+    "difficulty": "Medium",
+    "explanation": "A screw gauge (micrometer) is designed to measure very small lengths, such as the diameter of thin wires, with high precision."
+  },
+  {
+    "id": 266,
+    "section": "Physics",
+    "question": "The law of conservation of mechanical energy applies strictly when:",
+    "options": [
+      "Friction is present",
+      "Only conservative forces act on the system",
+      "The object is at rest",
+      "External forces do work on the system"
+    ],
+    "answer": "Only conservative forces act on the system",
+    "difficulty": "Medium",
+    "explanation": "Mechanical energy (KE + PE) is conserved only when non-conservative forces like friction or air resistance are absent."
+  },
+  {
+    "id": 267,
+    "section": "Physics",
+    "question": "Which of the following pairs has the same dimensional formula?",
+    "options": [
+      "Work and Torque",
+      "Force and Pressure",
+      "Power and Force",
+      "Energy and Momentum"
+    ],
+    "answer": "Work and Torque",
+    "difficulty": "Medium",
+    "explanation": "Both work and torque are dimensionally [ML²T⁻²], since work is force×distance and torque is force×lever arm, though they are conceptually different."
+  },
+  {
+    "id": 268,
+    "section": "Physics",
+    "question": "A light-year is a unit used to measure:",
+    "options": [
+      "Time",
+      "Distance",
+      "Speed",
+      "Intensity of light"
+    ],
+    "answer": "Distance",
+    "difficulty": "Medium",
+    "explanation": "A light-year measures the distance light travels in one year, used for astronomical distances, not a unit of time."
+  },
+  {
+    "id": 269,
+    "section": "Physics",
+    "question": "The commercial unit of electrical energy is the:",
+    "options": [
+      "Joule",
+      "Kilowatt-hour",
+      "Watt",
+      "Newton-meter"
+    ],
+    "answer": "Kilowatt-hour",
+    "difficulty": "Easy",
+    "explanation": "Electrical energy consumption is commonly billed in kilowatt-hours (kWh), the commercial unit of energy."
+  },
+  {
+    "id": 270,
+    "section": "Physics",
+    "question": "Which physical quantity is measured in the unit 'lux'?",
+    "options": [
+      "Sound intensity",
+      "Illuminance",
+      "Magnetic flux",
+      "Radioactivity"
+    ],
+    "answer": "Illuminance",
+    "difficulty": "Easy",
+    "explanation": "Lux is the SI unit of illuminance, measuring luminous flux per unit area."
+  }
+]

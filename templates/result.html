@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}Exam Results | Atechabad Testing System{% endblock %}
+
+{% block content %}
+<!-- Results Hero Header Card -->
+<div class="glass-panel" style="padding: 2.25rem; margin-bottom: 2rem; border-left: 6px solid {% if attempt.pass_status == 'PASS' %}#059669{% else %}#dc2626{% endif %}; background: var(--bg-surface);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+    <div>
+      <span class="section-badge" style="background: {% if attempt.pass_status == 'PASS' %}#d1fae5; color: #059669; border-color: #10b981;{% else %}#fee2e2; color: #dc2626; border-color: #fca5a5;{% endif %} font-size: 0.9rem; padding: 0.4rem 1.1rem;">
+        {{ attempt.pass_status }} &bull; GRADE {{ attempt.grade }}
+      </span>
+      <h2 style="font-size: 2.2rem; margin-top: 0.6rem; letter-spacing: -0.02em;">
+        Score: {{ attempt.total_score }} / {{ attempt.max_score }} ({{ attempt.percentage }}%)
+      </h2>
+      <p style="color: var(--text-secondary); font-size: 1rem; margin-top: 0.25rem;">
+        Candidate: <strong>{{ attempt.candidate_name }}</strong> (Roll No: {{ attempt.candidate_roll }}) &bull; Date: {{ attempt.created_at }}
+      </p>
+    </div>
+
+    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+      <a href="{{ url_for('review', attempt_id=attempt.id) }}" class="btn btn-secondary">🔍 Review Answers</a>
+      <a href="{{ url_for('report', attempt_id=attempt.id) }}" class="btn btn-primary">🖨️ Official Score Report</a>
+      <a href="{{ url_for('instructions') }}" class="btn btn-warning">🔄 Retry Exam</a>
+    </div>
+  </div>
+</div>
+
+<!-- Key Performance Stats Grid -->
+<div class="stats-grid" style="margin-bottom: 2rem;">
+  <div class="stat-card">
+    <div class="val" style="color: #d97706;">🔥 {{ attempt.longest_streak }}</div>
+    <div class="lbl">Longest Correct Streak</div>
+  </div>
+  <div class="stat-card">
+    <div class="val" style="color: #059669; font-size: 1.6rem;">{{ attempt.strongest_subject or 'N/A' }}</div>
+    <div class="lbl">🎯 Strongest Subject</div>
+  </div>
+  <div class="stat-card">
+    <div class="val" style="color: #dc2626; font-size: 1.6rem;">{{ attempt.weakest_subject or 'N/A' }}</div>
+    <div class="lbl">⚠️ Needs Improvement</div>
+  </div>
+  <div class="stat-card">
+    <div class="val" style="color: #2563eb;">{{ format_time(attempt.time_taken_seconds) }}</div>
+    <div class="lbl">Total Completion Time</div>
+  </div>
+</div>
+
+<!-- Analytics Charts Grid -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+  <!-- Chart 1: Accuracy Ratio -->
+  <div class="glass-panel" style="padding: 1.75rem; background: var(--bg-surface);">
+    <h3 style="margin-bottom: 1rem; font-size: 1.1rem; text-align: center;">🎯 Accuracy Breakdown</h3>
+    <div style="max-width: 260px; margin: 0 auto;">
+      <canvas id="accuracyChart"></canvas>
+    </div>
+    <div style="display: flex; justify-content: space-around; margin-top: 1.25rem; text-align: center; font-size: 0.88rem;">
+      <div><strong style="color: #059669; font-size: 1.1rem;">{{ attempt.correct_count }}</strong><br><span style="color: var(--text-muted);">Correct</span></div>
+      <div><strong style="color: #dc2626; font-size: 1.1rem;">{{ attempt.wrong_count }}</strong><br><span style="color: var(--text-muted);">Wrong</span></div>
+      <div><strong style="color: #64748b; font-size: 1.1rem;">{{ attempt.skipped_count }}</strong><br><span style="color: var(--text-muted);">Skipped</span></div>
+    </div>
+  </div>
+
+  <!-- Chart 2: Section Breakdown -->
+  <div class="glass-panel" style="padding: 1.75rem; background: var(--bg-surface);">
+    <h3 style="margin-bottom: 1rem; font-size: 1.1rem; text-align: center;">📚 Performance by Subject Section</h3>
+    <canvas id="sectionChart"></canvas>
+  </div>
+
+  <!-- Chart 3: Attempt Progression Trend -->
+  <div class="glass-panel" style="padding: 1.75rem; background: var(--bg-surface);">
+    <h3 style="margin-bottom: 1rem; font-size: 1.1rem; text-align: center;">📈 Historical Score Trend</h3>
+    <canvas id="trendChart"></canvas>
+  </div>
+</div>
+
+<!-- Difficulty Tier Analysis -->
+<div class="glass-panel" style="padding: 1.75rem; margin-bottom: 2rem; background: var(--bg-surface);">
+  <h3 style="margin-bottom: 1.25rem; font-size: 1.2rem;">📈 Difficulty Breakdown</h3>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;">
+    {% for diff, ddata in attempt.difficulty_scores.items() %}
+    <div style="background: var(--bg-body); padding: 1.25rem; border-radius: var(--radius-sm); text-align: center; border: 1px solid var(--border-subtle);">
+      <span class="q-diff-badge q-diff-{{ diff }}">{{ diff }}</span>
+      <div style="font-size: 1.8rem; font-weight: 800; color: var(--brand-navy); margin: 0.4rem 0;">
+        {{ ddata.correct }} / {{ ddata.total }}
+      </div>
+      <div style="font-weight: 700; color: var(--brand-blue); font-size: 0.92rem;">{{ ddata.percentage }}% Accuracy</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const attemptData = {{ (attempt or {})|tojson }};
+    const perfSummaryData = {{ (perf_summary or (attempt and attempt.section_scores) or {})|tojson }};
+    renderAttemptCharts(attemptData, perfSummaryData);
+  });
+</script>
+{% endblock %}

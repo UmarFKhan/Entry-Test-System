@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Score Report - Atechabad Testing System</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap');
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f8fafc; color: #0f172a; padding: 2.5rem 1.5rem; }
+    
+    .report-card {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3.5rem;
+      border-radius: 12px;
+      border: 1px solid #cbd5e1;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+    
+    .report-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px double #0b1727;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .univ-title { font-family: 'Outfit', sans-serif; font-size: 1.9rem; color: #0b1727; font-weight: 800; letter-spacing: -0.02em; }
+    .univ-sub { font-size: 0.95rem; color: #475569; font-weight: 600; }
+    
+    .badge-stamp {
+      border: 3px solid {% if attempt.pass_status == 'PASS' %}#059669{% else %}#dc2626{% endif %};
+      color: {% if attempt.pass_status == 'PASS' %}#059669{% else %}#dc2626{% endif %};
+      padding: 0.5rem 1.5rem;
+      font-weight: 900;
+      font-size: 1.3rem;
+      border-radius: 8px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transform: rotate(-3deg);
+    }
+    
+    .grid-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+    
+    .grid-table th, .grid-table td {
+      border: 1px solid #cbd5e1;
+      padding: 0.75rem 1rem;
+      text-align: left;
+      font-size: 0.92rem;
+    }
+    
+    .grid-table th { background: #f1f5f9; font-weight: 800; color: #0b1727; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.5px; }
+    
+    .no-print {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .btn-print {
+      background: #0b1727;
+      color: #ffffff;
+      padding: 0.75rem 2rem;
+      border: none;
+      font-size: 0.95rem;
+      font-weight: 800;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(11,23,39,0.2);
+    }
+
+    @media print {
+      body { background: #ffffff; padding: 0; }
+      .report-card { border: none; box-shadow: none; padding: 0; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print">
+    <button onclick="window.print()" class="btn-print">🖨️ Print / Save as Official PDF</button>
+    <a href="{{ url_for('result', attempt_id=attempt.id) }}" style="margin-left: 1rem; text-decoration: none; color: #475569; font-weight: 700;">← Back to Result Scorecard</a>
+  </div>
+
+  <div class="report-card">
+    <!-- Header -->
+    <div class="report-header">
+      <div>
+        <div class="univ-title">ATECHABAD TESTING SYSTEM</div>
+        <div class="univ-sub">Official Computer-Based Entrance Test (CBT) Score Report</div>
+        <div style="font-size: 0.82rem; color: #64748b; margin-top: 0.3rem;">Atechabad Portal &bull; atechabad.com/ats</div>
+      </div>
+      <div class="badge-stamp">
+        {{ attempt.pass_status }}
+      </div>
+    </div>
+
+    <!-- Candidate Info -->
+    <h3 style="margin-bottom: 0.75rem; color: #0b1727; font-size: 1.1rem;">Candidate & Examination Details</h3>
+    <table class="grid-table">
+      <tr>
+        <th>Candidate Name</th>
+        <td style="font-weight: 700;">{{ attempt.candidate_name }}</td>
+        <th>Roll Number</th>
+        <td style="font-family: 'JetBrains Mono', monospace; font-weight: 700;">{{ attempt.candidate_roll }}</td>
+      </tr>
+      <tr>
+        <th>Attempt ID</th>
+        <td style="font-family: 'JetBrains Mono', monospace; font-weight: 700;">#{{ attempt.id }}</td>
+        <th>Date & Time</th>
+        <td>{{ attempt.created_at }}</td>
+      </tr>
+      <tr>
+        <th>Final Grade</th>
+        <td><strong style="color: #2563eb;">Grade {{ attempt.grade }}</strong></td>
+        <th>Completion Time</th>
+        <td style="font-family: 'JetBrains Mono', monospace; font-weight: 700;">{{ format_time(attempt.time_taken_seconds) }}</td>
+      </tr>
+    </table>
+
+    <!-- Score Summary -->
+    <h3 style="margin-bottom: 0.75rem; color: #0b1727; font-size: 1.1rem;">Overall Score Summary</h3>
+    <table class="grid-table">
+      <thead>
+        <tr>
+          <th>Total Questions</th>
+          <th>Correct Answers</th>
+          <th>Wrong Answers</th>
+          <th>Skipped</th>
+          <th>Total Score</th>
+          <th>Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ attempt.max_score }}</td>
+          <td style="color: #059669; font-weight: 800;">{{ attempt.correct_count }}</td>
+          <td style="color: #dc2626; font-weight: 800;">{{ attempt.wrong_count }}</td>
+          <td style="color: #64748b;">{{ attempt.skipped_count }}</td>
+          <td style="font-weight: 800;">{{ attempt.total_score }} / {{ attempt.max_score }}</td>
+          <td style="font-weight: 900; color: #2563eb;">{{ attempt.percentage }}%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Sectional Breakdown -->
+    <h3 style="margin-bottom: 0.75rem; color: #0b1727; font-size: 1.1rem;">Subject Performance Breakdown</h3>
+    <table class="grid-table">
+      <thead>
+        <tr>
+          <th>Subject Section</th>
+          <th>Total Questions</th>
+          <th>Correct</th>
+          <th>Wrong</th>
+          <th>Skipped</th>
+          <th>Accuracy (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for sec, sdata in attempt.section_scores.items() %}
+        <tr>
+          <td style="font-weight: 700;">{{ sec }}</td>
+          <td>{{ sdata.total }}</td>
+          <td style="color: #059669; font-weight: 700;">{{ sdata.correct }}</td>
+          <td style="color: #dc2626; font-weight: 700;">{{ sdata.wrong }}</td>
+          <td>{{ sdata.skipped }}</td>
+          <td style="font-weight: 800; color: {% if sdata.percentage >= 50 %}#059669{% else %}#dc2626{% endif %};">
+            {{ sdata.percentage }}%
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <!-- Verification Footer -->
+    <div style="margin-top: 3.5rem; display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid #cbd5e1; padding-top: 1.5rem; font-size: 0.82rem; color: #64748b;">
+      <div>
+        <p>This is an official computer-generated CBT score transcript.</p>
+        <p style="font-family: 'JetBrains Mono', monospace; margin-top: 0.2rem;">System Security Hash: ATS-CBT-{{ attempt.id }}-{{ attempt.percentage }}</p>
+      </div>
+      <div style="text-align: right;">
+        <div style="border-bottom: 1px solid #0f172a; width: 180px; margin-bottom: 0.4rem;"></div>
+        <p style="font-weight: 800; color: #0b1727;">Atechabad Examination Board</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

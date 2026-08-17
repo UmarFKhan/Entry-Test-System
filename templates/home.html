@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard | Atechabad Testing System{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-card">
+  <div class="hero-text">
+    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.35); padding: 0.35rem 0.9rem; border-radius: var(--radius-full); font-size: 0.82rem; font-weight: 800; color: #38bdf8; margin-bottom: 1rem;">
+      🎓 Atechabad Testing System (ATS) 2026
+    </div>
+    <h2>Universities Entry Test & CBT Simulator</h2>
+    <p>Prepare for NUST (NET), FAST-NU, ECAT, MDCAT, NTS, GIKI, PIEAS, Bahria & Air University admission tests with authentic practice MCQs, custom test configurator, university guides, and detailed scorecards.</p>
+    <div class="hero-actions">
+      <a href="{{ url_for('instructions') }}" class="btn btn-primary" style="font-size: 1.05rem; padding: 0.85rem 2rem; font-weight: 800;">🚀 Start Full Exam (100 Q)</a>
+      <a href="{{ url_for('guides') }}" class="btn btn-secondary" style="font-size: 1.05rem; padding: 0.85rem 1.75rem; font-weight: 800; border-color: rgba(56,189,248,.4); color: #38bdf8;">📚 Test Guides & Patterns</a>
+      <a href="{{ url_for('practice') }}" class="btn btn-secondary" style="font-size: 1.05rem; padding: 0.85rem 1.75rem; font-weight: 800; border-color: rgba(56,189,248,.4); color: var(--brand-blue);">🎯 Custom Practice</a>
+      <a href="{{ url_for('madness') }}" class="btn" style="font-size: 1.05rem; padding: 0.85rem 1.75rem; font-weight: 800; background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); color: #fff; border: none; box-shadow: 0 4px 15px rgba(225,29,72,0.35);">🔥 Quiz Madness</a>
+      <button id="resumeTestBtn" class="btn btn-warning" style="display:none; font-size: 1.05rem; padding: 0.85rem 2rem; font-weight: 800;">🔄 Resume Active Exam</button>
+    </div>
+  </div>
+</div>
+
+<!-- High Score Quick Stats -->
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="val">{{ stats.total_attempts }}</div>
+    <div class="lbl">Total Test Attempts</div>
+  </div>
+  <div class="stat-card">
+    <div class="val" style="color: #059669;">{{ stats.top_percentage }}%</div>
+    <div class="lbl">Highest Score</div>
+  </div>
+  <div class="stat-card">
+    <div class="val" style="color: #2563eb;">{{ stats.avg_percentage }}%</div>
+    <div class="lbl">Average Accuracy</div>
+  </div>
+  <div class="stat-card">
+    <div class="val" style="color: #d97706;">{{ format_time(stats.best_time) }}</div>
+    <div class="lbl">Best Completion Time</div>
+  </div>
+</div>
+
+<!-- Recent Attempt History Card -->
+<div class="glass-panel" style="padding: 2rem; margin-top: 2rem;">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.5rem;">
+    <div>
+      <h3 style="font-size: 1.3rem;">📊 Recent Exam Attempts</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Saved locally in SQLite database</p>
+    </div>
+    {% if recent_attempts %}
+    <span class="section-badge">{{ recent_attempts|length }} Records Logged</span>
+    {% endif %}
+  </div>
+
+  {% if recent_attempts %}
+  <div style="overflow-x: auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>Attempt ID</th>
+          <th>Candidate Name</th>
+          <th>Score / Max</th>
+          <th>Percentage</th>
+          <th>Grade</th>
+          <th>Time Taken</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for a in recent_attempts %}
+        <tr>
+          <td style="font-weight: 800; font-family: 'JetBrains Mono', monospace; color: var(--brand-blue);">#{{ a.id }}</td>
+          <td style="font-weight: 700;">{{ a.candidate_name }}</td>
+          <td style="font-weight: 700;">{{ a.total_score }} / {{ a.max_score }}</td>
+          <td style="font-weight: 800; color: {% if a.pass_status == 'PASS' %}#059669{% else %}#dc2626{% endif %};">
+            {{ a.percentage }}%
+          </td>
+          <td>
+            <span class="section-badge" style="{% if a.pass_status == 'PASS' %}background: #d1fae5; color: #059669; border-color: #10b981;{% else %}background: #fee2e2; color: #dc2626; border-color: #fca5a5;{% endif %}">
+              Grade {{ a.grade }}
+            </span>
+          </td>
+          <td style="font-family: 'JetBrains Mono', monospace; font-weight: 700; color: var(--text-secondary);">{{ format_time(a.time_taken_seconds) }}</td>
+          <td>
+            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+              <a href="{{ url_for('result', attempt_id=a.id) }}" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.8rem;">Scorecard</a>
+              <a href="{{ url_for('review', attempt_id=a.id) }}" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.8rem;">Review</a>
+              <a href="{{ url_for('report', attempt_id=a.id) }}" class="btn btn-primary" style="padding: 0.35rem 0.75rem; font-size: 0.8rem;">Print Report</a>
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div style="text-align: center; padding: 3.5rem 1.5rem; color: var(--text-muted);">
+    <p style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-secondary); font-weight: 600;">No test attempts recorded yet.</p>
+    <a href="{{ url_for('instructions') }}" class="btn btn-primary">🚀 Take Your First CBT Test</a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/storage.js') }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedState = CBTStorage.getExamState();
+    const resumeBtn = document.getElementById('resumeTestBtn');
+    if (savedState && savedState.questionsLength) {
+      resumeBtn.style.display = 'inline-flex';
+      resumeBtn.addEventListener('click', () => {
+        window.location.href = "{{ url_for('exam') }}";
+      });
+    }
+  });
+</script>
+{% endblock %}

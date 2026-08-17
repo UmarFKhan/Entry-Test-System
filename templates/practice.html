@@ -1,0 +1,466 @@
+{% extends "base.html" %}
+{% block title %}Custom Practice | Atechabad Testing System{% endblock %}
+
+{% block extra_head %}
+<style>
+  /* ── Practice Page Styles ──────────────────────────── */
+  .practice-hero {
+    background: linear-gradient(135deg, #0b1727 0%, #1e293b 100%);
+    color: #fff;
+    padding: 2.5rem 3rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .practice-hero::after {
+    content: '';
+    position: absolute;
+    top: -50%; right: -10%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .practice-hero h2 { color: #fff; font-size: 2.1rem; margin-bottom: .4rem; letter-spacing: -0.02em; }
+  .practice-hero p  { color: #94a3b8; font-size: 1.05rem; max-width: 640px; }
+
+  .practice-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  /* ── Config Card ───────────────────────────────────── */
+  .config-card { padding: 2rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); }
+  .config-card h3 { margin-bottom: 1.4rem; font-size: 1.3rem; }
+
+  /* Section label above each config block */
+  .cfg-label {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    margin-bottom: .6rem;
+  }
+
+  /* Quick-template chips */
+  .template-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem;
+    margin-bottom: 1.5rem;
+  }
+  .chip {
+    padding: .45rem 1rem;
+    border-radius: var(--radius-full);
+    font-size: .85rem;
+    font-weight: 800;
+    cursor: pointer;
+    border: 1.5px solid var(--border-muted);
+    background: var(--bg-surface);
+    color: var(--text-secondary);
+    transition: all .18s ease;
+    user-select: none;
+  }
+  .chip:hover { border-color: var(--brand-blue); color: var(--brand-blue); transform: translateY(-1px); }
+  .chip.active {
+    background: var(--brand-blue);
+    color: #fff;
+    border-color: var(--brand-blue);
+    box-shadow: 0 4px 12px rgba(37,99,235,.25);
+  }
+
+  /* Question count input row */
+  .count-row {
+    display: flex;
+    align-items: center;
+    gap: .85rem;
+    margin-bottom: 1.5rem;
+  }
+  .count-row input[type="number"] {
+    width: 110px;
+    padding: .65rem .9rem;
+    border-radius: var(--radius-sm);
+    border: 1.5px solid var(--border-muted);
+    font-size: 1.15rem;
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-primary);
+    background: var(--bg-surface);
+    text-align: center;
+    transition: border-color .15s;
+    outline: none;
+  }
+  .count-row input[type="number"]:focus { border-color: var(--brand-blue); }
+  .count-info {
+    font-size: .88rem;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+  #autoTimeDisplay {
+    font-weight: 800;
+    color: var(--brand-blue);
+  }
+
+  /* Time override section */
+  .time-override {
+    background: #f8fafc;
+    border-radius: var(--radius-sm);
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-subtle);
+  }
+  .toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+  }
+  .toggle-label { font-weight: 700; font-size: .92rem; }
+
+  /* iOS-style toggle switch */
+  .toggle-switch { position: relative; width: 44px; height: 24px; }
+  .toggle-switch input { opacity: 0; width: 0; height: 0; }
+  .toggle-slider {
+    position: absolute; cursor: pointer;
+    inset: 0;
+    background: var(--border-muted);
+    border-radius: 24px;
+    transition: background .2s;
+  }
+  .toggle-slider::before {
+    content: '';
+    position: absolute;
+    width: 18px; height: 18px;
+    left: 3px; top: 3px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform .2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,.2);
+  }
+  .toggle-switch input:checked + .toggle-slider { background: var(--brand-blue); }
+  .toggle-switch input:checked + .toggle-slider::before { transform: translateX(20px); }
+
+  .time-slider-wrap { display: none; }
+  .time-slider-wrap.visible { display: block; }
+
+  input[type="range"].slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--border-muted);
+    outline: none;
+    margin: .6rem 0 .3rem;
+  }
+  input[type="range"].slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: var(--brand-blue);
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(37,99,235,.4);
+    transition: transform .15s;
+  }
+  input[type="range"].slider::-webkit-slider-thumb:hover { transform: scale(1.15); }
+  .slider-labels { display: flex; justify-content: space-between; font-size: .78rem; color: var(--text-muted); font-weight: 600; }
+
+  /* Section filter checkboxes */
+  .section-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem;
+    margin-bottom: 1.5rem;
+  }
+  .section-cb-label {
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+    padding: .45rem 0.9rem;
+    border-radius: var(--radius-full);
+    border: 1.5px solid var(--border-muted);
+    background: var(--bg-surface);
+    font-size: .88rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .18s;
+    user-select: none;
+  }
+  .section-cb-label input[type="checkbox"] { accent-color: var(--brand-blue); width: 16px; height: 16px; }
+  .section-cb-label:has(input:checked) {
+    border-color: var(--brand-blue);
+    background: #eff6ff;
+    color: var(--brand-blue);
+  }
+
+  /* Start button */
+  .start-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.05rem;
+    padding: 0.9rem;
+    font-weight: 800;
+    letter-spacing: .3px;
+    margin-top: .5rem;
+  }
+
+  /* ── Sidebar summary card ──────────────────────────── */
+  .summary-card { padding: 1.6rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); }
+  .summary-card h3 { font-size: 1.1rem; margin-bottom: 1.1rem; }
+
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: .65rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+    font-size: .92rem;
+  }
+  .summary-row:last-child { border-bottom: none; }
+  .summary-row .key { color: var(--text-muted); font-weight: 600; }
+  .summary-row .val { font-weight: 800; color: var(--brand-navy); }
+
+  /* Tips section */
+  .tip-card { padding: 1.25rem 1.4rem; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: var(--radius-md); margin-top: 1.25rem; }
+  .tip-card p { font-size: .85rem; color: #1e40af; margin-bottom: .4rem; line-height: 1.5; }
+  .tip-card p:last-child { margin-bottom: 0; }
+  .tip-card strong { color: #1d4ed8; }
+
+  @media (max-width: 900px) {
+    .practice-grid { grid-template-columns: 1fr; }
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Banner -->
+<div class="practice-hero">
+  <div style="display:inline-flex;align-items:center;gap:.5rem;background:rgba(56,189,248,.15);border:1px solid rgba(56,189,248,.35);padding:.3rem .85rem;border-radius:var(--radius-full);font-size:.82rem;font-weight:800;color:#38bdf8;margin-bottom:.9rem;">
+    🎯 Custom Practice Mode
+  </div>
+  <h2>Design Your Custom Test Session</h2>
+  <p>Customize your question pool, choose specific university test subjects, and adjust duration — or use our automated official exam ratio.</p>
+</div>
+
+<div class="practice-grid">
+  <!-- ─── LEFT: Configurator ─────────────────────── -->
+  <form class="glass-panel config-card" id="practiceForm" method="POST" action="{{ url_for('practice_start') }}">
+    <h3>⚙️ Configure Practice Exam</h3>
+
+    <!-- Candidate Full Name -->
+    <div class="cfg-label">Candidate Full Name</div>
+    <div style="margin-bottom: 1.5rem;">
+      <input type="text" id="candidateNameInput" name="candidate_name" value="Candidate Name" placeholder="Enter your full name..." style="width: 100%; padding: 0.65rem 0.9rem; border-radius: var(--radius-sm); border: 1.5px solid var(--border-muted); font-size: 1rem; font-weight: 700; color: var(--text-primary); background: var(--bg-surface); outline: none; transition: border-color .15s;" onfocus="this.style.borderColor='var(--brand-blue)'" onblur="this.style.borderColor='var(--border-muted)'" />
+    </div>
+
+    <!-- Quick Templates -->
+    <div class="cfg-label">Quick Presets</div>
+    <div class="template-chips">
+      <div class="chip" data-q="10" data-t="12">Quick 10</div>
+      <div class="chip" data-q="20" data-t="24">Sprint 20</div>
+      <div class="chip" data-q="50" data-t="60">Half Exam 50</div>
+      <div class="chip" data-q="75" data-t="90">Mock 75</div>
+      <div class="chip active" data-q="100" data-t="120">Full Exam 100 ✅</div>
+    </div>
+
+    <!-- Custom Count -->
+    <div class="cfg-label">Number of Questions</div>
+    <div class="count-row">
+      <input type="number" id="numQuestionsInput" name="num_questions" value="100" min="1" max="{{ total_available }}" />
+      <div class="count-info">
+        Auto time: <span id="autoTimeDisplay">120 min</span> &nbsp;|&nbsp; Available: <strong>{{ total_available }}</strong>
+      </div>
+    </div>
+
+    <!-- Time Override Toggle -->
+    <div class="cfg-label">Time Limit Override</div>
+    <div class="time-override">
+      <div class="toggle-row">
+        <span class="toggle-label">🕐 Set Custom Time Limit</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="customTimeToggle">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <div class="time-slider-wrap" id="timeSliderWrap">
+        <input type="range" class="slider" id="timeSlider" min="1" max="180" value="120" step="1">
+        <div class="slider-labels">
+          <span>1 min</span>
+          <span id="sliderVal" style="color:var(--brand-blue);font-weight:800;font-size:.92rem;">120 min</span>
+          <span>180 min</span>
+        </div>
+      </div>
+      <!-- Hidden field: submitted when toggle is on -->
+      <input type="hidden" name="custom_time" id="customTimeHidden" value="">
+    </div>
+
+    <!-- Subject Filters -->
+    <div class="cfg-label">Filter by Subject <span style="font-weight:500;color:var(--text-muted);">(leave unchecked for all)</span></div>
+    <div class="section-filters">
+      {% for section in sections %}
+      <label class="section-cb-label">
+        <input type="checkbox" name="sections" value="{{ section }}"> {{ section }}
+      </label>
+      {% endfor %}
+    </div>
+
+    <button type="submit" class="btn btn-primary start-btn">🚀 Start Practice Session</button>
+  </form>
+
+  <!-- ─── RIGHT: Live Summary Sidebar ───────────────── -->
+  <div>
+    <div class="glass-panel summary-card">
+      <h3>📋 Session Summary</h3>
+
+      <div class="summary-row">
+        <span class="key">Candidate</span>
+        <span class="val" id="sumCandidate">Candidate Name</span>
+      </div>
+      <div class="summary-row">
+        <span class="key">Questions</span>
+        <span class="val" id="sumQ">100</span>
+      </div>
+      <div class="summary-row">
+        <span class="key">Time Limit</span>
+        <span class="val" id="sumTime">120 min</span>
+      </div>
+      <div class="summary-row">
+        <span class="key">Pacing Rate</span>
+        <span class="val" id="sumPerQ">72 sec / Q</span>
+      </div>
+      <div class="summary-row">
+        <span class="key">Selected Subjects</span>
+        <span class="val" id="sumSections">All</span>
+      </div>
+      <div class="summary-row">
+        <span class="key">Analytics Status</span>
+        <span class="val" style="color:#059669;">Full Scorecard Saved</span>
+      </div>
+    </div>
+
+    <div class="tip-card">
+      <p><strong>💡 Pro Tip:</strong> Standard university entrance exam pacing is <strong>1.2 minutes per question</strong> (120 mins for 100 MCQs).</p>
+      <p>Enable <strong>Custom Time</strong> to simulate extra time pressure or allow extended practice sessions.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  const DEFAULT_FULL_Q   = {{ total_available }};
+  const DEFAULT_FULL_MIN = {{ default_time }};
+
+  const nameInput     = document.getElementById('candidateNameInput');
+  const qInput        = document.getElementById('numQuestionsInput');
+  const autoTimeDisp  = document.getElementById('autoTimeDisplay');
+  const toggleEl      = document.getElementById('customTimeToggle');
+  const sliderWrap    = document.getElementById('timeSliderWrap');
+  const timeSlider    = document.getElementById('timeSlider');
+  const sliderValDisp = document.getElementById('sliderVal');
+  const hiddenTime    = document.getElementById('customTimeHidden');
+  const chips         = document.querySelectorAll('.chip');
+
+  // Summary elements
+  const sumCandidate = document.getElementById('sumCandidate');
+  const sumQ         = document.getElementById('sumQ');
+  const sumTime      = document.getElementById('sumTime');
+  const sumPerQ      = document.getElementById('sumPerQ');
+  const sumSections  = document.getElementById('sumSections');
+
+  // Load saved candidate name if present
+  const savedName = sessionStorage.getItem('ats_candidate_name') || sessionStorage.getItem('bu_candidate_name');
+  if (savedName && nameInput) {
+    nameInput.value = savedName;
+  }
+
+  function calcAutoMinutes(n) {
+    return Math.max(1, Math.round((n / DEFAULT_FULL_Q) * DEFAULT_FULL_MIN));
+  }
+
+  function getActiveTimeMinutes() {
+    if (toggleEl.checked) return parseInt(timeSlider.value);
+    return calcAutoMinutes(parseInt(qInput.value) || 1);
+  }
+
+  function updateSummary() {
+    const n = parseInt(qInput.value) || 0;
+    const t = getActiveTimeMinutes();
+    const perQ = n > 0 ? Math.round((t * 60) / n) : 0;
+
+    if (sumCandidate && nameInput) {
+      sumCandidate.textContent = nameInput.value.trim() || 'Candidate Name';
+    }
+    sumQ.textContent     = n;
+    sumTime.textContent  = t + ' min';
+    sumPerQ.textContent  = perQ + ' sec / Q';
+
+    const checked = [...document.querySelectorAll('input[name="sections"]:checked')].map(c => c.value);
+    sumSections.textContent = checked.length ? checked.join(', ') : 'All';
+  }
+
+  function updateAutoTimeLabel() {
+    const n = parseInt(qInput.value) || 1;
+    const mins = calcAutoMinutes(n);
+    autoTimeDisp.textContent = mins + ' min';
+    updateSummary();
+  }
+
+  if (nameInput) {
+    nameInput.addEventListener('input', updateSummary);
+  }
+
+  document.getElementById('practiceForm').addEventListener('submit', () => {
+    const val = nameInput ? (nameInput.value.trim() || 'Candidate Name') : 'Candidate Name';
+    sessionStorage.setItem('ats_candidate_name', val);
+    CBTStorage.clearExamState();
+  });
+
+  // Chip click handlers
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      const q = parseInt(chip.dataset.q);
+      const t = parseInt(chip.dataset.t);
+      qInput.value = q;
+      timeSlider.value = t;
+      sliderValDisp.textContent = t + ' min';
+      updateAutoTimeLabel();
+    });
+  });
+
+  qInput.addEventListener('input', () => {
+    chips.forEach(c => c.classList.remove('active'));
+    updateAutoTimeLabel();
+  });
+
+  toggleEl.addEventListener('change', () => {
+    if (toggleEl.checked) {
+      sliderWrap.classList.add('visible');
+      hiddenTime.value = timeSlider.value;
+    } else {
+      sliderWrap.classList.remove('visible');
+      hiddenTime.value = '';
+    }
+    updateSummary();
+  });
+
+  timeSlider.addEventListener('input', () => {
+    sliderValDisp.textContent = timeSlider.value + ' min';
+    hiddenTime.value = timeSlider.value;
+    updateSummary();
+  });
+
+  document.querySelectorAll('input[name="sections"]').forEach(cb => {
+    cb.addEventListener('change', updateSummary);
+  });
+
+  updateAutoTimeLabel();
+</script>
+{% endblock %}
