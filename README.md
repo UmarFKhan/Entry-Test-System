@@ -1,92 +1,92 @@
-# Atechabad Testing System (ATS)
+# 🎓 Entry Test Simulator for Bahria & Islamic University (IIUI)
 
-Atechabad Testing System (ATS) is a premier, feature-rich Computer-Based Testing (CBT) portal & University Entry Test preparation platform. Built with **Flask**, **SQLite**, **Phusion Passenger WSGI**, and modern **vanilla CSS3/JavaScript** with **Chart.js** integration.
+Welcome to the **Entry Test Simulator**, a comprehensive Computer-Based Testing (CBT) preparation platform designed specifically for students aiming to secure admission into undergraduate programs at **Bahria University** and **International Islamic University Islamabad (IIUI)**.
+
+This feature-rich application provides highly accurate testing simulations, detailed guides, and powerful analytics to help you conquer the admission tests.
+
+**🌐 Try it Online Now:** [www.atechabad.com/ats/](https://www.atechabad.com/ats/)
+
+---
+
+## 📸 Platform Layout
+
+Here is a glimpse of what the simulator looks like:
+
+### Dashboard & Analytics
+![Layout 1](static/img/1.png)
+
+### Custom Practice & CBT Mode
+![Layout 2](static/img/2.png)
 
 ---
 
 ## 🌟 Key Features
 
-1. **University Entry Test Guides**:
-   - Comprehensive test pattern, subject weightage, time breakdown, and strategy guides for **NUST (NET)**, **FAST-NU**, **ECAT (UET)**, **MDCAT**, **NTS (NAT/GAT)**, **GIKI**, **PIEAS**, **Bahria**, and **Air University**.
+### 1. 🏛️ Dedicated University Guides
+- Comprehensive details on test patterns, subject weightage, time breakdowns, and strategies.
+- Fully up-to-date admission timelines, fee structures, and transfer policies for **Bahria University** and **International Islamic University Islamabad (IIUI)**.
 
-2. **Multiple Testing Modes**:
-   - **Full CBT Exam Simulator**: 100 MCQs, 120 Minutes official format.
-   - **Custom Practice Mode**: Pick question count, set time limit override, and filter by subject sections.
-   - **Quiz Madness Mode**: Unlimited exhaustive testing across 100% of question banks with **zero repeats**.
+### 2. 🎯 Custom Test Practices
+Tailor your preparation to focus on your weak areas using our robust **Custom Practice Mode**:
+- **Subject-Specific Filters**: Choose exactly which subjects you want to practice (e.g., only Mathematics and Physics).
+- **Custom Question Counts**: Define how many questions you want to attempt per session.
+- **Adjustable Time Limits**: Override the standard time limits to challenge your speed and accuracy.
+- **Randomization Engine**: Questions and options are shuffled dynamically every time, ensuring a fresh test experience.
 
-3. **cPanel Phusion Passenger Ready**:
-   - Built-in `passenger_wsgi.py` entry point.
-   - Designed for subpath hosting e.g., `atechabad.com/ats` or standalone root.
+### 3. 🚀 Multiple Testing Modes
+- **Full CBT Exam Simulator**: Experience the real deal with a 100-MCQ, 120-Minute test matching the official format of BUET and IIUI entry tests.
+- **Quiz Madness Mode**: An exhaustive, unlimited testing mode covering the entire question bank across all subjects with **zero repeats**—perfect for final revision marathons.
 
-4. **Rich Analytics & Official Transcripts**:
-   - Chart.js Visualizations (Accuracy breakdown, Subject section performance, Historical progression).
-   - Detailed Question Review with step-by-step explanations.
-   - Official Printable Score Transcripts (`/report/<id>`).
-
----
-
-## 🌐 cPanel Deployment Configuration
-
-In your cPanel **Setup Python App** section, set the following parameters matching your server setup:
-
-| Setting | Value |
-| :--- | :--- |
-| **Python Version** | `3.11` (or 3.10+) |
-| **Application Root** | `atechabad/testingsystem` |
-| **Application URL** | `atechabad.com/ats` |
-| **Application Startup File** | `passenger_wsgi.py` |
-| **Application Entry Point** | `app` |
-| **Environment Variable** | `SECRET_KEY` = `atechabad-super-secret-key-2025` |
+### 4. 📊 Rich Analytics & Official Transcripts
+- **Performance Visualizations**: Track your accuracy breakdowns, subject-wise section performance, and historical progression.
+- **Detailed Question Review**: Step-by-step explanations for every question to help you learn from mistakes.
+- **Official Printable Scorecards**: Generate and save printable transcripts (`/report/<id>`) of your mock attempts.
 
 ---
 
 ## 📂 Directory Structure
 
 ```text
-atechabad/testingsystem/
-│
-├── app.py                  # Flask Application Controller
-├── passenger_wsgi.py       # cPanel Phusion Passenger WSGI Entry Point
-├── config.py               # App Configuration & Environment Settings
-├── question_loader.py      # Question Loader & Randomizer
-├── exam_engine.py          # Exam Logic & Evaluation Engine
-├── result_engine.py        # Analytics & Metrics Engine
-├── storage.py              # SQLite Database Layer
-├── requirements.txt        # Python Dependencies
-├── README.md               # Quick Start Guide
-│
-├── questions/              # Question Banks (JSON)
+/
+├── app.py                  # Main Flask Application Controller (Routes, DB Engine, Logic)
+├── questions/              # Question Banks (JSON format)
 │   ├── english.json
 │   ├── maths.json
 │   ├── physics.json
 │   ├── analytical.json
 │   ├── gk.json
 │   └── computer.json
-│
 ├── static/
-│   ├── css/
-│   │   ├── style.css       # Primary Light Theme & Glassmorphism
-│   │   └── dark.css        # Dark Mode Overrides
-│   ├── js/
-│   │   ├── app.js          # Core Exam Client & Hotkeys
-│   │   ├── timer.js        # Countdown & Storage Timer
-│   │   ├── storage.js      # LocalStorage Manager
-│   │   ├── randomizer.js   # Question & Option Shuffler
-│   │   ├── charts.js       # Chart.js Visualizer
-│   │   └── review.js       # Review Filter Logic
-│
-├── templates/
-│   ├── base.html           # Base Layout & Header Nav
-│   ├── home.html           # Dashboard
-│   ├── guides.html         # University Entry Test Guides
-│   ├── instructions.html   # Exam Instructions
+│   ├── css/                # Styling (Primary Light Theme, Glassmorphism, Dark Mode)
+│   ├── js/                 # Client-side Logic (Timers, Randomizer, Chart.js)
+│   └── img/                # Assets and Layout Previews
+├── templates/              # HTML Templates (Jinja2)
+│   ├── home.html           # Main Dashboard
 │   ├── exam.html           # CBT Test Interface
 │   ├── practice.html       # Custom Practice Configurator
-│   ├── madness.html        # Quiz Madness Mode
-│   ├── result.html         # Scorecard & Analytics Dashboard
-│   ├── review.html         # Answer Review
-│   └── report.html         # Official Score Transcript
-│
+│   └── ...                 # Additional layout files
 └── database/
-    └── scores.db           # SQLite Database Store
+    └── scores.db           # SQLite Database Store for historical test records
 ```
+
+---
+
+## 🛠️ How to Run Locally
+
+To start practicing right away on your own machine:
+
+1. **Install Python**: Ensure you have Python 3.10 or higher installed.
+2. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run the Application**:
+   ```bash
+   python app.py
+   ```
+4. **Access the Portal**:
+   Open your browser and navigate to `http://127.0.0.1:5000/`.
+
+---
+
+*Best of luck with your entry test preparation! Go ace those exams!* 🚀
