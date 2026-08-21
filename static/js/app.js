@@ -1,66 +1,70 @@
 /* ==========================================================================
-   Atechabad Testing System (ATS) - Main Client App Logic (Auto-Submit on Exit)
+   Atechabad Testing System (ATS) - Enterprise CBT Client Engine
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
   if (!window.EXAM_QUESTIONS || window.EXAM_QUESTIONS.length === 0) return;
 
-  // Clear any existing stored exam states - tests cannot be resumed
+  // Clear any leftover stored state - fresh non-resumable exam session
   CBTStorage.clearExamState();
 
-  let questions = window.EXAM_QUESTIONS;
-  let currentIndex = 0;
-  let userAnswers = {}; // q_id -> selected option text
-  let flaggedQuestions = new Set(); // q_id set
+  const allQuestions = window.EXAM_QUESTIONS;
+  let activeFilterSection = 'all';
+  let filteredIndices = allQuestions.map((_, i) => i);
+  let currentIndex = 0; // index in allQuestions
+  
+  let userAnswers = {}; // q_id -> option text
+  let reviewedQuestions = new Set(); // q_id set for "Marked for Review"
+  let visitedQuestions = new Set([0]); // indices visited
   let timerInstance = null;
   let isSubmitted = false;
-  let candidateName = sessionStorage.getItem('ats_candidate_name') || sessionStorage.getItem('bu_candidate_name') || 'Candidate Name';
 
-  // Sound Synthesizer (Web Audio API)
+  let candidateName = sessionStorage.getItem('ats_candidate_name') || sessionStorage.getItem('bu_candidate_name') || 'Candidate Name';
+  const candidateNameInput = document.getElementById('candidateNameInput');
+  if (candidateNameInput && candidateNameInput.value) {
+    candidateName = candidateNameInput.value.trim();
+  }
+
+  // Audio Synthesizer for feedback
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   function playSound(type) {
     if (window.CBT_SOUND_MUTED) return;
     try {
-      if (audioCtx.state === 'suspended') {
-        audioCtx.resume();
-      }
+      if (audioCtx.state === 'suspended') audioCtx.resume();
       const osc = audioCtx.createOscillator();
       const gain = audioCtx.createGain();
       osc.connect(gain);
       gain.connect(audioCtx.destination);
-
       const now = audioCtx.currentTime;
 
       if (type === 'select') {
         osc.type = 'sine';
+        osc.frequency.setValueAtTime(523.25, now);
+        osc.frequency.exponentialRampToValueAtTime(659.25, now + 0.06);
+        gain.gain.setValueAtTime(0.08, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.06);
+        osc.start(now);
+        osc.stop(now + 0.06);
+      } else if (type === 'review') {
+        osc.type = 'triangle';
         osc.frequency.setValueAtTime(440, now);
-        osc.frequency.exponentialRampToValueAtTime(880, now + 0.08);
-        gain.gain.setValueAtTime(0.12, now);
+        osc.frequency.setValueAtTime(880, now + 0.08);
+        gain.gain.setValueAtTime(0.1, now);
         gain.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
         osc.start(now);
         osc.stop(now + 0.08);
-      } else if (type === 'flag') {
-        osc.type = 'triangle';
-        osc.frequency.setValueAtTime(587.33, now);
-        osc.frequency.setValueAtTime(880, now + 0.06);
-        gain.gain.setValueAtTime(0.15, now);
-        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.12);
-        osc.start(now);
-        osc.stop(now + 0.12);
       } else if (type === 'nav') {
         osc.type = 'sine';
-        osc.frequency.setValueAtTime(300, now);
-        gain.gain.setValueAtTime(0.08, now);
-        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.05);
+        osc.frequency.setValueAtTime(350, now);
+        gain.gain.setValueAtTime(0.05, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.04);
         osc.start(now);
-        osc.stop(now + 0.05);
+        osc.stop(now + 0.04);
       }
-    } catch (e) {
-      console.log('Audio playback error:', e);
-    }
+    } catch (e) {}
   }
 
-  // DOM Elements
+  // DOM References
   const qSectionBadge = document.getElementById('qSectionBadge');
   const qSeqNum = document.getElementById('qSeqNum');
   const qSeqNumHeader = document.getElementById('qSeqNumHeader');
@@ -70,27 +74,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const optionsList = document.getElementById('optionsList');
   const paletteGrid = document.getElementById('paletteGrid');
   const timerDisplay = document.getElementById('timerDisplay');
-  const candidateNameInput = document.getElementById('candidateNameInput');
   const progressFillBar = document.getElementById('progressFillBar');
   const answeredCounterBadge = document.getElementById('answeredCounterBadge');
   const paletteSummaryText = document.getElementById('paletteSummaryText');
+
   const statAns = document.getElementById('statAns');
-  const statFlag = document.getElementById('statFlag');
+  const statReview = document.getElementById('statReview');
   const statUnans = document.getElementById('statUnans');
+  const statNotVisited = document.getElementById('statNotVisited');
 
   const btnPrev = document.getElementById('btnPrev');
   const btnNext = document.getElementById('btnNext');
-  const btnFlag = document.getElementById('btnFlag');
+  const btnMarkReview = document.getElementById('btnMarkReview');
+  const markReviewText = document.getElementById('markReviewText');
+  const btnClearResponse = document.getElementById('btnClearResponse');
   const btnSubmit = document.getElementById('btnSubmit');
 
-  const examDurationMinutes = window.EXAM_DURATION_MINUTES || 120;
-  let initialRemaining = examDurationMinutes * 60;
+  const sectionTabsContainer = document.getElementById('sectionTabsContainer');
 
-  if (candidateNameInput) {
-    candidateNameInput.value = candidateName;
+  // Count sections for tabs
+  function updateSectionCounts() {
+    const counts = { all: allQuestions.length, english: 0, maths: 0, physics: 0, computer: 0, analytical: 0 };
+    allQuestions.forEach(q => {
+      const s = (q.subject || q.section || '').toLowerCase();
+      if (s.includes('eng')) counts.english++;
+      else if (s.includes('math')) counts.maths++;
+      else if (s.includes('phys')) counts.physics++;
+      else if (s.includes('comp') || s.includes('cs')) counts.computer++;
+      else if (s.includes('ana') || s.includes('intel') || s.includes('logic')) counts.analytical++;
+    });
+
+    const setTabCount = (id, count) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = count;
+    };
+    setTabCount('countTabAll', counts.all);
+    setTabCount('countTabEnglish', counts.english);
+    setTabCount('countTabMaths', counts.maths);
+    setTabCount('countTabPhysics', counts.physics);
+    setTabCount('countTabComputer', counts.computer);
+    setTabCount('countTabAnalytical', counts.analytical);
   }
+  updateSectionCounts();
 
-  // Initialize Timer
+  // Initialize Countdown Timer
+  const examDurationMinutes = window.EXAM_DURATION_MINUTES || 120;
   timerInstance = new CBTTimer(
     examDurationMinutes,
     (remaining, formatted) => {
@@ -104,157 +132,219 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     },
     () => {
-      alert("Time is up! Your exam will now be automatically submitted.");
+      alert("Time is up! Your responses will now be automatically submitted for evaluation.");
       submitExam();
     }
   );
-  timerInstance.start(initialRemaining);
+  timerInstance.start(examDurationMinutes * 60);
 
+  // Render Current Question
   function renderQuestion(index) {
     currentIndex = index;
-    const q = questions[currentIndex];
+    visitedQuestions.add(currentIndex);
+    const q = allQuestions[currentIndex];
     const qId = String(q.id);
 
-    // Update Header Text & Sequence Numbers
-    if (qSectionBadge) qSectionBadge.textContent = q.section || 'General';
+    if (qSectionBadge) qSectionBadge.textContent = q.subject || q.section || 'General';
     if (qSeqNum) qSeqNum.textContent = currentIndex + 1;
     if (qSeqNumHeader) qSeqNumHeader.textContent = currentIndex + 1;
-    if (qTotalCount) qTotalCount.textContent = questions.length;
+    if (qTotalCount) qTotalCount.textContent = allQuestions.length;
 
-    // Difficulty Badge
     if (qDiffBadge) {
-      qDiffBadge.textContent = q.difficulty || 'Medium';
-      qDiffBadge.className = `q-diff-badge q-diff-${q.difficulty || 'Medium'}`;
+      const diff = q.difficulty || 'Medium';
+      qDiffBadge.textContent = diff;
+      qDiffBadge.className = `q-diff-badge q-diff-${diff}`;
     }
 
-    // Question Text
     if (qText) qText.textContent = q.question;
 
-    // Options List
+    // Render Radio Option Selectors
     if (optionsList) {
       optionsList.innerHTML = '';
       const selectedOpt = userAnswers[qId];
-      const optPrefixes = ['A', 'B', 'C', 'D', 'E'];
+      const optLetters = ['A', 'B', 'C', 'D', 'E'];
 
-      q.options.forEach((optText, idx) => {
+      q.options.forEach((optText, optIdx) => {
         const isSelected = selectedOpt === optText;
-        const prefix = optPrefixes[idx] || String(idx + 1);
+        const letter = optLetters[optIdx] || String(optIdx + 1);
 
-        const optDiv = document.createElement('div');
-        optDiv.className = `option-item ${isSelected ? 'selected' : ''}`;
-        optDiv.dataset.optionText = optText;
+        const row = document.createElement('div');
+        row.className = `cbt-option-row ${isSelected ? 'selected' : ''}`;
+        row.dataset.optionText = optText;
 
-        optDiv.innerHTML = `
-          <div class="opt-left">
-            <div class="opt-prefix">${prefix}</div>
-            <div class="opt-text">${optText}</div>
+        row.innerHTML = `
+          <div class="cbt-opt-left">
+            <div class="cbt-opt-letter">${letter}</div>
+            <div class="cbt-opt-text">${optText}</div>
           </div>
-          <div class="opt-key-hint">
-            <kbd class="kbd" style="border: none; background: transparent; font-size: 0.75rem; color: inherit;">Key ${idx + 1}</kbd>
+          <div>
+            <kbd class="kbd">Key ${optIdx + 1}</kbd>
           </div>
         `;
 
-        optDiv.addEventListener('click', () => {
+        row.addEventListener('click', () => {
           selectOption(qId, optText);
         });
 
-        optionsList.appendChild(optDiv);
+        optionsList.appendChild(row);
       });
     }
 
-    // Update Flag Button State
-    if (btnFlag) {
-      if (flaggedQuestions.has(qId)) {
-        btnFlag.innerHTML = `
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
-          <span>Flagged</span>
-        `;
-        btnFlag.className = 'btn btn-warning';
+    // Update Mark for Review button state
+    if (btnMarkReview) {
+      const isReview = reviewedQuestions.has(qId);
+      if (isReview) {
+        btnMarkReview.classList.add('active-review');
+        if (markReviewText) markReviewText.textContent = 'Marked for Review';
       } else {
-        btnFlag.innerHTML = `
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
-          <span>Flag Question</span>
-        `;
-        btnFlag.className = 'btn btn-secondary';
+        btnMarkReview.classList.remove('active-review');
+        if (markReviewText) markReviewText.textContent = 'Mark for Review';
       }
     }
 
-    // Prev/Next disable logic
+    // Navigation buttons state
     if (btnPrev) btnPrev.disabled = currentIndex === 0;
-    if (btnNext) btnNext.disabled = currentIndex === questions.length - 1;
+    if (btnNext) {
+      if (currentIndex === allQuestions.length - 1) {
+        btnNext.innerHTML = `<span>Review End</span>`;
+      } else {
+        btnNext.innerHTML = `<span>Save & Next</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"></polyline></svg>`;
+      }
+    }
 
     renderPalette();
   }
 
-  function selectOption(qId, optionText) {
+  function selectOption(qId, optText) {
     playSound('select');
-    if (userAnswers[qId] === optionText) {
+    if (userAnswers[qId] === optText) {
       delete userAnswers[qId];
     } else {
-      userAnswers[qId] = optionText;
+      userAnswers[qId] = optText;
     }
     renderQuestion(currentIndex);
   }
 
+  // Render Status Matrix Palette
   function renderPalette() {
     if (!paletteGrid) return;
     paletteGrid.innerHTML = '';
 
     const answeredCount = Object.keys(userAnswers).length;
-    const flaggedCount = flaggedQuestions.size;
-    const totalCount = questions.length;
+    const reviewCount = reviewedQuestions.size;
+    const totalCount = allQuestions.length;
     const unansweredCount = totalCount - answeredCount;
-    const percent = Math.round((answeredCount / totalCount) * 100);
+    const notVisitedCount = totalCount - visitedQuestions.size;
+    const pct = Math.round((answeredCount / totalCount) * 100);
 
-    // Update Live Counters
-    if (progressFillBar) progressFillBar.style.width = `${percent}%`;
+    if (progressFillBar) progressFillBar.style.width = `${pct}%`;
     if (answeredCounterBadge) {
-      answeredCounterBadge.innerHTML = `<span class="badge-dot"></span> ${answeredCount} / ${totalCount} Answered (${percent}%)`;
+      answeredCounterBadge.innerHTML = `<span class="badge-dot"></span> ${answeredCount} / ${totalCount} Answered (${pct}%)`;
     }
-    if (paletteSummaryText) paletteSummaryText.textContent = `${answeredCount}/${totalCount} Done`;
-    if (statAns) statAns.textContent = answeredCount;
-    if (statFlag) statFlag.textContent = flaggedCount;
-    if (statUnans) statUnans.textContent = unansweredCount;
+    if (paletteSummaryText) paletteSummaryText.textContent = `${answeredCount}/${totalCount} Answered`;
 
-    questions.forEach((q, idx) => {
+    if (statAns) statAns.textContent = answeredCount;
+    if (statReview) statReview.textContent = reviewCount;
+    if (statUnans) statUnans.textContent = unansweredCount;
+    if (statNotVisited) statNotVisited.textContent = notVisitedCount;
+
+    allQuestions.forEach((q, idx) => {
+      // Check if filtered by section tab
+      if (activeFilterSection !== 'all') {
+        const s = (q.subject || q.section || '').toLowerCase();
+        let match = false;
+        if (activeFilterSection === 'english' && s.includes('eng')) match = true;
+        else if (activeFilterSection === 'maths' && s.includes('math')) match = true;
+        else if (activeFilterSection === 'physics' && s.includes('phys')) match = true;
+        else if (activeFilterSection === 'computer' && (s.includes('comp') || s.includes('cs'))) match = true;
+        else if (activeFilterSection === 'analytical' && (s.includes('ana') || s.includes('logic') || s.includes('intel'))) match = true;
+        if (!match) return;
+      }
+
       const qId = String(q.id);
       const isCurrent = idx === currentIndex;
       const isAnswered = !!userAnswers[qId];
-      const isFlagged = flaggedQuestions.has(qId);
+      const isReview = reviewedQuestions.has(qId);
+      const isVisited = visitedQuestions.has(idx);
 
-      const pBtn = document.createElement('button');
-      pBtn.className = 'p-btn';
-      pBtn.textContent = idx + 1;
-      pBtn.setAttribute('aria-label', `Question ${idx + 1}`);
+      const node = document.createElement('button');
+      node.className = 'cbt-q-node';
+      node.textContent = idx + 1;
+      node.setAttribute('aria-label', `Question ${idx + 1}`);
 
-      if (isCurrent) {
-        pBtn.classList.add('current');
-      } else if (isFlagged) {
-        pBtn.classList.add('flagged');
+      if (isReview) {
+        node.classList.add('marked-review');
       } else if (isAnswered) {
-        pBtn.classList.add('answered');
+        node.classList.add('answered');
+      } else if (isVisited) {
+        node.classList.add('unanswered');
       }
 
-      pBtn.addEventListener('click', () => {
+      if (isCurrent) {
+        node.classList.add('current');
+      }
+
+      node.addEventListener('click', () => {
         playSound('nav');
         renderQuestion(idx);
       });
 
-      paletteGrid.appendChild(pBtn);
+      paletteGrid.appendChild(node);
     });
   }
 
-  // Flag button handler
-  if (btnFlag) {
-    btnFlag.addEventListener('click', () => {
-      playSound('flag');
-      const qId = String(questions[currentIndex].id);
-      if (flaggedQuestions.has(qId)) {
-        flaggedQuestions.delete(qId);
+  // Section Tabs Switching
+  if (sectionTabsContainer) {
+    const tabBtns = sectionTabsContainer.querySelectorAll('.cbt-tab-btn');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilterSection = btn.dataset.section || 'all';
+
+        // If current question is outside active tab, jump to first matching question
+        if (activeFilterSection !== 'all') {
+          const matchIdx = allQuestions.findIndex(q => {
+            const s = (q.subject || q.section || '').toLowerCase();
+            if (activeFilterSection === 'english' && s.includes('eng')) return true;
+            if (activeFilterSection === 'maths' && s.includes('math')) return true;
+            if (activeFilterSection === 'physics' && s.includes('phys')) return true;
+            if (activeFilterSection === 'computer' && (s.includes('comp') || s.includes('cs'))) return true;
+            if (activeFilterSection === 'analytical' && (s.includes('ana') || s.includes('logic') || s.includes('intel'))) return true;
+            return false;
+          });
+          if (matchIdx !== -1) {
+            renderQuestion(matchIdx);
+            return;
+          }
+        }
+        renderPalette();
+      });
+    });
+  }
+
+  // Mark for Review action
+  if (btnMarkReview) {
+    btnMarkReview.addEventListener('click', () => {
+      playSound('review');
+      const qId = String(allQuestions[currentIndex].id);
+      if (reviewedQuestions.has(qId)) {
+        reviewedQuestions.delete(qId);
       } else {
-        flaggedQuestions.add(qId);
+        reviewedQuestions.add(qId);
       }
       renderQuestion(currentIndex);
+    });
+  }
+
+  // Clear Response action
+  if (btnClearResponse) {
+    btnClearResponse.addEventListener('click', () => {
+      const qId = String(allQuestions[currentIndex].id);
+      if (userAnswers[qId]) {
+        delete userAnswers[qId];
+        renderQuestion(currentIndex);
+      }
     });
   }
 
@@ -269,30 +359,34 @@ document.addEventListener('DOMContentLoaded', () => {
   if (btnNext) {
     btnNext.addEventListener('click', () => {
       playSound('nav');
-      if (currentIndex < questions.length - 1) renderQuestion(currentIndex + 1);
+      if (currentIndex < allQuestions.length - 1) {
+        renderQuestion(currentIndex + 1);
+      } else {
+        openSubmitModal();
+      }
     });
   }
 
-  // Submit modal elements
+  // Modal Actions
   const submitModal = document.getElementById('submitModal');
   const modalAnsCount = document.getElementById('modalAnsCount');
   const modalTotalCount = document.getElementById('modalTotalCount');
+  const modalReviewCount = document.getElementById('modalReviewCount');
   const modalUnansCount = document.getElementById('modalUnansCount');
-  const modalFlagCount = document.getElementById('modalFlagCount');
   const modalTimeLeft = document.getElementById('modalTimeLeft');
   const btnCancelSubmit = document.getElementById('btnCancelSubmit');
   const btnConfirmSubmit = document.getElementById('btnConfirmSubmit');
 
   function openSubmitModal() {
     const answeredCount = Object.keys(userAnswers).length;
-    const totalCount = questions.length;
+    const totalCount = allQuestions.length;
     const unansweredCount = totalCount - answeredCount;
-    const flaggedCount = flaggedQuestions.size;
+    const reviewCount = reviewedQuestions.size;
 
     if (modalAnsCount) modalAnsCount.textContent = answeredCount;
     if (modalTotalCount) modalTotalCount.textContent = totalCount;
+    if (modalReviewCount) modalReviewCount.textContent = reviewCount;
     if (modalUnansCount) modalUnansCount.textContent = unansweredCount;
-    if (modalFlagCount) modalFlagCount.textContent = flaggedCount;
     if (modalTimeLeft) modalTimeLeft.textContent = timerDisplay ? timerDisplay.textContent : '00:00';
 
     if (submitModal) submitModal.style.display = 'flex';
@@ -316,13 +410,13 @@ document.addEventListener('DOMContentLoaded', () => {
       candidate_roll: 'ATS-' + Math.floor(100000 + Math.random() * 900000),
       time_taken_seconds: timeTaken,
       answers: userAnswers,
-      questions: questions
+      questions: allQuestions
     };
 
     if (btnConfirmSubmit) {
       btnConfirmSubmit.disabled = true;
       btnConfirmSubmit.innerHTML = `
-        <svg class="animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" stroke-dasharray="32" stroke-dashoffset="12"></circle></svg>
+        <svg class="animate-spin" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" stroke-dasharray="32" stroke-dashoffset="12"></circle></svg>
         <span>Submitting...</span>
       `;
     }
@@ -341,7 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
         CBTStorage.clearExamState();
         window.location.href = targetUrl;
       } else {
-        alert('Failed to submit exam: ' + (data.message || data.error || 'Unknown error'));
+        alert('Submission failed: ' + (data.message || data.error || 'Unknown error'));
         if (btnConfirmSubmit) {
           btnConfirmSubmit.disabled = false;
           btnConfirmSubmit.textContent = 'Confirm Submit';
@@ -360,7 +454,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Auto-submit when the window/screen is closed or unloaded
+  // Reliable Auto-Submit on exit / screen close
   function handleAutoSubmitOnExit() {
     if (isSubmitted) return;
     isSubmitted = true;
@@ -374,7 +468,7 @@ document.addEventListener('DOMContentLoaded', () => {
       candidate_roll: 'ATS-' + Math.floor(100000 + Math.random() * 900000),
       time_taken_seconds: timeTaken,
       answers: userAnswers,
-      questions: questions
+      questions: allQuestions
     };
 
     const submitEndpoint = window.SUBMIT_URL || '/submit';
@@ -392,7 +486,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }).catch(() => {});
       }
     } catch (e) {
-      console.error('Auto-submit beacon error:', e);
+      console.error('Auto-submit error:', e);
     }
 
     CBTStorage.clearExamState();
@@ -402,29 +496,23 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('beforeunload', handleAutoSubmitOnExit);
 
   if (btnSubmit) {
-    btnSubmit.addEventListener('click', () => {
-      openSubmitModal();
-    });
+    btnSubmit.addEventListener('click', openSubmitModal);
   }
 
   if (btnCancelSubmit) {
-    btnCancelSubmit.addEventListener('click', () => {
-      closeSubmitModal();
-    });
+    btnCancelSubmit.addEventListener('click', closeSubmitModal);
   }
 
   if (btnConfirmSubmit) {
-    btnConfirmSubmit.addEventListener('click', () => {
-      submitExam();
-    });
+    btnConfirmSubmit.addEventListener('click', submitExam);
   }
 
-  // Keyboard Shortcuts (1, 2, 3, 4, N, P, F, S, Arrows)
+  // Keyboard Shortcuts
   document.addEventListener('keydown', (e) => {
     if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
 
     const key = e.key.toUpperCase();
-    const q = questions[currentIndex];
+    const q = allQuestions[currentIndex];
     const qId = String(q.id);
 
     if (['1', '2', '3', '4'].includes(key)) {
@@ -434,17 +522,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else if (key === 'N' || e.key === 'ArrowRight') {
       playSound('nav');
-      if (currentIndex < questions.length - 1) renderQuestion(currentIndex + 1);
+      if (currentIndex < allQuestions.length - 1) renderQuestion(currentIndex + 1);
     } else if (key === 'P' || e.key === 'ArrowLeft') {
       playSound('nav');
       if (currentIndex > 0) renderQuestion(currentIndex - 1);
     } else if (key === 'F') {
-      if (btnFlag) btnFlag.click();
+      if (btnMarkReview) btnMarkReview.click();
     } else if (key === 'S') {
       if (btnSubmit) btnSubmit.click();
     }
   });
 
-  // Initial Render
-  renderQuestion(currentIndex);
+  // Initial render
+  renderQuestion(0);
 });

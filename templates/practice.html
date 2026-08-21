@@ -1,29 +1,22 @@
 {% extends "base.html" %}
-{% block title %}Custom Practice | Atechabad Testing System{% endblock %}
+
+{% block title %}Custom Practice Configurator | Atechabad Testing System{% endblock %}
 
 {% block extra_head %}
 <style>
-  .practice-hero {
-    background: linear-gradient(135deg, #0b1727 0%, #1e293b 60%, #0f172a 100%);
-    color: #fff;
-    padding: 2.75rem 3rem;
-    border-radius: var(--radius-lg);
-    margin-bottom: 2rem;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+  .practice-header {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1.75rem 2rem;
+    margin-bottom: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    box-shadow: var(--shadow-xs);
   }
-  .practice-hero::after {
-    content: '';
-    position: absolute;
-    top: -50%; right: -10%;
-    width: 450px; height: 450px;
-    background: radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-  }
-  .practice-hero h2 { color: #fff; font-size: 2.2rem; margin-bottom: .4rem; letter-spacing: -0.025em; }
-  .practice-hero p  { color: #cbd5e1; font-size: 1.05rem; max-width: 680px; line-height: 1.6; }
 
   .practice-grid {
     display: grid;
@@ -32,26 +25,31 @@
     align-items: start;
   }
 
-  .config-card { padding: 2.25rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); }
-  .config-card h3 { margin-bottom: 1.5rem; font-size: 1.35rem; display: flex; align-items: center; gap: 0.6rem; }
+  .config-card {
+    padding: 2rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-xs);
+  }
 
   .cfg-label {
     font-size: 0.78rem;
     font-weight: 800;
     color: var(--text-muted);
     text-transform: uppercase;
-    letter-spacing: .7px;
+    letter-spacing: .6px;
     margin-bottom: .65rem;
     display: block;
   }
 
-  /* Quick-template chips */
   .template-chips {
     display: flex;
     flex-wrap: wrap;
     gap: .55rem;
     margin-bottom: 1.75rem;
   }
+
   .chip {
     padding: .5rem 1.1rem;
     border-radius: var(--radius-full);
@@ -64,21 +62,25 @@
     transition: all var(--transition-fast);
     user-select: none;
   }
-  .chip:hover { border-color: var(--brand-primary); color: var(--brand-primary); transform: translateY(-1px); }
+
+  .chip:hover {
+    border-color: var(--brand-primary);
+    color: var(--brand-primary);
+  }
+
   .chip.active {
     background: var(--brand-primary);
     color: #fff;
     border-color: var(--brand-primary);
-    box-shadow: 0 4px 14px rgba(37,99,235,.25);
   }
 
-  /* Count input */
   .count-row {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.75rem;
   }
+
   .count-row input[type="number"] {
     width: 110px;
     padding: .65rem .9rem;
@@ -92,266 +94,230 @@
     text-align: center;
     outline: none;
   }
-  .count-row input[type="number"]:focus { border-color: var(--brand-primary); }
-  .count-info {
-    font-size: .88rem;
-    color: var(--text-muted);
-    font-weight: 600;
-  }
-  #autoTimeDisplay {
-    font-weight: 800;
-    color: var(--brand-primary);
-    font-family: 'JetBrains Mono', monospace;
+
+  .count-row input[type="number"]:focus {
+    border-color: var(--brand-primary);
   }
 
-  /* Time override */
-  .time-override {
-    background: var(--bg-subtle);
-    border-radius: var(--radius-md);
-    padding: 1.25rem;
+  .section-checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: .75rem;
     margin-bottom: 1.75rem;
-    border: 1px solid var(--border-subtle);
   }
-  .toggle-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .toggle-label { font-weight: 700; font-size: .92rem; color: var(--text-primary); }
 
-  /* iOS toggle */
-  .toggle-switch { position: relative; width: 44px; height: 24px; }
-  .toggle-switch input { opacity: 0; width: 0; height: 0; }
-  .toggle-slider {
-    position: absolute; cursor: pointer;
-    inset: 0;
-    background: var(--border-default);
-    border-radius: 24px;
-    transition: background .2s;
-  }
-  .toggle-slider::before {
-    content: '';
-    position: absolute;
-    width: 18px; height: 18px;
-    left: 3px; top: 3px;
-    background: #fff;
-    border-radius: 50%;
-    transition: transform .2s;
-    box-shadow: 0 1px 4px rgba(0,0,0,.2);
-  }
-  .toggle-switch input:checked + .toggle-slider { background: var(--brand-primary); }
-  .toggle-switch input:checked + .toggle-slider::before { transform: translateX(20px); }
-
-  .time-slider-wrap { display: none; margin-top: 1rem; }
-  .time-slider-wrap.visible { display: block; }
-
-  input[type="range"].slider {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 6px;
-    border-radius: 3px;
-    background: var(--border-default);
-    outline: none;
-    margin: .6rem 0 .4rem;
-  }
-  input[type="range"].slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px; height: 20px;
-    border-radius: 50%;
-    background: var(--brand-primary);
-    cursor: pointer;
-    box-shadow: 0 0 8px rgba(37,99,235,.4);
-    transition: transform .15s;
-  }
-  input[type="range"].slider::-webkit-slider-thumb:hover { transform: scale(1.15); }
-  .slider-labels { display: flex; justify-content: space-between; font-size: .78rem; color: var(--text-muted); font-weight: 600; }
-
-  /* Subject filters */
-  .section-filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .6rem;
-    margin-bottom: 2rem;
-  }
-  .section-cb-label {
+  .section-label {
     display: flex;
     align-items: center;
-    gap: .5rem;
-    padding: .5rem 1rem;
-    border-radius: var(--radius-full);
-    border: 1.5px solid var(--border-default);
-    background: var(--bg-surface);
-    font-size: .88rem;
-    font-weight: 700;
+    gap: .75rem;
+    padding: .85rem 1rem;
+    border: 1.5px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
     cursor: pointer;
     transition: all var(--transition-fast);
+    background: var(--bg-subtle);
     user-select: none;
-    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: .92rem;
   }
-  .section-cb-label input[type="checkbox"] { accent-color: var(--brand-primary); width: 16px; height: 16px; }
-  .section-cb-label:has(input:checked) {
+
+  .section-label:hover {
     border-color: var(--brand-primary);
-    background: var(--brand-primary-light);
-    color: var(--brand-primary);
   }
 
-  /* Summary Card */
-  .summary-card { padding: 1.75rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); position: sticky; top: calc(var(--header-height) + 1.25rem); }
-  .summary-card h3 { font-size: 1.15rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem; }
+  .section-label input[type="checkbox"] {
+    accent-color: var(--brand-primary);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
 
-  .summary-row {
+  .section-label input[type="checkbox"]:checked ~ .sec-name {
+    color: var(--brand-primary);
+    font-weight: 700;
+  }
+
+  .time-slider-container {
+    display: none;
+    margin-top: 1rem;
+    padding: 1.25rem;
+    background: var(--bg-subtle);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-subtle);
+  }
+
+  .time-slider-container.visible {
+    display: block;
+  }
+
+  .summary-sidebar {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    position: sticky;
+    top: calc(var(--header-height) + 1rem);
+    box-shadow: var(--shadow-xs);
+  }
+
+  .summary-stat-row {
     display: flex;
     justify-content: space-between;
-    padding: .75rem 0;
+    align-items: center;
+    padding: .65rem 0;
     border-bottom: 1px solid var(--border-subtle);
     font-size: .92rem;
   }
-  .summary-row:last-child { border-bottom: none; }
-  .summary-row .key { color: var(--text-muted); font-weight: 600; }
-  .summary-row .val { font-weight: 800; color: var(--brand-navy); font-family: 'JetBrains Mono', monospace; }
 
-  .tip-card { padding: 1.25rem 1.4rem; background: var(--brand-primary-light); border: 1px solid var(--brand-primary-border); border-radius: var(--radius-md); margin-top: 1.25rem; }
-  .tip-card p { font-size: .85rem; color: #1e40af; margin-bottom: .4rem; line-height: 1.5; }
-  .tip-card p:last-child { margin-bottom: 0; }
-
-  body.dark-mode .tip-card {
-    background: rgba(56, 189, 248, 0.08);
-    border-color: rgba(56, 189, 248, 0.25);
-  }
-  body.dark-mode .tip-card p {
-    color: #bae6fd;
+  .summary-stat-row:last-child {
+    border-bottom: none;
   }
 
-  @media (max-width: 900px) {
-    .practice-grid { grid-template-columns: 1fr; }
-    .summary-card { position: static; }
+  .summary-val {
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--brand-navy);
   }
 </style>
 {% endblock %}
 
 {% block content %}
-<!-- Hero Banner -->
-<div class="practice-hero">
-  <div class="badge badge-primary" style="margin-bottom: 1rem; border-color: rgba(56,189,248,.4); background: rgba(56,189,248,.15); color: #38bdf8;">
-    <span class="badge-dot" style="background: #38bdf8;"></span>
-    <span>Custom Test Configurator</span>
+<!-- Practice Configurator Header -->
+<div class="practice-header">
+  <div>
+    <h2 style="font-size: 1.55rem; color: var(--brand-navy); margin-bottom: 0.25rem;">
+      Custom Practice Configurator
+    </h2>
+    <p style="color: var(--text-secondary); font-size: 0.92rem;">
+      Customize your test volume, subject modules, and timer constraints for targeted practice.
+    </p>
   </div>
-  <h2>Design Your Custom Practice Session</h2>
-  <p>Customize your question bank size, focus on specific university test subjects, and adjust duration to match your personal revision targets.</p>
+
+  <div class="dash-meta-tags">
+    <span class="badge badge-primary">
+      <span class="badge-dot"></span>
+      {{ total_available }} MCQs Pool
+    </span>
+    <span class="badge badge-neutral">Instant Feedback</span>
+  </div>
 </div>
 
-<div class="practice-grid">
-  <!-- LEFT: Configurator Form -->
-  <form class="glass-panel config-card" id="practiceForm" method="POST" action="{{ url_for('practice_start') }}">
-    <h3>
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-      Session Settings
-    </h3>
+<form id="practiceForm" action="{{ url_for('practice_start') }}" method="POST">
+  <div class="practice-grid">
+    <!-- Left Column: Settings Form -->
+    <div class="config-card">
+      <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        Session Parameters
+      </h3>
 
-    <!-- Candidate Name -->
-    <label class="cfg-label" for="candidateNameInput">Candidate Full Name</label>
-    <div style="margin-bottom: 1.75rem;">
-      <input type="text" id="candidateNameInput" name="candidate_name" class="input-control" value="Candidate Name" placeholder="Enter your full name..." />
-    </div>
-
-    <!-- Presets -->
-    <label class="cfg-label">Quick Presets</label>
-    <div class="template-chips">
-      <div class="chip" data-q="10" data-t="12">Quick 10</div>
-      <div class="chip" data-q="20" data-t="24">Sprint 20</div>
-      <div class="chip" data-q="50" data-t="60">Half Exam 50</div>
-      <div class="chip" data-q="75" data-t="90">Mock 75</div>
-      <div class="chip active" data-q="100" data-t="120">Full Exam 100</div>
-    </div>
-
-    <!-- Number of Questions -->
-    <label class="cfg-label" for="numQuestionsInput">Number of Questions</label>
-    <div class="count-row">
-      <input type="number" id="numQuestionsInput" name="num_questions" value="100" min="1" max="{{ total_available }}" />
-      <div class="count-info">
-        Auto time: <span id="autoTimeDisplay">120 min</span> &nbsp;|&nbsp; Available: <strong>{{ total_available }}</strong>
+      <!-- 1. Candidate Name Input -->
+      <div style="margin-bottom: 1.75rem;">
+        <label class="cfg-label" for="candidateNameInput">Candidate Name:</label>
+        <input type="text" id="candidateNameInput" name="candidate_name" class="input-control" value="Candidate Name" placeholder="Enter your full name for results transcript...">
       </div>
-    </div>
 
-    <!-- Time Limit Override -->
-    <label class="cfg-label">Time Limit Override</label>
-    <div class="time-override">
-      <div class="toggle-row">
-        <span class="toggle-label">Set Custom Time Limit</span>
-        <label class="toggle-switch">
-          <input type="checkbox" id="customTimeToggle" aria-label="Toggle custom time limit">
-          <span class="toggle-slider"></span>
-        </label>
+      <!-- 2. Question Presets Bar -->
+      <label class="cfg-label">Select Standard Question Preset:</label>
+      <div class="template-chips">
+        <div class="chip" data-q="10" data-t="12">Quick 10 (12m)</div>
+        <div class="chip" data-q="20" data-t="24">Sprint 20 (24m)</div>
+        <div class="chip" data-q="50" data-t="60">Half Mock 50 (60m)</div>
+        <div class="chip" data-q="75" data-t="90">Speed Drill 75 (90m)</div>
+        <div class="chip active" data-q="{{ total_available }}" data-t="{{ default_time }}">Full 100 (120m)</div>
       </div>
-      <div class="time-slider-wrap" id="timeSliderWrap">
-        <input type="range" class="slider" id="timeSlider" min="1" max="180" value="120" step="1" aria-label="Time slider">
-        <div class="slider-labels">
-          <span>1 min</span>
-          <span id="sliderVal" style="color:var(--brand-primary);font-weight:800;font-size:.92rem;font-family:'JetBrains Mono',monospace;">120 min</span>
-          <span>180 min</span>
+
+      <!-- 3. Question Count Input -->
+      <label class="cfg-label" for="numQuestionsInput">Or Enter Exact Question Count:</label>
+      <div class="count-row">
+        <input type="number" id="numQuestionsInput" name="num_questions" min="1" max="{{ total_available }}" value="{{ total_available }}">
+        <div class="count-info">
+          Calculated Standard Time: <strong id="autoTimeDisplay" style="color: var(--brand-primary); font-family: 'JetBrains Mono', monospace;">{{ default_time }} min</strong>
         </div>
       </div>
-      <input type="hidden" name="custom_time" id="customTimeHidden" value="">
+
+      <!-- 4. Subject Modules Selection -->
+      <label class="cfg-label">Filter Subject Sections:</label>
+      <div class="section-checkbox-grid">
+        {% for sec in (sections or all_sections or ['Mathematics', 'Physics', 'English', 'Computer Science', 'Analytical']) %}
+        <label class="section-label">
+          <input type="checkbox" name="sections" value="{{ sec }}" checked>
+          <span class="sec-name">{{ sec }}</span>
+        </label>
+        {% endfor %}
+      </div>
+
+      <!-- 5. Custom Time Override Toggle -->
+      <div style="margin-top: 1rem; padding-top: 1.25rem; border-top: 1px solid var(--border-subtle);">
+        <label style="display: flex; align-items: center; gap: .75rem; cursor: pointer; user-select: none;">
+          <input type="checkbox" id="customTimeToggle" style="accent-color: var(--brand-primary); width: 18px; height: 18px;">
+          <div>
+            <strong style="font-size: .95rem; color: var(--brand-navy);">Override Time Limit</strong>
+            <p style="font-size: .82rem; color: var(--text-muted); margin: 0;">Specify custom test duration to train speed or allow extended practice.</p>
+          </div>
+        </label>
+
+        <div class="time-slider-container" id="timeSliderWrap">
+          <div style="display: flex; justify-content: space-between; margin-bottom: .5rem; font-weight: 700; font-size: .9rem;">
+            <span>Custom Time Allowed:</span>
+            <span id="sliderVal" style="color: var(--brand-primary); font-family: 'JetBrains Mono', monospace;">{{ default_time }} min</span>
+          </div>
+          <input type="range" id="timeSlider" min="5" max="180" step="5" value="{{ default_time }}" style="width: 100%; accent-color: var(--brand-primary);">
+          <div style="display: flex; justify-content: space-between; font-size: .75rem; color: var(--text-muted); margin-top: .25rem;">
+            <span>5 min</span>
+            <span>60 min</span>
+            <span>120 min</span>
+            <span>180 min</span>
+          </div>
+          <input type="hidden" id="customTimeHidden" name="custom_time" value="">
+        </div>
+      </div>
     </div>
 
-    <!-- Filter by Subject -->
-    <label class="cfg-label">Filter by Subject <span style="font-weight:500;color:var(--text-muted);text-transform:none;">(leave unchecked for all)</span></label>
-    <div class="section-filters">
-      {% for section in sections %}
-      <label class="section-cb-label">
-        <input type="checkbox" name="sections" value="{{ section }}"> {{ section }}
-      </label>
-      {% endfor %}
-    </div>
-
-    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-      <span>Start Practice Session</span>
-    </button>
-  </form>
-
-  <!-- RIGHT: Live Summary Sidebar -->
-  <div>
-    <div class="glass-panel summary-card">
-      <h3>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+    <!-- Right Column: Sticky Summary & Launch Card -->
+    <div class="summary-sidebar">
+      <h3 style="font-size: 1.15rem; color: var(--brand-navy); margin-bottom: 1.25rem;">
         Session Summary
       </h3>
 
-      <div class="summary-row">
-        <span class="key">Candidate</span>
-        <span class="val" id="sumCandidate" style="font-family: inherit;">Candidate Name</span>
+      <div class="summary-stat-row">
+        <span style="color: var(--text-secondary);">Candidate:</span>
+        <span class="summary-val" id="sumCandidate" style="font-family: inherit; font-size: 0.88rem;">Candidate Name</span>
       </div>
-      <div class="summary-row">
-        <span class="key">Questions</span>
-        <span class="val" id="sumQ">100</span>
-      </div>
-      <div class="summary-row">
-        <span class="key">Time Limit</span>
-        <span class="val" id="sumTime">120 min</span>
-      </div>
-      <div class="summary-row">
-        <span class="key">Pacing Rate</span>
-        <span class="val" id="sumPerQ">72 sec / Q</span>
-      </div>
-      <div class="summary-row">
-        <span class="key">Selected Subjects</span>
-        <span class="val" id="sumSections" style="font-family: inherit; font-size: 0.85rem;">All</span>
-      </div>
-      <div class="summary-row">
-        <span class="key">Record Storage</span>
-        <span class="val" style="color: var(--status-success); font-family: inherit;">Saved to Database</span>
-      </div>
-    </div>
 
-    <div class="tip-card">
-      <p><strong>Official Exam Benchmark:</strong> Standard university entrance test pacing is <strong>1.2 minutes per question</strong> (120 mins for 100 MCQs).</p>
-      <p>Toggle <strong>Custom Time</strong> to simulate extra time pressure or allow untimed practice.</p>
+      <div class="summary-stat-row">
+        <span style="color: var(--text-secondary);">Total Questions:</span>
+        <span class="summary-val" id="sumQ">{{ total_available }}</span>
+      </div>
+
+      <div class="summary-stat-row">
+        <span style="color: var(--text-secondary);">Allocated Time:</span>
+        <span class="summary-val" id="sumTime">{{ default_time }} min</span>
+      </div>
+
+      <div class="summary-stat-row">
+        <span style="color: var(--text-secondary);">Pacing Rate:</span>
+        <span class="summary-val" id="sumPerQ" style="color: #059669;">72 sec / Q</span>
+      </div>
+
+      <div class="summary-stat-row">
+        <span style="color: var(--text-secondary);">Included Sections:</span>
+        <span class="summary-val" id="sumSections" style="font-size: .8rem; text-align: right; max-width: 160px;">All</span>
+      </div>
+
+      <div style="margin-top: 1.75rem;">
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; justify-content: center; font-weight: 800;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <span>Begin Custom Practice</span>
+        </button>
+      </div>
+
+      <div style="margin-top: 1.5rem; background: var(--bg-subtle); padding: 1rem; border-radius: var(--radius-sm); font-size: .82rem; color: var(--text-muted); border: 1px solid var(--border-subtle);">
+        <strong style="color: var(--brand-navy);">Official Benchmark:</strong> Standard university entrance test pace is <strong>1.2 minutes per MCQ</strong> (120 mins for 100 MCQs).
+      </div>
     </div>
   </div>
-</div>
+</form>
 {% endblock %}
 
 {% block extra_js %}
@@ -370,14 +336,12 @@
   const hiddenTime    = document.getElementById('customTimeHidden');
   const chips         = document.querySelectorAll('.chip');
 
-  // Summary elements
   const sumCandidate = document.getElementById('sumCandidate');
   const sumQ         = document.getElementById('sumQ');
   const sumTime      = document.getElementById('sumTime');
   const sumPerQ      = document.getElementById('sumPerQ');
   const sumSections  = document.getElementById('sumSections');
 
-  // Load saved candidate name
   const savedName = sessionStorage.getItem('ats_candidate_name') || sessionStorage.getItem('bu_candidate_name');
   if (savedName && nameInput) {
     nameInput.value = savedName;
@@ -425,7 +389,6 @@
     CBTStorage.clearExamState();
   });
 
-  // Chip click handlers
   chips.forEach(chip => {
     chip.addEventListener('click', () => {
       chips.forEach(c => c.classList.remove('active'));

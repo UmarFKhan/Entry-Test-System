@@ -1,43 +1,23 @@
 {% extends "base.html" %}
-{% block title %}Quiz Madness Mode | Atechabad Testing System{% endblock %}
+
+{% block title %}Quiz Madness Marathon | Atechabad Testing System{% endblock %}
 
 {% block extra_head %}
 <style>
-  .madness-hero {
-    background: linear-gradient(135deg, #1e1b4b 0%, #311042 50%, #450a0a 100%);
-    color: #fff;
-    padding: 2.75rem 3rem;
-    border-radius: var(--radius-lg);
-    margin-bottom: 2rem;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgba(244, 63, 94, 0.3);
-    box-shadow: 0 10px 30px rgba(225, 29, 72, 0.15);
-  }
-  .madness-hero::after {
-    content: '';
-    position: absolute;
-    top: -40%; right: -10%;
-    width: 450px; height: 450px;
-    background: radial-gradient(circle, rgba(244, 63, 94, 0.25) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-  }
-  .madness-badge {
-    display: inline-flex;
+  .madness-header {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-left: 5px solid #e11d48;
+    border-radius: var(--radius-md);
+    padding: 1.75rem 2rem;
+    margin-bottom: 1.75rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
-    background: rgba(244, 63, 94, 0.2);
-    border: 1px solid rgba(244, 63, 94, 0.5);
-    padding: 0.35rem 0.95rem;
-    border-radius: var(--radius-full);
-    font-size: 0.85rem;
-    font-weight: 800;
-    color: #fca5a5;
-    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    box-shadow: var(--shadow-xs);
   }
-  .madness-hero h2 { color: #fff; font-size: 2.25rem; margin-bottom: .4rem; letter-spacing: -0.025em; }
-  .madness-hero p  { color: #cbd5e1; font-size: 1.05rem; max-width: 680px; line-height: 1.6; }
 
   .madness-grid {
     display: grid;
@@ -50,224 +30,220 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
   }
 
   .subj-card {
     background: var(--bg-surface);
-    border: 2px solid var(--border-subtle);
+    border: 1.5px solid var(--border-subtle);
     border-radius: var(--radius-md);
     padding: 1.5rem;
     cursor: pointer;
-    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all var(--transition-fast);
     position: relative;
     user-select: none;
+    box-shadow: var(--shadow-xs);
   }
 
   .subj-card:hover {
-    border-color: #f43f5e;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(244, 63, 94, 0.12);
+    border-color: #e11d48;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
   }
 
   .subj-card.active {
     border-color: #e11d48;
-    background: linear-gradient(145deg, rgba(225, 29, 72, 0.04), var(--bg-surface));
-    box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.15), 0 12px 28px rgba(225, 29, 72, 0.12);
+    background: var(--bg-surface);
+    outline: 2px solid #e11d48;
+    outline-offset: -2px;
   }
 
   .subj-card .icon-box {
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(225, 29, 72, 0.1);
+    background: #fff1f2;
     color: #e11d48;
-    margin-bottom: 1rem;
+    margin-bottom: 0.85rem;
   }
 
   .subj-card .title {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 800;
     color: var(--brand-navy);
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.25rem;
   }
 
   .subj-card .q-count {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 800;
     color: #e11d48;
-    background: rgba(225, 29, 72, 0.1);
-    display: inline-block;
-    padding: 0.2rem 0.65rem;
-    border-radius: var(--radius-full);
     font-family: 'JetBrains Mono', monospace;
   }
 
   .subj-card .desc {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    margin-top: 0.65rem;
-    line-height: 1.45;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+    line-height: 1.4;
   }
 
-  .madness-summary {
+  .madness-summary-card {
     background: var(--bg-surface);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
-    padding: 1.75rem;
+    padding: 2rem;
     position: sticky;
-    top: calc(var(--header-height) + 1.25rem);
-  }
-
-  @media (max-width: 900px) {
-    .madness-grid { grid-template-columns: 1fr; }
-    .madness-summary { position: static; }
+    top: calc(var(--header-height) + 1rem);
+    box-shadow: var(--shadow-xs);
   }
 </style>
 {% endblock %}
 
 {% block content %}
-<!-- Hero Section -->
-<div class="madness-hero">
-  <div class="madness-badge">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
-    <span>Exhaustive Question Bank Marathon</span>
+<!-- Madness Marathon Header -->
+<div class="madness-header">
+  <div>
+    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.35rem;">
+      <span class="badge badge-danger">
+        <span class="badge-dot" style="background: #e11d48;"></span>
+        Zero-Repeat Policy Active
+      </span>
+      <span class="badge badge-neutral">{{ all_questions_count or 1239 }} Total Question Pool</span>
+    </div>
+    <h2 style="font-size: 1.55rem; color: var(--brand-navy); margin-bottom: 0.2rem;">
+      Quiz Madness Marathon
+    </h2>
+    <p style="color: var(--text-secondary); font-size: 0.92rem;">
+      Exhaustive test engine that delivers 100% of the questions in the question bank without repeats.
+    </p>
   </div>
-  <h2>Quiz Madness Mode</h2>
-  <p>Attempt 100% of the questions in any chosen subject (or every single MCQ in the entire system) with <strong>zero repeats</strong>. Test your absolute endurance and master full question banks!</p>
+
+  <div>
+    <a href="{{ url_for('instructions') }}" class="btn btn-secondary">
+      &larr; Standard 100-Q Mock
+    </a>
+  </div>
 </div>
 
 <form id="madnessForm" action="{{ url_for('madness_start') }}" method="POST">
-  <input type="hidden" name="section" id="selectedSectionInput" value="All">
+  <input type="hidden" name="subject" id="selectedSubjectInput" value="all">
+  <input type="hidden" name="candidate_name" id="madnessCandidateName" value="Candidate Name">
 
   <div class="madness-grid">
-    <!-- Left Column: Subject Selection -->
+    <!-- Left Column: Subject Selection Grid -->
     <div>
-      <!-- Candidate Profile Input -->
-      <div class="glass-panel" style="padding: 1.75rem; margin-bottom: 1.75rem;">
-        <label for="candidateName" class="cfg-label" style="margin-bottom: 0.5rem;">Candidate Full Name</label>
-        <input type="text" id="candidateName" name="candidate_name" class="input-control" value="Candidate Name" placeholder="Enter your full name...">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.15rem; color: var(--brand-navy); font-weight: 800;">
+          Select Subject Marathon Domain:
+        </h3>
+        <span style="font-size: 0.82rem; color: var(--text-muted); font-weight: 700;">
+          Click any card to select
+        </span>
       </div>
 
-      <!-- Subject Selection Section -->
-      <div class="glass-panel" style="padding: 1.75rem;">
-        <h3 style="font-size: 1.3rem; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.5rem;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
-          Select Subject Pool
-        </h3>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
-          Choose a subject to load <strong>all of its MCQs without repeating any</strong>:
-        </p>
-
-        <div class="subj-card-grid">
-          <!-- All Subjects -->
-          <div class="subj-card active" data-section="All" data-count="{{ total_available or 100 }}" data-time="{{ ((total_available or 100) * 1.2)|round|int }}">
-            <div class="icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-            </div>
-            <div class="title">All Subjects</div>
-            <div class="q-count">{{ total_available or 100 }} MCQs</div>
-            <div class="desc">Ultimate 100% Marathon across all subject banks</div>
+      <div class="subj-card-grid">
+        <!-- 1. All Subjects Combined -->
+        <div class="subj-card active" data-subject="all" data-count="{{ all_questions_count or 1239 }}" data-name="Complete Bank Marathon">
+          <div class="icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
           </div>
-
-          <!-- English -->
-          <div class="subj-card" data-section="English" data-count="300" data-time="360">
-            <div class="icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path></svg>
-            </div>
-            <div class="title">English</div>
-            <div class="q-count">300 MCQs</div>
-            <div class="desc">Grammar, Synonyms, Narration & Vocabulary</div>
-          </div>
-
-          <!-- Computer -->
-          <div class="subj-card" data-section="Computer" data-count="234" data-time="280">
-            <div class="icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-            </div>
-            <div class="title">Computer Science</div>
-            <div class="q-count">234 MCQs</div>
-            <div class="desc">Hardware, Networking, Databases & Programming</div>
-          </div>
-
-          <!-- Analytical -->
-          <div class="subj-card" data-section="Analytical" data-count="215" data-time="258">
-            <div class="icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-            </div>
-            <div class="title">Analytical Reasoning</div>
-            <div class="q-count">215 MCQs</div>
-            <div class="desc">Logic, Sequences, Deductions & Pattern Analysis</div>
-          </div>
-
-          <!-- Physics -->
-          <div class="subj-card" data-section="Physics" data-count="210" data-time="252">
-            <div class="icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)"></ellipse></svg>
-            </div>
-            <div class="title">Physics</div>
-            <div class="q-count">210 MCQs</div>
-            <div class="desc">Mechanics, Electricity, Magnetism & Waves</div>
-          </div>
-
-          <!-- Maths -->
-          <div class="subj-card" data-section="Maths" data-count="180" data-time="216">
-            <div class="icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>
-            </div>
-            <div class="title">Mathematics</div>
-            <div class="q-count">180 MCQs</div>
-            <div class="desc">Algebra, Calculus, Trigonometry & Matrices</div>
-          </div>
+          <div class="title">All Subjects Marathon</div>
+          <div class="q-count">{{ all_questions_count or 1239 }} Total MCQs</div>
+          <div class="desc">Maths, Physics, CS, English, and Analytical reasoning.</div>
         </div>
 
-        <!-- Custom Timer Setting -->
-        <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
-          <label for="customTime" class="cfg-label" style="margin-bottom: 0.4rem;">
-            Timer Duration Override (Minutes - Optional)
-          </label>
-          <input type="number" id="customTime" name="custom_time" placeholder="Auto calculated time" min="1" max="1000" class="input-control" style="width: 220px; font-family: 'JetBrains Mono', monospace; font-weight: 700;">
-          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.4rem;">Leave empty to use recommended auto-pacing based on total MCQs.</p>
+        <!-- 2. Mathematics -->
+        <div class="subj-card" data-subject="Mathematics" data-count="{{ (subject_counts or {}).get('Mathematics', 180) }}" data-name="Mathematics Marathon">
+          <div class="icon-box" style="background:#eff6ff; color:#2563eb;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <div class="title">Mathematics</div>
+          <div class="q-count" style="color:#2563eb;">{{ (subject_counts or {}).get('Mathematics', 180) }} MCQs</div>
+          <div class="desc">Calculus, Trigonometry, Vectors, Conics, Algebra.</div>
+        </div>
+
+        <!-- 3. Physics -->
+        <div class="subj-card" data-subject="Physics" data-count="{{ (subject_counts or {}).get('Physics', 210) }}" data-name="Physics Marathon">
+          <div class="icon-box" style="background:#fffbeb; color:#d97706;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <div class="title">Physics</div>
+          <div class="q-count" style="color:#d97706;">{{ (subject_counts or {}).get('Physics', 210) }} MCQs</div>
+          <div class="desc">Mechanics, Electromagnetism, Optics, Nuclear physics.</div>
+        </div>
+
+        <!-- 4. English -->
+        <div class="subj-card" data-subject="English" data-count="{{ (subject_counts or {}).get('English', 300) }}" data-name="English Marathon">
+          <div class="icon-box" style="background:#ecfdf5; color:#059669;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path></svg>
+          </div>
+          <div class="title">English</div>
+          <div class="q-count" style="color:#059669;">{{ (subject_counts or {}).get('English', 300) }} MCQs</div>
+          <div class="desc">Grammar, Vocabulary, Sentence Correction, Synonyms.</div>
+        </div>
+
+        <!-- 5. Computer Science -->
+        <div class="subj-card" data-subject="Computer Science" data-count="{{ (subject_counts or {}).get('Computer Science', 234) }}" data-name="Computer Science Marathon">
+          <div class="icon-box" style="background:#f5f3ff; color:#7c3aed;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line></svg>
+          </div>
+          <div class="title">Computer Science</div>
+          <div class="q-count" style="color:#7c3aed;">{{ (subject_counts or {}).get('Computer Science', 234) }} MCQs</div>
+          <div class="desc">Architecture, Algorithms, C++, Networking, OS.</div>
+        </div>
+
+        <!-- 6. Analytical / Intelligence -->
+        <div class="subj-card" data-subject="Analytical" data-count="{{ (subject_counts or {}).get('Analytical', 215) }}" data-name="Analytical Marathon">
+          <div class="icon-box" style="background:#f0f9ff; color:#0284c7;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path></svg>
+          </div>
+          <div class="title">Analytical Reasoning</div>
+          <div class="q-count" style="color:#0284c7;">{{ (subject_counts or {}).get('Analytical', 215) }} MCQs</div>
+          <div class="desc">Logic grids, sequence patterns, directional reasoning.</div>
         </div>
       </div>
     </div>
 
-    <!-- Right Column: Summary Card & Launch -->
-    <div class="madness-summary">
-      <h4 style="font-size: 1.2rem; color: var(--brand-navy); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
-        Madness Summary
-      </h4>
+    <!-- Right Column: Sticky Marathon Summary -->
+    <div class="madness-summary-card">
+      <h3 style="font-size: 1.15rem; color: var(--brand-navy); margin-bottom: 1.25rem;">
+        Marathon Summary
+      </h3>
 
-      <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.75rem; font-size: 0.95rem;">
-        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
-          <span style="color: var(--text-muted); font-weight: 600;">Selected Target:</span>
-          <strong id="summaryTargetName" style="color: #e11d48;">All Subjects</strong>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
-          <span style="color: var(--text-muted); font-weight: 600;">Total Questions:</span>
-          <strong id="summaryQCount" style="font-size: 1.1rem; color: var(--brand-primary); font-family: 'JetBrains Mono', monospace;">{{ total_available or 100 }} MCQs</strong>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
-          <span style="color: var(--text-muted); font-weight: 600;">Repeat Policy:</span>
-          <span class="badge badge-success" style="font-size: 0.8rem;"><span class="badge-dot"></span> Zero Repeats</span>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
-          <span style="color: var(--text-muted); font-weight: 600;">Time Allowed:</span>
-          <strong id="summaryTimeMinutes" style="color: #d97706; font-family: 'JetBrains Mono', monospace;">{{ ((total_available or 100) * 1.2)|round|int }} Mins</strong>
-        </div>
+      <div class="summary-stat-row">
+        <span style="color: var(--text-secondary);">Domain:</span>
+        <span class="summary-val" id="madnessSubjectName" style="color:#e11d48; font-size: 0.88rem;">All Subjects Marathon</span>
       </div>
 
-      <button type="submit" class="btn btn-danger btn-lg" style="width: 100%;">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-        <span>Launch Quiz Madness</span>
-      </button>
+      <div class="summary-stat-row">
+        <span style="color: var(--text-secondary);">Total Questions:</span>
+        <span class="summary-val" id="madnessQCount">{{ all_questions_count or 1239 }}</span>
+      </div>
+
+      <div class="summary-stat-row">
+        <span style="color: var(--text-secondary);">Estimated Time:</span>
+        <span class="summary-val" id="madnessTimeEst">{{ ((all_questions_count or 1239) * 1.2)|round|int }} min</span>
+      </div>
+
+      <div class="summary-stat-row">
+        <span style="color: var(--text-secondary);">Repeat Policy:</span>
+        <span class="summary-val" style="color: #059669; font-size: 0.8rem;">0% Duplicate Guarantee</span>
+      </div>
+
+      <div style="margin-top: 1.75rem;">
+        <button type="submit" class="btn btn-danger btn-lg" style="width: 100%; justify-content: center; font-weight: 800;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <span>Launch Marathon Session</span>
+        </button>
+      </div>
+
+      <div style="margin-top: 1.5rem; background: var(--bg-subtle); padding: 1rem; border-radius: var(--radius-sm); font-size: .82rem; color: var(--text-muted); border: 1px solid var(--border-subtle);">
+        <strong style="color: var(--brand-navy);">Exhaustive Guarantee:</strong> Marathon mode loads every question from the chosen subject pool without repetition.
+      </div>
     </div>
   </div>
 </form>
@@ -276,39 +252,36 @@
 {% block extra_js %}
 <script src="{{ url_for('static', filename='js/storage.js') }}"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedName = sessionStorage.getItem('ats_candidate_name') || sessionStorage.getItem('bu_candidate_name');
-    if (savedName) {
-      document.getElementById('candidateName').value = savedName;
-    }
+  const subjectCards = document.querySelectorAll('.subj-card');
+  const subjectInput = document.getElementById('selectedSubjectInput');
+  const subjectNameDisp = document.getElementById('madnessSubjectName');
+  const qCountDisp = document.getElementById('madnessQCount');
+  const timeEstDisp = document.getElementById('madnessTimeEst');
+  const candidateNameInput = document.getElementById('madnessCandidateName');
 
-    const cards = document.querySelectorAll('.subj-card');
-    const selectedInput = document.getElementById('selectedSectionInput');
-    const summaryTargetName = document.getElementById('summaryTargetName');
-    const summaryQCount = document.getElementById('summaryQCount');
-    const summaryTimeMinutes = document.getElementById('summaryTimeMinutes');
+  const savedName = sessionStorage.getItem('ats_candidate_name') || sessionStorage.getItem('bu_candidate_name');
+  if (savedName && candidateNameInput) {
+    candidateNameInput.value = savedName;
+  }
 
-    cards.forEach(card => {
-      card.addEventListener('click', () => {
-        cards.forEach(c => c.classList.remove('active'));
-        card.classList.add('active');
+  subjectCards.forEach(card => {
+    card.addEventListener('click', () => {
+      subjectCards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
 
-        const sec = card.dataset.section;
-        const count = card.dataset.count;
-        const autoTime = card.dataset.time;
+      const subj = card.dataset.subject;
+      const count = parseInt(card.dataset.count) || 0;
+      const name = card.dataset.name;
 
-        selectedInput.value = sec;
-        summaryTargetName.textContent = sec === 'All' ? 'All Subjects (Marathon)' : sec;
-        summaryQCount.textContent = `${count} MCQs`;
-        summaryTimeMinutes.textContent = `${autoTime} Mins`;
-      });
+      if (subjectInput) subjectInput.value = subj;
+      if (subjectNameDisp) subjectNameDisp.textContent = name;
+      if (qCountDisp) qCountDisp.textContent = count;
+      if (timeEstDisp) timeEstDisp.textContent = Math.round(count * 1.2) + ' min';
     });
+  });
 
-    document.getElementById('madnessForm').addEventListener('submit', () => {
-      const cName = document.getElementById('candidateName').value.trim() || 'Candidate Name';
-      CBTStorage.clearExamState();
-      sessionStorage.setItem('ats_candidate_name', cName);
-    });
+  document.getElementById('madnessForm').addEventListener('submit', () => {
+    CBTStorage.clearExamState();
   });
 </script>
 {% endblock %}

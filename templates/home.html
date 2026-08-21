@@ -3,95 +3,255 @@
 {% block title %}Dashboard | Atechabad Testing System{% endblock %}
 
 {% block content %}
-<!-- Hero Section -->
-<div class="hero-card">
-  <div class="hero-text">
-    <div class="badge badge-primary" style="margin-bottom: 1.25rem; font-size: 0.85rem; padding: 0.45rem 1rem; border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.12); color: #38bdf8;">
-      <span class="badge-dot" style="background: #38bdf8;"></span>
-      <span>Official 2026 University Entrance Exam Engine</span>
+<!-- Command Center Header -->
+<div class="dash-command-header">
+  <div class="dash-welcome-title">
+    <h2>Entrance Examination Command Center</h2>
+    <p>Prepare for <strong>NUST (NET), FAST-NU, ECAT, MDCAT, Bahria (BUET) & IIUI</strong> admissions with verified CBT simulations.</p>
+  </div>
+
+  <div class="dash-meta-tags">
+    <span class="badge badge-primary">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+      Official 2026 Session
+    </span>
+    <span class="badge badge-success">
+      <span class="badge-dot"></span>
+      1,239 Verified MCQs
+    </span>
+    <span class="badge badge-neutral">
+      Relational DB Sync Active
+    </span>
+  </div>
+</div>
+
+<!-- Testing Modes Bento Grid -->
+<div class="dash-modes-grid">
+  <!-- 1. Primary Hero Mode: Full Mock Exam -->
+  <div class="dash-mode-card hero-mode">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+        <span class="badge" style="background: rgba(56, 189, 248, 0.18); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); font-weight: 800;">
+          Official CBT Simulation
+        </span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #94a3b8;">100 MCQs &bull; 120 Mins</span>
+      </div>
+
+      <h3>Full Entry Test Mock Exam</h3>
+      <p>Standardized computer-based testing simulation matching official admission entrance exam ratios across Mathematics, Physics/Computer, English Grammar, and Analytical Reasoning.</p>
     </div>
-    
-    <h2>Universities Entry Test & CBT Simulator</h2>
-    
-    <p>Prepare for <strong>NUST (NET), FAST-NU, ECAT, MDCAT, NTS, GIKI, PIEAS, Bahria & Air University</strong> admission tests with authentic computer-based testing simulations, custom configurator, university guides, and detailed score analytics.</p>
-    
-    <div class="hero-actions">
-      <a href="{{ url_for('instructions') }}" class="btn btn-primary btn-lg">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-        <span>Start Full Exam (100 Q)</span>
-      </a>
 
-      <a href="{{ url_for('practice') }}" class="btn btn-secondary btn-lg">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
-        <span>Custom Practice</span>
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+      <div style="font-size: 0.82rem; color: #94a3b8;">
+        <span>Zero negative penalty</span> &bull; <span>Instant transcript report</span>
+      </div>
+      <a href="{{ url_for('instructions') }}" class="btn btn-primary btn-lg" style="background: #38bdf8; color: #0b1727; border-color: #38bdf8; font-weight: 800;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        <span>Launch Full Exam</span>
       </a>
-      
-      <a href="{{ url_for('madness') }}" class="btn btn-danger btn-lg">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
-        <span>Quiz Madness</span>
-      </a>
+    </div>
+  </div>
 
-      <a href="{{ url_for('guides') }}" class="btn btn-secondary btn-lg">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path></svg>
-        <span>Test Guides</span>
+  <!-- 2. Custom Practice Mode -->
+  <div class="dash-mode-card practice-mode">
+    <div>
+      <div class="mode-icon-box">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+      </div>
+      <h3>Custom Practice</h3>
+      <p>Filter by specific subjects, define custom question counts, and adjust pacing timers to focus on weak topics.</p>
+    </div>
+
+    <div>
+      <a href="{{ url_for('practice') }}" class="btn btn-secondary" style="width: 100%;">
+        <span>Configure Practice</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- 3. Quiz Madness Marathon -->
+  <div class="dash-mode-card madness-mode">
+    <div>
+      <div class="mode-icon-box" style="background: #fff1f2; color: #e11d48;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+      </div>
+      <h3>Quiz Madness Marathon</h3>
+      <p>Exhaustive zero-repeat testing mode covering 100% of questions in the question bank for subject mastery.</p>
+    </div>
+
+    <div>
+      <a href="{{ url_for('madness') }}" class="btn btn-danger" style="width: 100%;">
+        <span>Start Marathon</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- 4. University Admission Guides -->
+  <div class="dash-mode-card guides-mode">
+    <div>
+      <div class="mode-icon-box" style="background: #ecfdf5; color: #059669;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path></svg>
+      </div>
+      <h3>University Portals & Criteria</h3>
+      <p>Inspect program eligibility requirements, fee structures, PEC transfer rules, and step-by-step admission progress trackers.</p>
+    </div>
+
+    <div>
+      <a href="{{ url_for('guides') }}" class="btn btn-secondary" style="width: 100%;">
+        <span>Explore Guides</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </div>
   </div>
 </div>
 
-<!-- Performance Metrics Quick Stats -->
-<div class="stats-grid">
-  <div class="stat-card">
-    <div class="stat-card-header">
-      <span class="lbl">Total Attempts</span>
-      <div class="stat-card-icon" style="background: rgba(37, 99, 235, 0.12); color: #2563eb;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+<!-- Two-Column Section: Subject Mastery Diagnostics & University Tracks -->
+<div class="dash-two-col">
+  <!-- Left: Subject Mastery Diagnostics -->
+  <div class="mastery-card">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+      <h3 style="font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+        Subject Diagnostic Breakdown
+      </h3>
+      <span class="badge badge-neutral" style="font-size: 0.75rem;">5 Core Modules</span>
+    </div>
+
+    <div class="mastery-row">
+      <div class="mastery-info">
+        <div class="mastery-label-group">
+          <span>Mathematics (Calculus & Algebra)</span>
+          <span style="color: var(--brand-primary); font-family: 'JetBrains Mono', monospace;">180 MCQs</span>
+        </div>
+        <div class="mastery-bar-track">
+          <div class="mastery-bar-fill" style="width: 85%; background: #2563eb;"></div>
+        </div>
       </div>
     </div>
-    <div class="val">{{ stats.total_attempts }}</div>
+
+    <div class="mastery-row">
+      <div class="mastery-info">
+        <div class="mastery-label-group">
+          <span>English (Grammar & Vocabulary)</span>
+          <span style="color: #059669; font-family: 'JetBrains Mono', monospace;">300 MCQs</span>
+        </div>
+        <div class="mastery-bar-track">
+          <div class="mastery-bar-fill" style="width: 92%; background: #059669;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mastery-row">
+      <div class="mastery-info">
+        <div class="mastery-label-group">
+          <span>Physics (Mechanics & Waves)</span>
+          <span style="color: #d97706; font-family: 'JetBrains Mono', monospace;">210 MCQs</span>
+        </div>
+        <div class="mastery-bar-track">
+          <div class="mastery-bar-fill" style="width: 78%; background: #d97706;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mastery-row">
+      <div class="mastery-info">
+        <div class="mastery-label-group">
+          <span>Computer Science & Architecture</span>
+          <span style="color: #7c3aed; font-family: 'JetBrains Mono', monospace;">234 MCQs</span>
+        </div>
+        <div class="mastery-bar-track">
+          <div class="mastery-bar-fill" style="width: 88%; background: #7c3aed;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mastery-row">
+      <div class="mastery-info">
+        <div class="mastery-label-group">
+          <span>Analytical & Logical Reasoning</span>
+          <span style="color: #0284c7; font-family: 'JetBrains Mono', monospace;">215 MCQs</span>
+        </div>
+        <div class="mastery-bar-track">
+          <div class="mastery-bar-fill" style="width: 82%; background: #0284c7;"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="stat-card">
-    <div class="stat-card-header">
-      <span class="lbl">Highest Score</span>
-      <div class="stat-card-icon" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-2.34"></path><path d="M14 14.66V17c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2.34"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
-      </div>
+  <!-- Right: Target University Tracks -->
+  <div class="mastery-card">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+      <h3 style="font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+        Target University Admissions Tracks
+      </h3>
+      <span class="badge badge-neutral" style="font-size: 0.75rem;">Admissions 2026</span>
     </div>
-    <div class="val" style="color: #10b981;">{{ stats.top_percentage }}%</div>
-  </div>
 
-  <div class="stat-card">
-    <div class="stat-card-header">
-      <span class="lbl">Average Accuracy</span>
-      <div class="stat-card-icon" style="background: rgba(56, 189, 248, 0.12); color: #0284c7;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+    <div class="uni-track-item">
+      <div>
+        <div class="uni-track-title">Bahria University Islamabad (BUIC)</div>
+        <div class="uni-track-sub">BUET Format &bull; 100 MCQs &bull; E-8 Naval Complex</div>
       </div>
+      <a href="{{ url_for('university_detail', uni_id='bahria') }}" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.75rem;">
+        Guide
+      </a>
     </div>
-    <div class="val" style="color: var(--brand-primary);">{{ stats.avg_percentage }}%</div>
-  </div>
 
-  <div class="stat-card">
-    <div class="stat-card-header">
-      <span class="lbl">Best Completion Time</span>
-      <div class="stat-card-icon" style="background: rgba(245, 158, 11, 0.12); color: #d97706;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+    <div class="uni-track-item">
+      <div>
+        <div class="uni-track-title">International Islamic University (IIUI)</div>
+        <div class="uni-track-sub">60% Test + 40% Academic Aggregate &bull; H-10 Campus</div>
       </div>
+      <a href="{{ url_for('university_detail', uni_id='iiui') }}" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.75rem;">
+        Guide
+      </a>
     </div>
-    <div class="val" style="color: #d97706; font-size: 1.95rem;">{{ format_time(stats.best_time) }}</div>
+
+    <div class="uni-track-item">
+      <div>
+        <div class="uni-track-title">NUST (NET) & FAST-NU Tracks</div>
+        <div class="uni-track-sub">Engineering & Computer Science Test Patterns</div>
+      </div>
+      <a href="{{ url_for('guides') }}" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.75rem;">
+        Details
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Performance Metrics Quick Row -->
+<div class="stats-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.75rem;">
+  <div class="card" style="padding: 1.25rem;">
+    <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Total Attempts</div>
+    <div style="font-size: 1.75rem; font-weight: 800; font-family: 'JetBrains Mono', monospace; color: var(--brand-navy); margin-top: 0.25rem;">{{ stats.total_attempts }}</div>
+  </div>
+  <div class="card" style="padding: 1.25rem;">
+    <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Highest Score</div>
+    <div style="font-size: 1.75rem; font-weight: 800; font-family: 'JetBrains Mono', monospace; color: #059669; margin-top: 0.25rem;">{{ stats.top_percentage }}%</div>
+  </div>
+  <div class="card" style="padding: 1.25rem;">
+    <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Average Accuracy</div>
+    <div style="font-size: 1.75rem; font-weight: 800; font-family: 'JetBrains Mono', monospace; color: var(--brand-primary); margin-top: 0.25rem;">{{ stats.avg_percentage }}%</div>
+  </div>
+  <div class="card" style="padding: 1.25rem;">
+    <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Best Time</div>
+    <div style="font-size: 1.75rem; font-weight: 800; font-family: 'JetBrains Mono', monospace; color: #d97706; margin-top: 0.25rem;">{{ format_time(stats.best_time) }}</div>
   </div>
 </div>
 
 <!-- Recent Attempt History Section -->
-<div class="glass-panel" style="padding: 2rem; margin-top: 2rem;">
-  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+<div class="card" style="padding: 1.75rem;">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 1rem;">
     <div>
-      <h3 style="font-size: 1.35rem; display: flex; align-items: center; gap: 0.6rem;">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-        Recent Exam Attempts
+      <h3 style="font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+        Recent Examination Transcripts
       </h3>
-      <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500; margin-top: 0.2rem;">
-        Saved relational test records & detailed diagnostic analytics
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.15rem;">
+        Saved relational test records & diagnostic evaluations
       </p>
     </div>
     
@@ -111,7 +271,7 @@
           <th>Percentage</th>
           <th>Grade</th>
           <th>Time Taken</th>
-          <th style="text-align: right;">Actions</th>
+          <th style="text-align: right;">Transcript Actions</th>
         </tr>
       </thead>
       <tbody>
@@ -142,14 +302,14 @@
           </td>
           <td style="text-align: right;">
             <div style="display: inline-flex; gap: 0.4rem; justify-content: flex-end;">
-              <a href="{{ url_for('result', attempt_id=a.id) }}" class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.82rem; min-height: 32px;">
+              <a href="{{ url_for('result', attempt_id=a.id) }}" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.8rem; min-height: 30px;">
                 Scorecard
               </a>
-              <a href="{{ url_for('review', attempt_id=a.id) }}" class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.82rem; min-height: 32px;">
+              <a href="{{ url_for('review', attempt_id=a.id) }}" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.8rem; min-height: 30px;">
                 Review
               </a>
-              <a href="{{ url_for('report', attempt_id=a.id) }}" class="btn btn-primary" style="padding: 0.4rem 0.85rem; font-size: 0.82rem; min-height: 32px;">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+              <a href="{{ url_for('report', attempt_id=a.id) }}" class="btn btn-primary" style="padding: 0.35rem 0.75rem; font-size: 0.8rem; min-height: 30px;">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
                 <span>Report</span>
               </a>
             </div>
@@ -160,14 +320,14 @@
     </table>
   </div>
   {% else %}
-  <div style="text-align: center; padding: 4rem 1.5rem; color: var(--text-muted);">
-    <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--bg-subtle); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: var(--text-muted);">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+  <div style="text-align: center; padding: 3.5rem 1.5rem; color: var(--text-muted);">
+    <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--bg-subtle); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--text-muted);">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
     </div>
-    <h4 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.4rem;">No test attempts recorded yet</h4>
-    <p style="font-size: 0.92rem; max-width: 420px; margin: 0 auto 1.5rem;">Launch your first full CBT test simulation or customize a subject practice session to track your performance diagnostics.</p>
+    <h4 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.35rem;">No test attempts recorded yet</h4>
+    <p style="font-size: 0.9rem; max-width: 400px; margin: 0 auto 1.25rem;">Begin your first full CBT test simulation or launch a subject practice session to track your performance diagnostics.</p>
     <a href="{{ url_for('instructions') }}" class="btn btn-primary btn-lg">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
       <span>Take Your First CBT Exam</span>
     </a>
   </div>
