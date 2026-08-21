@@ -5,11 +5,11 @@
 {% block extra_head %}
 <style>
   .guides-hero {
-    background: linear-gradient(135deg, #0b1727 0%, #1e293b 50%, #0f172a 100%);
+    background: linear-gradient(135deg, #0b1727 0%, #1e293b 60%, #0f172a 100%);
     color: #fff;
     padding: 2.75rem 3rem;
     border-radius: var(--radius-lg);
-    margin-bottom: 2rem;
+    margin-bottom: 2.25rem;
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -23,21 +23,8 @@
     border-radius: 50%;
     pointer-events: none;
   }
-  .guides-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: rgba(56, 189, 248, 0.15);
-    border: 1px solid rgba(56, 189, 248, 0.35);
-    padding: 0.35rem 0.95rem;
-    border-radius: var(--radius-full);
-    font-size: 0.85rem;
-    font-weight: 800;
-    color: #38bdf8;
-    margin-bottom: 1rem;
-  }
-  .guides-hero h2 { color: #fff; font-size: 2.2rem; margin-bottom: 0.5rem; }
-  .guides-hero p { color: #94a3b8; font-size: 1.05rem; max-width: 760px; line-height: 1.6; }
+  .guides-hero h2 { color: #fff; font-size: 2.25rem; margin-bottom: 0.5rem; letter-spacing: -0.025em; }
+  .guides-hero p { color: #cbd5e1; font-size: 1.05rem; max-width: 760px; line-height: 1.6; }
 
   .featured-unis-grid {
     display: grid;
@@ -50,7 +37,7 @@
     background: var(--bg-surface);
     border: 1.5px solid var(--border-subtle);
     border-radius: var(--radius-lg);
-    padding: 2rem;
+    padding: 2.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,26 +46,25 @@
   .uni-card-main:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
-    border-color: #3b82f6;
+    border-color: var(--brand-primary);
   }
 
   .uni-card-header {
     display: flex;
-    gap: 1rem;
+    gap: 1.15rem;
     align-items: flex-start;
     margin-bottom: 1.25rem;
   }
 
   .uni-logo-box {
-    width: 56px;
-    height: 56px;
+    width: 54px;
+    height: 54px;
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
-    background: #f1f5f9;
-    border: 1px solid var(--border-muted);
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-subtle);
     flex-shrink: 0;
   }
 
@@ -86,7 +72,7 @@
     font-size: 1.35rem;
     font-weight: 800;
     color: var(--brand-navy);
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.25rem;
   }
 
   .uni-title-text p {
@@ -99,16 +85,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
-    margin: 0.85rem 0 1.25rem 0;
+    margin: 1rem 0 1.25rem 0;
   }
 
   .prog-pill {
     font-size: 0.78rem;
-    font-weight: 800;
-    background: #eff6ff;
-    color: #1d4ed8;
-    border: 1px solid #bfdbfe;
-    padding: 0.25rem 0.65rem;
+    font-weight: 700;
+    background: var(--brand-primary-light);
+    color: var(--brand-primary);
+    border: 1px solid var(--brand-primary-border);
+    padding: 0.25rem 0.75rem;
     border-radius: var(--radius-full);
   }
 
@@ -132,7 +118,7 @@
   .guide-card:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
-    border-color: #93c5fd;
+    border-color: var(--brand-primary-border);
   }
 
   .pattern-table {
@@ -142,8 +128,8 @@
     border-collapse: collapse;
   }
   .pattern-table th {
-    background: var(--bg-body);
-    padding: 0.45rem 0.75rem;
+    background: var(--bg-subtle);
+    padding: 0.5rem 0.75rem;
     text-align: left;
     font-size: 0.75rem;
     color: var(--text-muted);
@@ -151,35 +137,29 @@
     border-bottom: 1px solid var(--border-subtle);
   }
   .pattern-table td {
-    padding: 0.5rem 0.75rem;
+    padding: 0.55rem 0.75rem;
     border-bottom: 1px solid var(--border-subtle);
   }
 
   .rule-pill {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
     padding: 0.25rem 0.65rem;
     border-radius: var(--radius-full);
     font-size: 0.78rem;
     font-weight: 800;
   }
-  .rule-no-neg { background: #d1fae5; color: #059669; border: 1px solid #10b981; }
-  .rule-neg { background: #fee2e2; color: #dc2626; border: 1px solid #fca5a5; }
-
-  .tips-list {
-    margin-left: 1.1rem;
-    font-size: 0.88rem;
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
-  }
+  .rule-no-neg { background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; }
+  .rule-neg { background: #fff1f2; color: #e11d48; border: 1px solid #fecdd3; }
 
   .strategy-banner {
     background: linear-gradient(135deg, #1e293b 0%, #0b1727 100%);
     color: #fff;
-    padding: 2rem 2.5rem;
-    border-radius: var(--radius-md);
+    padding: 2.25rem 2.5rem;
+    border-radius: var(--radius-lg);
     margin-bottom: 2rem;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.08);
   }
 </style>
 {% endblock %}
@@ -187,14 +167,18 @@
 {% block content %}
 <!-- Hero Header -->
 <div class="guides-hero">
-  <div class="guides-badge">
-    🎓 Universities Entrance Examination Portal 2026
+  <div class="badge badge-primary" style="margin-bottom: 1rem; border-color: rgba(56,189,248,.4); background: rgba(56,189,248,.15); color: #38bdf8;">
+    <span class="badge-dot" style="background: #38bdf8;"></span>
+    <span>University Admission Intelligence 2026</span>
   </div>
-  <h2>University Admission Portals, Criteria & Entry Test Guides</h2>
-  <p>Select your target university to inspect comprehensive program eligibility criteria (SSC/HSSC marks), transfer & migration rules, fee structures, test patterns, and step-by-step admission progress trackers.</p>
+  <h2>University Admission Portals, Criteria & Guides</h2>
+  <p>Select your target institution to inspect verified program eligibility criteria (SSC/HSSC marks), transfer & migration rules, fee structures, test weightages, and admission step trackers.</p>
 </div>
 
-<h3 style="font-size: 1.4rem; color: var(--brand-navy); margin-bottom: 1rem;">🏛️ Featured Universities Admission Portals</h3>
+<h3 style="font-size: 1.45rem; color: var(--brand-navy); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+  Featured University Admission Portals
+</h3>
 
 <!-- Featured Universities Grid (Bahria University & IIUI) -->
 <div class="featured-unis-grid">
@@ -203,7 +187,9 @@
   <div class="uni-card-main" style="border-top: 4px solid #2563eb;">
     <div>
       <div class="uni-card-header">
-        <div class="uni-logo-box" style="background:#eff6ff; color:#2563eb;">🏛️</div>
+        <div class="uni-logo-box" style="background:#eff6ff; color:#2563eb;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        </div>
         <div class="uni-title-text">
           <h3>Bahria University Islamabad (BUIC)</h3>
           <p>Federal Chartered Public Sector University - E-8 Campus</p>
@@ -221,16 +207,17 @@
         <span class="prog-pill">BS Cyber Security</span>
       </div>
 
-      <div style="background: var(--bg-body); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 1.25rem; font-size: 0.88rem;">
-        <div style="margin-bottom: 0.4rem;"><strong>🎯 Test Pattern:</strong> 100 MCQs (Maths, Physics/CS, English, Analytical)</div>
-        <div style="margin-bottom: 0.4rem;"><strong>💳 Est. First Semester Dues:</strong> PKR 188,000 (Incl. 15k Misc + 33k Admission + 25k Security)</div>
-        <div style="color: #e11d48; font-weight: 700;"><strong>⚠️ Transfer Policy:</strong> No cross transfer in Bahria Engineering programs!</div>
+      <div style="background: var(--bg-subtle); padding: 1.15rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 1.5rem; font-size: 0.88rem; display: flex; flex-direction: column; gap: 0.4rem;">
+        <div><strong>Test Pattern:</strong> 100 MCQs (Maths, Physics/CS, English, Analytical)</div>
+        <div><strong>Est. First Semester Dues:</strong> PKR 188,000 (Incl. 15k Misc + 33k Admission + 25k Security)</div>
+        <div style="color: #e11d48; font-weight: 700;"><strong>Transfer Policy:</strong> No cross transfer in Bahria Engineering programs!</div>
       </div>
     </div>
 
     <div>
-      <a href="{{ url_for('university_detail', uni_id='bahria') }}" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 0.95rem; padding: 0.8rem; font-weight: 800;">
-        📋 View Full Criteria & Admission Process Tracker →
+      <a href="{{ url_for('university_detail', uni_id='bahria') }}" class="btn btn-primary btn-lg" style="width: 100%;">
+        <span>View Full Criteria & Admission Tracker</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </div>
   </div>
@@ -239,7 +226,9 @@
   <div class="uni-card-main" style="border-top: 4px solid #059669;">
     <div>
       <div class="uni-card-header">
-        <div class="uni-logo-box" style="background:#d1fae5; color:#059669;">🕌</div>
+        <div class="uni-logo-box" style="background:#ecfdf5; color:#059669;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+        </div>
         <div class="uni-title-text">
           <h3>International Islamic University Islamabad (IIUI)</h3>
           <p>Public Sector Federal University - Sector H-10</p>
@@ -251,21 +240,22 @@
       </p>
 
       <div class="progs-list-tags">
-        <span class="prog-pill" style="background:#d1fae5; color:#059669; border-color:#a7f3d0;">BS Computer Science</span>
-        <span class="prog-pill" style="background:#d1fae5; color:#059669; border-color:#a7f3d0;">BS Software Engineering</span>
-        <span class="prog-pill" style="background:#d1fae5; color:#059669; border-color:#a7f3d0;">BS Artificial Intelligence</span>
+        <span class="prog-pill" style="background:#ecfdf5; color:#059669; border-color:#a7f3d0;">BS Computer Science</span>
+        <span class="prog-pill" style="background:#ecfdf5; color:#059669; border-color:#a7f3d0;">BS Software Engineering</span>
+        <span class="prog-pill" style="background:#ecfdf5; color:#059669; border-color:#a7f3d0;">BS Artificial Intelligence</span>
       </div>
 
-      <div style="background: var(--bg-body); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 1.25rem; font-size: 0.88rem;">
-        <div style="margin-bottom: 0.4rem;"><strong>🎯 Test Aggregate:</strong> 60% IIUI Entry Test + 40% Academic Marks</div>
-        <div style="margin-bottom: 0.4rem;"><strong>💳 Est. First Semester Dues:</strong> PKR 122,000 (Incl. 12k Misc + 20k Admission + 15k Security)</div>
-        <div style="color: #059669; font-weight: 700;"><strong>🔄 Transfer Policy:</strong> Credit transfer requires min 2.5 CGPA & HOD approval</div>
+      <div style="background: var(--bg-subtle); padding: 1.15rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 1.5rem; font-size: 0.88rem; display: flex; flex-direction: column; gap: 0.4rem;">
+        <div><strong>Test Aggregate:</strong> 60% IIUI Entry Test + 40% Academic Marks</div>
+        <div><strong>Est. First Semester Dues:</strong> PKR 122,000 (Incl. 12k Misc + 20k Admission + 15k Security)</div>
+        <div style="color: #059669; font-weight: 700;"><strong>Transfer Policy:</strong> Credit transfer requires min 2.5 CGPA & HOD approval</div>
       </div>
     </div>
 
     <div>
-      <a href="{{ url_for('university_detail', uni_id='iiui') }}" class="btn" style="width: 100%; justify-content: center; font-size: 0.95rem; padding: 0.8rem; font-weight: 800; background: linear-gradient(135deg, #059669 0%, #047857 100%); color: #fff; border: none;">
-        📋 View Full Criteria & Admission Process Tracker →
+      <a href="{{ url_for('university_detail', uni_id='iiui') }}" class="btn btn-lg" style="width: 100%; background: linear-gradient(135deg, #059669 0%, #047857 100%); color: #fff; border: none; box-shadow: 0 4px 12px rgba(5,150,105,0.25);">
+        <span>View Full Criteria & Admission Tracker</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </div>
   </div>
@@ -273,7 +263,10 @@
 </div>
 
 <!-- Other Major University Test Guides -->
-<h3 style="font-size: 1.4rem; color: var(--brand-navy); margin-bottom: 1rem;">📝 Other Major Entrance Exams Overview</h3>
+<h3 style="font-size: 1.45rem; color: var(--brand-navy); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path></svg>
+  Other Major University Testing Patterns
+</h3>
 
 <div class="guides-grid">
 
@@ -285,10 +278,12 @@
           <div style="font-size: 1.2rem; font-weight: 800; color: var(--brand-navy);">NUST Entry Test (NET)</div>
           <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">National University of Sciences & Technology</div>
         </div>
-        <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; background:#eff6ff; color:#2563eb;">🏛️</div>
+        <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; background:#eff6ff; color:#2563eb;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+        </div>
       </div>
 
-      <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+      <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
         <span class="rule-pill rule-no-neg">No Negative Marking</span>
         <span class="section-badge" style="font-size:0.75rem;">200 MCQs &bull; 180 Mins</span>
       </div>
@@ -315,7 +310,9 @@
       </table>
     </div>
     <div>
-      <a href="{{ url_for('practice') }}" class="btn btn-primary" style="width: 100%; justify-content: center;">🎯 Practice NET CBT Mock</a>
+      <a href="{{ url_for('practice') }}" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        <span>Practice NET CBT Mock</span>
+      </a>
     </div>
   </div>
 
@@ -325,13 +322,15 @@
       <div class="guide-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
         <div>
           <div style="font-size: 1.2rem; font-weight: 800; color: var(--brand-navy);">FAST-NU Admission Test</div>
-          <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Computer Science & Engineering Entry Test</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Computing & Engineering Entrance Test</div>
         </div>
-        <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; background:#fef3c7; color:#d97706;">💻</div>
+        <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; background:#fffbeb; color:#d97706;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line></svg>
+        </div>
       </div>
 
-      <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
-        <span class="rule-pill rule-neg">⚠️ 0.25 Negative Marking</span>
+      <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+        <span class="rule-pill rule-neg">0.25 Negative Marking</span>
         <span class="section-badge" style="font-size:0.75rem;">120 MCQs &bull; 120 Mins</span>
       </div>
 
@@ -356,7 +355,9 @@
       </table>
     </div>
     <div>
-      <a href="{{ url_for('practice') }}" class="btn btn-primary" style="width: 100%; justify-content: center;">🎯 Practice FAST CBT Mock</a>
+      <a href="{{ url_for('practice') }}" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        <span>Practice FAST CBT Mock</span>
+      </a>
     </div>
   </div>
 
@@ -368,11 +369,13 @@
           <div style="font-size: 1.2rem; font-weight: 800; color: var(--brand-navy);">ECAT (UET Entrance Test)</div>
           <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Engineering Colleges Admission Test</div>
         </div>
-        <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; background:#fee2e2; color:#dc2626;">⚙️</div>
+        <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; background:#fff1f2; color:#e11d48;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        </div>
       </div>
 
-      <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
-        <span class="rule-pill rule-neg">⚠️ -1 Penalty / +4 Correct</span>
+      <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+        <span class="rule-pill rule-neg">-1 Penalty / +4 Correct</span>
         <span class="section-badge" style="font-size:0.75rem;">100 MCQs &bull; 400 Marks</span>
       </div>
 
@@ -397,7 +400,9 @@
       </table>
     </div>
     <div>
-      <a href="{{ url_for('practice') }}" class="btn btn-primary" style="width: 100%; justify-content: center;">🎯 Practice ECAT CBT Mock</a>
+      <a href="{{ url_for('practice') }}" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        <span>Practice ECAT CBT Mock</span>
+      </a>
     </div>
   </div>
 
@@ -405,13 +410,19 @@
 
 <!-- Strategy Section Banner -->
 <div class="strategy-banner">
-  <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 0.5rem;">🔥 Ultimate Entry Test Preparation Strategy</h3>
-  <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 1.25rem;">
-    Achieving 85%+ in university entry tests requires a blend of conceptual mastery, quick mental arithmetic, and stamina. Use our <strong>Quiz Madness Mode</strong> to attempt 100% of questions in the question bank without repeats!
+  <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 0.5rem;">Entry Test Preparation Strategy</h3>
+  <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6;">
+    Achieving 85%+ in university entry tests requires conceptual mastery, rapid mental arithmetic, and endurance. Utilize our <strong>Quiz Madness Mode</strong> to attempt 100% of questions in the question bank without repeats!
   </p>
   <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-    <a href="{{ url_for('madness') }}" class="btn" style="background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); color: #fff; border: none; font-weight: 800;">🔥 Launch Quiz Madness (Zero Repeats)</a>
-    <a href="{{ url_for('practice') }}" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.2); color: #fff;">⚙️ Configure Custom Practice Session</a>
+    <a href="{{ url_for('madness') }}" class="btn btn-danger btn-lg">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+      <span>Launch Quiz Madness (Zero Repeats)</span>
+    </a>
+    <a href="{{ url_for('practice') }}" class="btn btn-secondary btn-lg">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+      <span>Configure Custom Practice</span>
+    </a>
   </div>
 </div>
 {% endblock %}

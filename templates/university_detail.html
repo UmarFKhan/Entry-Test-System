@@ -4,7 +4,6 @@
 
 {% block extra_head %}
 <style>
-  /* ── University Detail Header ───────────────────────── */
   .uni-hero {
     background: linear-gradient(135deg, #0b1727 0%, #1e293b 60%, #0f172a 100%);
     color: #ffffff;
@@ -35,12 +34,12 @@
     border-radius: var(--radius-full);
     font-size: 0.85rem;
     font-weight: 800;
-    margin-bottom: 0.85rem;
+    margin-bottom: 1rem;
   }
-  .uni-hero h1 { color: #ffffff; font-size: 2.2rem; margin-bottom: 0.4rem; letter-spacing: -0.02em; }
-  .uni-hero p { color: #94a3b8; font-size: 1.05rem; max-width: 760px; line-height: 1.6; }
+  .uni-hero h1 { color: #ffffff; font-size: 2.3rem; margin-bottom: 0.4rem; letter-spacing: -0.025em; }
+  .uni-hero p { color: #cbd5e1; font-size: 1.05rem; max-width: 760px; line-height: 1.6; }
 
-  /* ── Program Navigation Tabs ───────────────────────── */
+  /* Program Selector Box */
   .prog-selector-box {
     margin-bottom: 2rem;
     background: var(--bg-surface);
@@ -50,7 +49,7 @@
     box-shadow: var(--shadow-xs);
   }
   .prog-tabs-label {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     font-weight: 800;
     color: var(--text-muted);
     text-transform: uppercase;
@@ -65,13 +64,13 @@
   .prog-tab {
     padding: 0.65rem 1.25rem;
     border-radius: var(--radius-sm);
-    border: 1.5px solid var(--border-muted);
-    background: var(--bg-body);
+    border: 1.5px solid var(--border-default);
+    background: var(--bg-subtle);
     color: var(--text-secondary);
     font-weight: 700;
     font-size: 0.92rem;
     text-decoration: none;
-    transition: all 0.2s ease;
+    transition: all var(--transition-fast);
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -85,10 +84,10 @@
     background: {{ university.badge_color }};
     color: #ffffff;
     border-color: {{ university.badge_color }};
-    box-shadow: 0 4px 12px {{ university.badge_color }}40;
+    box-shadow: 0 4px 14px {{ university.badge_color }}40;
   }
 
-  /* ── Content Layout Grid ───────────────────────────── */
+  /* Criteria Bento Grid */
   .criteria-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -100,7 +99,7 @@
     background: var(--bg-surface);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
-    padding: 1.75rem;
+    padding: 1.85rem;
     display: flex;
     flex-direction: column;
     box-shadow: var(--shadow-xs);
@@ -117,12 +116,12 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1.25rem;
     padding-bottom: 0.75rem;
     border-bottom: 1.5px solid var(--border-subtle);
   }
 
-  /* Fee Table Styling */
+  /* Fee Table */
   .fee-table {
     width: 100%;
     border-collapse: collapse;
@@ -136,23 +135,26 @@
   .fee-table tr:last-child td { border-bottom: none; }
   .fee-table .fee-name { color: var(--text-secondary); font-weight: 600; }
   .fee-table .fee-val { text-align: right; font-weight: 800; color: var(--brand-navy); font-family: 'JetBrains Mono', monospace; }
-  .fee-table .highlight-row td { background: #eff6ff; font-weight: 900; }
+  .fee-table .highlight-row td { background: var(--brand-primary-light); font-weight: 900; }
 
-  /* Alert Callouts */
+  /* Warning Callout */
   .eng-warning-box {
-    background: #fff1f2;
-    border: 1.5px solid #fecdd3;
-    border-left: 5px solid #e11d48;
+    background: var(--status-danger-bg);
+    border: 1.5px solid var(--status-danger-border);
+    border-left: 5px solid var(--status-danger);
     padding: 1rem 1.25rem;
     border-radius: var(--radius-sm);
     margin-bottom: 1rem;
-    color: #9f1239;
+    color: var(--status-danger-text);
     font-size: 0.9rem;
     font-weight: 700;
     line-height: 1.5;
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
   }
 
-  /* ── Vertical Process Progress Tracker UI (Matching Screenshot) ───────── */
+  /* Vertical Stepper Timeline */
   .progress-section {
     background: var(--bg-surface);
     border: 1px solid var(--border-subtle);
@@ -169,7 +171,7 @@
     border-radius: var(--radius-sm);
     text-align: center;
     font-weight: 900;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
@@ -183,7 +185,6 @@
     padding-left: 2.5rem;
   }
 
-  /* Vertical Connecting Line */
   .timeline-container::before {
     content: '';
     position: absolute;
@@ -191,7 +192,7 @@
     top: 24px;
     bottom: 24px;
     width: 3px;
-    background: #cbd5e1;
+    background: var(--border-default);
     z-index: 1;
   }
 
@@ -205,7 +206,6 @@
     margin-bottom: 0;
   }
 
-  /* Green Check Icon Circle */
   .timeline-node {
     position: absolute;
     left: -2.5rem;
@@ -220,60 +220,60 @@
     justify-content: center;
     font-weight: 900;
     font-size: 1.25rem;
-    box-shadow: 0 0 0 5px #ffffff, 0 4px 10px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 0 0 5px var(--bg-surface), 0 4px 10px rgba(16, 185, 129, 0.3);
     z-index: 3;
   }
 
-  /* Content Card Box */
   .timeline-card {
-    background: #ffffff;
-    border: 1.5px solid #cbd5e1;
+    background: var(--bg-surface);
+    border: 1.5px solid var(--border-default);
     border-radius: var(--radius-md);
     padding: 1.5rem 1.75rem;
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+    box-shadow: var(--shadow-xs);
     transition: transform 0.2s ease, border-color 0.2s ease;
   }
 
   .timeline-card:hover {
     border-color: #10b981;
     transform: translateX(4px);
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    box-shadow: var(--shadow-md);
   }
 
   .step-date-badge {
     display: inline-block;
     font-size: 0.75rem;
     font-weight: 800;
-    color: #475569;
-    background: #f1f5f9;
+    color: var(--text-muted);
+    background: var(--bg-subtle);
     padding: 0.2rem 0.65rem;
     border-radius: 4px;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    font-family: 'JetBrains Mono', monospace;
   }
 
   .step-title {
     font-size: 1.15rem;
     font-weight: 800;
-    color: #0f172a;
+    color: var(--brand-navy);
     margin-bottom: 0.4rem;
   }
 
   .step-summary {
     font-size: 0.95rem;
-    color: #334155;
-    font-weight: 700;
+    color: var(--text-secondary);
+    font-weight: 600;
     margin-bottom: 0.6rem;
     line-height: 1.5;
   }
 
   .step-details {
     font-size: 0.88rem;
-    color: #64748b;
+    color: var(--text-muted);
     line-height: 1.6;
     white-space: pre-line;
-    border-top: 1px dashed #e2e8f0;
+    border-top: 1px dashed var(--border-subtle);
     padding-top: 0.6rem;
     margin-top: 0.6rem;
   }
@@ -284,13 +284,21 @@
 <!-- University Header Hero Card -->
 <div class="uni-hero">
   <div class="uni-badge-pill">
-    {{ university.icon }} {{ university.name }}
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+    <span>{{ university.name }}</span>
   </div>
   <h1>{{ program.name }}</h1>
   <p>{{ university.description }}</p>
-  <div style="display: flex; gap: 1rem; margin-top: 1.25rem; flex-wrap: wrap;">
-    <a href="{{ university.portal_url }}" target="_blank" class="btn btn-secondary" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2);">🌐 Official Admission Portal</a>
-    <a href="#admissionTimeline" class="btn btn-secondary" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2);">📊 View Step-by-Step Admission Tracker</a>
+  
+  <div style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+    <a href="{{ university.portal_url }}" target="_blank" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.12); color: #fff; border-color: rgba(255,255,255,0.25);">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+      <span>Official Admission Portal</span>
+    </a>
+    <a href="#admissionTimeline" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.12); color: #fff; border-color: rgba(255,255,255,0.25);">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+      <span>View Step-by-Step Process Tracker</span>
+    </a>
   </div>
 </div>
 
@@ -300,31 +308,33 @@
   <div class="prog-tabs-grid">
     {% for prog_key, prog_data in university.programs.items() %}
     <a href="{{ url_for('university_detail', uni_id=university.id, program_id=prog_key) }}" class="prog-tab {% if prog_key == program.id %}active{% endif %}">
-      <span>🎓</span> {{ prog_data.name }}
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+      <span>{{ prog_data.name }}</span>
     </a>
     {% endfor %}
   </div>
 </div>
 
-<!-- Main Information Grid (Eligibility, Transfer, Fees, Entry Test) -->
+<!-- Main Information Bento Grid -->
 <div class="criteria-grid">
 
   <!-- 1. Eligibility Criteria Box -->
   <div class="info-card">
     <div class="card-header-title">
-      <span>📌</span> Eligibility Criteria
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+      <span>Eligibility Criteria</span>
     </div>
     
     <div style="margin-bottom: 1.25rem;">
-      <h4 style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted); font-weight: 800; margin-bottom: 0.35rem;">SSC / Matriculation Requirements:</h4>
-      <p style="font-size: 0.95rem; color: var(--text-primary); font-weight: 600; line-height: 1.5; background: var(--bg-body); padding: 0.75rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+      <h4 style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 800; margin-bottom: 0.4rem; letter-spacing: 0.5px;">SSC / Matriculation Requirements:</h4>
+      <p style="font-size: 0.95rem; color: var(--text-primary); font-weight: 600; line-height: 1.5; background: var(--bg-subtle); padding: 0.85rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
         {{ program.ssc_criteria }}
       </p>
     </div>
 
     <div>
-      <h4 style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted); font-weight: 800; margin-bottom: 0.35rem;">HSSC / Intermediate Requirements:</h4>
-      <p style="font-size: 0.95rem; color: var(--text-primary); font-weight: 600; line-height: 1.5; background: var(--bg-body); padding: 0.75rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+      <h4 style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 800; margin-bottom: 0.4rem; letter-spacing: 0.5px;">HSSC / Intermediate Requirements:</h4>
+      <p style="font-size: 0.95rem; color: var(--text-primary); font-weight: 600; line-height: 1.5; background: var(--bg-subtle); padding: 0.85rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
         {{ program.hssc_criteria }}
       </p>
     </div>
@@ -333,12 +343,14 @@
   <!-- 2. Transfer / Migration Details Box -->
   <div class="info-card">
     <div class="card-header-title">
-      <span>🔄</span> Transfer & Migration Policy
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+      <span>Transfer & Migration Policy</span>
     </div>
 
     {% if program.engineering_transfer_rule %}
     <div class="eng-warning-box">
-      {{ program.engineering_transfer_rule }}
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      <div>{{ program.engineering_transfer_rule }}</div>
     </div>
     {% endif %}
 
@@ -346,15 +358,16 @@
       {{ program.transfer_policy }}
     </p>
 
-    <div style="margin-top: auto; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: var(--radius-sm); padding: 0.85rem 1rem; font-size: 0.85rem; color: #1e40af;">
-      <strong>ℹ️ Migration Approval Note:</strong> Transfer students must present previous official transcripts directly to the Department HOD for course credit mapping.
+    <div style="margin-top: auto; background: var(--brand-primary-light); border: 1px solid var(--brand-primary-border); border-radius: var(--radius-sm); padding: 0.85rem 1rem; font-size: 0.85rem; color: var(--brand-primary); font-weight: 600;">
+      <strong>Migration Approval Protocol:</strong> Transfer applicants must present previous official transcripts directly to the Department HOD for course credit mapping and exemption approval.
     </div>
   </div>
 
   <!-- 3. Fee Structure Breakdown Box -->
   <div class="info-card">
     <div class="card-header-title">
-      <span>💳</span> Program Fee Structure
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+      <span>Program Fee Structure</span>
     </div>
 
     <table class="fee-table">
@@ -376,8 +389,8 @@
           <td class="fee-val">{{ program.security_fee }}</td>
         </tr>
         <tr class="highlight-row">
-          <td class="fee-name" style="color: var(--brand-blue);">Est. First Semester Total</td>
-          <td class="fee-val" style="color: var(--brand-blue); font-size: 1.05rem;">{{ program.total_first_semester }}</td>
+          <td class="fee-name" style="color: var(--brand-primary);">Est. First Semester Total</td>
+          <td class="fee-val" style="color: var(--brand-primary); font-size: 1.1rem;">{{ program.total_first_semester }}</td>
         </tr>
       </tbody>
     </table>
@@ -387,14 +400,15 @@
     </p>
   </div>
 
-  <!-- 4. Entry Test Details & Practice Launch Card -->
+  <!-- 4. Entry Test Details Card -->
   <div class="info-card" style="border-color: {{ university.badge_color }}66;">
     <div class="card-header-title" style="color: {{ university.badge_color }};">
-      <span>🎯</span> Admission Test Details
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+      <span>Admission Test Details</span>
     </div>
 
     <div style="margin-bottom: 1rem;">
-      <div style="font-weight: 800; font-size: 1.1rem; color: var(--brand-navy); margin-bottom: 0.2rem;">
+      <div style="font-weight: 800; font-size: 1.1rem; color: var(--brand-navy); margin-bottom: 0.25rem;">
         {{ university.test_name }}
       </div>
       <div style="font-size: 0.88rem; color: var(--text-muted); font-weight: 600;">
@@ -408,28 +422,29 @@
 
     <!-- Subject Breakdown List -->
     <div style="margin-bottom: 1.5rem;">
-      <h5 style="font-size: 0.82rem; text-transform: uppercase; color: var(--text-muted); font-weight: 800; margin-bottom: 0.5rem;">Subject Pattern Breakdown:</h5>
-      <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+      <h5 style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); font-weight: 800; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Subject Pattern Breakdown:</h5>
+      <div style="display: flex; flex-direction: column; gap: 0.45rem;">
         {% for b in program.test_breakdown %}
-        <div style="display: flex; justify-content: space-between; font-size: 0.88rem; padding: 0.35rem 0.75rem; background: var(--bg-body); border-radius: var(--radius-xs); border: 1px solid var(--border-subtle);">
+        <div style="display: flex; justify-content: space-between; font-size: 0.88rem; padding: 0.45rem 0.85rem; background: var(--bg-subtle); border-radius: var(--radius-xs); border: 1px solid var(--border-subtle);">
           <span>{{ b.subject }}</span>
-          <strong style="color: var(--brand-blue);">{{ b.questions }} MCQs</strong>
+          <strong style="color: var(--brand-primary); font-family: 'JetBrains Mono', monospace;">{{ b.questions }} MCQs</strong>
         </div>
         {% endfor %}
       </div>
     </div>
 
-    <a href="{{ url_for('practice') }}" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.85rem; font-weight: 800; font-size: 1rem;">
-      🚀 Start Practice Test Now
+    <a href="{{ url_for('practice') }}" class="btn btn-primary btn-lg" style="width: 100%;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+      <span>Start Practice Test Now</span>
     </a>
   </div>
 
 </div>
 
-<!-- Step-by-Step Progress Tracker Section (Matching Screenshot Design) -->
+<!-- Step-by-Step Process Tracker Section -->
 <div class="progress-section" id="admissionTimeline">
   <div class="progress-header-bar">
-    IN PROGRESS - COMPLETE ADMISSION & MIGRATION PROCESS TRACKER
+    Official Step-by-Step Admission & Migration Process Tracker
   </div>
 
   <div class="timeline-container">
@@ -437,7 +452,7 @@
     <div class="timeline-item">
       <!-- Checkmark Node Icon -->
       <div class="timeline-node">
-        ✓
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
       </div>
 
       <!-- Step Card Box -->

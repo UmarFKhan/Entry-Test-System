@@ -1,133 +1,180 @@
 /* ==========================================================================
-   Bahria University CBT System - Sleek Dark Theme Overrides
+   Atechabad Testing System (ATS) - High-Contrast OLED Dark Theme
+   Inspired by Linear / Raycast / Vercel dark mode aesthetics
    ========================================================================== */
 
 body.dark-mode {
-  --bg-body: #090d16;
+  --bg-body: #080c14;
   --bg-surface: #0f172a;
-  --bg-card: rgba(15, 23, 42, 0.92);
-  --bg-glass: rgba(15, 23, 42, 0.75);
+  --bg-surface-elevated: #162036;
+  --bg-subtle: #131c31;
+  --bg-muted: #1e293b;
   
-  --border-subtle: #1e293b;
-  --border-muted: #334155;
-  --border-accent: #38bdf8;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-default: rgba(255, 255, 255, 0.14);
+  --border-strong: rgba(255, 255, 255, 0.22);
+  --border-focus: #38bdf8;
   
   --text-primary: #f8fafc;
-  --text-secondary: #cbd5e1;
+  --text-secondary: #94a3b8;
   --text-muted: #64748b;
   --text-inverse: #0f172a;
   
   --brand-navy: #f8fafc;
-  --brand-navy-light: #334155;
-  --brand-blue: #38bdf8;
+  --brand-navy-light: #cbd5e1;
+  --brand-primary: #38bdf8;
+  --brand-primary-hover: #0ea5e9;
+  --brand-primary-light: rgba(56, 189, 248, 0.12);
+  --brand-primary-border: rgba(56, 189, 248, 0.28);
   
   /* Status Colors in Dark Mode */
-  --status-answered: #34d399;
-  --status-answered-bg: rgba(5, 150, 105, 0.2);
-  --status-answered-border: #059669;
+  --status-success: #34d399;
+  --status-success-bg: rgba(16, 185, 129, 0.15);
+  --status-success-border: rgba(16, 185, 129, 0.35);
+  --status-success-text: #a7f3d0;
   
-  --status-current: #38bdf8;
-  --status-current-bg: rgba(56, 189, 248, 0.2);
-  --status-current-border: #0284c7;
+  --status-warning: #fbbf24;
+  --status-warning-bg: rgba(245, 158, 11, 0.15);
+  --status-warning-border: rgba(245, 158, 11, 0.35);
+  --status-warning-text: #fde68a;
   
-  --status-flagged: #fbbf24;
-  --status-flagged-bg: rgba(217, 119, 6, 0.2);
-  --status-flagged-border: #d97706;
+  --status-danger: #fb7185;
+  --status-danger-bg: rgba(244, 63, 94, 0.15);
+  --status-danger-border: rgba(244, 63, 94, 0.35);
+  --status-danger-text: #fecdd3;
   
-  --status-unanswered: #1e293b;
+  --status-info: #38bdf8;
+  --status-info-bg: rgba(56, 189, 248, 0.15);
+  --status-info-border: rgba(56, 189, 248, 0.35);
+  --status-info-text: #bae6fd;
+
+  --status-unanswered: #162036;
   --status-unanswered-text: #94a3b8;
-  
-  --status-wrong: #f87171;
-  --status-wrong-bg: rgba(220, 38, 38, 0.2);
+
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 6px -1px rgba(0, 0, 0, 0.45), 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 25px -4px rgba(0, 0, 0, 0.55), 0 4px 10px -2px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 20px 35px -6px rgba(0, 0, 0, 0.65), 0 8px 16px -4px rgba(0, 0, 0, 0.45);
 
   background-color: var(--bg-body);
   background-image: 
-    radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.08) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(37, 99, 235, 0.08) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.06) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.06) 0px, transparent 50%);
 }
 
 body.dark-mode .app-header {
-  background: #030712;
-  border-bottom: 1px solid #1e293b;
+  background: rgba(8, 12, 20, 0.95);
+  border-bottom-color: var(--border-subtle);
 }
 
 body.dark-mode .hero-card {
-  background: linear-gradient(135deg, #030712 0%, #0f172a 100%);
-  border: 1px solid #1e293b;
+  background: linear-gradient(135deg, #090d16 0%, #111827 60%, #0b0f17 100%);
+  border-color: var(--border-subtle);
 }
 
 body.dark-mode .option-item {
-  background: #0f172a;
-  border-color: #1e293b;
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
 }
 
 body.dark-mode .option-item:hover {
-  background: rgba(56, 189, 248, 0.05);
-  border-color: #38bdf8;
+  background: rgba(56, 189, 248, 0.08);
+  border-color: var(--brand-primary);
 }
 
 body.dark-mode .option-item.selected {
   background: rgba(56, 189, 248, 0.15);
-  border-color: #38bdf8;
-  box-shadow: 0 0 0 1px #38bdf8;
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 1px var(--brand-primary), 0 4px 16px rgba(56, 189, 248, 0.2);
 }
 
 body.dark-mode .opt-prefix {
-  background: #1e293b;
-  border-color: #334155;
+  background: var(--bg-subtle);
+  border-color: var(--border-default);
   color: #cbd5e1;
 }
 
 body.dark-mode .option-item.selected .opt-prefix {
-  background: #38bdf8;
-  color: #090d16;
-  border-color: #38bdf8;
+  background: var(--brand-primary);
+  color: #080c14;
+  border-color: var(--brand-primary);
 }
 
 body.dark-mode .opt-key-hint {
-  background: #1e293b;
-  border-color: #334155;
-  color: #38bdf8;
+  background: var(--bg-subtle);
+  border-color: var(--border-default);
+  color: var(--brand-primary);
 }
 
 body.dark-mode .kbd {
-  background: #0f172a;
-  border-color: #334155;
-  color: #38bdf8;
-}
-
-body.dark-mode .progress-track {
-  background: #1e293b;
-}
-
-body.dark-mode .palette-stats {
-  background: #0b1329;
-  border-color: #1e293b;
-}
-
-body.dark-mode th {
-  background: #0b1329;
-  color: #94a3b8;
-  border-bottom-color: #1e293b;
-}
-
-body.dark-mode td {
-  border-bottom-color: #1e293b;
-}
-
-body.dark-mode .section-badge {
-  background: rgba(56, 189, 248, 0.12);
-  color: #38bdf8;
-  border-color: rgba(56, 189, 248, 0.3);
+  background: var(--bg-subtle);
+  border-color: var(--border-default);
+  border-bottom-color: var(--border-strong);
+  color: #f8fafc;
 }
 
 body.dark-mode .btn-secondary {
-  background: #0f172a;
+  background: var(--bg-surface);
   color: #f8fafc;
-  border-color: #334155;
+  border-color: var(--border-default);
 }
 
 body.dark-mode .btn-secondary:hover {
-  background: #1e293b;
-  border-color: #475569;
+  background: var(--bg-subtle);
+  border-color: var(--border-strong);
+}
+
+body.dark-mode .input-control {
+  background: var(--bg-surface);
+  border-color: var(--border-default);
+  color: #f8fafc;
+}
+
+body.dark-mode .input-control:focus {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+body.dark-mode .table-container {
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
+}
+
+body.dark-mode th {
+  background: var(--bg-subtle);
+  color: #94a3b8;
+  border-bottom-color: var(--border-subtle);
+}
+
+body.dark-mode td {
+  border-bottom-color: var(--border-subtle);
+}
+
+body.dark-mode tbody tr:hover {
+  background: rgba(56, 189, 248, 0.03);
+}
+
+body.dark-mode .palette-stats {
+  background: var(--bg-subtle);
+  border-color: var(--border-subtle);
+}
+
+body.dark-mode .p-btn {
+  background: var(--bg-subtle);
+  border-color: var(--border-subtle);
+  color: #94a3b8;
+}
+
+body.dark-mode .p-btn:hover {
+  border-color: var(--border-strong);
+}
+
+body.dark-mode .app-footer {
+  background: var(--bg-surface);
+  border-top-color: var(--border-subtle);
+}
+
+body.dark-mode .modal-card {
+  background: var(--bg-surface-elevated);
+  border-color: var(--border-default);
 }

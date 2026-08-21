@@ -3,88 +3,125 @@
 {% block title %}Question Review | Atechabad Testing System{% endblock %}
 
 {% block content %}
-<div class="glass-panel" style="padding: 1.75rem; margin-bottom: 2rem; background: var(--bg-surface);">
-  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+<div class="glass-panel" style="padding: 1.85rem; margin-bottom: 2rem;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.25rem;">
     <div>
-      <h2 style="font-size: 1.6rem;">🔍 Detailed Question & Answer Review</h2>
-      <p style="color: var(--text-secondary); font-size: 0.95rem;">Attempt #{{ attempt.id }} &bull; Candidate: {{ attempt.candidate_name }}</p>
+      <h2 style="font-size: 1.65rem; display: flex; align-items: center; gap: 0.55rem;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        Detailed Question & Diagnostic Review
+      </h2>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.25rem;">
+        Attempt <span style="font-family: 'JetBrains Mono', monospace; font-weight: 700; color: var(--brand-primary);">#{{ attempt.id }}</span> &bull; Candidate: <strong>{{ attempt.candidate_name }}</strong>
+      </p>
     </div>
 
-    <!-- Filter Buttons -->
+    <!-- Filter Buttons Bar -->
     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-      <button class="btn btn-primary review-filter-btn active" data-filter="all">All ({{ attempt.detailed_answers|length }})</button>
-      <button class="btn btn-secondary review-filter-btn" data-filter="incorrect">Incorrect ({{ attempt.wrong_count }})</button>
-      <button class="btn btn-secondary review-filter-btn" data-filter="correct">Correct ({{ attempt.correct_count }})</button>
-      <button class="btn btn-secondary review-filter-btn" data-filter="skipped">Skipped ({{ attempt.skipped_count }})</button>
+      <button class="btn btn-primary review-filter-btn active" data-filter="all">
+        All ({{ attempt.detailed_answers|length }})
+      </button>
+      <button class="btn btn-secondary review-filter-btn" data-filter="incorrect">
+        <span class="badge-dot" style="background: #f43f5e;"></span>
+        Incorrect ({{ attempt.wrong_count }})
+      </button>
+      <button class="btn btn-secondary review-filter-btn" data-filter="correct">
+        <span class="badge-dot" style="background: #10b981;"></span>
+        Correct ({{ attempt.correct_count }})
+      </button>
+      <button class="btn btn-secondary review-filter-btn" data-filter="skipped">
+        <span class="badge-dot" style="background: #64748b;"></span>
+        Skipped ({{ attempt.skipped_count }})
+      </button>
     </div>
   </div>
 </div>
 
-<!-- Questions Review List -->
+<!-- Questions Review Cards List -->
 <div class="review-cards-list" style="display: flex; flex-direction: column; gap: 1.25rem;">
   {% for q in attempt.detailed_answers %}
   <div class="glass-panel review-card" 
        data-is-correct="{{ 'true' if q.is_correct else 'false' }}" 
        data-is-skipped="{{ 'true' if q.is_skipped else 'false' }}"
-       style="padding: 1.75rem; background: var(--bg-surface); border-left: 5px solid {% if q.is_correct %}#059669{% elif q.is_skipped %}#64748b{% else %}#dc2626{% endif %};">
+       style="padding: 2rem; border-left: 5px solid {% if q.is_correct %}#10b981{% elif q.is_skipped %}#64748b{% else %}#f43f5e{% endif %};">
     
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+    <!-- Top Details Row -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.5rem;">
       <div style="display: flex; align-items: center; gap: 0.75rem;">
-        <span style="font-weight: 800; font-size: 1.05rem; color: var(--brand-navy);">Question {{ loop.index }}</span>
-        <span class="section-badge">{{ q.section }}</span>
-        <span class="q-diff-badge q-diff-{{ q.difficulty }}">{{ q.difficulty }}</span>
+        <span style="font-weight: 800; font-size: 1.1rem; color: var(--brand-navy); font-family: 'JetBrains Mono', monospace;">
+          Question {{ loop.index }}
+        </span>
+        <span class="section-badge">{{ q.subject }}</span>
+        <span class="q-diff-badge q-diff-{{ q.difficulty or 'Medium' }}">{{ q.difficulty or 'Medium' }}</span>
       </div>
       
       <div>
         {% if q.is_correct %}
-          <span style="background: #d1fae5; color: #059669; border: 1px solid #10b981; padding: 0.3rem 0.85rem; border-radius: var(--radius-full); font-weight: 800; font-size: 0.82rem;">
-            ✅ Correct (+1)
+          <span class="badge badge-success">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Correct (+1)</span>
           </span>
         {% elif q.is_skipped %}
-          <span style="background: #f1f5f9; color: #64748b; border: 1px solid #cbd5e1; padding: 0.3rem 0.85rem; border-radius: var(--radius-full); font-weight: 800; font-size: 0.82rem;">
-            ⚪ Skipped (0)
+          <span class="badge badge-neutral">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Skipped (0)</span>
           </span>
         {% else %}
-          <span style="background: #fee2e2; color: #dc2626; border: 1px solid #fca5a5; padding: 0.3rem 0.85rem; border-radius: var(--radius-full); font-weight: 800; font-size: 0.82rem;">
-            ❌ Incorrect
+          <span class="badge badge-danger">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            <span>Incorrect</span>
           </span>
         {% endif %}
       </div>
     </div>
 
     <!-- Question Text -->
-    <p style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.25rem; color: var(--text-primary); line-height: 1.6;">
+    <p style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-primary); line-height: 1.6;">
       {{ q.question }}
     </p>
 
-    <!-- Options List -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.75rem; margin-bottom: 1.25rem;">
-      {% for opt in q.options %}
-        {% set is_correct_opt = (opt == q.correct_answer) %}
-        {% set is_user_opt = (opt == q.user_answer) %}
-        
-        <div style="padding: 0.85rem 1rem; border-radius: var(--radius-sm); border: 1.5px solid 
-                    {% if is_correct_opt %}#10b981{% elif is_user_opt and not is_correct_opt %}#fca5a5{% else %}var(--border-subtle){% endif %};
-                    background: {% if is_correct_opt %}#d1fae5{% elif is_user_opt and not is_correct_opt %}#fee2e2{% else %}var(--bg-body){% endif %};
-                    color: {% if is_correct_opt %}#065f46{% elif is_user_opt and not is_correct_opt %}#991b1b{% else %}var(--text-primary){% endif %};
-                    font-weight: {% if is_correct_opt or is_user_opt %}700{% else %}500{% endif %}; font-size: 0.95rem;">
-          <span style="margin-right: 0.4rem;">
-            {% if is_correct_opt %}✅{% elif is_user_opt and not is_correct_opt %}❌{% else %}⚪{% endif %}
-          </span>
-          {{ opt }}
-          {% if is_correct_opt %}<span style="font-size: 0.75rem; color: #059669; font-weight: 800; margin-left: 0.4rem;">(Correct)</span>{% endif %}
-          {% if is_user_opt %}<span style="font-size: 0.75rem; color: var(--brand-blue); font-weight: 800; margin-left: 0.4rem;">(Your Choice)</span>{% endif %}
+    <!-- Options List / Results -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem;">
+      {% if q.options %}
+        {% for opt in q.options %}
+          {% set is_correct_opt = (opt == q.correct_answer) %}
+          {% set is_user_opt = (opt == q.user_answer) %}
+          
+          <div style="padding: 0.95rem 1.15rem; border-radius: var(--radius-sm); border: 1.5px solid 
+                      {% if is_correct_opt %}#10b981{% elif is_user_opt and not is_correct_opt %}#fca5a5{% else %}var(--border-subtle){% endif %};
+                      background: {% if is_correct_opt %}var(--status-success-bg){% elif is_user_opt and not is_correct_opt %}var(--status-danger-bg){% else %}var(--bg-subtle){% endif %};
+                      color: {% if is_correct_opt %}var(--status-success-text){% elif is_user_opt and not is_correct_opt %}var(--status-danger-text){% else %}var(--text-primary){% endif %};
+                      font-weight: {% if is_correct_opt or is_user_opt %}700{% else %}500{% endif %}; font-size: 0.95rem; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              {{ opt }}
+            </div>
+            <div style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">
+              {% if is_correct_opt %}
+                <span style="color: #10b981;">(Correct Answer)</span>
+              {% elif is_user_opt and not is_correct_opt %}
+                <span style="color: #f43f5e;">(Your Choice)</span>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <!-- Fallback display when full options array isn't in DB row -->
+        <div style="padding: 0.95rem 1.15rem; border-radius: var(--radius-sm); border: 1.5px solid #10b981; background: var(--status-success-bg); color: var(--status-success-text); font-weight: 700;">
+          <strong>Correct Answer:</strong> {{ q.correct_answer }}
         </div>
-      {% endfor %}
+        <div style="padding: 0.95rem 1.15rem; border-radius: var(--radius-sm); border: 1.5px solid {% if q.is_correct %}#10b981{% elif q.is_skipped %}var(--border-subtle){% else %}#fca5a5{% endif %}; background: {% if q.is_correct %}var(--status-success-bg){% elif q.is_skipped %}var(--bg-subtle){% else %}var(--status-danger-bg){% endif %}; font-weight: 700;">
+          <strong>Your Response:</strong> {{ q.user_answer }}
+        </div>
+      {% endif %}
     </div>
 
     <!-- Explanation Box -->
-    <div style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 1rem 1.25rem; border-radius: var(--radius-sm);">
-      <strong style="color: #1d4ed8; display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.25rem; font-size: 0.92rem;">
-        💡 Explanation:
+    <div style="background: var(--brand-primary-light); border: 1px solid var(--brand-primary-border); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm);">
+      <strong style="color: var(--brand-primary); display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.35rem; font-size: 0.92rem;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+        Solution Explanation:
       </strong>
-      <p style="font-size: 0.92rem; color: #1e40af; line-height: 1.5;">
-        {{ q.explanation or "No explanation provided for this question." }}
+      <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">
+        {{ q.explanation or "No detailed explanation provided for this question." }}
       </p>
     </div>
   </div>

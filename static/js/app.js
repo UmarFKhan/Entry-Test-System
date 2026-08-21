@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let timerInstance = null;
   let candidateName = sessionStorage.getItem('ats_candidate_name') || sessionStorage.getItem('bu_candidate_name') || 'Candidate Name';
 
-  // Sound Synthesizer (Web Audio API - No external files needed!)
+  // Sound Synthesizer (Web Audio API)
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   function playSound(type) {
     if (window.CBT_SOUND_MUTED) return;
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         osc.stop(now + 0.08);
       } else if (type === 'flag') {
         osc.type = 'triangle';
-        osc.frequency.setValueAtTime(587.33, now); // D5
-        osc.frequency.setValueAtTime(880, now + 0.06); // A5
+        osc.frequency.setValueAtTime(587.33, now);
+        osc.frequency.setValueAtTime(880, now + 0.06);
         gain.gain.setValueAtTime(0.15, now);
         gain.gain.exponentialRampToValueAtTime(0.01, now + 0.12);
         osc.start(now);
@@ -79,10 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnFlag = document.getElementById('btnFlag');
   const btnSubmit = document.getElementById('btnSubmit');
 
-  // ── Session Key Logic ─────────────────────────────────────────────────────
-  // The server stamps each new exam start with a unique session_key.
-  // Same key   → mid-exam REFRESH   → restore everything from LocalStorage.
-  // New/missing key → NEW exam start → discard old state, use server questions.
+  // Session Key Logic
   const serverSessionKey = window.EXAM_SESSION_KEY || '';
   const savedState = CBTStorage.getExamState();
   const isResume = savedState && savedState.sessionKey && savedState.sessionKey === serverSessionKey;
@@ -91,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let initialRemaining = examDurationMinutes * 60;
 
   if (isResume) {
-    // Restore the mid-exam state exactly as it was
     questions = savedState.questions || window.EXAM_QUESTIONS || [];
     userAnswers = savedState.userAnswers || {};
     flaggedQuestions = new Set(savedState.flaggedQuestions || []);
@@ -111,7 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
       currentIndex = 0;
     }
   } else {
-    // Fresh start — clear any old session and use the server-provided questions
     CBTStorage.clearExamState();
   }
 
@@ -125,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
       : (timerInstance ? timerInstance.remainingSeconds : initialRemaining);
 
     const state = {
-      sessionKey: serverSessionKey,          // ← ties this save to the current exam
+      sessionKey: serverSessionKey,
       questions: questions,
       userAnswers: userAnswers,
       flaggedQuestions: Array.from(flaggedQuestions),
@@ -144,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     (remaining, formatted) => {
       if (timerDisplay) {
         timerDisplay.textContent = formatted;
-        if (remaining <= 600) { // Under 10 minutes warning glow
+        if (remaining <= 600) {
           timerDisplay.classList.add('timer-low-alert');
         } else {
           timerDisplay.classList.remove('timer-low-alert');
@@ -153,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
       saveState(remaining);
     },
     () => {
-      alert("⏰ Time is up! Your exam will now be automatically submitted.");
+      alert("Time is up! Your exam will now be automatically submitted.");
       submitExam();
     }
   );
@@ -198,7 +193,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="opt-prefix">${prefix}</div>
             <div class="opt-text">${optText}</div>
           </div>
-          <div class="opt-key-hint">[Key ${idx + 1}]</div>
+          <div class="opt-key-hint">
+            <kbd class="kbd" style="border: none; background: transparent; font-size: 0.75rem; color: inherit;">Key ${idx + 1}</kbd>
+          </div>
         `;
 
         optDiv.addEventListener('click', () => {
@@ -212,10 +209,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update Flag Button State
     if (btnFlag) {
       if (flaggedQuestions.has(qId)) {
-        btnFlag.innerHTML = `🚩 Flagged`;
+        btnFlag.innerHTML = `
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+          <span>Flagged</span>
+        `;
         btnFlag.className = 'btn btn-warning';
       } else {
-        btnFlag.innerHTML = `🏳️ Flag Question`;
+        btnFlag.innerHTML = `
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+          <span>Flag Question</span>
+        `;
         btnFlag.className = 'btn btn-secondary';
       }
     }
@@ -250,7 +253,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update Live Counters
     if (progressFillBar) progressFillBar.style.width = `${percent}%`;
-    if (answeredCounterBadge) answeredCounterBadge.textContent = `${answeredCount} / ${totalCount} Answered (${percent}%)`;
+    if (answeredCounterBadge) {
+      answeredCounterBadge.innerHTML = `<span class="badge-dot"></span> ${answeredCount} / ${totalCount} Answered (${percent}%)`;
+    }
     if (paletteSummaryText) paletteSummaryText.textContent = `${answeredCount}/${totalCount} Done`;
     if (statAns) statAns.textContent = answeredCount;
     if (statFlag) statFlag.textContent = flaggedCount;
@@ -265,6 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const pBtn = document.createElement('button');
       pBtn.className = 'p-btn';
       pBtn.textContent = idx + 1;
+      pBtn.setAttribute('aria-label', `Question ${idx + 1}`);
 
       if (isCurrent) {
         pBtn.classList.add('current');
@@ -357,7 +363,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (btnConfirmSubmit) {
       btnConfirmSubmit.disabled = true;
-      btnConfirmSubmit.textContent = '⏳ Submitting...';
+      btnConfirmSubmit.innerHTML = `
+        <svg class="animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" stroke-dasharray="32" stroke-dashoffset="12"></circle></svg>
+        <span>Submitting...</span>
+      `;
     }
 
     const submitEndpoint = window.SUBMIT_URL || 'submit';
@@ -377,7 +386,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Failed to submit exam: ' + (data.message || data.error || 'Unknown error'));
         if (btnConfirmSubmit) {
           btnConfirmSubmit.disabled = false;
-          btnConfirmSubmit.textContent = '🚀 Confirm Submit';
+          btnConfirmSubmit.textContent = 'Confirm Submit';
         }
       }
     })
@@ -386,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Error submitting exam: ' + err.message);
       if (btnConfirmSubmit) {
         btnConfirmSubmit.disabled = false;
-        btnConfirmSubmit.textContent = '🚀 Confirm Submit';
+        btnConfirmSubmit.textContent = 'Confirm Submit';
       }
     });
   }

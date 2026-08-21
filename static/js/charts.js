@@ -1,9 +1,18 @@
 /* ==========================================================================
-   Bahria University CBT System - Charts Visualization Handler (Chart.js)
+   Atechabad Testing System (ATS) - Charts Visualization Handler (Chart.js)
    ========================================================================== */
 
 function renderAttemptCharts(attemptData, perfSummaryData) {
   if (typeof Chart === 'undefined') return;
+
+  const isDarkMode = document.body.classList.contains('dark-mode');
+  const textColor = isDarkMode ? '#94a3b8' : '#64748b';
+  const gridColor = isDarkMode ? 'rgba(255, 255, 255, 0.06)' : 'rgba(0, 0, 0, 0.05)';
+  const fontFamily = "'Plus Jakarta Sans', sans-serif";
+
+  // Global Chart defaults
+  Chart.defaults.color = textColor;
+  Chart.defaults.font.family = fontFamily;
 
   // 1. Doughnut Chart: Correct vs Wrong vs Skipped
   const accuracyCtx = document.getElementById('accuracyChart');
@@ -18,18 +27,25 @@ function renderAttemptCharts(attemptData, perfSummaryData) {
             attemptData.wrong_count,
             attemptData.skipped_count
           ],
-          backgroundColor: ['#10b981', '#ef4444', '#94a3b8'],
+          backgroundColor: ['#10b981', '#f43f5e', '#64748b'],
           borderWidth: 2,
-          borderColor: '#ffffff'
+          borderColor: isDarkMode ? '#0f172a' : '#ffffff',
+          hoverOffset: 4
         }]
       },
       options: {
         responsive: true,
         plugins: {
-          legend: { position: 'bottom' },
-          tooltip: { enabled: true }
+          legend: { 
+            position: 'bottom',
+            labels: { font: { weight: 700 }, boxWidth: 12, padding: 16 }
+          },
+          tooltip: {
+            padding: 10,
+            cornerRadius: 8
+          }
         },
-        cutout: '68%'
+        cutout: '72%'
       }
     });
   }
@@ -45,19 +61,35 @@ function renderAttemptCharts(attemptData, perfSummaryData) {
       data: {
         labels: secLabels,
         datasets: [{
-          label: 'Score Percentage (%)',
+          label: 'Accuracy (%)',
           data: secPcts,
-          backgroundColor: '#0ea5e9',
-          borderRadius: 6
+          backgroundColor: '#2563eb',
+          borderRadius: 8,
+          borderSkipped: false
         }]
       },
       options: {
         responsive: true,
         scales: {
-          y: { beginAtZero: true, max: 100 }
+          y: { 
+            beginAtZero: true, 
+            max: 100,
+            grid: { color: gridColor },
+            ticks: { callback: v => v + '%' }
+          },
+          x: {
+            grid: { display: false }
+          }
         },
         plugins: {
-          legend: { display: false }
+          legend: { display: false },
+          tooltip: {
+            padding: 10,
+            cornerRadius: 8,
+            callbacks: {
+              label: ctx => `Accuracy: ${ctx.raw}%`
+            }
+          }
         }
       }
     });
@@ -78,17 +110,33 @@ function renderAttemptCharts(attemptData, perfSummaryData) {
           label: 'Score Percentage (%)',
           data: scores,
           borderColor: '#10b981',
-          backgroundColor: 'rgba(16, 185, 129, 0.1)',
+          backgroundColor: 'rgba(16, 185, 129, 0.12)',
           fill: true,
-          tension: 0.3,
+          tension: 0.35,
           pointRadius: 5,
-          pointBackgroundColor: '#10b981'
+          pointBackgroundColor: '#10b981',
+          pointBorderColor: '#ffffff',
+          pointBorderWidth: 2
         }]
       },
       options: {
         responsive: true,
         scales: {
-          y: { beginAtZero: true, max: 100 }
+          y: { 
+            beginAtZero: true, 
+            max: 100,
+            grid: { color: gridColor },
+            ticks: { callback: v => v + '%' }
+          },
+          x: {
+            grid: { display: false }
+          }
+        },
+        plugins: {
+          tooltip: {
+            padding: 10,
+            cornerRadius: 8
+          }
         }
       }
     });

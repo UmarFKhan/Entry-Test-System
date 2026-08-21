@@ -5,63 +5,98 @@
 {% block content %}
 <div style="max-width: 820px; margin: 0 auto;">
   <div class="glass-panel" style="padding: 2.5rem;">
-    <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+    <!-- Header -->
+    <div style="display: flex; align-items: flex-start; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1.25rem; margin-bottom: 1.75rem; flex-wrap: wrap; gap: 1rem;">
       <div>
-        <h2 style="font-size: 1.8rem;">📋 Entry Test Instructions & Rules</h2>
-        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.2rem;">
-          Please review the official testing procedures before beginning your Computer-Based Test.
+        <h2 style="font-size: 1.85rem; display: flex; align-items: center; gap: 0.6rem;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          Entry Test Instructions & Procedures
+        </h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.35rem;">
+          Please review the official testing rules before commencing your Computer-Based Test (CBT).
         </p>
       </div>
-      <span class="section-badge">Atechabad Testing System 2026</span>
+      <span class="badge badge-primary">ATS Portal 2026</span>
     </div>
 
     <!-- Candidate Input Box -->
-    <div style="background: var(--bg-body); padding: 1.25rem 1.5rem; border-radius: var(--radius-sm); margin-bottom: 1.75rem; border: 1px solid var(--border-muted);">
-      <label for="candidateName" style="display: block; font-weight: 800; margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--brand-navy);">
-        👤 Candidate Full Name:
+    <div style="background: var(--bg-subtle); padding: 1.35rem 1.5rem; border-radius: var(--radius-md); margin-bottom: 1.75rem; border: 1px solid var(--border-subtle);">
+      <label for="candidateName" style="display: flex; align-items: center; gap: 0.45rem; font-weight: 800; margin-bottom: 0.5rem; font-size: 0.92rem; color: var(--brand-navy);">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        Candidate Full Name:
       </label>
-      <input type="text" id="candidateName" value="Candidate Name" placeholder="Enter your full name..." style="width: 100%; padding: 0.75rem 1rem; border: 1.5px solid var(--border-muted); border-radius: var(--radius-sm); font-size: 1rem; font-weight: 600; font-family: inherit; color: var(--text-primary); background: var(--bg-surface); outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--brand-blue)'" onblur="this.style.borderColor='var(--border-muted)'">
+      <input type="text" id="candidateName" class="input-control" value="Candidate Name" placeholder="Enter your full name for official scorecard...">
     </div>
 
-    <!-- Exam Parameters Cards Grid -->
+    <!-- Exam Parameters 3-Col Grid -->
     <div class="stats-grid" style="margin-bottom: 1.75rem; grid-template-columns: repeat(3, 1fr);">
-      <div class="stat-card">
-        <div class="val" style="font-size: 2rem;">{{ total_questions }}</div>
+      <div class="stat-card" style="padding: 1.25rem;">
+        <div class="val" style="font-size: 2.1rem;">{{ total_questions }}</div>
         <div class="lbl">Total Questions</div>
       </div>
-      <div class="stat-card">
-        <div class="val" style="font-size: 2rem; color: #2563eb;">{{ exam_time }} min</div>
+      <div class="stat-card" style="padding: 1.25rem;">
+        <div class="val" style="font-size: 2.1rem; color: var(--brand-primary);">{{ exam_time }} min</div>
         <div class="lbl">Time Allowed</div>
       </div>
-      <div class="stat-card">
-        <div class="val" style="font-size: 2rem; color: #059669;">{{ passing_pct }}%</div>
+      <div class="stat-card" style="padding: 1.25rem;">
+        <div class="val" style="font-size: 2.1rem; color: #10b981;">{{ passing_pct }}%</div>
         <div class="lbl">Passing Mark</div>
       </div>
     </div>
 
-    <!-- Key Rules Bullet Card -->
-    <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.5rem; margin-bottom: 2rem;">
-      <h4 style="margin-bottom: 1rem; color: var(--brand-navy); font-size: 1.05rem;">Examination Guidelines & Shortcuts:</h4>
-      <ul style="margin-left: 1.25rem; color: var(--text-secondary); line-height: 1.8; font-size: 0.95rem;">
-        <li style="margin-bottom: 0.5rem;"><strong>Timer & Auto-Submit:</strong> The total examination duration is {{ exam_time }} minutes. When the timer hits 00:00, your test will automatically submit.</li>
-        <li style="margin-bottom: 0.5rem;"><strong>Auto-Save Progress:</strong> All selected answers save instantly in background. Refreshing or switching windows will preserve your state.</li>
-        <li style="margin-bottom: 0.5rem;"><strong>No Negative Marking in Full Mock:</strong> 0.0 penalty for wrong choices in general mock mode. Ensure you answer all questions before submitting.</li>
-        <li style="margin-bottom: 0.5rem;"><strong>Interactive Question Palette:</strong> Use the right-hand panel to skip between questions anytime:
-          <div style="display: flex; gap: 0.75rem; margin-top: 0.4rem; font-size: 0.82rem; font-weight: 700;">
-            <span style="color: #059669; background: #d1fae5; padding: 0.2rem 0.6rem; border-radius: 4px;">🟩 Answered</span>
-            <span style="color: #2563eb; background: #dbeafe; padding: 0.2rem 0.6rem; border-radius: 4px;">🟦 Current</span>
-            <span style="color: #d97706; background: #fef3c7; padding: 0.2rem 0.6rem; border-radius: 4px;">🟨 Flagged</span>
-            <span style="color: #64748b; background: #f1f5f9; padding: 0.2rem 0.6rem; border-radius: 4px;">⬜ Unanswered</span>
+    <!-- Key Rules Box -->
+    <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.75rem; margin-bottom: 2rem; box-shadow: var(--shadow-xs);">
+      <h4 style="margin-bottom: 1.15rem; color: var(--brand-navy); font-size: 1.05rem; display: flex; align-items: center; gap: 0.5rem;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        Examination Guidelines & Keyboard Navigation:
+      </h4>
+      
+      <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.95rem; color: var(--text-secondary);">
+        <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+          <span style="color: var(--brand-primary); margin-top: 2px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </span>
+          <div><strong>Timer & Auto-Submit:</strong> The total examination duration is <strong>{{ exam_time }} minutes</strong>. When the countdown reaches 00:00, responses submit automatically for evaluation.</div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+          <span style="color: var(--brand-primary); margin-top: 2px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </span>
+          <div><strong>Live Progress Auto-Save:</strong> All selected options are saved in real-time. Accidental browser reload will seamlessly resume your progress.</div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+          <span style="color: var(--brand-primary); margin-top: 2px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </span>
+          <div>
+            <strong>Interactive Question Palette:</strong> Easily navigate between items anytime using the status indicators:
+            <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+              <span class="badge badge-success"><span class="badge-dot"></span> Answered</span>
+              <span class="badge badge-primary"><span class="badge-dot"></span> Current</span>
+              <span class="badge badge-warning"><span class="badge-dot"></span> Flagged</span>
+              <span class="badge badge-neutral"><span class="badge-dot"></span> Unanswered</span>
+            </div>
           </div>
-        </li>
-        <li><strong>Keyboard Shortcuts:</strong> Press <kbd class="kbd">1</kbd> <kbd class="kbd">2</kbd> <kbd class="kbd">3</kbd> <kbd class="kbd">4</kbd> for options, <kbd class="kbd">N</kbd> / <kbd class="kbd">→</kbd> for Next, <kbd class="kbd">P</kbd> / <kbd class="kbd">←</kbd> for Previous, <kbd class="kbd">F</kbd> to Flag, and <kbd class="kbd">S</kbd> to Submit.</li>
-      </ul>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+          <span style="color: var(--brand-primary); margin-top: 2px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </span>
+          <div>
+            <strong>Keyboard Hotkeys:</strong> Press <kbd class="kbd">1</kbd> <kbd class="kbd">2</kbd> <kbd class="kbd">3</kbd> <kbd class="kbd">4</kbd> to select choices, <kbd class="kbd">N</kbd> or <kbd class="kbd">→</kbd> for Next, <kbd class="kbd">P</kbd> or <kbd class="kbd">←</kbd> for Previous, <kbd class="kbd">F</kbd> to Flag, and <kbd class="kbd">S</kbd> to Submit.
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Start Button -->
     <div style="text-align: center;">
-      <button id="startTestBtn" class="btn btn-primary" style="font-size: 1.1rem; padding: 0.9rem 2.5rem; border-radius: var(--radius-sm); font-weight: 800;">
-        🚀 Begin Examination Now
+      <button id="startTestBtn" class="btn btn-primary btn-lg" style="padding: 1rem 3rem; font-size: 1.1rem; border-radius: var(--radius-md);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        <span>Begin Examination Now</span>
       </button>
     </div>
   </div>
@@ -73,9 +108,7 @@
 <script>
   document.getElementById('startTestBtn').addEventListener('click', () => {
     const candidateName = document.getElementById('candidateName').value.trim() || 'Candidate Name';
-    // Clear old exam state when starting fresh
     CBTStorage.clearExamState();
-    // Save candidate name in session storage
     sessionStorage.setItem('ats_candidate_name', candidateName);
     window.location.href = "{{ url_for('exam') }}";
   });

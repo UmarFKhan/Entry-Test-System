@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}Atechabad Testing System | University Entry Test Portal{% endblock %}</title>
   <meta name="description" content="Atechabad Testing System (ATS) - Premier University Entry Test Simulator, Practice Modes, and Guides for NUST, FAST, ECAT, MDCAT, NTS, GIKI, Bahria & Air University.">
+  <meta name="theme-color" content="#0b1727">
   
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -12,14 +13,6 @@
   
   <!-- Chart.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  
-  <style>
-    .brand-logo-img {
-      height: 48px;
-      width: auto;
-      display: block;
-    }
-  </style>
 
   {% block extra_head %}{% endblock %}
 </head>
@@ -28,27 +21,59 @@
   <!-- Application Header -->
   <header class="app-header">
     <div class="brand-section">
-      <a href="{{ url_for('home') }}" style="text-decoration: none; display: flex; align-items: center; gap: 0.85rem; color: inherit;">
-        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Atechabad Academy" class="brand-logo-img">
+      <a href="{{ url_for('home') }}" class="brand-logo-link" aria-label="Atechabad Testing System Home">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="ATS Logo" class="brand-logo-img">
         <div class="brand-title-group">
           <h1>Atechabad Testing System</h1>
-          <p>Universities Entry Test & CBT Portal</p>
+          <p>University Entry Test & CBT Portal</p>
         </div>
       </a>
     </div>
 
-    <div class="header-controls">
-      <button id="soundToggleBtn" class="btn btn-secondary btn-icon" title="Toggle Sound FX">
-        🔊
+    <!-- Mobile Menu Button -->
+    <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle navigation menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" x2="20" y1="12" y2="12"></line>
+        <line x1="4" x2="20" y1="6" y2="6"></line>
+        <line x1="4" x2="20" y1="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <nav class="header-controls" id="headerNav" aria-label="Primary Navigation">
+      <a href="{{ url_for('home') }}" class="nav-link-btn {% if request.path == '/' %}active{% endif %}">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span>Home</span>
+      </a>
+      
+      <a href="{{ url_for('guides') }}" class="nav-link-btn {% if 'guide' in request.path or 'university' in request.path %}active{% endif %}">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path></svg>
+        <span>Test Guides</span>
+      </a>
+
+      <a href="{{ url_for('practice') }}" class="nav-link-btn {% if 'practice' in request.path %}active{% endif %}">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+        <span>Practice</span>
+      </a>
+
+      <a href="{{ url_for('madness') }}" class="nav-link-btn madness-nav {% if 'madness' in request.path %}active{% endif %}">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+        <span>Quiz Madness</span>
+      </a>
+
+      <div style="width: 1px; height: 24px; background: rgba(255,255,255,0.12); margin: 0 0.25rem;"></div>
+
+      <button id="soundToggleBtn" class="btn btn-secondary btn-icon" title="Toggle Sound FX" aria-label="Toggle Sound Effects">
+        <span id="soundIconWrapper">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+        </span>
       </button>
-      <button id="themeToggleBtn" class="btn btn-secondary btn-icon" title="Toggle Theme">
-        🌙
+
+      <button id="themeToggleBtn" class="btn btn-secondary btn-icon" title="Toggle Color Theme" aria-label="Toggle Dark and Light Mode">
+        <span id="themeIconWrapper">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+        </span>
       </button>
-      <a href="{{ url_for('guides') }}" class="btn btn-secondary" style="border-color: rgba(56,189,248,0.4); color: #38bdf8;">📚 Test Guides</a>
-      <a href="{{ url_for('practice') }}" class="btn btn-secondary" style="border-color: rgba(56,189,248,0.4); color: var(--brand-blue);">🎯 Practice Test</a>
-      <a href="{{ url_for('madness') }}" class="btn" style="background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); color: #fff; border: none; font-weight: 800;">🔥 Quiz Madness</a>
-      <a href="{{ url_for('home') }}" class="btn btn-secondary">🏠 Home</a>
-    </div>
+    </nav>
   </header>
 
   <!-- Main Content Wrapper -->
@@ -58,33 +83,81 @@
 
   <!-- Application Footer -->
   <footer class="app-footer">
-    <p>&copy; 2026 Atechabad Testing System (ATS). Prepared for University Entrance Exams Excellence.</p>
+    <div class="app-footer-inner">
+      <p>&copy; 2026 <strong>Atechabad Testing System (ATS)</strong> &bull; University Admission CBT Platform</p>
+      <div style="display: flex; gap: 1.5rem; align-items: center; font-size: 0.82rem;">
+        <span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #10b981; font-weight: 700;">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 8px #10b981;"></span>
+          System Online
+        </span>
+        <a href="{{ url_for('guides') }}" style="color: inherit; text-decoration: underline;">Guides & Criteria</a>
+        <a href="{{ url_for('practice') }}" style="color: inherit; text-decoration: underline;">Practice Mode</a>
+      </div>
+    </div>
   </footer>
 
-  <script class="theme-script">
+  <script>
     // Theme toggle handler
     const themeBtn = document.getElementById('themeToggleBtn');
-    themeBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      const isDark = document.body.classList.contains('dark-mode');
-      themeBtn.textContent = isDark ? '☀️' : '🌙';
+    const themeIconWrapper = document.getElementById('themeIconWrapper');
 
-      fetch('{{ url_for("api_save_settings") }}', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ theme: isDark ? 'dark' : 'light' })
+    const sunIcon = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>`;
+    const moonIcon = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>`;
+
+    function updateThemeIcon() {
+      const isDark = document.body.classList.contains('dark-mode');
+      if (themeIconWrapper) {
+        themeIconWrapper.innerHTML = isDark ? sunIcon : moonIcon;
+      }
+    }
+
+    // Set initial icon
+    updateThemeIcon();
+
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        updateThemeIcon();
+
+        fetch('{{ url_for("api_save_settings") }}', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ theme: isDark ? 'dark' : 'light' })
+        }).catch(() => {});
       });
-    });
+    }
 
     // Sound toggle handler
     window.CBT_SOUND_MUTED = localStorage.getItem('ats_cbt_muted') === 'true';
     const soundBtn = document.getElementById('soundToggleBtn');
+    const soundIconWrapper = document.getElementById('soundIconWrapper');
+
+    const soundOnIcon = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>`;
+    const soundOffIcon = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" x2="1" y1="1" y2="23"></line></svg>`;
+
+    function updateSoundIcon() {
+      if (soundIconWrapper) {
+        soundIconWrapper.innerHTML = window.CBT_SOUND_MUTED ? soundOffIcon : soundOnIcon;
+      }
+    }
+
+    updateSoundIcon();
+
     if (soundBtn) {
-      soundBtn.textContent = window.CBT_SOUND_MUTED ? '🔇' : '🔊';
       soundBtn.addEventListener('click', () => {
         window.CBT_SOUND_MUTED = !window.CBT_SOUND_MUTED;
         localStorage.setItem('ats_cbt_muted', window.CBT_SOUND_MUTED);
-        soundBtn.textContent = window.CBT_SOUND_MUTED ? '🔇' : '🔊';
+        updateSoundIcon();
+      });
+    }
+
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const headerNav = document.getElementById('headerNav');
+    if (mobileBtn && headerNav) {
+      mobileBtn.addEventListener('click', () => {
+        headerNav.classList.toggle('mobile-open');
       });
     }
   </script>

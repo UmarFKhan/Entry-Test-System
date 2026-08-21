@@ -3,11 +3,10 @@
 
 {% block extra_head %}
 <style>
-  /* ── Quiz Madness Hero Section ──────────────────── */
   .madness-hero {
     background: linear-gradient(135deg, #1e1b4b 0%, #311042 50%, #450a0a 100%);
     color: #fff;
-    padding: 2.5rem 3rem;
+    padding: 2.75rem 3rem;
     border-radius: var(--radius-lg);
     margin-bottom: 2rem;
     position: relative;
@@ -36,12 +35,10 @@
     font-weight: 800;
     color: #fca5a5;
     margin-bottom: 1rem;
-    text-shadow: 0 0 10px rgba(244, 63, 94, 0.5);
   }
-  .madness-hero h2 { color: #fff; font-size: 2.2rem; margin-bottom: .4rem; letter-spacing: -0.02em; }
-  .madness-hero p  { color: #cbd5e1; font-size: 1.05rem; max-width: 680px; }
+  .madness-hero h2 { color: #fff; font-size: 2.25rem; margin-bottom: .4rem; letter-spacing: -0.025em; }
+  .madness-hero p  { color: #cbd5e1; font-size: 1.05rem; max-width: 680px; line-height: 1.6; }
 
-  /* ── Grid Layout ──────────────────────────────────── */
   .madness-grid {
     display: grid;
     grid-template-columns: 1fr 360px;
@@ -49,7 +46,6 @@
     align-items: start;
   }
 
-  /* ── Subject Selection Cards ──────────────────────── */
   .subj-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -71,56 +67,64 @@
   .subj-card:hover {
     border-color: #f43f5e;
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(244, 63, 94, 0.15);
+    box-shadow: 0 10px 25px rgba(244, 63, 94, 0.12);
   }
 
   .subj-card.active {
     border-color: #e11d48;
     background: linear-gradient(145deg, rgba(225, 29, 72, 0.04), var(--bg-surface));
-    box-shadow: 0 0 0 4px rgba(225, 29, 72, 0.15), 0 12px 28px rgba(225, 29, 72, 0.18);
+    box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.15), 0 12px 28px rgba(225, 29, 72, 0.12);
   }
 
-  .subj-card .icon {
-    font-size: 2.2rem;
-    margin-bottom: 0.75rem;
-    display: inline-block;
+  .subj-card .icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(225, 29, 72, 0.1);
+    color: #e11d48;
+    margin-bottom: 1rem;
   }
 
   .subj-card .title {
     font-size: 1.15rem;
     font-weight: 800;
     color: var(--brand-navy);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.35rem;
   }
 
   .subj-card .q-count {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 800;
     color: #e11d48;
     background: rgba(225, 29, 72, 0.1);
     display: inline-block;
     padding: 0.2rem 0.65rem;
     border-radius: var(--radius-full);
+    font-family: 'JetBrains Mono', monospace;
   }
 
   .subj-card .desc {
     font-size: 0.82rem;
     color: var(--text-muted);
-    margin-top: 0.6rem;
+    margin-top: 0.65rem;
+    line-height: 1.45;
   }
 
-  /* ── Sidebar Summary ────────────────────────────── */
   .madness-summary {
     background: var(--bg-surface);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     padding: 1.75rem;
     position: sticky;
-    top: 1.5rem;
+    top: calc(var(--header-height) + 1.25rem);
   }
 
   @media (max-width: 900px) {
     .madness-grid { grid-template-columns: 1fr; }
+    .madness-summary { position: static; }
   }
 </style>
 {% endblock %}
@@ -129,122 +133,140 @@
 <!-- Hero Section -->
 <div class="madness-hero">
   <div class="madness-badge">
-    🔥 UNLIMITED EXHAUSTIVE TEST MODE
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+    <span>Exhaustive Question Bank Marathon</span>
   </div>
   <h2>Quiz Madness Mode</h2>
-  <p>Play 100% of the questions in any chosen subject (or every single MCQ in the entire system) with <strong>zero repeats</strong>. Test your absolute endurance and subject mastery!</p>
+  <p>Attempt 100% of the questions in any chosen subject (or every single MCQ in the entire system) with <strong>zero repeats</strong>. Test your absolute endurance and master full question banks!</p>
 </div>
 
 <form id="madnessForm" action="{{ url_for('madness_start') }}" method="POST">
   <input type="hidden" name="section" id="selectedSectionInput" value="All">
 
   <div class="madness-grid">
-    <!-- Left Column: Config & Subject Selection -->
+    <!-- Left Column: Subject Selection -->
     <div>
       <!-- Candidate Profile Input -->
-      <div class="glass-panel" style="padding: 1.75rem; margin-bottom: 1.75rem; background: var(--bg-surface);">
-        <label for="candidateName" style="display: block; font-weight: 800; margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--brand-navy);">
-          👤 Candidate Full Name:
-        </label>
-        <input type="text" id="candidateName" name="candidate_name" value="Candidate Name" placeholder="Enter your full name..." style="width: 100%; padding: 0.8rem 1rem; border: 1.5px solid var(--border-muted); border-radius: var(--radius-sm); font-size: 1.05rem; font-weight: 600; font-family: inherit; color: var(--text-primary); background: var(--bg-body); outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#e11d48'" onblur="this.style.borderColor='var(--border-muted)'">
+      <div class="glass-panel" style="padding: 1.75rem; margin-bottom: 1.75rem;">
+        <label for="candidateName" class="cfg-label" style="margin-bottom: 0.5rem;">Candidate Full Name</label>
+        <input type="text" id="candidateName" name="candidate_name" class="input-control" value="Candidate Name" placeholder="Enter your full name...">
       </div>
 
       <!-- Subject Selection Section -->
-      <div class="glass-panel" style="padding: 1.75rem; background: var(--bg-surface);">
-        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">🎯 Select Subject Bank for Madness Mode</h3>
+      <div class="glass-panel" style="padding: 1.75rem;">
+        <h3 style="font-size: 1.3rem; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.5rem;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+          Select Subject Pool
+        </h3>
         <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
           Choose a subject to load <strong>all of its MCQs without repeating any</strong>:
         </p>
 
         <div class="subj-card-grid">
           <!-- All Subjects -->
-          <div class="subj-card active" data-section="All" data-count="{{ total_available }}" data-time="{{ (total_available * 1.2)|round|int }}">
-            <div class="icon">⚡</div>
+          <div class="subj-card active" data-section="All" data-count="{{ total_available or 100 }}" data-time="{{ ((total_available or 100) * 1.2)|round|int }}">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
             <div class="title">All Subjects</div>
-            <div class="q-count">{{ total_available }} MCQs</div>
-            <div class="desc">Ultimate 100% Marathon across all banks</div>
+            <div class="q-count">{{ total_available or 100 }} MCQs</div>
+            <div class="desc">Ultimate 100% Marathon across all subject banks</div>
           </div>
 
           <!-- English -->
-          <div class="subj-card" data-section="English" data-count="{{ section_counts.get('English', 300) }}" data-time="{{ (section_counts.get('English', 300) * 1.2)|round|int }}">
-            <div class="icon">📚</div>
+          <div class="subj-card" data-section="English" data-count="300" data-time="360">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path></svg>
+            </div>
             <div class="title">English</div>
-            <div class="q-count">{{ section_counts.get('English', 300) }} MCQs</div>
-            <div class="desc">Grammar, Synonyms, Narration & Idioms</div>
+            <div class="q-count">300 MCQs</div>
+            <div class="desc">Grammar, Synonyms, Narration & Vocabulary</div>
           </div>
 
           <!-- Computer -->
-          <div class="subj-card" data-section="Computer" data-count="{{ section_counts.get('Computer', 234) }}" data-time="{{ (section_counts.get('Computer', 234) * 1.2)|round|int }}">
-            <div class="icon">💻</div>
+          <div class="subj-card" data-section="Computer" data-count="234" data-time="280">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
             <div class="title">Computer Science</div>
-            <div class="q-count">{{ section_counts.get('Computer', 234) }} MCQs</div>
-            <div class="desc">Hardware, Networking, DB & Programming</div>
+            <div class="q-count">234 MCQs</div>
+            <div class="desc">Hardware, Networking, Databases & Programming</div>
           </div>
 
           <!-- Analytical -->
-          <div class="subj-card" data-section="Analytical" data-count="{{ section_counts.get('Analytical', 215) }}" data-time="{{ (section_counts.get('Analytical', 215) * 1.2)|round|int }}">
-            <div class="icon">🧩</div>
+          <div class="subj-card" data-section="Analytical" data-count="215" data-time="258">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            </div>
             <div class="title">Analytical Reasoning</div>
-            <div class="q-count">{{ section_counts.get('Analytical', 215) }} MCQs</div>
-            <div class="desc">Logic, Sequences & Pattern Analysis</div>
+            <div class="q-count">215 MCQs</div>
+            <div class="desc">Logic, Sequences, Deductions & Pattern Analysis</div>
           </div>
 
           <!-- Physics -->
-          <div class="subj-card" data-section="Physics" data-count="{{ section_counts.get('Physics', 210) }}" data-time="{{ (section_counts.get('Physics', 210) * 1.2)|round|int }}">
-            <div class="icon">⚛️</div>
+          <div class="subj-card" data-section="Physics" data-count="210" data-time="252">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)"></ellipse></svg>
+            </div>
             <div class="title">Physics</div>
-            <div class="q-count">{{ section_counts.get('Physics', 210) }} MCQs</div>
-            <div class="desc">Mechanics, Electricity & Thermodynamics</div>
+            <div class="q-count">210 MCQs</div>
+            <div class="desc">Mechanics, Electricity, Magnetism & Waves</div>
           </div>
 
           <!-- Maths -->
-          <div class="subj-card" data-section="Maths" data-count="{{ section_counts.get('Maths', 180) }}" data-time="{{ (section_counts.get('Maths', 180) * 1.2)|round|int }}">
-            <div class="icon">📐</div>
+          <div class="subj-card" data-section="Maths" data-count="180" data-time="216">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>
+            </div>
             <div class="title">Mathematics</div>
-            <div class="q-count">{{ section_counts.get('Maths', 180) }} MCQs</div>
+            <div class="q-count">180 MCQs</div>
             <div class="desc">Algebra, Calculus, Trigonometry & Matrices</div>
           </div>
         </div>
 
         <!-- Custom Timer Setting -->
-        <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
-          <label for="customTime" style="display: block; font-weight: 800; font-size: 0.9rem; color: var(--brand-navy); margin-bottom: 0.4rem;">
-            ⏱️ Timer Duration Override (Minutes - Optional):
+        <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+          <label for="customTime" class="cfg-label" style="margin-bottom: 0.4rem;">
+            Timer Duration Override (Minutes - Optional)
           </label>
-          <input type="number" id="customTime" name="custom_time" placeholder="Auto calculated time" min="1" max="1000" style="width: 220px; padding: 0.65rem 0.9rem; border-radius: var(--radius-sm); border: 1.5px solid var(--border-muted); font-size: 1rem; font-weight: 700; font-family: inherit; background: var(--bg-body); outline: none;">
-          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.35rem;">Leave empty to use recommended auto-time based on question count.</p>
+          <input type="number" id="customTime" name="custom_time" placeholder="Auto calculated time" min="1" max="1000" class="input-control" style="width: 220px; font-family: 'JetBrains Mono', monospace; font-weight: 700;">
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.4rem;">Leave empty to use recommended auto-pacing based on total MCQs.</p>
         </div>
       </div>
     </div>
 
     <!-- Right Column: Summary Card & Launch -->
     <div class="madness-summary">
-      <h4 style="font-size: 1.15rem; color: var(--brand-navy); margin-bottom: 1rem;">🔥 Quiz Madness Summary</h4>
+      <h4 style="font-size: 1.2rem; color: var(--brand-navy); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+        Madness Summary
+      </h4>
 
       <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.75rem; font-size: 0.95rem;">
         <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
-          <span style="color: var(--text-secondary);">Selected Target:</span>
+          <span style="color: var(--text-muted); font-weight: 600;">Selected Target:</span>
           <strong id="summaryTargetName" style="color: #e11d48;">All Subjects</strong>
         </div>
 
         <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
-          <span style="color: var(--text-secondary);">Total Questions:</span>
-          <strong id="summaryQCount" style="font-size: 1.1rem; color: var(--brand-blue);">{{ total_available }} MCQs</strong>
+          <span style="color: var(--text-muted); font-weight: 600;">Total Questions:</span>
+          <strong id="summaryQCount" style="font-size: 1.1rem; color: var(--brand-primary); font-family: 'JetBrains Mono', monospace;">{{ total_available or 100 }} MCQs</strong>
         </div>
 
         <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
-          <span style="color: var(--text-secondary);">Repeat Policy:</span>
-          <strong style="color: #059669;">Zero Repeats 🚫🔁</strong>
+          <span style="color: var(--text-muted); font-weight: 600;">Repeat Policy:</span>
+          <span class="badge badge-success" style="font-size: 0.8rem;"><span class="badge-dot"></span> Zero Repeats</span>
         </div>
 
         <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.6rem;">
-          <span style="color: var(--text-secondary);">Time Allowed:</span>
-          <strong id="summaryTimeMinutes" style="color: #d97706;">{{ (total_available * 1.2)|round|int }} Mins</strong>
+          <span style="color: var(--text-muted); font-weight: 600;">Time Allowed:</span>
+          <strong id="summaryTimeMinutes" style="color: #d97706; font-family: 'JetBrains Mono', monospace;">{{ ((total_available or 100) * 1.2)|round|int }} Mins</strong>
         </div>
       </div>
 
-      <button type="submit" class="btn" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem; font-weight: 800; background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); color: #fff; border: none; border-radius: var(--radius-sm); box-shadow: 0 4px 15px rgba(225, 29, 72, 0.35); cursor: pointer; transition: transform 0.15s ease;">
-        🚀 Launch Quiz Madness
+      <button type="submit" class="btn btn-danger btn-lg" style="width: 100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        <span>Launch Quiz Madness</span>
       </button>
     </div>
   </div>
