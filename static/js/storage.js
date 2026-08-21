@@ -7,29 +7,24 @@ const CBTStorage = {
   KEY_SETTINGS: 'ats_cbt_settings',
   
   saveExamState(state) {
+    // Deprecated: Exams must not be resumable once closed
     try {
-      localStorage.setItem(this.KEY_EXAM_STATE, JSON.stringify(state));
-    } catch (e) {
-      console.error('Failed to save exam state to LocalStorage:', e);
-    }
+      localStorage.removeItem(this.KEY_EXAM_STATE);
+      localStorage.removeItem('bu_cbt_exam_state');
+    } catch (e) {}
   },
 
   getExamState() {
-    try {
-      let data = localStorage.getItem(this.KEY_EXAM_STATE);
-      if (!data) {
-        data = localStorage.getItem('bu_cbt_exam_state');
-      }
-      return data ? JSON.parse(data) : null;
-    } catch (e) {
-      console.error('Failed to load exam state:', e);
-      return null;
-    }
+    // Tests are non-resumable once closed
+    return null;
   },
 
   clearExamState() {
-    localStorage.removeItem(this.KEY_EXAM_STATE);
-    localStorage.removeItem('bu_cbt_exam_state');
+    try {
+      localStorage.removeItem(this.KEY_EXAM_STATE);
+      localStorage.removeItem('bu_cbt_exam_state');
+      sessionStorage.removeItem('ats_cbt_exam_state');
+    } catch (e) {}
   },
 
   getSettings() {
@@ -42,6 +37,8 @@ const CBTStorage = {
   },
 
   saveSettings(settings) {
-    localStorage.setItem(this.KEY_SETTINGS, JSON.stringify(settings));
+    try {
+      localStorage.setItem(this.KEY_SETTINGS, JSON.stringify(settings));
+    } catch (e) {}
   }
 };

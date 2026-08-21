@@ -1,15 +1,19 @@
 /* ==========================================================================
-   Atechabad Testing System (ATS) - Main Client App Logic (Enhanced UI & Audio)
+   Atechabad Testing System (ATS) - Main Client App Logic (Auto-Submit on Exit)
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
   if (!window.EXAM_QUESTIONS || window.EXAM_QUESTIONS.length === 0) return;
+
+  // Clear any existing stored exam states - tests cannot be resumed
+  CBTStorage.clearExamState();
 
   let questions = window.EXAM_QUESTIONS;
   let currentIndex = 0;
   let userAnswers = {}; // q_id -> selected option text
   let flaggedQuestions = new Set(); // q_id set
   let timerInstance = null;
+  let isSubmitted = false;
   let candidateName = sessionStorage.getItem('ats_candidate_name') || sessionStorage.getItem('bu_candidate_name') || 'Candidate Name';
 
   // Sound Synthesizer (Web Audio API)
@@ -79,58 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnFlag = document.getElementById('btnFlag');
   const btnSubmit = document.getElementById('btnSubmit');
 
-  // Session Key Logic
-  const serverSessionKey = window.EXAM_SESSION_KEY || '';
-  const savedState = CBTStorage.getExamState();
-  const isResume = savedState && savedState.sessionKey && savedState.sessionKey === serverSessionKey;
-
   const examDurationMinutes = window.EXAM_DURATION_MINUTES || 120;
   let initialRemaining = examDurationMinutes * 60;
 
-  if (isResume) {
-    questions = savedState.questions || window.EXAM_QUESTIONS || [];
-    userAnswers = savedState.userAnswers || {};
-    flaggedQuestions = new Set(savedState.flaggedQuestions || []);
-    currentIndex = savedState.currentIndex || 0;
-    if (savedState.candidateName) candidateName = savedState.candidateName;
-
-    if (typeof savedState.remainingSeconds === 'number' && savedState.lastTimestamp) {
-      const elapsedSeconds = Math.floor((Date.now() - savedState.lastTimestamp) / 1000);
-      initialRemaining = savedState.remainingSeconds - elapsedSeconds;
-    }
-
-    if (initialRemaining <= 0) {
-      CBTStorage.clearExamState();
-      initialRemaining = examDurationMinutes * 60;
-      userAnswers = {};
-      flaggedQuestions.clear();
-      currentIndex = 0;
-    }
-  } else {
-    CBTStorage.clearExamState();
-  }
-
   if (candidateNameInput) {
     candidateNameInput.value = candidateName;
-  }
-
-  function saveState(remainingSecs = null) {
-    const currentRemaining = (remainingSecs !== null && !isNaN(remainingSecs)) 
-      ? remainingSecs 
-      : (timerInstance ? timerInstance.remainingSeconds : initialRemaining);
-
-    const state = {
-      sessionKey: serverSessionKey,
-      questions: questions,
-      userAnswers: userAnswers,
-      flaggedQuestions: Array.from(flaggedQuestions),
-      currentIndex: currentIndex,
-      candidateName: candidateName,
-      remainingSeconds: currentRemaining,
-      lastTimestamp: Date.now(),
-      questionsLength: questions.length
-    };
-    CBTStorage.saveExamState(state);
   }
 
   // Initialize Timer
@@ -145,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
           timerDisplay.classList.remove('timer-low-alert');
         }
       }
-      saveState(remaining);
     },
     () => {
       alert("Time is up! Your exam will now be automatically submitted.");
@@ -228,7 +184,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnNext) btnNext.disabled = currentIndex === questions.length - 1;
 
     renderPalette();
-    saveState();
   }
 
   function selectOption(qId, optionText) {
@@ -349,6 +304,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Submit test handler
   function submitExam() {
+    if (isSubmitted) return;
+    isSubmitted = true;
+
     if (timerInstance) timerInstance.stop();
     const finalCandidateName = (candidateNameInput && candidateNameInput.value) ? candidateNameInput.value.trim() : (candidateName || 'Candidate Name');
     const timeTaken = timerInstance ? timerInstance.getTimeTakenSeconds() : 0;
@@ -369,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
     }
 
-    const submitEndpoint = window.SUBMIT_URL || 'submit';
+    const submitEndpoint = window.SUBMIT_URL || '/submit';
     fetch(submitEndpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -387,6 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (btnConfirmSubmit) {
           btnConfirmSubmit.disabled = false;
           btnConfirmSubmit.textContent = 'Confirm Submit';
+          isSubmitted = false;
         }
       }
     })
@@ -396,9 +355,51 @@ document.addEventListener('DOMContentLoaded', () => {
       if (btnConfirmSubmit) {
         btnConfirmSubmit.disabled = false;
         btnConfirmSubmit.textContent = 'Confirm Submit';
+        isSubmitted = false;
       }
     });
   }
+
+  // Auto-submit when the window/screen is closed or unloaded
+  function handleAutoSubmitOnExit() {
+    if (isSubmitted) return;
+    isSubmitted = true;
+
+    if (timerInstance) timerInstance.stop();
+    const finalCandidateName = (candidateNameInput && candidateNameInput.value) ? candidateNameInput.value.trim() : (candidateName || 'Candidate Name');
+    const timeTaken = timerInstance ? timerInstance.getTimeTakenSeconds() : 0;
+
+    const payload = {
+      candidate_name: finalCandidateName,
+      candidate_roll: 'ATS-' + Math.floor(100000 + Math.random() * 900000),
+      time_taken_seconds: timeTaken,
+      answers: userAnswers,
+      questions: questions
+    };
+
+    const submitEndpoint = window.SUBMIT_URL || '/submit';
+
+    try {
+      if (navigator.sendBeacon) {
+        const blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
+        navigator.sendBeacon(submitEndpoint, blob);
+      } else {
+        fetch(submitEndpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+          keepalive: true
+        }).catch(() => {});
+      }
+    } catch (e) {
+      console.error('Auto-submit beacon error:', e);
+    }
+
+    CBTStorage.clearExamState();
+  }
+
+  window.addEventListener('pagehide', handleAutoSubmitOnExit);
+  window.addEventListener('beforeunload', handleAutoSubmitOnExit);
 
   if (btnSubmit) {
     btnSubmit.addEventListener('click', () => {
@@ -442,10 +443,6 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (key === 'S') {
       if (btnSubmit) btnSubmit.click();
     }
-  });
-
-  window.addEventListener('beforeunload', () => {
-    saveState();
   });
 
   // Initial Render
